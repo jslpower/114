@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+ h1{ font-size:14px; color:#fff;}
+ h2{ font-size:12px; color:#000;}
+p,h1,h2,ul,li{ margin:0; padding:0;}
+.main{ margin:0 auto; text-align:left; padding:0; width:970px;}
+.add01{ margin:10px auto 0 auto; padding:0;}
+.content{ margin-top:10px;}
+.sidebar{ float:left; width:278px;}
+.sidebar a{ color:#333333;}
+.sidebar02{ float:left; margin-left:10px; width:680px;}
+/******************.sidebar start****************/
+.sidebar_1{ margin:0; padding:0;}
+.sidebar .T{text-indent:40px; height:44px; line-height:30px;  background:url(/images/hotel/seach_box_bg.gif) no-repeat 0 0; margin:0; padding:0;}
+.sidebar .search_box{ background:url(/images/hotel/seach_box_bg.gif) repeat-y -293px 0px; margin:0; padding:0;}
+.sidebar .search_box .field {padding:7px 0 0 0; margin:0;}
+.sidebar .search_box .field02 {padding-top:7px; padding-left:35px;}
+.sidebar .search_box .field label {display:inline-block;padding-right:10px;text-align:right;width:88px; text-indent:10px;}
+.C_red { color:#FF0000;}
+.sidebar .submit {overflow:hidden;padding:8px 0 0 80px; height:44px; background:url(/images/hotel/seach_box_bg.gif) no-repeat -586px 0px;}
+.search_bottom{background:url(/images/hotel/search_01.gif) no-repeat -456px bottom; height:20px;}
+.sidebar .submit a { font-size:12px; font-weight:bold; color:#1755ae; margin-left:10px;}
+.sidebar_2{margin:0; padding:0;}
+.sidebar_2 .more {height:26px;line-height:26px;padding:0 10px;position:relative;text-align:right; background:url(/images/hotel/bg02.gif) no-repeat 0 0; margin:10px 0 0 0;}
+.sidebar_2 .more span,.cuxiao .more span,.sidebar02_2_2 .more span {color:#ffffff;font-weight:bold;left:9px;line-height:25px;position:absolute;top:0; font-size:14px;}
+.sidebar02_2_2 a{ color:#333333;}
+.sidebar_2 .more a,.cuxiao .more a ,.sidebar02_2_2 .more a{color:#fffc00;margin-right:2px;position:relative;}
+.sidebar_2 ul,.cuxiao ul{border-bottom:1px #e45d04 solid;border-left:1px #e45d04 solid;border-right:1px #e45d04 solid;}
+
+.sidebar_2 ul li,.sidebar02_1 .cuxiao ul li{ line-height:23px; height:23px; padding:0 10px; position:relative;text-align:right; background:url(/images/hotel/new_hotelicon.gif) no-repeat 10px center;}
+.sidebar_2 ul li a,.sidebar02_1 .cuxiao ul li a{color:#333333; left:24px; line-height:25px;top:0; position:absolute;}
+.sidebar_2 ul li span,.sidebar02_1 .cuxiao ul li span{color:#cccccc;position:relative; margin-right:2px;}
+
+.sidebar_2 ul li.Number01,.sidebar_2 ul li.Number02,.sidebar_2 ul li.Number03,.sidebar_2 ul li.Number04,.sidebar_2 ul li.Number05,.sidebar_2 ul li.Number06,.sidebar_2 ul li.Number07,.sidebar_2 ul li.Number08,.sidebar_2 ul li.Number09,.sidebar_2 ul li.Number10{background-image:url(/images/hotel/number.gif); background-repeat:no-repeat;}
+.sidebar_2 ul li.Number01{background-position:6px 7px;}
+.sidebar_2 ul li.Number02{background-position:6px -19px;}
+.sidebar_2 ul li.Number03{background-position:6px -45px;}
+.sidebar_2 ul li.Number04{background-position:6px -72px;}
+.sidebar_2 ul li.Number05{background-position:6px -96px;}
+.sidebar_2 ul li.Number06{background-position:6px -122px;}
+.sidebar_2 ul li.Number07{background-position:6px -149px;}
+.sidebar_2 ul li.Number08{background-position:6px -174px;}
+.sidebar_2 ul li.Number09{background-position:6px -201px;}
+.sidebar_2 ul li.Number10{background-position:6px -228px;}
+.timespic{ margin-left:-19px; vertical-align:top; position:relative; top:3px;}
+/******************.sidebar end****************/
+
+/******************.sidebar02 start***************/
+.sidebar02_1{margin:0; padding:0;}
+.sidebar02_1 .flash_img{ float:left;}
+.sidebar02_1 .cuxiao{ float:left; width:255px; margin-left:6px;}
+.sidebar02_1 .cuxiao .more {height:26px;line-height:26px;padding:0 10px;position:relative;text-align:right; background:url(/images/hotel/bg03.gif) no-repeat 0 0;}
+.sidebar02_1 .cuxiao .more02 a{margin-right:25px;}
+.sidebar02_1 .cuxiao ul li a.fg{ color:#467002;}
+.cuxiao ul li span.frb,.imgRArea font.frb{font-weight:bold; color:#ff4400;}
+.frb{font-weight:bold; color:#ff4400;}
+
+/**********sidebar02_2**********/
+.sidebar02_2{/*position:relative;*/text-align:right;}
+.sidebar02_2_1{ margin-top:10px;}
+.sidebar02_2_1 .add_menu{ background:url(/images/hotel/bg04.gif) no-repeat 0 0; height:51px;padding:0 0 0 40px; }
+.sidebar02_2_1 .add_menu li{ float:left; width:45px; line-height:48px;}
+.sidebar02_2_1 .add_menu li a.default{ padding:10px; background:#ff7901; padding:5px 8px; color:#FFFFFF; font-weight:bold;}
+
+.sidebar02_2_content{border-bottom:3px #ffcd83 solid;border-left:3px #ffcd83 solid;border-right:3px #ffcd83 solid; text-align:left;}
+.sidebar02_2_content_L{ float:left; width:330px;}
+.sidebar02_2_content_R{ float:left; width:330px;}
+.imgLAreapic{float:left;height:86px;padding-top:2px;text-align:center;width:130px;}
+.imgRArea{float:left;padding-top:4px; text-align:left; line-height:20px; width:200px;}
+.imgLAreapic img{ border:1px #CCCCCC solid; padding:2px;}
+.sidebar02_2_List{*margin-top:5px; margin-bottom:5px;}
+.sidebar02_2_List a{ color:#000000;}
+.sidebar02_2_List tr td{ border-bottom:1px #ffdc9e dashed;}
+
+.sidebar02_2_2 .more {height:26px;line-height:26px;padding:0 10px;position:relative;text-align:right; background:url(/images/hotel/bg06.gif) no-repeat 0 0; margin:10px 0 0 0; }
+.sidebar02_2_2 ul{ float:left; border-bottom:1px #e45d04 solid;border-left:1px #e45d04 solid;border-right:1px #e45d04 solid; padding-bottom:10px; overflow:hidden; z-index:1; height:auto; width:678px;}
+.sidebar02_2_2 ul li{ float:left; width:140px; border:1px #CCCCCC solid; margin:10px 0 0 20px; _margin:10px 0 0 15px; text-align:center; background:#f1f1f1; height:120px; line-height:25px;}
+.sidebar02_2_2 ul li img{margin-top:2px;}
+/******************.sidebar02 end****************/
+
+/*****************登录前搜索页**********************/
+/**********sidebarSearch*********/
+.sidebarSearch{ width:224px; float:left;}
+.sidebarSearch .T{text-indent:40px; height:41px; line-height:30px; background:url(/images/hotel/search_01.gif) no-repeat 0 0;}
+.sidebarSearch .search_box{background:url(/images/hotel/search_01.gif) repeat-y -228px 0px; margin:0; padding:0;}
+.sidebarSearch .submit {overflow:hidden;padding:8px 0 0 20px; height:35px; background-image:none;}
+.sidebarSearch .submit img { vertical-align:middle;}
+.sidebarSearch .submit a {font-size:12px; font-weight:bold; color:#1755ae; margin-left:10px;}
+/*.sidebarSearch .search_box .field ul{background:url(/images/hotel/search_01.gif) no-repeat -456px bottom; padding:10px 0;}*/
+.sidebarSearch .search_box .field ul li{margin:0; padding:5px 0 0 0; text-indent:26px;}
+.sidebarSearch .search_box .field ul li label {display:inline-block;text-align:left;width:25px; vertical-align:middle; }
+.T_sub{ background:url(/images/hotel/search_02.gif) no-repeat 5px -49px; text-indent:40px; height:25px; line-height:25px; width:220px;}
+.C_Grb{ color:#467002;}
+.sidebar_2 .moreClassPage{background:url(/images/hotel/search_bg02.gif) no-repeat 0 0;}
+.sidebar_2_ClassPage ul li{ line-height:26px; height:26px; border-bottom:1px #CCCCCC dashed;}
+
+/**********sidebar02Search*********/
+.sidebar02Search{ width:734px;}
+.sidebar02SearchC{ border-bottom:1px #eebc82 solid; border-left:1px #eebc82 solid; border-right:1px #eebc82 solid;}
+.sidebar02_1 .xuanzhe{position:relative;text-align:right; background:url(/images/hotel/search_02.gif) no-repeat 0 0; height:48px; line-height:49px; font-size:20px; font-family:"黑体"}
+.sidebar02_1 .xuanzhe span{position:absolute; left:35px; top:0;}
+.sidebar02_1 .xuanzhe img{margin-right:10px;position:relative; top:15px; vertical-align:middle;}
+
+.xuanzhe_subtitle{position:relative; top:10px; left:0; text-align:right;border-bottom:1px #eebc82 solid; margin-bottom:25px;}
+.xuanzhe_subtitle ul{position:absolute; left:30px; top:-14px; *top:-16px; _top:-14px; margin:0; padding:0;}
+.xuanzhe_subtitle ul li{float:left; height:30px; text-align:center; line-height:30px; width:111px; background:url(/images/hotel/search_02.gif) no-repeat -214px -49px; margin-left:5px;}
+.xuanzhe_subtitle ul li a{ color:#e75200; font-weight:bold; font-size:14px;}
+.xuanzhe_subtitle span,.xuanzhe_subtitle02 span{position:relative; top:0; margin-right:10px; display:block;}
+
+.xuanzhe_subtitle02{ background:url(/images/hotel/search_06.gif) repeat-x 0 0; position:relative;text-align:right; height:31px; line-height:31px;}
+.xuanzhe_subtitle02 ul{position:absolute; left:30px;}
+.xuanzhe_subtitle02 span a.page02{ background:#FF6600; padding:3px; color:#fff;}
+.xuanzhe_subtitle02 span a.page01{ background:#ccc; padding:3px; color:#000000;}
+.xuanzhe_subtitle02 ul li{float:left; height:30px; text-align:left; width:70px; }
+
+.sidebar02_1_content_L{margin-top:1px; border-top:1px #CCCCCC solid;  border-bottom:1px #CCCCCC solid;  height:auto; margin-bottom:10px; background:#f1f1ef;}
+.bgc{ margin:1px 0 2px 0; overflow:hidden; height:auto;}
+.sidebar02_1_content_L .imgLAreapic{ width:149px; height:auto; background:#fff; margin:5px 10px; line-height:25px;}
+.sidebar02_1_content_L .imgLAreapic img{ border:none; vertical-align:top;}
+.sidebar02_1_content_L .imgRArea{ width:554px; position:relative; top:0;}
+.sidebar02_1_content_L .imgRArea p img{ vertical-align:middle;}
+.font14b{ font-size:14px; color:#000000; font-weight:bold;}
+.sidebar02_1_content_L .imgRArea ul{ margin-top:5px; border-bottom:2px solid #f85a01; padding-left:10px; /*position:absolute;*/ width:543px;}
+.sidebar02_1_content_L .imgRArea ul li{ float:left; width:80px; text-align:center; background:url(/images/hotel/search_02.gif) no-repeat -512px -55px;height:23px; line-height:23px;}
+.sidebar02_1_content_L .imgRArea ul li a{ color:#333333; display:block;}
+.sidebar02_1_content_L .imgRArea ul li a.tabtwo-on{ background:url(/images/hotel/search_02.gif) no-repeat -434px -55px; color:#ffffff; font-weight:bold;}
+.sidebar02_1_content_L .imgRArea ul li a:hover{ background:url(/images/hotel/search_02.gif) no-repeat -434px -55px; color:#ffffff; font-weight:bold;}
+.sidebar02_1_content_L .imgRArea table{ border-collapse:collapse;}
+.sidebar02_1_content_L .imgRArea table a{ color:#333333;}
+.xuxian td{ border-bottom:1px #b5b9ca dashed;}
+
+/***********************详细页**********************/
+.Tab{border-bottom:1px #eebc82 solid; margin:0 0 10px 0; width:734px;}
+.Tab ul{ margin-left:25px; float:left;}
+.Tab ul li{float:left; height:30px; text-align:center; line-height:30px; width:95px; background:url(/images/hotel/tab02.gif) no-repeat -94px 0; position:relative; top:2px; text-indent:10px; overflow:hidden; z-index:1;}
+.Tab ul li a{color:#333333; display:block; font-size:14px;}
+.Tab ul li a.Tabdefault02{background:url(/images/hotel/tab02.gif) no-repeat 0 0; color:#e75200; font-weight:bold;}
+.Tab ul li a:hover{ background:url(/images/hotel/tab02.gif) no-repeat 0 0; }
+.xx_content{ padding:15px;}
+.xx_content .R{float:left; width:236px;}
+.xx_content .L{float:left; width:432px; margin-right:25px; line-height:25px;}
+.fbb{ color:#333333; font-weight:bold;}
+.fbb02{ text-align:left; margin-left:90px; text-align:left;}
+.fbb03{ text-align:left; margin-left:164px; text-align:left;}
+.fbb04{ text-align:left; margin-left:140px; text-align:left;}
+.hotelpictable{ margin-bottom:10px;}
+.hotelpictable img{ padding:2px; border:1px #cccccc solid;}
+.hotelIntro{ line-height:20px; text-indent:24px; padding:0 10px;}
+.aboutIntro{ line-height:25px;}
+.aboutIntro td, .aboutIntro th{ border-bottom:1px #cccccc dashed; padding:8px 0;}
+.aboutIntro th{ background:url(/images/hotel/iconn002.gif) no-repeat 22px center;}
+
+/*****************预定页**********************/
+.jdxx{margin-left:35px;}
+.yd_jiange{ background:url(/images/hotel/yuding_01.gif) no-repeat bottom; width:694px; height:50px; margin-left:10px; padding-left:23px;}
+.red{color:#FF0000;}
+.orange{color:#FF6600;}
+.green{color:#467002;}
+.strong{font-weight:bold}
+.pandl{padding-left:5px;}
+.pand2{padding-top:5px;}
+.inputhui{border:1px solid #B6BCBB; height:16px;}
+.yuding{margin:10px 0px 20px 20px; width:677px;}
+.yuding h1{background:url(/images/hotel/yuding_02.gif) no-repeat  0px 3px; font-size:14px; font-weight:bold; padding:0px 0px 10px 20px; line-height:18px; color:#000000;}
+.yuding h1 span{font-size:12px; color:#666666; font-weight:normal;}
+.yuding li{float:left; width:160px; color:#FF0000; margin-left:20px; display:inline;}
+.biaoge1{margin:10px 0px 20px 20px; width:677px;}
+.biaoge1 table th{border-top:1px solid #F6DAB2; background-color:#FDF5EA; height:24px; padding:3px;}
+.biaoge1 table td{height:26px; border-bottom:1px dashed #ddd; padding:3px;}
+
+.biaoge2{margin:10px 0px 20px 20px; width:677px;}
+.biaoge2 h1{background:url(/images/hotel/yuding_03.gif) no-repeat 0px 1px;font-size:12px; font-weight:bold;padding:0px 0px 10px 15px; line-height:14px; color:#000000;}
+.biaoge2 span{ float:right; margin-top:-25px;}
+.biaoge2 table th{ background-color:#FDF5EA; height:26px; border:1px solid #F6DAB2; font-weight:normal; }
+.biaoge2 table td{height:26px; border:1px solid #F6DAB2;}
+
+.biaoge3{margin:10px 0px 20px 20px; width:677px;}
+.zuyisx{ border:1px #f6dab2 solid; padding:5px; line-height:18px; overflow-y:scroll; height:120px; width:660px;}
+.btn02{ margin:20px 0 10px 140px;}
+/*****************高级搜索******************/
+.chooseCityT{background:url(/images/hotel/ticon.gif) no-repeat left center; display:block; margin-left:25px; padding:10px 0; text-indent:15px; text-align:10px; font-weight:bold; color:#ff8a00; }
+
+/*******************预订单完成*******************/
+.yd_jiange02{ padding:18px 14px; }
+.yd_jiange_T{ font-size:14px; display:block;}
+.yd_jiange02 .ToHook{ margin:0 15px 0 0; vertical-align:middle;}
+.note{ display:block; padding:2px 0 0 48px;}
+.OrderState a{background:url(/images/hotel/orderformbtnbg.gif) no-repeat center center; height:27px; display:block; line-height:27px; text-align:center; color:#ffffff; font-weight:bold; padding:10px 0; width:75px;}
+.OrderState a:hover{ text-decoration:none; color:#ffffff;}
+
+/*********************翻页********************/
+.pageup{position:relative;text-align:right;}
+.pageup .pagetext{position:absolute; right:405px; top:12px; *top:5px; text-align:right; text-indent:10px;}
+.pageup .numberpage{position:relative; margin-right:5px; line-height:38px; left:0;}
+.pageup .numberpage a{ border:1px #54a11c solid; padding:3px 6px; margin-left:5px; color:#54a11c;}
+.pageup .numberpage a.nuberdefault{ background:#54a11c; color:#ffffff; font-weight:bold;}
+.pageup .numberpage a.uppage{border:1px #cccccc solid; color:#cccccc;}
+
+
+

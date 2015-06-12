@@ -1,0 +1,56 @@
+body {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+td {
+	font-size: 13px;
+	line-height: 22px;
+	word-wrap:break-word; word-break:break-all;table-layout:fixed;
+}
+table{ border-collapse:collapse}
+a:link {
+	color: #073389;
+	text-decoration: none;
+}
+a:visited {
+	color: #073389;
+	text-decoration: none;
+}
+a:hover {
+	color: #073389;
+	text-decoration: underline;
+}
+a:active {
+	color: #073389;
+}
+.font_hang {
+	font-size: 25px;
+	color: #000000;
+	line-height: 35px;
+	font-weight: bold;
+}
+.baocun_an {
+	font-size: 12px;
+	color: #000000;
+	/*background-image: url(../images/baocun.gif);*/
+	float: none;
+	height: 24px;
+	width: 103px;
+	border: 0px;
+}
+.bottow_side {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	font-size: 13px;
+}
+.bottow_no {
+	bor

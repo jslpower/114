@@ -1,0 +1,39 @@
+.stretch {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 15px; PADDING-BOTTOM: 0px; MARGIN: 0px; LINE-HEIGHT: 1px; PADDING-TOP: 0px; HEIGHT: 1px
+}
+.clear {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 15px; PADDING-BOTTOM: 0px; MARGIN: 0px; LINE-HEIGHT: 1px; PADDING-TOP: 0px; HEIGHT: 1px
+}
+.clearfix:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+UNKNOWN {
+	MIN-HEIGHT: 1px
+}
+UNKNOWN {
+	WIDTH: 100%
+}
+ HTML .clearfix {
+	HEIGHT: 1%
+}
+ HTML .boxzi_content {
+	HEIGHT: 1%
+}
+ HTML .box_content {
+	HEIGHT: 1%
+}
+ HTML .boxhui_content {
+	HEIGHT: 1%
+}
+ HTML .block {
+	HEIGHT: 1%
+}
+.clearfloat {
+	CLEAR: both; FONT-SIZE: 1px; LINE-HEIGHT: 0; HEIGHT: 0px
+}
+ HTML H5 {
+	ZOOM: 1
+}
+ HTML .clear3wb {
+	ZOOM: 1
+}

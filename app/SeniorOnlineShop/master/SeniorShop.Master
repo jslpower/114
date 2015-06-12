@@ -1,0 +1,307 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SeniorShop.master.cs" Inherits="SeniorOnlineShop.master.SeniorShop" %>
+
+<%@ Import Namespace="EyouSoft.Common" %>
+<%@ Register src="../usercontrol/ShopHead.ascx" tagname="ShopHead" tagprefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>首页</title>
+</head>
+<body>
+    <link href="<%=CssManage.GetCssFilePath("bodyframe") %>" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="<%=JsManage.GetJsFilePath("jquery") %>"></script>
+    <form id="form1" runat="server">
+    <div id="top">
+        <uc1:ShopHead ID="ShopHead1" runat="server" />        
+    </div>
+    
+    <div class="topbanner"><%=BannerImage%>        
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a id="linkHome" runat="server">首 页</a></li>
+            <li><a id="linkTourList" runat="server">散拼计划</a></li>
+            <li><a id="linkMudidi" runat="server">出游指南</a></li>
+            <li><a id="linkZiYuan" runat="server">旅游资源推荐</a></li>
+            <li><a id="linkNews" runat="server">最新动态</a></li>
+            <li><a id="linkNotice" runat="server">同业公告</a></li>
+            <li><a id="linkAboutUs" runat="server">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="mainbox">
+        <div class="left">
+            <div class="loginbar">
+                同行登录口</div>
+            <div class="login">
+                <asp:PlaceHolder ID="phNoLogin" runat="server">
+                <div class="login-left">
+                    
+                    用户名：<input name="u" id="u" type="text" size="15" />
+                    <br />
+                    密&nbsp;&nbsp;&nbsp; 码：<input name="p" id="p" type="password" size="15" />
+                    <br />
+                    <input name="vc" id="vc" type="hidden" size="6" />
+                    <span id="errSpan" style="color:red;"></span><br />
+                    </div>
+                <div style="width: 92px; float: right;">
+                    <div class="login-right">
+                        <input type="submit" value="提交" id="btnLogin" runat="server" />
+                    </div>
+                    <div style="clear: both;">
+                    </div>
+                    <div class="deng">
+                        <a id="linkUserReg" runat="server" class="FF6600">组团社(零售商) 注
+                                册</a></div>
+                </div>
+                </asp:PlaceHolder>
+                <asp:PlaceHolder ID="phLogin" runat="server">
+                <div style="display: block;" id="spanLogin">
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎您，<asp:Literal ID="ltrUserName" runat="server"></asp:Literal>&nbsp;&nbsp;&nbsp;<a
+                        class="huizi" href="#" id="linkLogout" runat="server">【退出】</a></div>
+                </asp:PlaceHolder>
+            </div>
+            <div style="height: 15px;">
+            </div>
+            <div class="leftn">
+                <div class="neileftk">
+                    <div class="neilefth">
+                        公司档案</div>
+                    <div class="neileftxx">
+                        <table width="94%" border="0" align="center" cellpadding="0" cellspacing="0" class="maintop5">
+                            <tr>
+                                <td align="left" style="font-weight: bold; font-size: 14px;line-height:23px">
+                                    品牌名称：
+
+                                    <script language="JavaScript">
+                                        <!-- Begin
+                                        Brandtext = '<%=CompanyBrandName %>'; //显示的文字
+
+                                        color1 = "blue"; //文字的颜色
+
+                                        color2 = "red"; //转换的颜色
+
+                                        fontsize = "5"; //字体大小
+                                        speed = 100; //转换速度 (1000 = 1 秒) 
+                                        i = 0;
+                                        if (navigator.appName == "Netscape") {
+                                            document.write("<layer id=a visibility=show></layer><br>");
+                                        }
+                                        else {
+                                            document.write("<div id=a></div><br>");
+                                        }
+
+                                        function changeCharColor() {
+                                            var str;
+                                            if (navigator.appName == "Netscape") {
+                                                str = "<center><font face=arial size =" + fontsize + "><font color=" + color1 + ">";
+                                                for (var j = 0; j < Brandtext.length; j++) {
+                                                    if (j == i) {
+                                                        str += "<font face=arial color=" + color2 + ">" + Brandtext.charAt(i) + "</font>";
+                                                    }
+                                                    else {
+                                                        str += Brandtext.charAt(j);
+                                                    }
+                                                }
+                                                str += "</font></font></center>";
+                                                document.getElementById("a").innerHTML = str;
+                                            }
+                                            if (navigator.appName == "Microsoft Internet Explorer") {
+                                                str = "<center><font face=arial size=" + fontsize + "><font color=" + color1 + ">";
+                                                for (var j = 0; j < Brandtext.length; j++) {
+                                                    if (j == i) {
+                                                        str += "<font face=arial color=" + color2 + ">" + Brandtext.charAt(i) + "</font>";
+                                                    }
+                                                    else {
+                                                        str += Brandtext.charAt(j);
+                                                    }
+                                                }
+                                                str += "</font></font></center>";
+                                                document.getElementById("a").innerHTML = str;
+                                            }(i == Brandtext.length) ? i = 0 : i++;
+                                        }
+                                        setInterval("changeCharColor()", speed);
+                                    // End -->
+                                    </script>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left">                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    联系人：<span class="lvsezi"><asp:Literal ID="ltrContactPeople" runat="server"></asp:Literal></span>&nbsp;<%=MQLink %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    手机：<asp:Literal ID="ltrMobile" runat="server"></asp:Literal>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    电话：<asp:Literal ID="ltrTelPhone" runat="server"></asp:Literal>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    传真：<asp:Literal ID="ltrFax" runat="server"></asp:Literal>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    地址： <asp:Literal ID="ltrAddress" runat="server"></asp:Literal>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px;
+                border: 1px solid #B5CBD0;">
+                <tr>
+                    <td>
+                        <img src="" id="imgMingPian" runat="server" alt="企业名片" width="261" height="142" />
+                    </td>
+                </tr>
+            </table>
+           <table width="100%" border="0" align="center" cellpadding="2" cellspacing="0" style="margin-top: 10px;
+                border: 1px solid #B5CBD0;">
+                <tr>
+                    <td width="34%" height="20" align="center" valign="bottom">
+                        <a href="http://www.travelsky.com/travelsky/static/home/" target="_blank">
+                            <img src="<%=ImageServerUrl %>/images/seniorshop/fly.gif" width="18" height="18" />
+                            航班查询</a>
+                    </td>
+                    <td width="33%" align="center" valign="bottom">
+                        <a href="http://qq.ip138.com/train/" target="_blank">
+                            <img src="<%=ImageServerUrl %>/images/seniorshop/huoche.gif" width="18" height="18" />
+                            火车查询</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" align="center" valign="bottom">
+                        <a href="http://weather.tq121.com.cn/" target="_blank">
+                            <img src="<%=ImageServerUrl %>/images/seniorshop/tianqi.gif" width="18" height="18" />
+                            天气查询</a>
+                    </td>
+                    <td align="center" valign="bottom">
+                        <a href="http://www.hao123.com/haoserver/kuaidi.htm" target="_blank">
+                            <img src="<%=ImageServerUrl %>/images/seniorshop/kuaid.gif" width="18" height="18" border="0" />
+                            快递查询</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" align="center" valign="bottom">
+                        <a href="http://site.baidu.com/list/wannianli.htm" target="_blank">
+                            <img src="<%=ImageServerUrl %>/images/seniorshop/wnl.gif" width="18" height="18" />
+                            万 年 历</a>
+                    </td>
+                    <td align="center" valign="bottom">
+                        <a href="http://www.ip138.com/post/" target="_blank">
+                            <img src="<%=ImageServerUrl %>/images/seniorshop/youbian.gif" width="18" height="18" />
+                            邮编查询</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" align="center" valign="bottom">
+                        <a href="http://qq.ip138.com/idsearch/" target="_blank">
+                            <img src="<%=ImageServerUrl %>/images/seniorshop/sfz.gif" width="18" height="18" />
+                            身 份 证</a>
+                    </td>
+                    <td align="center" valign="bottom">
+                        <a href="http://www.ip138.com/sj/index.htm" target="_blank">
+                            <img src="<%=ImageServerUrl %>/images/seniorshop/shouji.gif" width="18" height="18" />
+                            手机号码</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" align="center" valign="bottom">
+                        <a href="http://www.ip138.com/ips8.asp" target="_blank">
+                            <img src="<%=ImageServerUrl %>/images/seniorshop/ip.gif" width="18" height="18" />
+                            IP&nbsp; 查询</a>
+                    </td>
+                    <td align="center" valign="bottom">
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 15px;">
+                <tr>
+                    <td>
+                        <iframe border="0" name="play" marginwidth="0" marginheight="0" src="http://www.soso.com/tb.q"
+                            frameborder="0" width="260" scrolling="no" height="195"></iframe>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+        <asp:ContentPlaceHolder ID="c1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="firendbar">
+        友情链接</div>
+    <div class="firendlist">
+        <ul>
+            <asp:Repeater ID="rptFriendLinks" runat="server">
+            <ItemTemplate>
+            <li><a target="_blank" href="<%#Eval("LinkAddress") %>">·<%#Eval("LinkName") %></a></li>
+            </ItemTemplate>
+            </asp:Repeater>
+        </ul>
+    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px;">
+        <tr>
+            <td align="center" class="bottom1">
+                <br />
+                <asp:Literal ID="ltrCopyRight" runat="server"></asp:Literal><br />
+                <br />
+            </td>
+        </tr>
+    </table>
+    </form>
+    <script type="text/javascript">
+    //ie6 backgroundimage hack.
+    if($.browser.msie){
+        if(parseFloat($.browser.version)<=6){
+            try{
+                document.execCommand('BackgroundImageCache', false, true);
+            }catch(e){
+            }
+        }   
+    }
+    $(document).ready(function(){
+    //隔行,滑动,点击 变色.+ 单选框选中的行 变色:
+    $('.liststyle tbody tr:even').addClass('odd');
+	    $('.liststyle tbody tr').hover(
+		    function() {$(this).addClass('highlight');},
+		    function() {$(this).removeClass('highlight');}
+	    );
+
+	    // 如果单选框默认情况下是选择的，变色.
+	    $('.liststyle input[type="radio"]:checked').parents('tr').addClass('selected');
+    	
+	    // 单选框
+	    $('.liststyle tbody tr').click(
+		    function() {
+			    $(this).siblings().removeClass('selected');
+			    $(this).addClass('selected');
+			    $(this).find('input[type="radio"]').attr('checked','checked');
+		    }
+	    );
+    $("#div_showList1").mouseover(function(){$("#div_showList2").show();$("#div_showList2").load("date.html");});
+    $("#div_showList1").mouseout(function(){$("#div_showList2").hide();});
+    });
+    </script>
+<span style="display:none;"><script language="JavaScript" src="http://s126.cnzz.com/stat.php?id=1125215&amp;web_id=1125215&amp;show=pic" charset="gb2312" type="text/javascript"></script>&nbsp;<img height="0" alt="" width="0" border="0" src="http://zs7.cnzz.com/stat.htm?id=1125215&amp;r=http%3A//www.tongye114.com/Register/CompanyUserRegister.aspx&amp;lg=zh-cn&amp;ntime=0.67142400 1283503185&amp;repeatip=576&amp;rtime=4&amp;cnzz_eid=84357694-1283137261-&amp;showp=1024x768&amp;st=48&amp;sin=http%3A//www.tongye114.com/Register/CompanyUserRegister.aspx&amp;res=0" />
+</span>
+</body>
+</html>

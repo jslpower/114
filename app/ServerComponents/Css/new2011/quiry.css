@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0;padding:0 0 12px 0;font-size:12px;line-height:22px;font-family:"宋体","Arial Narrow";background:#fff;}
+form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+input,select{font-size:12px;line-height:16px;}
+img{border:0;}
+ul,li{list-style-type:none;}
+a {color:#00007F;text-decoration:none;}
+a:hover {color:#bd0a01;text-decoration:underline;}
+h3 {font-size:14px;}
+h4 {font-size:14px;font-weight:normal;text-align:center;cursor:pointer;overflow:hidden;}h4 a {width:100%;height:100%;display:block;}
+.hr_5,.hr_10 {font-size:1px;line-height:1px;clear:both;}
+.hr_5 {height:6px;}
+.hr_10 {height:10px;}
+.c{ width:972px; margin:0 auto; overflow:hidden;}
+.clear{ clear:both;}
+
+#main{ border:1px solid #c6d8e0; background:url(/images/new2011/chaxun/woabg.gif) repeat-x left top; margin-top:10px; margin-bottom:10px;}
+#main .topBTN{ height:90px; padding:20px; padding-bottom:0; margin-bottom:20px;}
+#main .topBTN ul{ height:90px;background:url(/images/new2011/chaxun/linebg.gif) no-repeat 120px top;}
+#main .topBTN ul li{ float:left; display:inline;text-align:center;overflow:hidden; width:89px; height:77px; margin-right:70px;}
+#main .topBTN ul li:hover,#main .topBTN ul li.b2Active{ background:url(/images/new2011/chaxun/trainBG.png) no-repeat right top;}
+#main .topBTN ul li a{ width:89px; height:77px;line-height:120px;background:url(/images/new2011/chaxun/trainBG.png); display:block;background-repeat:no-repeat; font-weight:700; color:#014C7B; font-size:14PX; overflow:hidden}
+#main .topBTN ul li a:hover{ text-decoration:none;}
+#main .topBTN ul li.b1 a{ background-position:25px 13px;}
+#main .topBTN ul li.b2 a{ background-position:25px -48px;}
+#main .topBTN ul li.b3 a{ background-position:25px -115px;}
+#main .topBTN ul li.b4 a{ background-position:25px -195px;}
+.form{ width:925px; height:666px; margin: 0 auto; margin-bottom:20px;}
+.bottomleft a { color:#333;}
+.topSearch{ height:55px; line-height:55px; text-align:center;_margin-top:10px;}
+.topSearch label{ font-size:14px; font-weight:bold; padding-right:10px;}
+.topSearch input.input{ width:330px; height:22px; line-height:21px; color:#7f9db9; border:1px solid #7f9db9; overflow:hidden;}
+.topSearch input.btn{ width:96px; height:29px; background:url(/images/new2011/chaxun/triaval_03.gif) no-repeat left center; border:0; text-indent:-999px; cursor:pointer;}
+.text,.list{ width:930px; margin:0 auto; margin-bottom:10px;}
+.text{ background:#f5fafd; padding:10px;}
+.text h3{ text-align:center;}
+.text span{ font-size:13px; font-weight:bold;}
+.text a{ color:#118af0; font-weight:bold; padding-right:20px;}
+.text a:hover{ color:#F00; text-decoration:none;}
+.list{ clear:both;margin-bottom:15px; padding-bottom:15px; border-bottom:1px dashed #dddddd;line-height:25px; border:1px solid #fff; background:#fff;}
+.list:hover{ background:#f9fdff; border:1px solid #a3d4fa;}
+.list .left{background:url(/images/new2011/chaxun/bggg.png) no-repeat right center;_background:url(/images/new2011/chaxun/bggggig.gif) no-repeat right center; width:22px; height:189px; layout-flow:text-align:center; font-size:14px; font-weight:bold; padding-right:10px; padding-left:10px;}
+.list .right{ width:872px;margin-left:10px; height:100%; vertical-align:middle}
+.list .right a{ width:150px; display:inline-block ; overflow:hidden; color:#0069ca; font-size:14px; padding-left:10px; background:url(/images/new2011/chaxun/triaval_07.gif) no-repeat left 12px}
+.list .right a:hover{ color:#ff7b1a; text-decoration:none}
+
+      .ftop{ width:944px; height:41px; line-height:41px; background:url(/images/new2011/chaxun/tdm.gif) no-repeat left top;}
+	  .ftop h3{background:url(/images/new2011/chaxun/td_06.gif) no-repeat left center; margin-left:20px; padding-left:15px;}
+	  .fcen{ border-left:1px solid #e4e4e4;border-right:1px solid #e4e4e4; width:902px; padding:20px;}
+	  .fbottom{width:944px; height:4px; background:url(/images/new2011/chaxun/td_29.gif) no-repeat left top;}
+	  .con{ width:944px; height:auto}
+	  .fcen_l{ width:190px; float:left; text-align:center;}
+	  .fcen_r{ width:702px; float:right; }
+	  .ttop { background: url(/images/new2011/chaxun/add.gif) no-repeat 10px center #f6f6f6; padding-left:35px;height:30px;line-height:30px;}
+	  .ttop1{ background: url(/images/new2011/chaxun/td_19.gif) no-repeat 10px center #f6f6f6; }
+	  .ttop2{ background: url(/images/new2011/chaxun/td_27.gif) no-repeat 10px center #f6f6f6;}
+	  .fcen_r_l{ float:left; line-height:30px; font-size:14px; margin-left:35px; margin-top:10px; _margin-left:15px;width:360px;}
+	  .fcen_r_l h3{position:relative; left:-20px; }
+	  .fcen_r_l p{ padding-left:20px;}
+	  .fcen_r_r{ float:right; width:270px; border:1px solid #e4e4e4; padding:10px; margin-top:10px; }
+	  .fcen_r_r h3{ background:url(/images/new2011/chaxun/td_14.gif) no-repeat left center; padding-left:20px;}
+	  .fcen_r_r ul li{ color:#1176ca; border-bottom:1px dashed #bababa;padding-top:3px; padding-bottom:3px;}
+	  .fcen_r_r ul li a{ font-size:14px; text-decoration:underline; color:#1176ca;}
+	  .fcen_r_r ul li a:hover{ color:#e97104;}
+	  .wrp{ width:100%; clear:both; }
+	  .wrp1{ font-size:14px; margin-top:10px;}
+	  .wrp1 div{ margin-left:10px; line-height:25px; margin-top:10px;}
+	  
+	  #tags{ margin-top:10px;}
+#tags ul{ width:100%; clear:both; height:30px; border-bottom:1px solid #dedede;}
+#tags ul li{ float:left; height:30px; line-height:30px; font-size:14px; background:url(/images/new2011/chaxun/btnbgac.gif) repeat-x left top; padding-left:15px; padding-right:15px; text-align:center; border:1px solid #dedede; border-bottom:0; margin-left:5px;}
+#tags ul li a{ color:#000;}
+#tags ul li a:hover{ color:#000; text-decoration:none;}
+#tags ul li.selectTag{background:url(/images/new2011/chaxun/td_23.gif) repeat-x left top;}
+.tagContent{ color:#5d5c5c;}
+.tagContent table{ font-size:14px; color:#5d5c5c;}
+.tagContent{ width:95%; margin:0 auto; margin-top:10px;}
+.tagContent table .tdt{ text-align:right; font-weight:bold; vertical-align:top}
+.tagContent table .tdc{ vertical-align:top}

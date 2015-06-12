@@ -1,0 +1,172 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserBackCenter", "UserBackCenter\UserBackCenter.csproj", "{3F6619A4-5195-4B74-9268-3C0545B937FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Function.Common", "EyouSoft.Common\EyouSoft.Function.Common.csproj", "{8F83F92A-AC73-4736-9449-EF69355C98B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerComponents", "ServerComponents\ServerComponents.csproj", "{6AE1F220-F1E0-4E85-8A20-DBF74113ACAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserPublicCenter", "UserPublicCenter\UserPublicCenter.csproj", "{C2073294-02E2-41D9-A74B-13A0B803DE21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeniorOnlineShop", "SeniorOnlineShop\SeniorOnlineShop.csproj", "{89CB7066-C2F1-4042-B6A7-983BE1D7804F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteOperationsCenter", "SiteOperationsCenter\SiteOperationsCenter.csproj", "{88109441-D80A-4787-9DA6-90A919FDD384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystem", "FileSystem\FileSystem.csproj", "{11802471-D0A8-4F92-8800-4CF3875E3080}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassportCenter", "PassportCenter\PassportCenter.csproj", "{8547503D-B9F2-4B92-B71D-A2C701C3E9F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlLibrary", "ControlLibrary\ControlLibrary.csproj", "{13F4FD7D-AB65-4D54-A1C4-8174F5F4496F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCKeditor.Net_2.6.3", "FCKeditor.Net_2.6.3\FCKeditor.Net_2.6.3.csproj", "{CD2164D6-23C1-41BF-9A55-17315B42EA4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "底层库", "底层库\底层库.csproj", "{1D261EAC-B956-470F-8F43-ABB38BE7A6AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Security.Membership", "EyouSoft.Security.Membership\EyouSoft.Security.Membership.csproj", "{22692765-6207-4393-BCB1-622491BC8E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.ControlCommon", "EyouSoft.ControlCommon\EyouSoft.ControlCommon.csproj", "{DC008DC6-F54A-4929-AD57-1059315B7602}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSO", "SSO", "{30A5FACF-98A7-4261-96F5-7DF3F5359D97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.SSOComponent", "EyouSoft.SSOComponent\EyouSoft.SSOComponent.csproj", "{E6C66292-B68A-4B88-96AD-C768AF4C8F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMFrame", "IMFrame\IMFrame.csproj", "{547915B1-4832-4050-A670-AF50891D3EA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOAP", "SOAP\SOAP.csproj", "{32A10966-B24F-4399-BF48-54B7B80D3F0B}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 17
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ServerComponents\\ServerComponents.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = ServerComponents\\
+		SccProjectUniqueName2 = UserBackCenter\\UserBackCenter.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = UserBackCenter\\
+		SccProjectUniqueName3 = UserPublicCenter\\UserPublicCenter.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = UserPublicCenter\\
+		SccProjectUniqueName4 = SeniorOnlineShop\\SeniorOnlineShop.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = SeniorOnlineShop\\
+		SccProjectUniqueName5 = SiteOperationsCenter\\SiteOperationsCenter.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = SiteOperationsCenter\\
+		SccProjectUniqueName6 = FileSystem\\FileSystem.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = FileSystem\\
+		SccProjectUniqueName7 = PassportCenter\\PassportCenter.csproj
+		SccProjectTopLevelParentUniqueName7 = TMIS应用.sln
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = PassportCenter\\
+		SccProjectUniqueName8 = ControlLibrary\\ControlLibrary.csproj
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = ControlLibrary\\
+		SccProjectUniqueName9 = FCKeditor.Net_2.6.3\\FCKeditor.Net_2.6.3.csproj
+		SccLocalPath9 = .
+		SccProjectFilePathRelativizedFromConnection9 = FCKeditor.Net_2.6.3\\
+		SccProjectUniqueName10 = 底层库\\底层库.csproj
+		SccLocalPath10 = .
+		SccProjectFilePathRelativizedFromConnection10 = 底层库\\
+		SccProjectUniqueName11 = EyouSoft.Security.Membership\\EyouSoft.Security.Membership.csproj
+		SccProjectTopLevelParentUniqueName11 = TMIS应用.sln
+		SccLocalPath11 = .
+		SccProjectFilePathRelativizedFromConnection11 = EyouSoft.Security.Membership\\
+		SccProjectUniqueName12 = EyouSoft.ControlCommon\\EyouSoft.ControlCommon.csproj
+		SccLocalPath12 = .
+		SccProjectFilePathRelativizedFromConnection12 = EyouSoft.ControlCommon\\
+		SccProjectUniqueName13 = EyouSoft.SSOComponent\\EyouSoft.SSOComponent.csproj
+		SccProjectTopLevelParentUniqueName13 = TMIS应用.sln
+		SccLocalPath13 = .
+		SccProjectFilePathRelativizedFromConnection13 = EyouSoft.SSOComponent\\
+		SccProjectUniqueName14 = IMFrame\\IMFrame.csproj
+		SccLocalPath14 = .
+		SccProjectFilePathRelativizedFromConnection14 = IMFrame\\
+		SccProjectUniqueName15 = EyouSoft.Common\\EyouSoft.Function.Common.csproj
+		SccLocalPath15 = .
+		SccProjectFilePathRelativizedFromConnection15 = EyouSoft.Common\\
+		SccProjectUniqueName16 = SOAP\\SOAP.csproj
+		SccLocalPath16 = .
+		SccProjectFilePathRelativizedFromConnection16 = SOAP\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F6619A4-5195-4B74-9268-3C0545B937FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6619A4-5195-4B74-9268-3C0545B937FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F6619A4-5195-4B74-9268-3C0545B937FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6619A4-5195-4B74-9268-3C0545B937FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F83F92A-AC73-4736-9449-EF69355C98B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F83F92A-AC73-4736-9449-EF69355C98B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F83F92A-AC73-4736-9449-EF69355C98B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F83F92A-AC73-4736-9449-EF69355C98B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE1F220-F1E0-4E85-8A20-DBF74113ACAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE1F220-F1E0-4E85-8A20-DBF74113ACAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE1F220-F1E0-4E85-8A20-DBF74113ACAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE1F220-F1E0-4E85-8A20-DBF74113ACAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2073294-02E2-41D9-A74B-13A0B803DE21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2073294-02E2-41D9-A74B-13A0B803DE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2073294-02E2-41D9-A74B-13A0B803DE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2073294-02E2-41D9-A74B-13A0B803DE21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89CB7066-C2F1-4042-B6A7-983BE1D7804F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89CB7066-C2F1-4042-B6A7-983BE1D7804F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89CB7066-C2F1-4042-B6A7-983BE1D7804F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89CB7066-C2F1-4042-B6A7-983BE1D7804F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88109441-D80A-4787-9DA6-90A919FDD384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88109441-D80A-4787-9DA6-90A919FDD384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88109441-D80A-4787-9DA6-90A919FDD384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88109441-D80A-4787-9DA6-90A919FDD384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11802471-D0A8-4F92-8800-4CF3875E3080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11802471-D0A8-4F92-8800-4CF3875E3080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11802471-D0A8-4F92-8800-4CF3875E3080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11802471-D0A8-4F92-8800-4CF3875E3080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8547503D-B9F2-4B92-B71D-A2C701C3E9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8547503D-B9F2-4B92-B71D-A2C701C3E9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8547503D-B9F2-4B92-B71D-A2C701C3E9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8547503D-B9F2-4B92-B71D-A2C701C3E9F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13F4FD7D-AB65-4D54-A1C4-8174F5F4496F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F4FD7D-AB65-4D54-A1C4-8174F5F4496F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F4FD7D-AB65-4D54-A1C4-8174F5F4496F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F4FD7D-AB65-4D54-A1C4-8174F5F4496F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD2164D6-23C1-41BF-9A55-17315B42EA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD2164D6-23C1-41BF-9A55-17315B42EA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD2164D6-23C1-41BF-9A55-17315B42EA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD2164D6-23C1-41BF-9A55-17315B42EA4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D261EAC-B956-470F-8F43-ABB38BE7A6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D261EAC-B956-470F-8F43-ABB38BE7A6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D261EAC-B956-470F-8F43-ABB38BE7A6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D261EAC-B956-470F-8F43-ABB38BE7A6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22692765-6207-4393-BCB1-622491BC8E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22692765-6207-4393-BCB1-622491BC8E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22692765-6207-4393-BCB1-622491BC8E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22692765-6207-4393-BCB1-622491BC8E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC008DC6-F54A-4929-AD57-1059315B7602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC008DC6-F54A-4929-AD57-1059315B7602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC008DC6-F54A-4929-AD57-1059315B7602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC008DC6-F54A-4929-AD57-1059315B7602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C66292-B68A-4B88-96AD-C768AF4C8F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C66292-B68A-4B88-96AD-C768AF4C8F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C66292-B68A-4B88-96AD-C768AF4C8F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C66292-B68A-4B88-96AD-C768AF4C8F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{547915B1-4832-4050-A670-AF50891D3EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{547915B1-4832-4050-A670-AF50891D3EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{547915B1-4832-4050-A670-AF50891D3EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{547915B1-4832-4050-A670-AF50891D3EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A10966-B24F-4399-BF48-54B7B80D3F0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A10966-B24F-4399-BF48-54B7B80D3F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A10966-B24F-4399-BF48-54B7B80D3F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A10966-B24F-4399-BF48-54B7B80D3F0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22692765-6207-4393-BCB1-622491BC8E59} = {30A5FACF-98A7-4261-96F5-7DF3F5359D97}
+		{8547503D-B9F2-4B92-B71D-A2C701C3E9F7} = {30A5FACF-98A7-4261-96F5-7DF3F5359D97}
+		{E6C66292-B68A-4B88-96AD-C768AF4C8F77} = {30A5FACF-98A7-4261-96F5-7DF3F5359D97}
+	EndGlobalSection
+EndGlobal

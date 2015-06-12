@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetTicketUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LoginTicket" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTicketUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTicketUserResult" type="tns:SSOResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SSOResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsValid" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserInfo" type="tns:UserInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="SSOScript" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UserInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OpUserId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProvinceId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CityId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PermissionList" type="tns:ArrayOfInt" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsEnable" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsAdmin" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepartId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepartName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AreaId" type="tns:ArrayOfInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginTicket" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UserLoginAct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PWD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LoginTicket" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RedirectUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserLoginActResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserLoginActResult" type="tns:SSOResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserLoginPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PWD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LoginTicket" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PwdType" type="tns:PasswordType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="PasswordType">
+        <s:restriction base="s:string">
+          <s:enumeration value="SHA" />
+          <s:enumeration value="MD5" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="UserLoginPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserLoginPasswordResult" type="tns:SSOResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserLogout">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RedirectUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserLogoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserLogoutResult" type="tns:SSOResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserInfoResult" type="tns:SSOResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sso" type="tns:SSOResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserInfoResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTicketUserSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTicketUser" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketUserSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTicketUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserLoginActSoapIn">
+    <wsdl:part name="parameters" element="tns:UserLoginAct" />
+  </wsdl:message>
+  <wsdl:message name="UserLoginActSoapOut">
+    <wsdl:part name="parameters" element="tns:UserLoginActResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserLoginPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:UserLoginPassword" />
+  </wsdl:message>
+  <wsdl:message name="UserLoginPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:UserLoginPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserLogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:UserLogout" />
+  </wsdl:message>
+  <wsdl:message name="UserLogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:UserLogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SSOFlowSoap">
+    <wsdl:operation name="GetTicketUser">
+      <wsdl:input message="tns:GetTicketUserSoapIn" />
+      <wsdl:output message="tns:GetTicketUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserLoginAct">
+      <wsdl:input message="tns:UserLoginActSoapIn" />
+      <wsdl:output message="tns:UserLoginActSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserLoginPassword">
+      <wsdl:input message="tns:UserLoginPasswordSoapIn" />
+      <wsdl:output message="tns:UserLoginPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserLogout">
+      <wsdl:input message="tns:UserLogoutSoapIn" />
+      <wsdl:output message="tns:UserLogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <wsdl:input message="tns:GetUserInfoSoapIn" />
+      <wsdl:output message="tns:GetUserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserInfo">
+      <wsdl:input message="tns:UpdateUserInfoSoapIn" />
+      <wsdl:output message="tns:UpdateUserInfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SSOFlowSoap" type="tns:SSOFlowSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTicketUser">
+      <soap:operation soapAction="http://tempuri.org/GetTicketUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserLoginAct">
+      <soap:operation soapAction="http://tempuri.org/UserLoginAct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserLoginPassword">
+      <soap:operation soapAction="http://tempuri.org/UserLoginPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserLogout">
+      <soap:operation soapAction="http://tempuri.org/UserLogout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <soap:operation soapAction="http://tempuri.org/GetUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserInfo">
+      <soap:operation soapAction="http://tempuri.org/UpdateUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SSOFlowSoap12" type="tns:SSOFlowSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTicketUser">
+      <soap12:operation soapAction="http://tempuri.org/GetTicketUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserLoginAct">
+      <soap12:operation soapAction="http://tempuri.org/UserLoginAct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserLoginPassword">
+      <soap12:operation soapAction="http://tempuri.org/UserLoginPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserLogout">
+      <soap12:operation soapAction="http://tempuri.org/UserLogout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetUserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserInfo">
+      <soap12:operation soapAction="http://tempuri.org/UpdateUserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SSOFlow">
+    <wsdl:port name="SSOFlowSoap" binding="tns:SSOFlowSoap">
+      <soap:address location="http://localhost:30006/SSOFlow.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SSOFlowSoap12" binding="tns:SSOFlowSoap12">
+      <soap12:address location="http://localhost:30006/SSOFlow.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

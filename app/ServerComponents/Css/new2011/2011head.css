@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+.fixed:after { content: "."; display: block; clear: both; height: 0; visibility: hidden; }
+.fixed { display: block; min-height: 1%; }
+*html .fixed { height: 1%; }
+.clear { diplay: block!important; float: none!important; clear: both; overflow: hidden; width: auto!important; height: 0!important; margin: 0 auto!important; padding: 0!important; font-size: 0; line-height: 0; }
+.fl, .fr { display: inline; float: left; }
+.fr { float: right; }
+.hr_5,.hr_10,.hr_2{ clear:both; font-size:1px; line-height:1px}
+.hr_2{ height:2px;} 
+.hr_5{ height:5px;} 
+.hr_10{ height:10px;}
+
+#site-nav,.Download-MQ s{background:url(/images/new2011/index/topicon.png) no-repeat 999em 0;}
+
+#site-nav{ min-width:1000px; height:28px; background-repeat:repeat-x; background-position:0 -7px; width:auto;}
+#site-nav-bd{color:#000000; width:970px; height:22px; line-height:22px; margin:0 auto; padding:2px 0; position:relative; z-index:10000;}
+#site-nav-bd .login-info{ float:left;margin:0; padding:0}
+#site-nav .login-info a {margin-right:8px; color:#ff6600; font-size:12px; font-weight:bold;}
+#site-nav-bd .quick-menu{ position:absolute; right:0; top:1px;}
+#site-nav-bd .quick-menu li{ float:left; padding:1px 5px 0 5px; margin-left:-1px; }
+#site-nav-bd .quick-menu li span{ padding-left:5px;}
+#site-nav-bd .quick-menu li a{ color:#333333;}
+#site-nav-bd .quick-menu .Download-MQ { position:relative;}
+#site-nav-bd .quick-menu .Download-MQ s{ background-repeat:no-repeat; background-position:0 0; width:7px; height:7px; position:absolute; left:90px; top:9px;}
+#site-nav-bd .quick-menu .Download-MQ a{ color:#0080c8; text-decoration:none;}
+/**** gong gao dan hang gun dong *****/
+#scrollDiv{ height:15px;overflow:hidden;}
+#scrollDiv li{height:15px;}
+#scrollDiv li a{ color:#FFFFFF;}
+#scrollDiv li a:hover{ color:#FFFF00;}
+
+/********* friendlink ********/
+.links{width:966px; margin:5px auto; background:#f6f6f6; height:87px; border-top:1px #dddddd solid; border-bottom:1px #dddddd solid; position:relative;}
+.links s{ background:url(/images/new2011/index/headicon.png) no-repeat 0 -999em; display:inline-block; width:30px; height:89px; position:absolute; }
+.links s.linksL{ background-position:-26px -257px; left:-2px; top:0;}
+.links s.linksR{ background-position:0 -168px; right:-2px; top:0;}
+.links-cont{ width:906px; margin:0 auto; padding:5px 0 5px 18px;}
+.links-cont .links-pic li{float:left; border:1px #dddddd solid; padding:2px; margin-left:6px; background:#FFFFFF; }
+.links-pic li img{width:100px; height:32px;}
+.links-cont p{ line-height:18px;}
+
+/**footer**/
+.footer{ background:#f3f3f3; width:100%; border-top:2px #fca400 solid;}
+.footer-nav-bd{ width:970px; margin:0 auto; text-align:center; line-height:20px; padding:10px 0;}
+
+.souch_1{width:970px; margin:auto;height:76px;padding-top:10px;}
+.logo_1{float:left;padding-right:10px;}
+.chengshi_1{width:110px;float:left; border-left:1px dotted #ccc;padding-left:10px; line-height:16px; }
+.chengshi_1 a{color:#666;}
+.chengshi_1 a:hover{color:#ff6600;}
+.chengshi_1 span{ font-weight:bold; font-size:14px; color:#ff6600; line-height:20px;}
+.sousuobox_1{width:389px;float:left;height:50px;padding:0 0 0 25px;}
+.sousuo_1{width:379px;height:27px;float:left;background:url(/images/new2011/index/zong.jpg) no-repeat left bottom;padding:10px 6px;}
+.ssk{ background:url(/images/new2011/index/zong.jpg) no-repeat 0 -30px;width:235px;height:26px; border:1px solid #c7c7c7; border-right:none;         line-height:26px;padding-left:3px;float:left; font-size:14px;}
+.ssg{background:url(/images/new2011/index/zong.jpg) no-repeat 0 0;width:68px;height:28px;float:left; color:#fff; line-height:28px; text-align:center; font-weight:bold;font-size:14px;padding-right:1px;}
+.ssg a{ color:#fff6d7;} .ssg a:hover{ color:#fff;}
+.ssg2{background:url(/images/new2011/index/zong.jpg) no-repeat -70px 0; color:#e63d00;}
+.ssg2 a{ color:#e63d00;} .ssg2 a:hover{ color:#bd3200;}
+.remen a{height:25px; line-height:25px; color:#999;}
+.remen a:hover{height:25px; line-height:25px; color:#ff6600;}
+.dianhua{background:url(/images/new2011/index/zong.jpg) no-repeat -140px 0;width:246px;height:27px;float:right;margin-top:20px;}
+.nav{ background:url(/images/new2011/index/home_24.jpg) repeat-x;height:40px;width:100%;}
+.nav ul{width:970px;height:40px; margin:0 auto; }
+.nav li{float:left;text-align:center; font-weight:bold; line-height:40px;}
+.nav li.lixian{background:url(/images/new2011/index/zong.jpg) no-repeat right -314px;width:2px;height:40px; margin:0 5px; display:inline;}
+.nav li.xiazai{float:right;padding-top:2px; line-height:0px;}
+.nav li a{width:63px;height:40px;float:left; color:#fff; font-size:14px}
+.nav li a:hover{width:63px;float:left;background:url(/images/new2011/index/zong.jpg) no-repeat -275px -179px; color:#e63d00;}
+.nav li.dqy a{background:url(/images/new2011/index/zong.jpg) no-repeat -275px -179px; color:#e63d00;}
+.nav li.dqy a:hover{background:url(/images/new2011/index/zong.jpg) no-repeat -275px -179px; color:#e63d00; text-decoration:none;}
+.px102{height:7px; overflow:hidden;clear:both;}
+
+

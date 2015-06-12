@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AjaxListDelete.aspx.cs" Inherits="UserBackCenter.EShop.AjaxListDelete" %>

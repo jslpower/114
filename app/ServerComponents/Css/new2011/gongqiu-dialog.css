@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document code by 11447@sohu.com*/
+BODY {color:#333;font-size:12px;font-family:"宋体"; text-align: center; background:#fff; margin:0px;}input,textarea,select {font-size:12px;font-family:"宋体";COLOR: #333;}
+img {border: thin none;}table{	border-collapse:collapse;}TD {FONT-SIZE: 12px; COLOR: #333; line-height: 20px;}sup { color:#5B8E12;}ul {list-style:none;	margin:0px;	padding:0px;}li {line-height:150%;	list-style-type:none;margin:0;padding:0;}
+a {COLOR:#074387; TEXT-DECORATION: none;}a:hover {COLOR:#f00; TEXT-DECORATION: underline;}a:active {color:#f00; TEXT-DECORATION: none;}
+.ff0000 {color:#f00;}
+a.ff0000 { color:#f00;}
+.body {width:970px;clear:both; margin:0 auto; padding-top:10px;}
+.margin5 { margin-top:5px;}
+.margin10 { margin-top:10px;}
+.margin15 { margin-top:15px;}
+.midd {margin-top:5px; margin-top:9px\9; *margin-top:13px; _margin-top:13px;}
+.clear { clear:both;}
+/* CSS Document */
+.hr-5{ height:5px; margin:0; padding:0; clear:both}
+
+/*供求信息表单*/
+.reviewT{ width:100%; height:29px; line-height:29px; background:url(/images/new2011/reviewsBG.gif) no-repeat left top;}
+.reviewT .l{ float:left; margin-left:5px; color:#FFF; font-weight:700; color:#FFF;}
+.reviewT .R{ float:right; font-size:14px; font-weight:bolder}
+.reviewC textarea{ border:1px solid #caeb9c;}
+.reviewC input{ text-indent:-999px; float:right; margin-top:10px; background:url(/images/new2011/bgg.gif) no-repeat left top; width:144px; height:36px; border:0; cursor:pointer}
+table.reList tr td{ padding-top:5px; padding-bottom:5px;}
+table.reList tr td.regin{ font-size:14px;}
+table.reList tr td.title{ font-size:14px;}
+table.reList tr td.pubTime{ color:#999}
+table.reList tr td.supplier a{ color:#999;}
+table.reList tr td.supplier a:hover{ color:#F00; text-decoration:none;}
+
+/*login 浮动层*/
+#floatBoxBg{width:100%;height:100%;filter:alpha(opacity=50);opacity:0.5;position:absolute;top:0;left:0;}
+.floatBoxLogin{border:#666 5px solid;width:300px;position:absolute;top:50px;left:40%; background:url(/images/new2011/dialogobg.gif) repeat-x left 0px #fff;z-index:999999;z-index:11;}
+.pubish_fix{ background:url(/images/new2011/gif_btn.gif) no-repeat left top;}
+
+.floatBoxLogin .title{height:23px;padding:7px 10px 0;color:#fff;height:50px;}
+.floatBoxLogin .title h4{float:left;padding:0;margin:0;font-size:14px;line-height:16px; color:#f34915; background:url(/images/new2011/diaplogt.gif) no-repeat left center; padding-left:20px; font-size:15px; margin-left:140px; margin-top:10px;_margin-left:70px}
+.pubish_fix .title h4{ display:none}
+.floatBoxLogin .title span{float:right;cursor:pointer; margin-top:7px;}
+.floatBoxLogin .content{height:200px;}
+.floatBoxLogin .content h2{ margin:0; padding:0}
+.pubish_fix .content{ float:none; width:503px; margin-left:95px; margin-top:25px; overflow:hidden}
+.pubish_fix .content div a{ display:block; width:503px; height:87px; text-indent:-999px;}
+.pubish_fix .content div a.last{ margin-top:35px;}
+.floatBoxLogin ul{ width:285px; margin:0 auto;margin-top:0px;}
+.floatBoxLogin ul li{ text-align:left; padding-top:5px; padding-bottom:5px;}
+.floatBoxLogin ul li label{ width:61px; text-align:right; padding-right:5px;}
+.floatBoxLogin ul li a{ color:#0657b2}
+.floatBoxLogin ul li input{ border:1px solid #e2e2e2; height:22px; line-height:22px; margin-right:5px;}
+.floatBoxLogin ul li input.ff{ border:0; padding:0; margin:0; height:auto; position:relative; top:2px; margin-left:55px;}
+.floatBoxLogin ul li input.login_btn{ background:url(/images/new2011/login_btn.gif) no-repeat left top; width:112px; height:28px; border:0; text-indent:-999px; overflow:hidden; margin-left:47px; cursor:pointer}
+
+/*信息发布浮动框*/
+.floatBox{border:#666 5px solid;width:300px;position:absolute;top:50px;left:40%;z-index:11;}
+.floatBox{ background:url(/images/new2011/publishLay.gif) repeat-x left 0px #fff;}
+.floatBox .content{ height:auto;padding:10px;}
+.floatBox .title { height:auto; padding:0; width:30px; float:right;margin-top:7px;}
+.floatBox .title h4{ display:none;}
+.floatBox .title span{ margin-right:7px; }
+.floatBox .content ul.widthFix{ width:auto}
+.floatBox .box-content{ border:0; padding:0; height:auto; *float:left}
+.floatBox .content ul.widthFix li label{ font-weight:bold; font-size:14px;}
+.floatBox .content ul.widthFix li.links{ clear:both; width:auto; height:auto; background:none; border:0;}
+.floatBox .content ul.widthFix li.links span{ padding-left:20px; background-image:url(/images/new2011/btmIcon.gif); background-repeat:no-repeat; background-position:left top; padding-top:2px; padding-bottom:2px;}
+.floatBox .content ul.widthFix li .reviewT{ width:90%;}
+.floatBox .content ul.widthFix li span.im{ float:left; padding-right:5px; color:#F00}
+.floatBox .content ul.widthFix li select{ width:135px;}
+.floatBox .content ul.widthFix li.acc{width:655px;*margin-left:-40px;}
+.floatBox .content ul.widthFix li.acc label{ font-size:12px; font-weight:normal; color:#0552a8; padding-left:10px;}
+.floatBox .content ul.widthFix li.era{ margin-top:20px;}
+.floatBox .content ul.widthFix li.era .reviewC textarea{ height:210px;}
+.floatBox .content ul.widthFix li.radio input{ width:auto}
+.floatBox ul li label{ width:auto; padding-right:inherit}
+.floatBox ul li label input{ height:auto; position:relative; top:2px; border:0; }
+.floatBox ul li{ padding-top:4px; padding-bottom:3px; text-align:left}
+.floatBox ul li label img{ position:relative;top:4px;_top:6px;}
+.floatBox ul li input{ width:100px; border:1px solid #b5d2d5; padding:0; margin-left:5px; padding-top:2px; padding-bottom:2px;}
+.floatBox ul li input.btnSty{background: url("/images/new2011/bgg.gif") no-repeat scroll left top transparent;border: 0 none;cursor: pointer;height: 36px;margin-top: 10px;text-indent: -999px;width: 144px; position:relative; top:-25px; *float:left;margin-top:30px;}
+.floatBox .content ul.widthFix li .otherInfo div{ height:30px; width:650px;}
+.floatBox .content ul.widthFix li .otherInfo div.Allregin{ margin-left:10px;}
+.floatBox .content ul.widthFix li .otherInfo div span.left{ padding-left:10px;}
+.floatBox .content ul.widthFix li .otherInfo div span.right{ padding-left:10px; float:right}
+.floatBox .content ul.widthFix li .otherInfo div span.right em{ font-size:15px; color:#999; font-style:normal; padding-left:5px;}
+.floatBox .content ul.widthFix li.links span.s1{ background-position:left -2px;;}
+.floatBox .content ul.widthFix li.links span.s2{background-position:left -22px;;}
+.floatBox .content ul.widthFix li.links span.s3{background-position:left -42px;}
+.floatBox .content ul.widthFix li.links span.s4{background-position:left -60px;}
+.floatBox .content ul.widthFix li.links span.s5{background-position:left -80px;}
+.floatBox .content ul.widthFix li.links span.s6{background-position:left -100px;}
+
+/*浮动框*/
+#newsSlider .container {overflow: hidden; width: 220px; position: relative; height: 136px; margin-top:5px; margin-left:5px;display:inline}
+#newsSlider div.slides {left: 0px; position: absolute; top: 0px}
+#newsSlider ul.slides {padding-right: 0px; padding-left: 0px; left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px; list-style-type: none; position: absolute; top: 0px}
+#newsSlider ul.slides DL {margin-top: 32px}
+#newsSlider ul.slides DT A {font: bold 14px/30px "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif; color: #2a609f}
+#newsSlider ul.slides DD {line-height: 22px}
+#newsSlider ul.slides DD .more {margin-top: -18px; float: right; overflow: hidden; width: 14px; text-indent: -100em; height: 12px}
+#newsSlider div.slides div {padding-right: 0px; display: none; padding-left: 0px; padding-bottom: 0px; margin: 0px; width: 280px; padding-top: 0px; position: absolute; top: 0px}
+ul.slides li {padding-right: 0px; display: none; padding-left: 0px; padding-bottom: 0px; margin: 0px; width: 220px; padding-top: 0px; position: absolute; top: 0px}
+#newsSlider #loopedSlider {clear: both; margin: 0px auto; width: 220px; position: relative}
+#newsSlider {clear: both; margin: 0px auto; width: 220px; position: relative}
+#newsSlider {border-bottom: #eee 1px solid}
+#newsSlider ul.pagination {position:relative; float:right; top:-25px;}
+#newsSlider ul.pagination li {float: left; margin-right: 5px; background:#fff; border:1px solid #8fbaf1;}
+#newsSlider ul.pagination li a {display: block; font: bold 12px/15px "Times New Roman", Times, serif; width: 15px; color: #fff; text-align: center;text-decoration:none;color:#8fbaf1}
+#newsSlider ul.pagination li.active a {background:#74a8ed; color: #fff; text-decoration: none}
+ul.pagination li A:hover {background-position: 0px 100%; color: #fff; text-decoration: none}
+
+#navi{ height:40px;}   
+#navi ul li{margin:0; padding:0;width:200px; float:left; display:inline; text-align:center; height:30px; line-height30px; _margin-top:0px;_overflow:hidden; _position:relative; _top:1px;}   
+#navi ul li a{display:block; text-decoration:none;height:30px; border-bottom:0; margin-left:5px;font-weight:bolder; font-size:15px; line-height:35px; color:#666}   
+#navi ul li.hover{background:url(/images/new2011/desos.png) no-repeat 10px center #FFFFFF; color:#5ebe5e;border:#999 1px solid; border-bottom:0;}  

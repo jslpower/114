@@ -1,0 +1,44 @@
+﻿@charset "utf-8";
+/* CSS 114前台登陆页面样式 */
+html, body, p, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table {
+    border: medium none;
+    font-size: 12px;
+    line-height: 20px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.px10 {
+    clear: both;
+    height: 10px;
+    overflow: hidden;
+}
+BODY {
+    color: #333333;
+    font-family: "宋体",Arial,Helvetica,sans-serif;
+}
+.xiaodengl{width:970px; margin:0 auto;}
+.dlleft{float:left;width:467px;}
+.dlright{width:453px;height:356px;float:left; background:url(/images/new2011/denglul_04.jpg) no-repeat left top;padding-left:50px;}
+.dlright p{ text-align:left;}
+.dlright p a{ text-decoration:none; color:#555555;}
+.dlright p a:hover{ text-decoration:underline; color:#FF6600;}
+.dlcenter{ background:url(/images/new2011/denglul_11.jpg) left bottom repeat-x;height:325px;width:465px; border-left:1px solid #e8e9ea;border-right:1px solid #e8e9ea;}
+.dlcenter h2{ border-bottom:1px solid #e8e9ea;text-align:left;}
+.iputt{ background:url(/images/new2011/denglul_14.jpg) no-repeat left top;width:195px;height:33px; line-height:33px; font-size:14px;padding-left:5px;}
+.dlkkk{width:265px; margin:0 auto;padding-top:15px; }
+.dlkkk p{padding-bottom:10px; width:270px;float:left;}
+.dlkkk p.pkk{padding-left:55px;padding-bottom:10px; text-align:left;}
+.dlkkk p.pkk span{float:left; text-align:left;}
+.wjmima a{padding-left:20px; color:#5c9008; line-height:40px;}
+label{ cursor:default;}
+.dlkkk p label{font-size:14px;padding-right:5px; width:52px; overflow:hidden;float:left; line-height:30px;}
+.dlkkk p input{float:left;}
+.zcym{width:255px;margin:10px auto 0; border-top:1px solid #dadada; clear:both;}
+.hmzc{float:left; line-height:40px;padding-top:10px;}
+.ljzc{float:right;padding-left:30px;padding-top:10px;}
+.geyou{ color:#ff7700; font-weight:bold; font-size:14px;height:25px;}
+.dianjic{font-size:14px;height:25px;}
+
+

@@ -1,0 +1,14 @@
+﻿//定义api
+WebServices.TongyeAPI api = new WebApplication1.WebServices.TongyeAPI();
+
+//定义认证header
+WebServices.APISoapHeader header = new WebApplication1.WebServices.APISoapHeader();
+//header赋值,TMIS_APIKey为配置文件中配置的api调用密钥
+header.SecretKey = System.Configuration.ConfigurationManager.AppSettings.Get("TMIS_APIKey");
+api.APISoapHeaderValue = header;
+
+//调用api
+Response.Write(api.IsExistsUserName("aa"));
+
+api.Dispose();
+api = null;

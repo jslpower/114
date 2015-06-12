@@ -1,0 +1,134 @@
+﻿.boxy-wrapper {
+    position: absolute;
+	background:url("/images/new2011/boxy/publishLay.gif") repeat-x scroll left 0 #FFFFFF
+}
+.boxy-wrapper.fixed {
+    position: fixed;
+}
+.boxy-modal-blackout {
+    background-color: black;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.boxy-wrapper {
+    empty-cells: show;
+}
+.boxy-wrapper .boxy-top-left, .boxy-wrapper .boxy-top-right, .boxy-wrapper .boxy-bottom-right, .boxy-wrapper .boxy-bottom-left {
+    height: 5px;
+    padding: 0;
+    width: 5px;
+	background-color: #C9DDFB;
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+}
+:root .boxy-wrapper .boxy-top-left {
+    background-color: #333333;
+    height: 5px;
+    opacity: 0.6;
+	filter:alpha(opacity=60);
+    padding: 0;
+}
+:root .boxy-wrapper .boxy-top-right {
+    background-color: #333333;
+    height: 5px;
+    opacity: 0.6;
+	filter:alpha(opacity=60);
+    padding: 0;
+}
+:root .boxy-wrapper .boxy-bottom-right {
+    background-color: #333333;
+    height: 5px;
+    opacity: 0.6;
+	filter:alpha(opacity=60);
+    padding: 0;
+}
+:root .boxy-wrapper .boxy-bottom-left {
+    background-color: #333333;
+    height: 5px;
+    opacity: 0.6;
+    padding: 0;
+}
+.boxy-wrapper .boxy-top-left {
+}
+.boxy-wrapper .boxy-top-right {
+}
+.boxy-wrapper .boxy-bottom-right {
+}
+.boxy-wrapper .boxy-bottom-left {
+}
+.boxy-wrapper .boxy-top, .boxy-wrapper .boxy-bottom {
+    background-color: #333;
+    height: 5px;
+    opacity: 0.6;
+    padding: 0;
+	filter:alpha(opacity=60);
+}
+.boxy-wrapper .boxy-left, .boxy-wrapper .boxy-right {
+    background-color: #333;
+    opacity: 0.6;
+    padding: 0;
+    width: 5px;
+	filter:alpha(opacity=60);
+}
+.boxy-wrapper .title-bar {
+    height: 40px;
+    position: relative;
+	background:url("/images/new2011/boxy/publishLay.gif") repeat-x left 0 #FFFFFF;
+}
+
+.boxy-wrapper .title-bar.dragging {
+    cursor: move;
+}
+.boxy-wrapper .title-bar h2 {
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 34px;
+    margin: 0;
+    padding: 1px 0 0 20px;
+    text-align:left;
+}
+.boxy-wrapper .title-bar .close {
+    background: url("/images/new2011/boxy/closebox.gif") repeat scroll 0 0 transparent;
+    color: white;
+    display: block;
+    float: right;
+    font-size: 90%;
+    height: 16px;
+    line-height: 1;
+    position: absolute;
+    right: 6px;
+    text-indent: -9999px;
+    top: 6px;
+    width: 16px;
+	outline:none;
+}
+.boxy-wrapper .title-bar .close:hover {
+    background: url("/images/new2011/boxy/closebox2.gif") repeat scroll 0 0 transparent;
+    display: block;
+    float: right;
+    font-size: 90%;
+    height: 16px;
+    line-height: 1;
+    position: absolute;
+    right: 6px;
+    text-indent: -9999px;
+    top: 6px;
+    width: 16px;
+}
+.boxy-inner {
+    background-color: white;
+    overflow: hidden;
+    padding: 0;
+}
+.boxy-content {
+    padding: 15px;
+}
+.boxy-wrapper .question {
+    min-height: 80px;
+    width: 350px;
+}
+.boxy-wrapper .answers {
+    text-align: right;
+}

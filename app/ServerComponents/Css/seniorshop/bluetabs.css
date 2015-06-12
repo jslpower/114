@@ -1,0 +1,59 @@
+
+
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv_b{
+position:absolute;
+top:0px;
+border: 1px solid #BFDC94; /*THEME CHANGE HERE*/
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+background-color: white;
+width: 200px;
+visibility: hidden;
+}
+
+
+.dropmenudiv_b a{
+width: auto;
+display: block;
+text-indent: 5px;
+border: 0 solid #BFDC94; /*THEME CHANGE HERE*/
+border-bottom-width: 1px;
+padding: 2px 0;
+text-decoration: none;
+color: black;
+}
+
+* html .dropmenudiv_b a{ /*IE only hack*/
+width: 100%;
+}
+
+.dropmenudiv_b a:hover{ /*THEME CHANGE HERE*/
+background-color: #429D14; color:#FFFFFF;
+}
+ .Obtn {	MARGIN-TOP: 80px; WIDTH: 25px; BACKGROUND: url(../images/img3-5_1.gif) no-repeat; FLOAT: left; HEIGHT: 150px; MARGIN-LEFT: -1px}
+.boxgrid{ width:960px; height: 120px;background:#fff; border: solid 2px #8399AF; overflow: hidden; position: relative; margin:0 auto; }
+.boxgrid h3 { font-size:30px;}
+.boxcaption{ float: left; position: absolute; background: #BBE1F3;height: 180px; width: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);}
+.captionfull .boxcaption { top: 0px; left: 0px;}
+.boxgrid2{ width:385px; height: 190px; float:left; background:#fff; border: 0px; overflow: hidden; position: relative; }
+.boxgrid2 h3 { font-size:30px; line-height:30px;}
+.boxcaption2{ float: left; position: absolute; background: #BBE1F3;height: 190px; width: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);}
+.infocfull .boxcaption2 { top:0px; left: 0;}
+.boxgrid3{ width:960px; height:56px;  background:#fff; border: 0px; overflow: hidden; position: relative;  margin:0 auto; }
+.boxgrid3 h3 { font-size:30px; line-height:30px;}
+.boxcaption3{ position: absolute; background: #BBE1F3;height:56px; width: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);}
+.infocfull3 .boxcaption3 { top:0px; left: 0;}
+
+.boxgrid4{ width:265px; height: 200px; float:left; background:#fff; border: 0px; overflow: hidden; position: relative; }
+.boxgrid4 h3 { font-size:30px; line-height:30px;}
+.boxcaption4{ float: left; position: absolute; background: #BBE1F3;height: 275px; width: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);}
+.infocfull4 .boxcaption4 { top:0px; left: 0;}
+
+.boxgrid5{ width:261px; height: 142px; float:left; background:#fff; border: 0px; overflow: hidden; position: relative; }
+.boxgrid5 h3 { font-size:30px; line-height:30px;}
+.boxcaption5{ float: left; position: absolute; background: #BBE1F3;height: 142px; width: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);}
+.infocfull5 .boxcaption5 { top:0px; left: 0;}
+

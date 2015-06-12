@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+ul,ol,li{ list-style-type:none;}
+h1,h2{ font-size:14px;}
+a{ color:#333333; text-decoration:none;}
+a:hover{ color:#fc4d00;}
+body{ font-family:"宋体"; font-size:12px; text-align:center;}
+.clearboth{ clear:both;}
+img{ vertical-align:text-top; border:0;}
+
+#wrap{ width:972px; margin:0 auto;}
+/**************.menu*****************/
+.menu{ height:39px; background:url(/images/sightshop/nav_bg.gif) no-repeat center center;}
+.menu ul li{ float:left; width:120px; line-height:44px!important; line-height:49px;}
+.menu ul li a{ color:#FFFFFF; display:block; font-weight:bold; font-size:14px;}
+.menu ul li a.menu-on{color:#ffe149; background:url(/images/sightshop/menu-onbg.gif) no-repeat center bottom;}
+.menu ul li a:hover{color:#ffe149; background:url(/images/sightshop/menu-onbg.gif) no-repeat center bottom;}
+/**************.main*****************/
+.main{ text-align:left;}
+/**************.sidebar***************/
+
+/*****.sidebar*******/
+.sidebar{float:left; width:247px;}
+
+.sidebar_1{border:1px #b8e7b3 solid; background:#e7f9e3; margin-top:10px; padding:0;}
+.sidebar_1 .more,.sidebar02_2 .more,.sidebar02Scenic .more{ height:28px; line-height:28px; position:relative; text-align:right; padding:0 10px;}
+.sidebar_1 .more span,.sidebar02_2 .more span,.sidebar02Scenic .more span{position:absolute; left:9px; top:0; font-size:14px; font-weight:bold; text-indent:18px; color:#194c07; background:url(/images/sightshop/left_icon.gif) no-repeat left 8px;}
+.sidebar_1 .more a,.sidebar02_2 .more a,.sidebar02Scenic .more a{position:relative; margin-right:5px; display:block;}
+.sidebar_1_text{ margin:0 5px 5px 5px; background:#FFFFFF; text-align:center; padding-bottom:15px; *padding-bottom:14px;}
+.jqlog{margin-top:10px;}
+.sidebar_1_text ul{ text-align:left; line-height:20px; text-indent:10px; padding-top:10px;}
+.sidebar_1_text ul li label{ margin-left:20px;}
+.sidebar_1_text ul li img{ vertical-align:middle;}
+
+/*****.sidebar02*******/
+.sidebar02{float:left; margin:10px 0 0 5px; width:715px;}
+/****.sidebar02_1****/
+.sidebar02_1{ margin:0 auto; float:left;}
+.Font14b{ font-weight:bold; font-size:14px;}
+.C_orange{color:#fc4d00;}
+/*.sidebar02_1_L{float:left; width:450px; border:1px #c6d8e0 solid; padding:3px;}*/
+
+.sidebar02_1_R{ float:left; width:245px; margin-left:10px; background:#e9f4fb;min-height:299px;height:auto !important;height:299px;overflow:visible;}
+.sidebar02_1_R h1{ padding:15px 0; text-indent:10px;}
+.sidebar02_1_R p,.sidebar02_1_R span{ background:#FFFFFF; display:block; margin:5px;padding:5px 8px; color:#328017; line-height:20px;}
+.Scenic_spot{text-indent:24px;}
+.Tour_Guide{ margin-top:5px; padding:5px 8px 10px 8px; line-height:21px;}
+.Tour_Guide h2{ font-size:12px; color:#256e0c;}
+
+/***sidebar02_2***/
+.sidebar02_2{ margin-top:10px;}
+.C_blue{color:#0055aa;}
+.subnav{border-bottom:2px #55bc38 solid; width:711px; padding-left:3px;}
+.subnav li{ float:left; width:85px; text-align:center; height:21px; line-height:22px; margin-bottom:-2px; background:url(/images/sightshop/tab02.gif) no-repeat center center;}
+.subnav li a{ font-weight:bold; color:#3b671d; display:block;}
+.subnav li a.tab-five-on{color:#FFFFFF; background:url(/images/sightshop/tab01.gif) no-repeat center center;}
+.subnav li a:hover{color:#FFFFFF; background:url(/images/sightshop/tab01.gif) no-repeat center center;}
+.sidebar02_2Content{ border:1px #c6d8e0 solid; margin:0 auto;}
+.sidebar02_2Content ul{padding:15px 10px 5px 10px;}
+
+.sidebar02_2Content ul li{ position:relative; left:0; top:0; height:23px; *height:21px;_height:20px; text-align:right;}
+.sidebar02_2Content ul li p{ position:absolute; left:5px;}
+.sidebar02_2Content ul li em{ font-style:normal; position:relative; margin-right:2px; color:#CCCCCC; display:block;}
+.sidebar02_2Content_L{ float:left; width:330px;}
+.sidebar02_2Content_R{ float:left; width:330px;}
+
+.sidebar02_2Content{ border:1px #c6d8e0 solid; margin:0 auto; height:140px;} 
+.sidebar02_2Content ul,.sidebar02_2Content ol{padding:15px 10px 5px 10px;}
+
+/*****景区美图******/
+.more02{ background:url(/images/sightshop/meituTitle.gif) no-repeat center center; width:693px;}
+.more02 a{ color:#FFFFFF;}
+.add002{ margin-top:10px;}
+.ScenicPhoto{border:1px #c6d8e0 solid; padding:9px; float:left; width:694px;}
+.ScenicPhoto li{ float:left; width:172px; text-align:center; line-height:29px; background:url(/images/sightshop/photobg.gif) no-repeat center 105px;}
+
+.friendlink{border:1px #c6d8e0 solid; padding:5px; line-height:20px; text-align:left; margin-top:10px;}
+
+.copyright{color:#333333; line-height:20px; padding:10px 0 10px;}
+.copyright span{ float:left;}
+.copyright p{ float:left; margin-left:20px; text-align:left;}
+
+/*****************ScenicSpotIntro.html 景区介绍****************/
+.sidebar02Scenic{border:1px #c6d8e0 solid; width:713px;}
+.sidebar02Scenic .more03{ background:url(/images/sightshop/bg002.gif) repeat-x center center; height:37px;}
+.C_green{ color:#194c07; font-weight:bold;}
+.content{padding:10px 15px; color:#333333; line-height:22px;}
+.content span{ float:left; display:block;}
+.content p{float:left;text-indent:24px; width:395px; margin-left:15px;}
+.content .text{ margin-top:15px; line-height:24px;}
+.content .contentpic{padding:15px 0 5px 0;}
+.content .contentpic li{ float:left; width:170px; text-align:center;}
+
+/*****************ScenicSpotIntro.html 景区动态****************/
+.searchnews{ text-align:right; margin-right:30px;}
+.searchbtn{ margin-top:-7px;}
+.news_title{ background:url(/images/sightshop/newstitlebg.gif) no-repeat 0 0; width:654px; color:#FFFFFF; height:40px;}
+.news_title li{ float:left; width:260px; text-align:right; line-height:30px; font-weight:bold;}
+.news_title li.xuhao{ width:50px; text-align:center;}
+.news_list tr td{ border-bottom:1px #cccccc dashed;}
+.pageup{ margin-left:40px;}
+.newscontenttitle{ padding:15px; border-bottom:1px #cccccc dashed; text-align:center;}
+.newscontenttitle em{ font-style:normal; text-align:right; display:block;}
+.newscontentpic{ text-align:center; padding:20px;}
+
+/*****************ScenicSpotIntro.html 景区美图****************/
+.ScenicSpotPic{ padding:10px 0 10px 15px;}
+.ScenicSpotPic li{float:left; width:220px; text-align:center; line-height:40px; background:url(/images/sightshop/photodaoy.gif) no-repeat center 147px;}
+.ScenicSpotPic li img{border:1px #c6d8e0 solid;}
+.flashpic{ text-align:center; margin-top:15px;}
+.flashpic ul{padding:0 10px; margin-left:25px;}
+.flashpic ul li{ float:left; width:155px; text-align:center;}
+.flashpic ul li img{ border:2px #dbdbdb solid;}
+.flash_btn{ position:relative; top:-60px; *top:-70px; left:0; text-align:right; height:48px;}
+.flash_btn a.left_btn{ position:absolute; left:9px;}
+.flash_btn a.right_btn{ position:relative; margin-right:2px;}
+.bigpic{ text-align:center;}
+
+.contact_container{ font-size:14px; color:#313131;}
+
+/************首页FLASH切换****************/
+.sidebar02_1_L{float:left; width:450px; border:1px #c6d8e0 solid;  padding:3px;}
+.sidebar02_1_L .boxpadding {margin-bottom:0px; }
+#Slide{margin-bottom:0; overflow:hidden; width: 450px; height: 291px}
+.thumb_title{ margin-top: 195px; background: #000; width: 450px; text-indent:200px; line-height:30px; position: absolute; height: 30px; background:rgba(0, 0, 0, 0.5) none repeat scroll 0 0 !important; filter:Alpha(opacity=50); background:#000;}
+.thumb_title a{ color:#fff; font-size:14px;}
+#Slide_Thumb{ margin-top:5px; margin-left:0px; position:relative; width:450px}
+#Slide_Thumb ul li{ float:left; width:90px; text-align:center; cursor: pointer;}
+#Slide_Thumb ul li.thumb_on img{border:1px #ff6b2a solid;}
+#Slide_Thumb ul li img{width:82px; height:59px;}
+
+

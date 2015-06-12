@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AjaxAdSort.aspx.cs" Inherits="SiteOperationsCenter.AdManagement.AjaxAdSort" %>

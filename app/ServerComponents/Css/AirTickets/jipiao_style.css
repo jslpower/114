@@ -1,0 +1,613 @@
+.clearboth{ clear:both; }	
+/******************.main start****************/
+.main{
+	margin:10px auto 0 auto;
+	width:970px;
+}
+/**************** 机票登录 开始********************/
+.content01{
+	margin:0 auto;
+}
+.content01_left{
+	float:left;
+	width:320px;
+	height:221px;
+	background:url(/images/jipiao/login_bg.gif) no-repeat 0 0;
+}
+.content01_right{
+	float:left;
+	width:640px;
+	margin-left:10px;
+}
+.content01_left ul{
+	margin:45px 0 0 20px;
+	text-align:left;
+}
+.content01_left ul li{
+	padding:8px 0;
+}
+.content01_left ul li .inputtext{
+	font-size:14px;
+	font-weight:bold;
+	color:#fc7e12;
+	margin-right:8px;
+}
+.content01_left ul li a{
+	text-decoration:underline;
+	color:#4c8c03;
+	display:inline;
+	padding-left:10px;
+	font-size:14px;
+}
+.content02{
+	margin:10px auto 0 auto;
+}
+
+/********content02_left start***********/ 
+.content02_left{
+	float:left;
+	width:320px;
+}
+.title_tab li{
+	float:left;
+	line-height:33px;
+	width:85px;
+	padding-right:5px;
+}
+.title_tab li a{
+	display:block;
+	background:url(/images/jipiao/Tab002.jpg) no-repeat 0 0;
+	font-size:14px;
+	height:31px;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+}
+.title_tab li a:hover{
+	background:url(/images/jipiao/Tab001.jpg) no-repeat 0 0;
+	font-size:14px;
+	height:33px;
+	font-weight:bold;
+	color:#ffffff;
+	text-decoration:none;
+}
+.title_tab li a.book_default{
+	background:url(/images/jipiao/Tab001.jpg) no-repeat 0 0;
+	font-size:14px;
+	height:33px;
+	font-weight:bold;
+	color:#ffffff;
+	position:relative;
+	top:2px;
+}
+.content02_left_body_box_hidden
+{
+	display:none;
+}
+.content02_left_body_box{
+	text-align:left;
+	background:url(/images/jipiao/content02_left_center.jpg) repeat-y  0 0;
+}
+.content02_left_body_box ol{
+	margin:0;
+	padding:0 0 0 10px;
+	height:270px;
+}
+.content02_left_body_box ol li{
+	line-height:27px;
+	height:27px;
+	position:relative;
+}
+.content02_left_body_box ol li h1{
+	font-size:12px;
+	float:left;
+	width:90px;
+	font-weight:normal;
+	display:inline;
+	background:url(/images/jipiao/icon001.jpg) no-repeat 12px 7.5px;
+	margin:0;
+	padding:0;
+	text-indent:30px;
+}
+.content02_left_body_box ol li a{
+	margin-left:10px;
+}
+.content02_left_body_box ol li h2{
+	font-size:12px;
+	float:left;
+	width:150px;
+	font-weight:normal;
+	color:#458002;
+	display:inline;
+	margin:0 0 0 10px;
+	padding:0;
+}
+.content02_left_body_box ol li h2 span{
+	margin-left:25px;
+}
+.content02_left_body_box ol li h3{
+	font-size:12px;
+	font-weight:normal;
+	margin:0;
+	padding:0;
+	width:60px;
+	display:inline;
+}
+.content02_left_body_box ol li h1 a{
+	color:#504f4f;
+}
+/********content02_left end***********/ 
+
+/********content02_right start***********/
+.content02_right{
+	width:640px;
+	float:left;
+	margin-left:10px;
+	display:inline;
+	height:100px;
+}
+.content02_right_body{
+	background:url(/images/jipiao/jpxq_center.jpg) repeat-y 0 0;
+}
+.content02_right_body_L{
+	width:358px;
+	float:left;
+	text-align:left;
+	font-size:14px;
+	font-weight:bold;
+	color:#4c8c03;
+	padding-left:35px;
+}
+.number{
+	margin:6px 0 6px 0;
+}
+.number span{
+	color:#e96001;
+}
+.content02_right_body_L ul li a{
+	line-height:26px;
+    font-size:14px;
+    font-weight:bold;
+    color:#4c8c03;   
+}
+
+.content02_right_body_L span{
+    font-size:14px;
+    font-weight:bold;
+    color:#E96001;   
+}
+
+.content02_right_body_L ul li span{
+	color:#e96001;
+	font-size:16px;
+}
+.content02_right_body_R{
+	width:227px;
+	float:left;
+	display:inline;
+}
+.content02_right_body_R ul li{
+	padding:10px 0 0 20px;
+}
+/********content02_right end***********/
+
+/**************** 机票登录 结束********************/
+
+/**********sidebar start***********/
+.sidebar{
+	float:left;
+	width:148px;
+	background:#ebf4fe;
+	border-right:1px  #a2cbf9 solid;
+}
+.sidebar h1{
+	font-style:normal;
+	margin:0;
+	padding:0;
+}
+
+.sidebar ul li{	
+	text-align:left;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+.sidebar ul li span{
+	margin:0;
+	padding:0;
+}
+.sidebar ul li span a{
+	text-align:left;
+	display:block;
+	text-indent:20px;
+	line-height:33px;
+	font-size:14px;
+	font-weight:bold;
+	color:#467002;
+	text-decoration:none;
+	background:url(/images/jipiao/left_menu_bg.jpg) repeat-x 0 0;
+	
+}
+.sidebar ul li span a:hover{
+	background:url(/images/jipiao/menu_hoverbg.jpg) repeat-x 0 0;
+	color:#FFFFFF;
+}
+.sidebar ul li span a.default{
+	background:url(/images/jipiao/menu_hoverbg.jpg) repeat-x 0 0;
+	color:#FFFFFF;
+}
+/*************订单管理 开始****************/
+.two_menu{
+	text-align:left;
+	margin:0;
+	padding:0;
+	}
+.two_menu a{
+	display:block;
+	margin:0;
+	padding:0;
+	text-align:left;
+	line-height:22px;
+	text-indent:20px;
+}
+.line{
+	border-bottom:1px #999999 dashed;
+}
+.kounu{
+	color:#FF3300;
+}
+.jiesuanjia{
+	font-weight:bold;
+	color:#FF0000;
+}
+.zhechebz{
+	font-weight:bold;
+	color:#FF0000;
+	text-align:left;
+	margin-left:8px;
+	padding:5px 0;
+	display:block;
+}
+.pringBtn{
+	width:60%;
+	margin:0 auto;
+}
+.pringBtn li{
+	float:left;
+	background:url(/images/jipiao/Printbtn.jpg) no-repeat 0 0;
+	width:88px;
+	line-height:28px;
+	margin:10px 0 0 20px;
+}
+.pringBtn li a{
+	font-weight:bold;
+	font-size:14px;
+}
+/*.handle_btn{
+	margin:0 auto;
+	padding:0;
+	width:800px;
+}
+.handle_btn li{
+	float:left;
+	line-height:30px;
+	margin:0 20px 0 20px;
+}
+.handle_btn li a{
+	font-size:16px;
+	font-weight:bold;
+	color:#FFFFFF;
+	width:103px;
+	display:block;
+	background:url(/images/jipiao/chaozuo_btn.jpg) no-repeat 0 0;
+}*/
+
+.handle_con{
+	margin:5px 0 0 0;
+	padding:0;
+}
+.beizu{
+	line-height:20px;
+	text-indent:24px;
+	padding:0 10px;
+	text-align:left;
+	color:#FF0000;
+}
+.orderform_state{
+	color:#FF0000;
+	font-weight:bold;
+	background:#ffffff;
+	}
+
+/*************订单管理 结束****************/
+
+
+/**********sidebar end***********/
+/**********sidebar02 start***********/
+.sidebar02{
+	float:left;
+	/*width:819px;*/
+	width:815px;
+	margin-left:5px;
+}
+.sidebar02_toptext{
+	background:url(/images/jipiao/jpydpic.jpg) no-repeat 0 0;
+	line-height:53px;
+	display:block;
+	text-indent:198px;
+}
+.sidebar02_toptext a{
+	color:#e60d03;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.sidebar02_toptext em{
+	font-style:normal;
+	color:#e60d03;
+	font-size:12px;
+	font-weight:bold;
+}
+.sub_menu{
+	margin-top:10px;
+	text-align:left;
+	line-height:26px;
+	background:url(/images/jipiao/menu_sub_center.jpg) repeat-x 0 0;
+	height:26px;
+}
+.sub_menu ul{
+	background:url(/images/jipiao/menu_sub_left.jpg) no-repeat 0 0;
+	text-indent:24px;
+	height:25px;
+}
+.sub_menu ul li{
+	line-height:25px;
+	float:left;
+	padding-left:10px;
+	background:url(/images/jipiao/icon04.jpg) no-repeat 10px center
+}
+.sub_menu ul li.over{
+	background:url(/images/jipiao/icon03.jpg) no-repeat 15px center;
+	color:#eb6f00;
+}
+.sub_menu_right{
+	background:url(/images/jipiao/menu_sub_right.jpg) no-repeat 0 0;
+	width:10px;
+	margin:-25px 0 0 805px;
+}
+
+/*******sidebar02_con start******/
+.sidebar02_con{
+	margin:10px auto 0 auto;
+}
+/***.sidebar02_con_left***/
+.sidebar02_con_left{
+	float:left;
+	width:610px;
+}
+
+/***.sidebar02_con_right***/
+.sidebar02_con_right{
+	float:left;
+	width:182px;
+}
+.sidebar02_con_tableContain{
+	margin-left:5px;
+	background:#fafafa;
+	border:1px #dcd8d8 solid;
+	text-align:left;
+	line-height:26px;
+	*line-height:28px;
+	padding:0 8px;
+	width:182px;
+}
+.sidebar02_con_tableContain table th{
+	font-size:16px;
+	font-weight:bold;
+	color:#ff6900;
+}
+.sidebar02_con_tableContain table td span{
+	font-size:14px;
+	color:#035080;
+}
+/***********首页*************/
+.sidebar02_con_left_c{
+	border:1px #a2cbf9 solid;
+	width:610px;
+}
+.sidebar02_con_right_c{
+	border:1px #a2cbf9 solid;
+	margin-left:5px;
+	width:195px;
+}
+.sidebar02_con_right_c ul li{
+	padding:4px 7px;
+	height:71px;
+}
+.table_cont{
+	border:1px #ff5f00 solid;
+	background:url(/images/jipiao/xcd_bg.jpg) repeat-x 0 0;
+	margin:10px auto;
+	padding:0
+}
+.xingcengdan_print{
+	font-size:14px;
+	font-weight:bold;
+	color:#d44b00;
+	}
+.public_container{
+	margin:0 auto 20px auto;
+	padding:0;
+	background:#fdf9df;
+	width:93%;
+}
+.public_Tab {
+	border-bottom:2px #fc5a07 solid;
+	vertical-align:bottom;
+	height:34px;
+}
+.public_Tab li{
+	float:left;
+	width:115px;
+	height:34px;
+	line-height:34px;
+	margin-left:10px;
+}
+.public_Tab li a{
+	display:block;
+	background:url(/images/jipiao/public_nav_bg01.jpg) no-repeat 0 0;
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+}
+.public_Tab li a:hover{
+	background:url(/images/jipiao/public_nav_bg02.jpg) no-repeat 0 0;
+	color:#FFFFFF;
+}
+
+.public_Tab li a.default{
+	background:url(/images/jipiao/public_nav_bg02.jpg) no-repeat 0 0;
+	color:#FFFFFF;
+}
+
+.public_content_hidden
+{
+	display:none;
+}
+.public_content textarea{
+	border:1px #fc5a07 solid;
+	margin-top:10px;
+	width:99%;
+	height:150px;
+}
+
+/*******查询结果**********/
+.sidebar02_con_table01{
+	/*border:1px #CCCCCC solid;*/
+	/*background:#eeeeee;*/
+}
+.sidebar02_con_table01 .book_default{
+	color:red;
+}
+.sidebar02_con_table01 p{
+	border:1px #CCCCCC solid;
+	background:#FAFAFA;
+	padding:15px 0;
+	margin:0;
+}
+.sidebar02_con_table01 table td{
+	padding-left:20px;
+}
+.sidebar02_con_table02,.sidebar02_con_table03{
+	margin:10px auto 0 auto;
+}
+.title{
+	font-size:14px; 
+	font-weight:bold;
+	color:#0657B2; 
+	text-indent:20px;
+	display:block;
+
+}
+.title_text{
+	font-size:14px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+/******add_travellerInfo start******/
+.add_travellerInfo{
+	margin:10px auto 10px auto;
+	width:814px;
+}
+/*****选项卡********/
+.add_travellerInfo ul{
+	margin:0 0 0 1px;
+}
+.add_travellerInfo ul li{
+	float:left;
+	width:106px;
+	margin-left:10px;
+	text-align:center;
+	line-height:29px;
+	display:inline;
+	height:28px;	
+}
+.add_travellerInfo ul li a{
+	display:block;
+	color:#000000;
+	font-size:12px;
+	width:106px;
+	background:url(/images/jipiao/Tab02.jpg) no-repeat ;
+}
+.add_travellerInfo ul li a:hover{
+	background:url(/images/jipiao/Tab01.jpg) no-repeat;
+	color:#014164;
+	font-weight:bold;
+	height:29px;
+	position:relative;
+	_top:1px;
+}
+.add_travellerInfo ul li a.book_default{
+	background:url(/images/jipiao/Tab01.jpg) no-repeat;
+	color:#014164;
+	font-weight:bold;
+	height:29px;
+	*position:relative;
+	_top:1px;
+}
+.add_travellerInfo_cont{
+	border:1px #bfddff solid;
+	width:97%;
+	margin:0 auto;
+	padding:10px 0;
+	background:#FFFFFF;
+}
+.btn{
+	margin:20px 0 20px 0;
+}
+/********************直接支付********************/
+.sidebar02_con_lianxi td{
+	padding-left:28px;
+}
+/******add_travellerInfo end*******/
+
+
+/*******sidebar02_con end******/
+
+/**********sidebar02 end***********/
+
+/******************.main end****************/
+
+/*热点机票城市容器*/
+    #divHotCitys{display:none; position:absolute;width:208px;border:1px solid #cccccc; margin:0px auto; background:#ffffff}
+	#ulHotCitys{margin:0px;padding:0px; list-style-type:none; color:#666666; overflow:hidden;width:198px; margin:0px auto; margin-top:4px;}
+	#ulHotCitys li{margin:0px;padding:0px; list-style-type:none; float:left;height:24px;width:66px; line-height:24px;text-align:center;}
+	/*提示信息*/
+	#ulHotCitys li.li1{width:178px;height:32px; line-height:32px; background:#f5f5f5; text-align:left;}
+	/*关闭按钮*/
+	#ulHotCitys li.li2{width:20px;height:32px; line-height:32px; background:#f5f5f5;}
+	#ulHotCitys li.li2 a{overflow: hidden;display:block;text-decoration:none;color:#666666}
+	#ulHotCitys li.li2 a:hover{overflow: hidden;display:block; background:#f0f0f0; color:#666666}
+	/*间隔*/
+	#ulHotCitys li.li3{width:100%;height:4px;line-height:4px}
+	/*城市列表*/
+	#ulHotCitys li.list{}
+	#ulHotCitys li.list a{overflow: hidden;display:block;text-decoration:none;color:#666666;height:24px;width:66px; }
+	#ulHotCitys li.list a:hover{overflow: hidden;display:block; background:#ff9900; color:#ffffff;}
+	/*未设置热点城市时的提示信息*/
+	#ulHotCitys li.liNotHotCitys{width:100%; height:28px; line-height:28px; text-align:left;}
+	
+	
+	
+/*focus*/
+.container, .container *{margin:0; padding:0;}
+.container{width:640px; height:219px; overflow:hidden;position:relative; float:left}
+.slider{position:absolute;}
+.slider li{ list-style:none;display:inline;}
+.slider img,.slider2 img{ width:640px; height:219px; display:block;}
+.slider2 li{float:left;}
+.slider2{width:3200px;}
+.num{ position:absolute; right:5px; bottom:5px;}
+.num li{float:left;color:#FF7300;text-align:center;line-height:16px;width:16px;height:16px;font-family: Arial;font-size:12px;cursor: pointer;overflow: hidden;margin: 3px 1px;border: 1px solid #FF7300;	background-color: #fff;}
+.num li.on{	color: #fff;line-height: 21px;width: 21px;height: 21px;font-size:16px;margin: 0 1px;border: 0;background-color: #FF7300;font-weight: bold;}

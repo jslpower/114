@@ -1,0 +1,668 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{547915B1-4832-4050-A670-AF50891D3EA2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IMFrame</RootNamespace>
+    <AssemblyName>IMFrame</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Adpost.Ticket, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\Adpost.Ticket.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.HotelBI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.HotelBI.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.IBLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.IBLL.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.OpenRelation.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.OpenRelation.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.ProceFlow, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json.Net20, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Card\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\LookUserInfo.aspx.cs">
+      <DependentUpon>LookUserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\LookUserInfo.aspx.designer.cs">
+      <DependentUpon>LookUserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommendCompany.aspx.cs">
+      <DependentUpon>CommendCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommendCompany.aspx.designer.cs">
+      <DependentUpon>CommendCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EShop.aspx.cs">
+      <DependentUpon>EShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EShop.aspx.designer.cs">
+      <DependentUpon>EShop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EyouSoft\EyouGoto.aspx.cs">
+      <DependentUpon>EyouGoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EyouSoft\EyouGoto.aspx.designer.cs">
+      <DependentUpon>EyouGoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EyouSoft\EyouSoftFunc.aspx.cs">
+      <DependentUpon>EyouSoftFunc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EyouSoft\EyouSoftFunc.aspx.designer.cs">
+      <DependentUpon>EyouSoftFunc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FalseLogin.aspx.cs">
+      <DependentUpon>FalseLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FalseLogin.aspx.designer.cs">
+      <DependentUpon>FalseLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel\AjaxOrderSearch.aspx.cs">
+      <DependentUpon>AjaxOrderSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hotel\AjaxOrderSearch.aspx.designer.cs">
+      <DependentUpon>AjaxOrderSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel\HotelSearch.aspx.cs">
+      <DependentUpon>HotelSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hotel\HotelSearch.aspx.designer.cs">
+      <DependentUpon>HotelSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel\OrderSearch.aspx.cs">
+      <DependentUpon>OrderSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hotel\OrderSearch.aspx.designer.cs">
+      <DependentUpon>OrderSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LocalAgency\AjaxDeleteRoute.aspx.cs">
+      <DependentUpon>AjaxDeleteRoute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LocalAgency\AjaxDeleteRoute.aspx.designer.cs">
+      <DependentUpon>AjaxDeleteRoute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LocalAgency\AjaxMain.aspx.cs">
+      <DependentUpon>AjaxMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LocalAgency\AjaxMain.aspx.designer.cs">
+      <DependentUpon>AjaxMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LocalAgency\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LocalAgency\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWeb.aspx.cs">
+      <DependentUpon>LoginWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginWeb.aspx.designer.cs">
+      <DependentUpon>LoginWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MQMainPanelAdv.aspx.cs">
+      <DependentUpon>MQMainPanelAdv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MQMainPanelAdv.aspx.designer.cs">
+      <DependentUpon>MQMainPanelAdv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MqNotice\Notice.aspx.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MqNotice\Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MqNotice\Radio.aspx.cs">
+      <DependentUpon>Radio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MqNotice\Radio.aspx.designer.cs">
+      <DependentUpon>Radio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MQTransit.aspx.cs">
+      <DependentUpon>MQTransit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MQTransit.aspx.designer.cs">
+      <DependentUpon>MQTransit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Msg.aspx.cs">
+      <DependentUpon>Msg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Msg.aspx.designer.cs">
+      <DependentUpon>Msg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RouteAgency\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RouteAgency\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RouteAgency\TourManger\AjaxSetUser.aspx.cs">
+      <DependentUpon>AjaxSetUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RouteAgency\TourManger\AjaxSetUser.aspx.designer.cs">
+      <DependentUpon>AjaxSetUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RouteAgency\TourManger\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RouteAgency\TourManger\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RouteAgency\TourManger\SetUser.aspx.cs">
+      <DependentUpon>SetUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RouteAgency\TourManger\SetUser.aspx.designer.cs">
+      <DependentUpon>SetUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RouteAgency\TourOrder\AjaxOrderList.aspx.cs">
+      <DependentUpon>AjaxOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RouteAgency\TourOrder\AjaxOrderList.aspx.designer.cs">
+      <DependentUpon>AjaxOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RouteAgency\TourOrder\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RouteAgency\TourOrder\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RouteAgency\TourOrder\IMOrderList.aspx.cs">
+      <DependentUpon>IMOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RouteAgency\TourOrder\IMOrderList.aspx.designer.cs">
+      <DependentUpon>IMOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineMQ\AddFriend.aspx.cs">
+      <DependentUpon>AddFriend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineMQ\AddFriend.aspx.designer.cs">
+      <DependentUpon>AddFriend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\AddFriend.aspx.cs">
+      <DependentUpon>AddFriend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\AddFriend.aspx.designer.cs">
+      <DependentUpon>AddFriend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineMQ\SearchFriend.aspx.cs">
+      <DependentUpon>SearchFriend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlineMQ\SearchFriend.aspx.designer.cs">
+      <DependentUpon>SearchFriend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\SearchFriend.aspx.cs">
+      <DependentUpon>SearchFriend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\SearchFriend.aspx.designer.cs">
+      <DependentUpon>SearchFriend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperCluster\MQCardUploadControl.ascx.cs">
+      <DependentUpon>MQCardUploadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperCluster\MQCardUploadControl.ascx.designer.cs">
+      <DependentUpon>MQCardUploadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperCluster\MsgSearch.aspx.cs">
+      <DependentUpon>MsgSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperCluster\MsgSearch.aspx.designer.cs">
+      <DependentUpon>MsgSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperCluster\UserCardList.aspx.cs">
+      <DependentUpon>UserCardList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperCluster\UserCardList.aspx.designer.cs">
+      <DependentUpon>UserCardList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuperCluster\UserCardMode.aspx.cs">
+      <DependentUpon>UserCardMode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperCluster\UserCardMode.aspx.designer.cs">
+      <DependentUpon>UserCardMode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierInfo\PublishQiuGou.aspx.cs">
+      <DependentUpon>PublishQiuGou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierInfo\PublishQiuGou.aspx.designer.cs">
+      <DependentUpon>PublishQiuGou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierInfo\PublishSupplierInfo.aspx.cs">
+      <DependentUpon>PublishSupplierInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierInfo\PublishSupplierInfo.aspx.designer.cs">
+      <DependentUpon>PublishSupplierInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierInfo\SupplierInfoList.aspx.cs">
+      <DependentUpon>SupplierInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierInfo\SupplierInfoList.aspx.designer.cs">
+      <DependentUpon>SupplierInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket\517NATicket.aspx.cs">
+      <DependentUpon>517NATicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ticket\517NATicket.aspx.designer.cs">
+      <DependentUpon>517NATicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TourAgency\ExchangeTopic\AjaxSupplierInfo.aspx.cs">
+      <DependentUpon>AjaxSupplierInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TourAgency\ExchangeTopic\AjaxSupplierInfo.aspx.designer.cs">
+      <DependentUpon>AjaxSupplierInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TourAgency\ExchangeTopic\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TourAgency\ExchangeTopic\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TourAgency\TourManger\AjaxAreaList.aspx.cs">
+      <DependentUpon>AjaxAreaList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TourAgency\TourManger\AjaxAreaList.aspx.designer.cs">
+      <DependentUpon>AjaxAreaList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TourAgency\TourManger\AjaxSetAttention.aspx.cs">
+      <DependentUpon>AjaxSetAttention.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TourAgency\TourManger\AjaxSetAttention.aspx.designer.cs">
+      <DependentUpon>AjaxSetAttention.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TourAgency\TourManger\DropSiteAndCityList.ascx.cs">
+      <DependentUpon>DropSiteAndCityList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TourAgency\TourManger\DropSiteAndCityList.ascx.designer.cs">
+      <DependentUpon>DropSiteAndCityList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TourAgency\TourManger\MySettionCompany.aspx.cs">
+      <DependentUpon>MySettionCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TourAgency\TourManger\MySettionCompany.aspx.designer.cs">
+      <DependentUpon>MySettionCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TourAgency\TourManger\SetAttentionCompany.aspx.cs">
+      <DependentUpon>SetAttentionCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TourAgency\TourManger\SetAttentionCompany.aspx.designer.cs">
+      <DependentUpon>SetAttentionCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TourAgency\TourManger\TourAreaList.aspx.cs">
+      <DependentUpon>TourAreaList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TourAgency\TourManger\TourAreaList.aspx.designer.cs">
+      <DependentUpon>TourAreaList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TourAgency\TourOrder\AjaxAera.aspx.cs">
+      <DependentUpon>AjaxAera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TourAgency\TourOrder\AjaxAera.aspx.designer.cs">
+      <DependentUpon>AjaxAera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TourAgency\TourOrder\AjaxOrderTotal.aspx.cs">
+      <DependentUpon>AjaxOrderTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TourAgency\TourOrder\AjaxOrderTotal.aspx.designer.cs">
+      <DependentUpon>AjaxOrderTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TourAgency\TourOrder\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TourAgency\TourOrder\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\IMTop.ascx.cs">
+      <DependentUpon>IMTop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\IMTop.ascx.designer.cs">
+      <DependentUpon>IMTop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\ProvinceAndCityList.ascx.cs">
+      <DependentUpon>ProvinceAndCityList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\ProvinceAndCityList.ascx.designer.cs">
+      <DependentUpon>ProvinceAndCityList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\SingleFileUpload.ascx.cs">
+      <DependentUpon>SingleFileUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\SingleFileUpload.ascx.designer.cs">
+      <DependentUpon>SingleFileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\SiteSelect.ascx.cs">
+      <DependentUpon>SiteSelect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\SiteSelect.ascx.designer.cs">
+      <DependentUpon>SiteSelect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\SubAccount.ascx.cs">
+      <DependentUpon>SubAccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\SubAccount.ascx.designer.cs">
+      <DependentUpon>SubAccount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\TourAgencyMenu.ascx.cs">
+      <DependentUpon>TourAgencyMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\TourAgencyMenu.ascx.designer.cs">
+      <DependentUpon>TourAgencyMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Business\images\tongyejiaru.gif" />
+    <Content Include="Business\images\tongyeloge.gif" />
+    <Content Include="Business\images\tongyexianlubg.gif" />
+    <Content Include="Business\images\tongyexianlujinlu.gif" />
+    <Content Include="Business\Tongye114.html" />
+    <Content Include="Card\Default.aspx" />
+    <Content Include="Card\LookUserInfo.aspx" />
+    <Content Include="CommendCompany.aspx" />
+    <Content Include="EyouSoft\EyouSoft.html" />
+    <Content Include="EyouSoft\images\djlogin.gif" />
+    <Content Include="EyouSoft\images\gjlogin.gif" />
+    <Content Include="EyouSoft\images\yytgs.gif" />
+    <Content Include="EyouSoft\images\yytjs.gif" />
+    <Content Include="EyouSoft\images\yytlogo.gif" />
+    <Content Include="EyouSoft\images\yytsy.gif" />
+    <Content Include="EyouSoft\images\ztlogin.gif" />
+    <Content Include="LocalAgency\Main.aspx" />
+    <Content Include="LoginWeb.aspx" />
+    <Content Include="Msg.aspx" />
+    <Content Include="Register\Default.aspx" />
+    <Content Include="RouteAgency\Main.aspx" />
+    <Content Include="RouteAgency\Main.html" />
+    <Content Include="RouteAgency\TourManger\AjaxSetUser.aspx" />
+    <Content Include="RouteAgency\TourManger\Default.aspx" />
+    <Content Include="RouteAgency\TourManger\SetUser.aspx" />
+    <Content Include="RouteAgency\TourOrder\AjaxOrderList.aspx" />
+    <Content Include="RouteAgency\TourOrder\Default.aspx" />
+    <Content Include="OnlineMQ\AddFriend.aspx" />
+    <Content Include="Search\Default.aspx" />
+    <Content Include="OnlineMQ\SearchFriend.aspx" />
+    <Content Include="Ticket\517NATicket.aspx" />
+    <Content Include="Ticket\517NATicketlib\jquery-1.3.2.min.js" />
+    <Content Include="Ticket\517NATicketlib\jquery.autocomplete.css" />
+    <Content Include="Ticket\517NATicketlib\jquery.autocomplete.ticket.js" />
+    <Content Include="Ticket\517NATicketlib\jquery.js" />
+    <Content Include="Ticket\517NATicketlib\ticket.core.js" />
+    <Content Include="Ticket\517NATicketlib\ticket.LKE.data.js" />
+    <Content Include="Ticket\517NATicketlib\ticket.LKE.data.temp.20100416.js" />
+    <Content Include="TourAgency\ExchangeTopic\Default.aspx" />
+    <Content Include="TourAgency\TourManger\AjaxAreaList.aspx" />
+    <Content Include="TourAgency\TourManger\AjaxSetAttention.aspx" />
+    <Content Include="TourAgency\TourManger\DropSiteAndCityList.ascx" />
+    <Content Include="TourAgency\TourManger\MySettionCompany.aspx" />
+    <Content Include="TourAgency\TourManger\SetAttentionCompany.aspx" />
+    <Content Include="TourAgency\TourManger\TourAreaList.aspx" />
+    <Content Include="TourAgency\TourOrder\AjaxAera.aspx" />
+    <Content Include="TourAgency\TourOrder\AjaxOrderTotal.aspx" />
+    <Content Include="TourAgency\TourOrder\Default.aspx" />
+    <Content Include="WebControls\IMTop.ascx" />
+    <Content Include="WebControls\SiteSelect.ascx" />
+    <Content Include="WebControls\SubAccount.ascx" />
+    <Content Include="WebControls\TourAgencyMenu.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlLibrary\ControlLibrary.csproj">
+      <Project>{13F4FD7D-AB65-4D54-A1C4-8174F5F4496F}</Project>
+      <Name>ControlLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Common\EyouSoft.Function.Common.csproj">
+      <Project>{8F83F92A-AC73-4736-9449-EF69355C98B1}</Project>
+      <Name>EyouSoft.Function.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.ControlCommon\EyouSoft.ControlCommon.csproj">
+      <Project>{DC008DC6-F54A-4929-AD57-1059315B7602}</Project>
+      <Name>EyouSoft.ControlCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Security.Membership\EyouSoft.Security.Membership.csproj">
+      <Project>{22692765-6207-4393-BCB1-622491BC8E59}</Project>
+      <Name>EyouSoft.Security.Membership</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\IBLL.Configuration.xml" />
+    <Content Include="Config\IDAL.Configuration.xml" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\ReminderEmail\AddFriendEmail.xml" />
+    <Content Include="App_Data\ReminderEmail\OrderEmail.xml" />
+    <Content Include="App_Data\ReminderEmail\RegPassEmail.xml" />
+    <Content Include="Config\memcached.config" />
+    <Content Include="DatePicker\calendar.js" />
+    <Content Include="DatePicker\config.js" />
+    <Content Include="DatePicker\DatePicker.htm" />
+    <Content Include="DatePicker\lang\en.js" />
+    <Content Include="DatePicker\lang\zh-cn.js" />
+    <Content Include="DatePicker\lang\zh-tw.js" />
+    <Content Include="DatePicker\skin\datePicker.gif" />
+    <Content Include="DatePicker\skin\default\datepicker.css" />
+    <Content Include="DatePicker\skin\default\img.gif" />
+    <Content Include="DatePicker\skin\WdatePicker.css" />
+    <Content Include="DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="DatePicker\WdatePicker.js" />
+    <Content Include="DLL\EyouSoft.ProceFlow.dll" />
+    <Content Include="DLL\Newtonsoft.Json.Net20.dll" />
+    <Content Include="EShop.aspx" />
+    <Content Include="EyouSoft\EyouGoto.aspx" />
+    <Content Include="EyouSoft\images\allimg.gif" />
+    <Content Include="EyouSoft\images\bj01.gif" />
+    <Content Include="EyouSoft\images\bj02.gif" />
+    <Content Include="EyouSoft\images\softui_03.gif" />
+    <Content Include="EyouSoft\images\softui_05.gif" />
+    <Content Include="EyouSoft\EyouSoftFunc.aspx" />
+    <Content Include="EyouSoft\images\x.gif" />
+    <Content Include="EyouSoft\images\yytbj.gif" />
+    <Content Include="EyouSoft\js\jquery-1.4.4-min.js" />
+    <Content Include="FalseLogin.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Hotel\AjaxOrderSearch.aspx" />
+    <Content Include="Hotel\HotelSearch.aspx" />
+    <Content Include="Hotel\OrderSearch.aspx" />
+    <Content Include="LocalAgency\AjaxDeleteRoute.aspx" />
+    <Content Include="LocalAgency\AjaxMain.aspx" />
+    <Content Include="MQMainPanelAdv.aspx" />
+    <Content Include="MqNotice\Notice.aspx" />
+    <Content Include="MqNotice\Radio.aspx" />
+    <Content Include="MQTransit.aspx" />
+    <Content Include="RouteAgency\TourOrder\IMOrderList.aspx" />
+    <Content Include="Search\AddFriend.aspx" />
+    <Content Include="Search\SearchFriend.aspx" />
+    <Content Include="SuperCluster\MQCardUploadControl.ascx" />
+    <Content Include="SuperCluster\MsgSearch.aspx" />
+    <Content Include="SuperCluster\UserCardList.aspx" />
+    <Content Include="SuperCluster\UserCardMode.aspx" />
+    <Content Include="SupplierInfo\PublishQiuGou.aspx" />
+    <Content Include="SupplierInfo\PublishSupplierInfo.aspx" />
+    <Content Include="SupplierInfo\SupplierInfoList.aspx" />
+    <Content Include="swfupload\swfupload.swf" />
+    <Content Include="Ticket\机票帮助.html" />
+    <Content Include="TourAgency\ExchangeTopic\AjaxSupplierInfo.aspx" />
+    <Content Include="WebControls\ProvinceAndCityList.ascx" />
+    <Content Include="WebControls\SingleFileUpload.ascx" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DownLoad\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>30007</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,158 @@
+﻿
+/*****************ordermanage begin******************/
+.clearboth{
+	clear:both;
+}
+.admin_right{
+	float:left;
+	width:835px;
+	margin:10px 0 0 5px;
+}
+.sub_leftmenu{
+	margin:0;
+	padding:0;
+}
+.sub_leftmenu li{
+	float:left;
+	background:url(/images/jipiao/btn02.jpg) no-repeat 0 0;
+	width:98px;
+	height:32px;
+	line-height:33px;
+	margin:0 0 0 20px;
+	padding:0;
+}
+.sub_leftmenu li a{
+	display:block;
+	background:url(/images/jipiao/btn02.jpg) no-repeat 0 0;
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+}
+.sub_leftmenu li a:hover{
+	display:block;
+	background:url(/images/jipiao/btn02_default.jpg) no-repeat 0 0;
+	color:#FFFFFF;
+}
+.sub_leftmenu li a.book_default{
+	display:block;
+	background:url(/images/jipiao/btn02_default.jpg) no-repeat 0 0;
+	color:#FFFFFF;
+}
+.admin_tablebox{
+	border:1px #9ccbff solid;
+	margin:10px 0 0 0;
+	text-align:left;
+}
+.admin_tablebox01{
+	border:1px #9ccbff solid;
+	margin:5px 0 0 0;
+	text-align:left;
+	padding:0;
+}
+.flight_info{
+	border:1px #075586 solid;
+	text-align:left;
+	width:835px;
+	margin:20px 0 0 0;
+	padding:0 0 15px 0;
+}
+.Passenger_info{
+	border:1px #075586 solid;
+	text-align:left;
+	margin-top:20px;
+	padding:0 0 10px 0;
+	width:835px;
+}
+.info_Title{
+	display:block;
+	width:140px;
+	line-height:20px;
+	background:#FFFFFF;
+	position:relative;
+	text-align:center;
+	top:-8px;
+	left:20px;
+	font-size:14px;
+	color:#ff7300;
+	font-weight:bold;
+}
+.Img{
+	vertical-align:top;
+	margin:-10px 8px 0 0;
+}
+.userInfo{
+	border:1px #7dabd8 solid;
+	margin-top:10px;
+}
+.number_btn{
+	font-family:14px;
+	color:#074263;
+	font-weight:bold;
+	display:block;
+	background:url(/images/jipiao/nubmer_btn_bg.jpg) no-repeat;
+	width:57px;
+	height:23px;
+	line-height:23px;
+}
+.text{
+	font-size:14px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.text a{
+	font-size:14px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.float_info{
+	position:absolute;
+	top:350px;
+	left:300px;
+	z-index:1;
+}
+.title{
+	font-size:14px; 
+	font-weight:bold;
+	color:#0657B2; 
+	text-indent:20px;
+	display:block;
+
+}
+.zhechebz{
+	font-weight:bold;
+	color:#FF0000;
+	text-align:left;
+	margin-left:8px;
+}
+
+.orderform_state{
+	color:#FF0000;
+	font-weight:bold;
+	background:#ffffff;
+	}
+/*****************ordermanage end******************/
+
+/******************airadd begin*******************/
+
+.contact_text{
+	height:30px;
+	border:1px #99ccff solid;
+	background:#eef7ff;
+	margin:10px auto 0 auto;
+	
+	text-align:left;
+	text-indent:10px;
+	padding-top:7px;
+}
+.contact_text span{
+	margin-right:220px;
+}
+.contact_text em{
+	font-size:14px;
+	font-weight:bold;
+	color:#ff6e00;
+	font-style:normal;
+	margin-left:15px;
+}
+
+/******************airadd end*******************/

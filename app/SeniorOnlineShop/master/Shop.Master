@@ -1,0 +1,285 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Shop.master.cs" Inherits="SeniorOnlineShop.master.Shop" %>
+<%@ Import Namespace="EyouSoft.Common" %>
+<%@ Import Namespace="EyouSoft.Common.URLREWRITE" %>
+<%@ Register Src="~/usercontrol/ShopHead.ascx" TagName="ShopHead" TagPrefix="uc1" %>
+<%@ Register src="../usercontrol/ShopFooter.ascx" tagname="ShopFooter" tagprefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+   <title>同业网店</title>
+    <style type="text/css">
+    /*wanggp*/
+    .Obtn {	MARGIN-TOP: 104px; WIDTH: 25px; BACKGROUND: url(../images/img3-5_1.gif) no-repeat; FLOAT: left; HEIGHT: 150px; MARGIN-LEFT: -1px}
+    .boxgrid{ width:640px; height: 180px;float:left; background:#161613; border: solid 2px #8399AF; overflow: hidden; position: relative; }
+    .boxgrid h3 { font-size:30px;}
+    .boxcaption{ float: left; position: absolute; background: #BBE1F3;height: 180px; width: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);}
+    .captionfull .boxcaption { top: 100; left: 0;}
+    .boxgrid2{ width:315px; height: 180px;float:left; background:#161613; border: solid 2px #8399AF; overflow: hidden; position: relative; }
+    .boxgrid2 h3 { font-size:30px; line-height:30px;}
+    .boxcaption2{ float: left; position: absolute; background: #BBE1F3;height: 180px; width: 100%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);}
+    .infocfull .boxcaption2 { top: 100; left: 0;}
+    .head {
+    background: url("http://localhost:30001/images/new2011/index/topBg.gif") no-repeat scroll right bottom transparent;
+    height: auto;
+    margin: 0 auto;
+    width: 970px;
+}
+.card-companyname a{color: #CD500C;
+    float: left;
+    font-family: "黑体","宋体";
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 318px;}
+.xinright_c {float: left;height: 70px;padding: 0 10px; width: 298px;}
+.xinrightlogo {
+    border: 1px solid #EEEEEE;
+    float: left;
+    margin-right: 10px;
+}
+.xinrightwenzi {
+    float: left;
+    line-height: 22px;
+    text-align:left;
+}
+.xinlv {
+    color: #75A734;
+    font-weight: bold;
+}
+.xinright_b {
+    float: left;
+    height: 70px;
+    padding: 10px 10px 0;
+    width: 298px;
+}
+.xinright_b li {
+    float: left;
+    line-height: 20px;
+    list-style-type: none;
+    width: 149px;
+    text-align:left;
+}
+.xinright_b .xindizhi {
+    float: left;
+    width: 298px;
+}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="top">
+        <uc1:ShopHead ID="ShopHead2" runat="server" />
+    </div>
+    <div class="head">
+    <!--masthead start-->
+    <div class="masthead">
+        <div class="tongye-logo">
+            <a href="<%=SubStation.CityUrlRewrite(CityId) %>">
+                <img src="<%=UnionLogo %>" width="155px" height="57px" alt="同业114" /></a></div>
+        <div class="weather-city"> 
+            <span class="weather-city-name">
+                <asp:Label ID="labCityName" runat="server"></asp:Label></span><span id="s_wea"></span>
+            
+            <div class="tocity-list"><a href="<%=Domain.UserPublicCenter %>/ToCutCity.aspx?Index=<%=HeadMenuIndex %>">[切换城市]</a>
+            热点：<a href="<%=SubStation.CityUrlRewrite(19) %>">北京</a>&nbsp;&nbsp;<a href="<%=SubStation.CityUrlRewrite(48) %>">广州</a>&nbsp;&nbsp;<a
+                href="<%=SubStation.CityUrlRewrite(362) %>">杭州</a>&nbsp;&nbsp;<a href="<%=SubStation.CityUrlRewrite(292) %>">上海</a>&nbsp;&nbsp;<a
+                    href="<%=SubStation.CityUrlRewrite(192) %>">南京</a>&nbsp;&nbsp;<a href="<%=SubStation.CityUrlRewrite(257) %>">济南</a>&nbsp;&nbsp;<a
+                        href="<%=SubStation.CityUrlRewrite(367) %>">宁波</a>&nbsp;&nbsp;<a href="<%=SubStation.CityUrlRewrite(352) %>">昆明</a>&nbsp;&nbsp;<a
+                            href="<%=SubStation.CityUrlRewrite(225) %>">沈阳</a></div>
+            <div class="download" >
+                <img src="<%=ImageServerPath %>/images/new2011/index/MQdownload.gif" alt="MQ下载" border="0"
+                    usemap="#Map" />
+                <map name="Map" id="Map">
+                    <area shape="rect" coords="-1,1,154,48" href="http://im.tongye114.com/" target="_blank" />
+                    <area shape="rect" coords="156,1,249,52" href="http://im.tongye114.com/IM/DownLoad/download.aspx"
+                        target="_blank" />
+                </map>
+            </div>
+        </div>
+        <!--masthead end-->
+        <div class="hr_10">
+        </div>
+        <!--nav start-->
+        <div class="nav fixed">
+            <ul id="headMenu">
+                <li><a  runat="server" id="menu1">首页</a></li>
+                <li><a  runat="server" id="menu2">线路</a></li>
+                <li><a  runat="server" id="menu3"  target="_blank" href="/AirTickets/TicketNew.aspx">机票</a></li>
+                <li><a  runat="server" id="menu4">酒店</a></li>
+                <li><a  runat="server" id="menu5">景区</a></li>
+            
+                <li><a  runat="server" id="menu6">供求</a></li>
+                <li><a  runat="server" id="menu7">资讯</a></li>
+            </ul>
+            <a href="http://im.tongye114.com/" target="_blank" class="mq-links">同业MQ，让您的生意做的更精彩！</a>
+        </div>
+        <!--nav end-->
+        <div class="Notice fixed">
+            <p class="Notice-L">
+                <s class="Notice-icon"></s>同业114现共有采购商 <b><font color="#FFFF00">
+                    <asp:Literal ID="litBuy" runat="server"></asp:Literal></font></b> 供应商 <b><font color="#FFFF00">
+                        <asp:Literal ID="litSup" runat="server"></asp:Literal></font></b> 近期供求 <b><font color="#FFFF00">
+                            <asp:Literal ID="litNum" runat="server"></asp:Literal></font></b>
+            </p>
+            <div class="Notice-R fixed">
+                <span class="Notice-R-title"><s class="Notice-icon02"></s><b>公告：</b></span>
+                    <ul class="scroll_state">
+                        <%=noticeHtml%>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <table width="970" border="0" align="center" cellpadding="0" cellspacing="0" class="margin10">
+      <tr>
+        <td width="647" align="left" valign="top">
+          <img src="http://localhost:30001/images/shop/shopnopic.gif" width="652" height="180" />
+        </td>
+        <td width="323" valign="top">		
+          <table width="318" height="182" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="top">
+			        <div class="card-companyname"><a href="#"><asp:Literal ID="ltr_CompanyName" runat="server">杭州美景国际旅行社有限公司</asp:Literal></a></div>			
+			        <div class="xinright_c">
+             <div class="xinrightlogo"><img width="95" height="62" src="http://localhost:30001/images/shop/putong_02.jpg"></div>
+             <div class="xinrightwenzi">
+          品牌名称：<span class="xinlv"><asp:Literal
+        ID="ltr_BrandName" runat="server">魅力华东</asp:Literal></span><br>
+                销售地区：<asp:Literal ID="ltr_SaleArea" runat="server">杭州 </asp:Literal> <br>
+                公司类型：<asp:Literal ID="ltr_CompanyType" runat="server">组团社 地接社 地接社</asp:Literal>
+             </div>
+           </div>
+           <div class="xinright_b">
+           <li><strong>联系人：</strong><asp:Literal ID="ltr_LinkPerson" runat="server">张敏</asp:Literal></li>
+           <li><strong>电  话：</strong><asp:Literal ID="ltr_Phone" runat="server">0571—86494121</asp:Literal></li>
+     <li><strong>手  机：</strong><asp:Literal ID="ltr_Mobel" runat="server">0571—86494121</asp:Literal></li>
+           <li><strong>传真：</strong><asp:Literal ID="ltr_Faxs" runat="server">0571—86494121</asp:Literal></li>
+           <li class="xindizhi"><strong>地址：</strong><asp:Literal ID="ltr_Address" runat="server">杭州下城区沈家路杭钢4-1-201</asp:Literal></li></div>
+
+			        </td>
+                  </tr>
+                </table> 
+      	        </td>
+              </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="footer">
+    	<div class="footer-nav-bd">
+        	<uc2:ShopFooter ID="ShopFooter1" runat="server" />
+         </div>
+    </div>
+    </form>
+    <script type="text/javascript">
+    //前台网站栏目选中JS index:索引  从1开始(首页，线路....)
+    var CityControl = {
+        MenuSelected: function(Index) {
+            $($("#header .menu").find("li").get(Index-1)).addClass("on");
+        }
+    };
+    
+$(document).ready(function(){
+//隔行,滑动,点击 变色.+ 单选框选中的行 变色:
+$('.liststyle tbody tr:even').addClass('odd');
+	$('.liststyle tbody tr').hover(
+		function() {$(this).addClass('highlight');},
+		function() {$(this).removeClass('highlight');}
+	);
+
+	// 如果单选框默认情况下是选择的，变色.
+	$('.liststyle input[type="radio"]:checked').parents('tr').addClass('selected');
+	
+	// 单选框
+	$('.liststyle tbody tr').click(
+		function() {
+			$(this).siblings().removeClass('selected');
+			$(this).addClass('selected');
+			$(this).find('input[type="radio"]').attr('checked','checked');
+		}
+	);
+$("#imgDate").mouseover(function(){$("#div_showList2").load("date.html").show().mouseout(function(){$("#div_showList2").hide();});});
+//$("#div_showList2").mouseout(function(){$("#div_showList2").hide();});
+});
+</script>
+<script type="text/javascript">
+			$(document).ready(function(){
+				$('.boxgrid.captionfull').hover(function(){
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:150});
+				}, function() {
+					$(".cover", this).stop().animate({top:'150px'},{queue:false,duration:150});
+				});
+				//
+				$('.boxgrid2.infocfull').hover(function(){
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:150});
+				}, function() {
+					$(".cover", this).stop().animate({top:'150px'},{queue:false,duration:150});
+				});
+			
+			});
+
+
+</script>
+
+<script type="text/javascript" src="<%=JsManage.GetJsFilePath("Switchable") %>"></script>
+<script type="text/javascript">
+  $(function() {
+            var _wrap = $('ul.scroll_state');
+            var _interval = 2000;
+            var _moving;
+            _wrap.hover(function() {
+                clearInterval(_moving);
+            }, function() {
+                _moving = setInterval(function() {
+                    var _field = _wrap.find('li:first');
+                    var _h = _field.height();
+                    _field.animate({ marginTop: -_h + 'px' }, 600, function() {
+                        _field.css('marginTop', 0).appendTo(_wrap);
+                    })
+                }, _interval)
+            }).trigger('mouseleave');
+            
+        });
+function GetWeather(){
+    $.ajax(
+	       { 
+	         url:"/usercontrol/GetWeather.ashx",
+	         data:"cityname=<%=CityName %>&method=save",
+             dataType:"html",
+             cache:false,
+             async:true,
+             type:"get",
+             success:function(result){ 
+                 $("#s_wea").html(result);
+             },
+             error:function(){ alert("sas"); }
+	       });
+	      
+}
+
+$(function(){
+    if(<%=HeadMenuIndex %>>0){
+          if(<%=HeadMenuIndex %> ==10)
+                $("#eare").css("marginTop","16px");
+           }
+          if($.browser.msie){
+            if(parseFloat($.browser.version)<=6){
+                try{
+                    document.execCommand('BackgroundImageCache', false, true);
+                }catch(e){
+                }
+            }   
+        }
+        <%if(!(HeadMenuIndex == 6)){ %>
+        //获取天气
+        setTimeout(GetWeather,2000);<%} %>
+         
+        });
+       
+</script>
+</body>
+</html>

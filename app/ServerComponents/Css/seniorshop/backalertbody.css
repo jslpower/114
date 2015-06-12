@@ -1,0 +1,18 @@
+﻿body {
+    margin: 0px; font-size:12px;
+}
+.left1{ background:#BFDAF8; color:#074263; border-bottom:1px solid #A5ADC4; border-top:1px solid #fff; height:26px; text-align:right; font-weight:bold;}.right1{ background:#fff; border-bottom:1px solid #A5ADC4; }
+.left1 span
+{
+  color:Red;
+}
+.kuang{ border:1px solid #A5ADC4;}
+ .hang
+{
+    background: url(/Images/detail_list_th.gif) repeat-x;
+    text-align: center;
+    color: #074263;
+    font-weight: bold;
+    height: 18px;
+    padding-top: 5px;
+}

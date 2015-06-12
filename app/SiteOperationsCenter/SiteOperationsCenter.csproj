@@ -1,0 +1,2406 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88109441-D80A-4787-9DA6-90A919FDD384}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiteOperationsCenter</RootNamespace>
+    <AssemblyName>SiteOperationsCenter</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EyouSoft.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.HotelBI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.HotelBI.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.IBLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.IBLL.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Net20, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UserPublicCenter\bin\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenFlashChart, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DatePicker\calendar.js" />
+    <Content Include="DatePicker\config.js" />
+    <Content Include="DatePicker\DatePicker.htm" />
+    <Content Include="DatePicker\lang\en.js" />
+    <Content Include="DatePicker\lang\zh-cn.js" />
+    <Content Include="DatePicker\lang\zh-tw.js" />
+    <Content Include="DatePicker\skin\datePicker.gif" />
+    <Content Include="DatePicker\skin\default\datepicker.css" />
+    <Content Include="DatePicker\skin\default\img.gif" />
+    <Content Include="DatePicker\skin\WdatePicker.css" />
+    <Content Include="DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="DatePicker\WdatePicker.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="PlatformManagement\BasicDataManage.aspx" />
+    <Content Include="PlatformManagement\BasicInfoManagement.aspx" />
+    <Content Include="PlatformManagement\LinksInfo.aspx" />
+    <Content Include="PlatformManagement\PartnersInfo.aspx" />
+    <Content Include="PlatformManagement\SalesRegionManage.aspx" />
+    <Content Include="PlatformManagement\UniversalLineManage.aspx" />
+    <Content Include="usercontrol\SingleFileUpload.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdManagement\AddPhotoAd.aspx.cs">
+      <DependentUpon>AddPhotoAd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\AddPhotoAd.aspx.designer.cs">
+      <DependentUpon>AddPhotoAd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdManagement\AddPhotoWritingAd.aspx.cs">
+      <DependentUpon>AddPhotoWritingAd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\AddPhotoWritingAd.aspx.designer.cs">
+      <DependentUpon>AddPhotoWritingAd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdManagement\AddUnitAd.aspx.cs">
+      <DependentUpon>AddUnitAd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\AddUnitAd.aspx.designer.cs">
+      <DependentUpon>AddUnitAd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdManagement\AddWritingAd.aspx.cs">
+      <DependentUpon>AddWritingAd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\AddWritingAd.aspx.designer.cs">
+      <DependentUpon>AddWritingAd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdManagement\AdManageHome.aspx.cs">
+      <DependentUpon>AdManageHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\AdManageHome.aspx.designer.cs">
+      <DependentUpon>AdManageHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdManagement\AjaxAdSort.aspx.cs">
+      <DependentUpon>AjaxAdSort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\AjaxAdSort.aspx.designer.cs">
+      <DependentUpon>AjaxAdSort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdManagement\CompanyListSelect.aspx.cs">
+      <DependentUpon>CompanyListSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\CompanyListSelect.aspx.designer.cs">
+      <DependentUpon>CompanyListSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdManagement\PhotoAdList.aspx.cs">
+      <DependentUpon>PhotoAdList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\PhotoAdList.aspx.designer.cs">
+      <DependentUpon>PhotoAdList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdManagement\PhotoWritingAdList.aspx.cs">
+      <DependentUpon>PhotoWritingAdList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\PhotoWritingAdList.aspx.designer.cs">
+      <DependentUpon>PhotoWritingAdList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdManagement\RecommendProductList.aspx.cs">
+      <DependentUpon>RecommendProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\RecommendProductList.aspx.designer.cs">
+      <DependentUpon>RecommendProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdManagement\SanPinCenterNormalList.aspx.cs">
+      <DependentUpon>SanPinCenterNormalList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\SanPinCenterNormalList.aspx.designer.cs">
+      <DependentUpon>SanPinCenterNormalList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdManagement\UnitAdList.aspx.cs">
+      <DependentUpon>UnitAdList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\UnitAdList.aspx.designer.cs">
+      <DependentUpon>UnitAdList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdManagement\WritingAdList.aspx.cs">
+      <DependentUpon>WritingAdList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManagement\WritingAdList.aspx.designer.cs">
+      <DependentUpon>WritingAdList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdvertiseTicket\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdvertiseTicket\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdvertiseTicket\EditTicketMessage.aspx.cs">
+      <DependentUpon>EditTicketMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdvertiseTicket\EditTicketMessage.aspx.designer.cs">
+      <DependentUpon>EditTicketMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirTicktManage\AirTicketItemInfo.aspx.cs">
+      <DependentUpon>AirTicketItemInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AirTicktManage\AirTicketItemInfo.aspx.designer.cs">
+      <DependentUpon>AirTicketItemInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirTicktManage\AirTicketItemList.aspx.cs">
+      <DependentUpon>AirTicketItemList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AirTicktManage\AirTicketItemList.aspx.designer.cs">
+      <DependentUpon>AirTicketItemList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirTicktManage\TourTeamApplyDetails.aspx.cs">
+      <DependentUpon>TourTeamApplyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AirTicktManage\TourTeamApplyDetails.aspx.designer.cs">
+      <DependentUpon>TourTeamApplyDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirTicktManage\TourTeamApplyList.aspx.cs">
+      <DependentUpon>TourTeamApplyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AirTicktManage\TourTeamApplyList.aspx.designer.cs">
+      <DependentUpon>TourTeamApplyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\AddBusinessMemeber.aspx.cs">
+      <DependentUpon>AddBusinessMemeber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\AddBusinessMemeber.aspx.designer.cs">
+      <DependentUpon>AddBusinessMemeber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\AddPersonalMember.aspx.cs">
+      <DependentUpon>AddPersonalMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\AddPersonalMember.aspx.designer.cs">
+      <DependentUpon>AddPersonalMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\AjaxBusinessMemeberList.aspx.cs">
+      <DependentUpon>AjaxBusinessMemeberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\AjaxBusinessMemeberList.aspx.designer.cs">
+      <DependentUpon>AjaxBusinessMemeberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\AjaxPersonalMemberList.aspx.cs">
+      <DependentUpon>AjaxPersonalMemberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\AjaxPersonalMemberList.aspx.designer.cs">
+      <DependentUpon>AjaxPersonalMemberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\BusinessMemeberList.aspx.cs">
+      <DependentUpon>BusinessMemeberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\BusinessMemeberList.aspx.designer.cs">
+      <DependentUpon>BusinessMemeberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\PersonalMemberList.aspx.cs">
+      <DependentUpon>PersonalMemberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\PersonalMemberList.aspx.designer.cs">
+      <DependentUpon>PersonalMemberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\SetGoogleMap.aspx.cs">
+      <DependentUpon>SetGoogleMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\SetGoogleMap.aspx.designer.cs">
+      <DependentUpon>SetGoogleMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\UpdatePersonalMember.aspx.cs">
+      <DependentUpon>UpdatePersonalMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\UpdatePersonalMember.aspx.designer.cs">
+      <DependentUpon>UpdatePersonalMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\AddLine.aspx.cs">
+      <DependentUpon>AddLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\AddLine.aspx.designer.cs">
+      <DependentUpon>AddLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\AjaxFitList.aspx.cs">
+      <DependentUpon>AjaxFitList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\AjaxFitList.aspx.designer.cs">
+      <DependentUpon>AjaxFitList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\AjaxFitStatistics.aspx.cs">
+      <DependentUpon>AjaxFitStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\AjaxFitStatistics.aspx.designer.cs">
+      <DependentUpon>AjaxFitStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\AjaxLineDetaile.aspx.cs">
+      <DependentUpon>AjaxLineDetaile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\AjaxLineDetaile.aspx.designer.cs">
+      <DependentUpon>AjaxLineDetaile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\AjaxLineList.aspx.cs">
+      <DependentUpon>AjaxLineList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\AjaxLineList.aspx.designer.cs">
+      <DependentUpon>AjaxLineList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\AjaxScatteredfightList.aspx.cs">
+      <DependentUpon>AjaxScatteredfightList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\AjaxScatteredfightList.aspx.designer.cs">
+      <DependentUpon>AjaxScatteredfightList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\AjaxTeamLineList.aspx.cs">
+      <DependentUpon>AjaxTeamLineList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\AjaxTeamLineList.aspx.designer.cs">
+      <DependentUpon>AjaxTeamLineList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\AjaxTeamorderManage.aspx.cs">
+      <DependentUpon>AjaxTeamorderManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\AjaxTeamorderManage.aspx.designer.cs">
+      <DependentUpon>AjaxTeamorderManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\AreaSelect.aspx.cs">
+      <DependentUpon>AreaSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\AreaSelect.aspx.designer.cs">
+      <DependentUpon>AreaSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\FitList.aspx.cs">
+      <DependentUpon>FitList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\FitList.aspx.designer.cs">
+      <DependentUpon>FitList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\FitOrderDetail.aspx.cs">
+      <DependentUpon>FitOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\FitOrderDetail.aspx.designer.cs">
+      <DependentUpon>FitOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\FitStatistics.aspx.cs">
+      <DependentUpon>FitStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\FitStatistics.aspx.designer.cs">
+      <DependentUpon>FitStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\LineList.aspx.cs">
+      <DependentUpon>LineList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\LineList.aspx.designer.cs">
+      <DependentUpon>LineList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\OrderMsgManage.aspx.cs">
+      <DependentUpon>OrderMsgManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\OrderMsgManage.aspx.designer.cs">
+      <DependentUpon>OrderMsgManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\QueryTour.aspx.cs">
+      <DependentUpon>QueryTour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\QueryTour.aspx.designer.cs">
+      <DependentUpon>QueryTour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\RouteAgency\AddOrderByRoute.aspx.cs">
+      <DependentUpon>AddOrderByRoute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\RouteAgency\AddOrderByRoute.aspx.designer.cs">
+      <DependentUpon>AddOrderByRoute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\RouteAgency\NewOrders.aspx.cs">
+      <DependentUpon>NewOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\RouteAgency\NewOrders.aspx.designer.cs">
+      <DependentUpon>NewOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\RouteAgency\OrderStateUpdate.aspx.cs">
+      <DependentUpon>OrderStateUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\RouteAgency\OrderStateUpdate.aspx.designer.cs">
+      <DependentUpon>OrderStateUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\ScatteredfightList.aspx.cs">
+      <DependentUpon>ScatteredfightList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\ScatteredfightList.aspx.designer.cs">
+      <DependentUpon>ScatteredfightList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\ServiceStandardList.aspx.cs">
+      <DependentUpon>ServiceStandardList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\ServiceStandardList.aspx.designer.cs">
+      <DependentUpon>ServiceStandardList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\SetLeaveCity.aspx.cs">
+      <DependentUpon>SetLeaveCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\SetLeaveCity.aspx.designer.cs">
+      <DependentUpon>SetLeaveCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\SetTourNo.aspx.cs">
+      <DependentUpon>SetTourNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\SetTourNo.aspx.designer.cs">
+      <DependentUpon>SetTourNo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\TeamAdd.aspx.cs">
+      <DependentUpon>TeamAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\TeamAdd.aspx.designer.cs">
+      <DependentUpon>TeamAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\TeamorderDetail.aspx.cs">
+      <DependentUpon>TeamorderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\TeamorderDetail.aspx.designer.cs">
+      <DependentUpon>TeamorderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\TeamorderManage.aspx.cs">
+      <DependentUpon>TeamorderManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\TeamorderManage.aspx.designer.cs">
+      <DependentUpon>TeamorderManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\TeamplanList.aspx.cs">
+      <DependentUpon>TeamplanList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\TeamplanList.aspx.designer.cs">
+      <DependentUpon>TeamplanList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\TourDescription.aspx.cs">
+      <DependentUpon>TourDescription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\TourDescription.aspx.designer.cs">
+      <DependentUpon>TourDescription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LineManage\UpdateScatteredFightPlan.aspx.cs">
+      <DependentUpon>UpdateScatteredFightPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LineManage\UpdateScatteredFightPlan.aspx.designer.cs">
+      <DependentUpon>UpdateScatteredFightPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCenterControl\AjaxGetInformationList.aspx.cs">
+      <DependentUpon>AjaxGetInformationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCenterControl\AjaxGetInformationList.aspx.designer.cs">
+      <DependentUpon>AjaxGetInformationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCenterControl\EditInformation.aspx.cs">
+      <DependentUpon>EditInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCenterControl\EditInformation.aspx.designer.cs">
+      <DependentUpon>EditInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCenterControl\InformationIndustry.aspx.cs">
+      <DependentUpon>InformationIndustry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCenterControl\InformationIndustry.aspx.designer.cs">
+      <DependentUpon>InformationIndustry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\AddLineArea.aspx.cs">
+      <DependentUpon>AddLineArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\AddLineArea.aspx.designer.cs">
+      <DependentUpon>AddLineArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\UpdateLineArea.aspx.cs">
+      <DependentUpon>UpdateLineArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\UpdateLineArea.aspx.designer.cs">
+      <DependentUpon>UpdateLineArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintPage\TouristInfo.aspx.cs">
+      <DependentUpon>TouristInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintPage\TouristInfo.aspx.designer.cs">
+      <DependentUpon>TouristInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScenicManage\AjaxAll.ashx.cs">
+      <DependentUpon>AjaxAll.ashx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\AjaxGetCompanyList.aspx.cs">
+      <DependentUpon>AjaxGetCompanyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\AjaxGetCompanyList.aspx.designer.cs">
+      <DependentUpon>AjaxGetCompanyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\AjaxGetRegisterCompanyaspx.aspx.cs">
+      <DependentUpon>AjaxGetRegisterCompanyaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\AjaxGetRegisterCompanyaspx.aspx.designer.cs">
+      <DependentUpon>AjaxGetRegisterCompanyaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\CompanyCreditList.aspx.cs">
+      <DependentUpon>CompanyCreditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\CompanyCreditList.aspx.designer.cs">
+      <DependentUpon>CompanyCreditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\CompanySaleCity.aspx.cs">
+      <DependentUpon>CompanySaleCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\CompanySaleCity.aspx.designer.cs">
+      <DependentUpon>CompanySaleCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\CompanyTourArea.aspx.cs">
+      <DependentUpon>CompanyTourArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\CompanyTourArea.aspx.designer.cs">
+      <DependentUpon>CompanyTourArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\EditCompany.aspx.cs">
+      <DependentUpon>EditCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\EditCompany.aspx.designer.cs">
+      <DependentUpon>EditCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\LoginDetail.aspx.cs">
+      <DependentUpon>LoginDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\LoginDetail.aspx.designer.cs">
+      <DependentUpon>LoginDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\OtherAllSaleCity.aspx.cs">
+      <DependentUpon>OtherAllSaleCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\OtherAllSaleCity.aspx.designer.cs">
+      <DependentUpon>OtherAllSaleCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\OtherCompany.aspx.cs">
+      <DependentUpon>OtherCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\OtherCompany.aspx.designer.cs">
+      <DependentUpon>OtherCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManage\RegisterCompany.aspx.cs">
+      <DependentUpon>RegisterCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManage\RegisterCompany.aspx.designer.cs">
+      <DependentUpon>RegisterCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerManage\AjaxByCustomerType.aspx.cs">
+      <DependentUpon>AjaxByCustomerType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerManage\AjaxByCustomerType.aspx.designer.cs">
+      <DependentUpon>AjaxByCustomerType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerManage\AjaxBySuitProduct.aspx.cs">
+      <DependentUpon>AjaxBySuitProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerManage\AjaxBySuitProduct.aspx.designer.cs">
+      <DependentUpon>AjaxBySuitProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerManage\AjaxContacters.aspx.cs">
+      <DependentUpon>AjaxContacters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerManage\AjaxContacters.aspx.designer.cs">
+      <DependentUpon>AjaxContacters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerManage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerManage\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerManage\EditCustomer.aspx.cs">
+      <DependentUpon>EditCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerManage\EditCustomer.aspx.designer.cs">
+      <DependentUpon>EditCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerManage\SysMaintenance.aspx.cs">
+      <DependentUpon>SysMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerManage\SysMaintenance.aspx.designer.cs">
+      <DependentUpon>SysMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackManage\FeedBack.aspx.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedbackManage\FeedBack.aspx.designer.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotelHomePageManage\HotelInfoPage.aspx.cs">
+      <DependentUpon>HotelInfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotelHomePageManage\HotelInfoPage.aspx.designer.cs">
+      <DependentUpon>HotelInfoPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotelHomePageManage\HotelManageList.aspx.cs">
+      <DependentUpon>HotelManageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotelHomePageManage\HotelManageList.aspx.designer.cs">
+      <DependentUpon>HotelManageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotelManagement\AddRever.aspx.cs">
+      <DependentUpon>AddRever.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotelManagement\AddRever.aspx.designer.cs">
+      <DependentUpon>AddRever.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotelManagement\AjaxInterfaceData.aspx.cs">
+      <DependentUpon>AjaxInterfaceData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotelManagement\AjaxInterfaceData.aspx.designer.cs">
+      <DependentUpon>AjaxInterfaceData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotelManagement\AjaxLocalData.aspx.cs">
+      <DependentUpon>AjaxLocalData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotelManagement\AjaxLocalData.aspx.designer.cs">
+      <DependentUpon>AjaxLocalData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotelManagement\AjaxRevertInfo.aspx.cs">
+      <DependentUpon>AjaxRevertInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotelManagement\AjaxRevertInfo.aspx.designer.cs">
+      <DependentUpon>AjaxRevertInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotelManagement\AjaxSearchOrderInfo.aspx.cs">
+      <DependentUpon>AjaxSearchOrderInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotelManagement\AjaxSearchOrderInfo.aspx.designer.cs">
+      <DependentUpon>AjaxSearchOrderInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotelManagement\FirstPageDataAdd.aspx.cs">
+      <DependentUpon>FirstPageDataAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotelManagement\FirstPageDataAdd.aspx.designer.cs">
+      <DependentUpon>FirstPageDataAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotelManagement\GroupOrderSearch.aspx.cs">
+      <DependentUpon>GroupOrderSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotelManagement\GroupOrderSearch.aspx.designer.cs">
+      <DependentUpon>GroupOrderSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotelManagement\HotelAccountInfo.aspx.cs">
+      <DependentUpon>HotelAccountInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotelManagement\HotelAccountInfo.aspx.designer.cs">
+      <DependentUpon>HotelAccountInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotelManagement\OrderSearch.aspx.cs">
+      <DependentUpon>OrderSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotelManagement\OrderSearch.aspx.designer.cs">
+      <DependentUpon>OrderSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IM\Message.aspx.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IM\Message.aspx.designer.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IM\SetGroupMember.aspx.cs">
+      <DependentUpon>SetGroupMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IM\SetGroupMember.aspx.designer.cs">
+      <DependentUpon>SetGroupMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCenterControl\Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCenterControl\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCenterControl\Keyword.aspx.cs">
+      <DependentUpon>Keyword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCenterControl\Keyword.aspx.designer.cs">
+      <DependentUpon>Keyword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCenterControl\NewsAdd.aspx.cs">
+      <DependentUpon>NewsAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCenterControl\NewsAdd.aspx.designer.cs">
+      <DependentUpon>NewsAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCenterControl\NewsInfoList.aspx.cs">
+      <DependentUpon>NewsInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCenterControl\NewsInfoList.aspx.designer.cs">
+      <DependentUpon>NewsInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCenterControl\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCenterControl\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCenterControl\OperatorNewsPage.aspx.cs">
+      <DependentUpon>OperatorNewsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCenterControl\OperatorNewsPage.aspx.designer.cs">
+      <DependentUpon>OperatorNewsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCenterControl\PictureUpdate.aspx.cs">
+      <DependentUpon>PictureUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCenterControl\PictureUpdate.aspx.designer.cs">
+      <DependentUpon>PictureUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCenterControl\SelectKeys.aspx.cs">
+      <DependentUpon>SelectKeys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCenterControl\SelectKeys.aspx.designer.cs">
+      <DependentUpon>SelectKeys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCenterControl\Tag.aspx.cs">
+      <DependentUpon>Tag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCenterControl\Tag.aspx.designer.cs">
+      <DependentUpon>Tag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Others\TicketLogs.aspx.cs">
+      <DependentUpon>TicketLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Others\TicketLogs.aspx.designer.cs">
+      <DependentUpon>TicketLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByAreaList.aspx.cs">
+      <DependentUpon>AjaxByAreaList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByAreaList.aspx.designer.cs">
+      <DependentUpon>AjaxByAreaList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByRouteAgencyList.aspx.cs">
+      <DependentUpon>AjaxByRouteAgencyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByRouteAgencyList.aspx.designer.cs">
+      <DependentUpon>AjaxByRouteAgencyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxShowCityByProvince.ashx.cs">
+      <DependentUpon>AjaxShowCityByProvince.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByAddAreaName.aspx.cs">
+      <DependentUpon>AjaxByAddAreaName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByAddAreaName.aspx.designer.cs">
+      <DependentUpon>AjaxByAddAreaName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByCustormerProList.aspx.cs">
+      <DependentUpon>AjaxByCustormerProList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByCustormerProList.aspx.designer.cs">
+      <DependentUpon>AjaxByCustormerProList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByGNShortRoute.aspx.cs">
+      <DependentUpon>AjaxByGNShortRoute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByGNShortRoute.aspx.designer.cs">
+      <DependentUpon>AjaxByGNShortRoute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByOutRouteList.aspx.cs">
+      <DependentUpon>AjaxByOutRouteList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByOutRouteList.aspx.designer.cs">
+      <DependentUpon>AjaxByOutRouteList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByPriceProList.aspx.cs">
+      <DependentUpon>AjaxByPriceProList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByPriceProList.aspx.designer.cs">
+      <DependentUpon>AjaxByPriceProList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByRouteProList.aspx.cs">
+      <DependentUpon>AjaxByRouteProList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\AjaxByRouteProList.aspx.designer.cs">
+      <DependentUpon>AjaxByRouteProList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\BasicDataManage.aspx.cs">
+      <DependentUpon>BasicDataManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\BasicDataManage.aspx.designer.cs">
+      <DependentUpon>BasicDataManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\BasicInfoManagement.aspx.cs">
+      <DependentUpon>BasicInfoManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\BasicInfoManagement.aspx.designer.cs">
+      <DependentUpon>BasicInfoManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\ChooseRouteAgency.aspx.cs">
+      <DependentUpon>ChooseRouteAgency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\ChooseRouteAgency.aspx.designer.cs">
+      <DependentUpon>ChooseRouteAgency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\ChooseRouteArea.aspx.cs">
+      <DependentUpon>ChooseRouteArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\ChooseRouteArea.aspx.designer.cs">
+      <DependentUpon>ChooseRouteArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeftMenuList.aspx.cs">
+      <DependentUpon>LeftMenuList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeftMenuList.aspx.designer.cs">
+      <DependentUpon>LeftMenuList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\DataCount.aspx.cs">
+      <DependentUpon>DataCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\DataCount.aspx.designer.cs">
+      <DependentUpon>DataCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\LinksInfo.aspx.cs">
+      <DependentUpon>LinksInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\LinksInfo.aspx.designer.cs">
+      <DependentUpon>LinksInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\OperatorLink.aspx.cs">
+      <DependentUpon>OperatorLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\OperatorLink.aspx.designer.cs">
+      <DependentUpon>OperatorLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\OperatorPartners.aspx.cs">
+      <DependentUpon>OperatorPartners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\OperatorPartners.aspx.designer.cs">
+      <DependentUpon>OperatorPartners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\PartnersInfo.aspx.cs">
+      <DependentUpon>PartnersInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\PartnersInfo.aspx.designer.cs">
+      <DependentUpon>PartnersInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\RouteAgencyList.aspx.cs">
+      <DependentUpon>RouteAgencyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\RouteAgencyList.aspx.designer.cs">
+      <DependentUpon>RouteAgencyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\RouteAreaType.aspx.cs">
+      <DependentUpon>RouteAreaType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\RouteAreaType.aspx.designer.cs">
+      <DependentUpon>RouteAreaType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\SalesRegionManage.aspx.cs">
+      <DependentUpon>SalesRegionManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\SalesRegionManage.aspx.designer.cs">
+      <DependentUpon>SalesRegionManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\ShowCompany.aspx.cs">
+      <DependentUpon>ShowCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\ShowCompany.aspx.designer.cs">
+      <DependentUpon>ShowCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScenicManage\AddScenic.aspx.cs">
+      <DependentUpon>AddScenic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScenicManage\AddScenic.aspx.designer.cs">
+      <DependentUpon>AddScenic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScenicManage\AjaxScenicList.aspx.cs">
+      <DependentUpon>AjaxScenicList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScenicManage\AjaxScenicList.aspx.designer.cs">
+      <DependentUpon>AjaxScenicList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScenicManage\EditScenicTicket.aspx.cs">
+      <DependentUpon>EditScenicTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScenicManage\EditScenicTicket.aspx.designer.cs">
+      <DependentUpon>EditScenicTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScenicManage\ScenicList.aspx.cs">
+      <DependentUpon>ScenicList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScenicManage\ScenicList.aspx.designer.cs">
+      <DependentUpon>ScenicList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScenicManage\ScenicPhotos.aspx.cs">
+      <DependentUpon>ScenicPhotos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScenicManage\ScenicPhotos.aspx.designer.cs">
+      <DependentUpon>ScenicPhotos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScenicManage\ScenicTicket.aspx.cs">
+      <DependentUpon>ScenicTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScenicManage\ScenicTicket.aspx.designer.cs">
+      <DependentUpon>ScenicTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScenicManage\SetGoogleMap.aspx.cs">
+      <DependentUpon>SetGoogleMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScenicManage\SetGoogleMap.aspx.designer.cs">
+      <DependentUpon>SetGoogleMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetCookie.aspx.cs">
+      <DependentUpon>SetCookie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetCookie.aspx.designer.cs">
+      <DependentUpon>SetCookie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMSManage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMSManage\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AgencyActionAnalysis\AllLoginList.aspx.cs">
+      <DependentUpon>AllLoginList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AgencyActionAnalysis\AllLoginList.aspx.designer.cs">
+      <DependentUpon>AllLoginList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AgencyActionAnalysis\AllOrderList.aspx.cs">
+      <DependentUpon>AllOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AgencyActionAnalysis\AllOrderList.aspx.designer.cs">
+      <DependentUpon>AllOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AgencyActionAnalysis\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AgencyActionAnalysis\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AgencyActionAnalysis\GetAgencyLoginList.aspx.cs">
+      <DependentUpon>GetAgencyLoginList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AgencyActionAnalysis\GetAgencyLoginList.aspx.designer.cs">
+      <DependentUpon>GetAgencyLoginList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AgencyActionAnalysis\GetAgencyOrderList.aspx.cs">
+      <DependentUpon>GetAgencyOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AgencyActionAnalysis\GetAgencyOrderList.aspx.designer.cs">
+      <DependentUpon>GetAgencyOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AgencyActionAnalysis\VisitLocaList.aspx.cs">
+      <DependentUpon>VisitLocaList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AgencyActionAnalysis\VisitLocaList.aspx.designer.cs">
+      <DependentUpon>VisitLocaList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AjaxEshopList.aspx.cs">
+      <DependentUpon>AjaxEshopList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AjaxEshopList.aspx.designer.cs">
+      <DependentUpon>AjaxEshopList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AjaxGetValidTourCompanys.aspx.cs">
+      <DependentUpon>AjaxGetValidTourCompanys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AjaxGetValidTourCompanys.aspx.designer.cs">
+      <DependentUpon>AjaxGetValidTourCompanys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AjaxLineOrder.aspx.cs">
+      <DependentUpon>AjaxLineOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AjaxLineOrder.aspx.designer.cs">
+      <DependentUpon>AjaxLineOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AjaxLineTravelagencyList.aspx.cs">
+      <DependentUpon>AjaxLineTravelagencyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AjaxLineTravelagencyList.aspx.designer.cs">
+      <DependentUpon>AjaxLineTravelagencyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AjaxMqReNew.aspx.cs">
+      <DependentUpon>AjaxMqReNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AjaxMqReNew.aspx.designer.cs">
+      <DependentUpon>AjaxMqReNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AjaxOrderListOfCompany.aspx.cs">
+      <DependentUpon>AjaxOrderListOfCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AjaxOrderListOfCompany.aspx.designer.cs">
+      <DependentUpon>AjaxOrderListOfCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AjaxTradesManHistoryLoginRecordList.aspx.cs">
+      <DependentUpon>AjaxTradesManHistoryLoginRecordList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AjaxTradesManHistoryLoginRecordList.aspx.designer.cs">
+      <DependentUpon>AjaxTradesManHistoryLoginRecordList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\BookList.aspx.cs">
+      <DependentUpon>BookList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\BookList.aspx.designer.cs">
+      <DependentUpon>BookList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\BookPeopleCount.aspx.cs">
+      <DependentUpon>BookPeopleCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\BookPeopleCount.aspx.designer.cs">
+      <DependentUpon>BookPeopleCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\CompanyInfo.aspx.cs">
+      <DependentUpon>CompanyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\CompanyInfo.aspx.designer.cs">
+      <DependentUpon>CompanyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\EshopDueDate.aspx.cs">
+      <DependentUpon>EshopDueDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\EshopDueDate.aspx.designer.cs">
+      <DependentUpon>EshopDueDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\LineCompanyAnalysis.aspx.cs">
+      <DependentUpon>LineCompanyAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\LineCompanyAnalysis.aspx.designer.cs">
+      <DependentUpon>LineCompanyAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\AjaxLineCompanyList.aspx.cs">
+      <DependentUpon>AjaxLineCompanyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\AjaxLineCompanyList.aspx.designer.cs">
+      <DependentUpon>AjaxLineCompanyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\LineOrderDetailsList.aspx.cs">
+      <DependentUpon>LineOrderDetailsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\LineOrderDetailsList.aspx.designer.cs">
+      <DependentUpon>LineOrderDetailsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\LineTravelagencyData.aspx.cs">
+      <DependentUpon>LineTravelagencyData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\LineTravelagencyData.aspx.designer.cs">
+      <DependentUpon>LineTravelagencyData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\LoginRecord.aspx.cs">
+      <DependentUpon>LoginRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\LoginRecord.aspx.designer.cs">
+      <DependentUpon>LoginRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\LogManagement.aspx.cs">
+      <DependentUpon>LogManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\LogManagement.aspx.designer.cs">
+      <DependentUpon>LogManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\MQReNew.aspx.cs">
+      <DependentUpon>MQReNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\MQReNew.aspx.designer.cs">
+      <DependentUpon>MQReNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\FlashPage.aspx.cs">
+      <DependentUpon>FlashPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\FlashPage.aspx.designer.cs">
+      <DependentUpon>FlashPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackManage\NetWorkMarketingList.aspx.cs">
+      <DependentUpon>NetWorkMarketingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedbackManage\NetWorkMarketingList.aspx.designer.cs">
+      <DependentUpon>NetWorkMarketingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\OrderListOfCompany.aspx.cs">
+      <DependentUpon>OrderListOfCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\OrderListOfCompany.aspx.designer.cs">
+      <DependentUpon>OrderListOfCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\SMSRemnantStatistics\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\SMSRemnantStatistics\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\SMSRemnantStatistics\GetSMSRemnantList.aspx.cs">
+      <DependentUpon>GetSMSRemnantList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\SMSRemnantStatistics\GetSMSRemnantList.aspx.designer.cs">
+      <DependentUpon>GetSMSRemnantList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\TradesManHistoryLoginRecordData.aspx.cs">
+      <DependentUpon>TradesManHistoryLoginRecordData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\TradesManHistoryLoginRecordData.aspx.designer.cs">
+      <DependentUpon>TradesManHistoryLoginRecordData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\ValidTourCompanyList.aspx.cs">
+      <DependentUpon>ValidTourCompanyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\ValidTourCompanyList.aspx.designer.cs">
+      <DependentUpon>ValidTourCompanyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\ViewedCompanyList.aspx.cs">
+      <DependentUpon>ViewedCompanyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\ViewedCompanyList.aspx.designer.cs">
+      <DependentUpon>ViewedCompanyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\AddSchoolInfo.aspx.cs">
+      <DependentUpon>AddSchoolInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\AddSchoolInfo.aspx.designer.cs">
+      <DependentUpon>AddSchoolInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\AddCommunityAdvisor.aspx.cs">
+      <DependentUpon>AddCommunityAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\AddCommunityAdvisor.aspx.designer.cs">
+      <DependentUpon>AddCommunityAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\AddHonoredGuest.aspx.cs">
+      <DependentUpon>AddHonoredGuest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\AddHonoredGuest.aspx.designer.cs">
+      <DependentUpon>AddHonoredGuest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\CommentList.aspx.cs">
+      <DependentUpon>CommentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\CommentList.aspx.designer.cs">
+      <DependentUpon>CommentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\CommunityAdvisor.aspx.cs">
+      <DependentUpon>CommunityAdvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\CommunityAdvisor.aspx.designer.cs">
+      <DependentUpon>CommunityAdvisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\GuestInterview.aspx.cs">
+      <DependentUpon>GuestInterview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\GuestInterview.aspx.designer.cs">
+      <DependentUpon>GuestInterview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\HonoredGuest.aspx.cs">
+      <DependentUpon>HonoredGuest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\HonoredGuest.aspx.designer.cs">
+      <DependentUpon>HonoredGuest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\QInformationManager.aspx.cs">
+      <DependentUpon>QInformationManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\QInformationManager.aspx.designer.cs">
+      <DependentUpon>QInformationManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\SchoolIntroduction.aspx.cs">
+      <DependentUpon>SchoolIntroduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\SchoolIntroduction.aspx.designer.cs">
+      <DependentUpon>SchoolIntroduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\SchoolList.aspx.cs">
+      <DependentUpon>SchoolList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\SchoolList.aspx.designer.cs">
+      <DependentUpon>SchoolList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\SeeSupplier.aspx.cs">
+      <DependentUpon>SeeSupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\SeeSupplier.aspx.designer.cs">
+      <DependentUpon>SeeSupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\SupplierInfo.aspx.cs">
+      <DependentUpon>SupplierInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\SupplierInfo.aspx.designer.cs">
+      <DependentUpon>SupplierInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\SupplyFocusBannerImg.aspx.cs">
+      <DependentUpon>SupplyFocusBannerImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\SupplyFocusBannerImg.aspx.designer.cs">
+      <DependentUpon>SupplyFocusBannerImg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManage\SupplyRuleInfo.aspx.cs">
+      <DependentUpon>SupplyRuleInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplierManage\SupplyRuleInfo.aspx.designer.cs">
+      <DependentUpon>SupplyRuleInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TongyeCenter\TongyeCenterEdit.aspx.cs">
+      <DependentUpon>TongyeCenterEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TongyeCenter\TongyeCenterEdit.aspx.designer.cs">
+      <DependentUpon>TongyeCenterEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TongyeCenter\TongyeCenterManager.aspx.cs">
+      <DependentUpon>TongyeCenterManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TongyeCenter\TongyeCenterManager.aspx.designer.cs">
+      <DependentUpon>TongyeCenterManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TongyeCenter\TongyeNotice.aspx.cs">
+      <DependentUpon>TongyeNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TongyeCenter\TongyeNotice.aspx.designer.cs">
+      <DependentUpon>TongyeNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TongyeCenter\TongyeNoticeEdit.aspx.cs">
+      <DependentUpon>TongyeNoticeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TongyeCenter\TongyeNoticeEdit.aspx.designer.cs">
+      <DependentUpon>TongyeNoticeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Top.aspx.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Top.aspx.designer.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformManagement\UniversalLineManage.aspx.cs">
+      <DependentUpon>UniversalLineManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlatformManagement\UniversalLineManage.aspx.designer.cs">
+      <DependentUpon>UniversalLineManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TyProductManage\AjaxHighShopAuit.aspx.cs">
+      <DependentUpon>AjaxHighShopAuit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TyProductManage\AjaxHighShopAuit.aspx.designer.cs">
+      <DependentUpon>AjaxHighShopAuit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TyProductManage\AjaxMQAduit.aspx.cs">
+      <DependentUpon>AjaxMQAduit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TyProductManage\AjaxMQAduit.aspx.designer.cs">
+      <DependentUpon>AjaxMQAduit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TyProductManage\AjaxPlanerBuyerQuery.aspx.cs">
+      <DependentUpon>AjaxPlanerBuyerQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TyProductManage\AjaxPlanerBuyerQuery.aspx.designer.cs">
+      <DependentUpon>AjaxPlanerBuyerQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TyProductManage\HighShopAuit.aspx.cs">
+      <DependentUpon>HighShopAuit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TyProductManage\HighShopAuit.aspx.designer.cs">
+      <DependentUpon>HighShopAuit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TyProductManage\LoginedRemindList.aspx.cs">
+      <DependentUpon>LoginedRemindList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TyProductManage\LoginedRemindList.aspx.designer.cs">
+      <DependentUpon>LoginedRemindList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TyProductManage\MQAudit.aspx.cs">
+      <DependentUpon>MQAudit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TyProductManage\MQAudit.aspx.designer.cs">
+      <DependentUpon>MQAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TyProductManage\PlanerBuyerQuery.aspx.cs">
+      <DependentUpon>PlanerBuyerQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TyProductManage\PlanerBuyerQuery.aspx.designer.cs">
+      <DependentUpon>PlanerBuyerQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\AjaxGetAreaList.aspx.cs">
+      <DependentUpon>AjaxGetAreaList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\AjaxGetAreaList.aspx.designer.cs">
+      <DependentUpon>AjaxGetAreaList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\AreaList.ascx.cs">
+      <DependentUpon>AreaList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\AreaList.ascx.designer.cs">
+      <DependentUpon>AreaList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\CompanyList.ascx.cs">
+      <DependentUpon>CompanyList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\CompanyList.ascx.designer.cs">
+      <DependentUpon>CompanyList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\DocFileUpload.ascx.cs">
+      <DependentUpon>DocFileUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\DocFileUpload.ascx.designer.cs">
+      <DependentUpon>DocFileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\GuestInterviewMenu.ascx.cs">
+      <DependentUpon>GuestInterviewMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\GuestInterviewMenu.ascx.designer.cs">
+      <DependentUpon>GuestInterviewMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\Linecontrol\TourServiceStandard.ascx.cs">
+      <DependentUpon>TourServiceStandard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\Linecontrol\TourServiceStandard.ascx.designer.cs">
+      <DependentUpon>TourServiceStandard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\Linecontrol\TourStandardPlan.ascx.cs">
+      <DependentUpon>TourStandardPlan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\Linecontrol\TourStandardPlan.ascx.designer.cs">
+      <DependentUpon>TourStandardPlan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\ProvinceAndCityAndAreaList.ascx.cs">
+      <DependentUpon>ProvinceAndCityAndAreaList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\ProvinceAndCityAndAreaList.ascx.designer.cs">
+      <DependentUpon>ProvinceAndCityAndAreaList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\ProvinceAndCityAndCounty.ascx.cs">
+      <DependentUpon>ProvinceAndCityAndCounty.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\ProvinceAndCityAndCounty.ascx.designer.cs">
+      <DependentUpon>ProvinceAndCityAndCounty.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\ProvinceAndCityList.ascx.cs">
+      <DependentUpon>ProvinceAndCityList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\ProvinceAndCityList.ascx.designer.cs">
+      <DependentUpon>ProvinceAndCityList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usercontrol\RouteAgency\TourServiceStandard.ascx.cs">
+      <DependentUpon>TourServiceStandard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\RouteAgency\TourServiceStandard.ascx.designer.cs">
+      <DependentUpon>TourServiceStandard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\SchoolMenu.ascx.cs">
+      <DependentUpon>SchoolMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\SchoolMenu.ascx.designer.cs">
+      <DependentUpon>SchoolMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\SingleFileUpload.ascx.cs">
+      <DependentUpon>SingleFileUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\SingleFileUpload.ascx.designer.cs">
+      <DependentUpon>SingleFileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\StartAndEndDate.ascx.cs">
+      <DependentUpon>StartAndEndDate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\StartAndEndDate.ascx.designer.cs">
+      <DependentUpon>StartAndEndDate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\Userorder\OrderCustomer.ascx.cs">
+      <DependentUpon>OrderCustomer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrol\Userorder\OrderCustomer.ascx.designer.cs">
+      <DependentUpon>OrderCustomer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\AjaxUserListManage.aspx.cs">
+      <DependentUpon>AjaxUserListManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManage\AjaxUserListManage.aspx.designer.cs">
+      <DependentUpon>AjaxUserListManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\PasswordChange.aspx.cs">
+      <DependentUpon>PasswordChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManage\PasswordChange.aspx.designer.cs">
+      <DependentUpon>PasswordChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\UserListManage.aspx.cs">
+      <DependentUpon>UserListManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManage\UserListManage.aspx.designer.cs">
+      <DependentUpon>UserListManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\UserSet.aspx.cs">
+      <DependentUpon>UserSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManage\UserSet.aspx.designer.cs">
+      <DependentUpon>UserSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yunyingcrossdomain.aspx.cs">
+      <DependentUpon>yunyingcrossdomain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yunyingcrossdomain.aspx.designer.cs">
+      <DependentUpon>yunyingcrossdomain.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlLibrary\ControlLibrary.csproj">
+      <Project>{13F4FD7D-AB65-4D54-A1C4-8174F5F4496F}</Project>
+      <Name>ControlLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Common\EyouSoft.Function.Common.csproj">
+      <Project>{8F83F92A-AC73-4736-9449-EF69355C98B1}</Project>
+      <Name>EyouSoft.Function.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.ControlCommon\EyouSoft.ControlCommon.csproj">
+      <Project>{DC008DC6-F54A-4929-AD57-1059315B7602}</Project>
+      <Name>EyouSoft.ControlCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Security.Membership\EyouSoft.Security.Membership.csproj">
+      <Project>{22692765-6207-4393-BCB1-622491BC8E59}</Project>
+      <Name>EyouSoft.Security.Membership</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FCKeditor.Net_2.6.3\FCKeditor.Net_2.6.3.csproj">
+      <Project>{CD2164D6-23C1-41BF-9A55-17315B42EA4A}</Project>
+      <Name>FCKeditor.Net_2.6.3</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdManagement\AddPhotoAd.aspx" />
+    <Content Include="AdManagement\AddPhotoWritingAd.aspx" />
+    <Content Include="AdManagement\AddWritingAd.aspx" />
+    <Content Include="CompanyManage\AjaxGetCompanyList.aspx" />
+    <Content Include="CompanyManage\AjaxGetRegisterCompanyaspx.aspx" />
+    <Content Include="CompanyManage\Default.aspx" />
+    <Content Include="CompanyManage\EditCompany.aspx" />
+    <Content Include="CompanyManage\RegisterCompany.aspx" />
+    <Content Include="PlatformManagement\AjaxByAddAreaName.aspx" />
+    <Content Include="PlatformManagement\AjaxByGNShortRoute.aspx" />
+    <Content Include="PlatformManagement\AjaxByOutRouteList.aspx" />
+    <Content Include="PlatformManagement\ChooseRouteAgency.aspx" />
+    <Content Include="PlatformManagement\ChooseRouteArea.aspx" />
+    <Content Include="LeftMenuList.aspx" />
+    <Content Include="PlatformManagement\OperatorLink.aspx" />
+    <Content Include="PlatformManagement\OperatorPartners.aspx" />
+    <Content Include="PlatformManagement\RouteAgencyList.aspx" />
+    <Content Include="PlatformManagement\ShowCompany.aspx" />
+    <Content Include="swich.html" />
+    <Content Include="Top.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\IBLL.Configuration.xml" />
+    <Content Include="Config\IDAL.Configuration.xml" />
+    <Content Include="Global.asax" />
+    <Content Include="PlatformManagement\AjaxByAreaList.aspx" />
+    <Content Include="PlatformManagement\AjaxByCustormerProList.aspx" />
+    <Content Include="PlatformManagement\AjaxByPriceProList.aspx" />
+    <Content Include="PlatformManagement\AjaxByRouteProList.aspx" />
+    <Content Include="PlatformManagement\RouteAreaType.aspx" />
+    <Content Include="usercontrol\ProvinceAndCityList.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdManagement\AddUnitAd.aspx" />
+    <Content Include="AdManagement\AdManageHome.aspx" />
+    <Content Include="AdManagement\AjaxAdSort.aspx" />
+    <Content Include="AdManagement\CompanyListSelect.aspx" />
+    <Content Include="AdManagement\PhotoAdList.aspx" />
+    <Content Include="AdManagement\PhotoWritingAdList.aspx" />
+    <Content Include="AdManagement\UnitAdList.aspx" />
+    <Content Include="AdManagement\WritingAdList.aspx" />
+    <Content Include="CompanyManage\CompanyCreditList.aspx" />
+    <Content Include="CompanyManage\CompanySaleCity.aspx" />
+    <Content Include="CompanyManage\CompanyTourArea.aspx" />
+    <Content Include="CompanyManage\LoginDetail.aspx" />
+    <Content Include="CompanyManage\OtherAllSaleCity.aspx" />
+    <Content Include="CompanyManage\OtherCompany.aspx" />
+    <Content Include="FCKeditor\editor\css\behaviors\disablehandles.htc" />
+    <Content Include="FCKeditor\editor\css\behaviors\showtableborders.htc" />
+    <Content Include="FCKeditor\editor\css\fck_editorarea.css" />
+    <Content Include="FCKeditor\editor\css\fck_internal.css" />
+    <Content Include="FCKeditor\editor\css\fck_showtableborders_gecko.css" />
+    <Content Include="FCKeditor\editor\css\images\block_address.png" />
+    <Content Include="FCKeditor\editor\css\images\block_blockquote.png" />
+    <Content Include="FCKeditor\editor\css\images\block_div.png" />
+    <Content Include="FCKeditor\editor\css\images\block_h1.png" />
+    <Content Include="FCKeditor\editor\css\images\block_h2.png" />
+    <Content Include="FCKeditor\editor\css\images\block_h3.png" />
+    <Content Include="FCKeditor\editor\css\images\block_h4.png" />
+    <Content Include="FCKeditor\editor\css\images\block_h5.png" />
+    <Content Include="FCKeditor\editor\css\images\block_h6.png" />
+    <Content Include="FCKeditor\editor\css\images\block_p.png" />
+    <Content Include="FCKeditor\editor\css\images\block_pre.png" />
+    <Content Include="FCKeditor\editor\css\images\fck_anchor.gif" />
+    <Content Include="FCKeditor\editor\css\images\fck_flashlogo.gif" />
+    <Content Include="FCKeditor\editor\css\images\fck_hiddenfield.gif" />
+    <Content Include="FCKeditor\editor\css\images\fck_pagebreak.gif" />
+    <Content Include="FCKeditor\editor\css\images\fck_plugin.gif" />
+    <Content Include="FCKeditor\editor\dialog\common\fck_dialog_common.css" />
+    <Content Include="FCKeditor\editor\dialog\common\fck_dialog_common.js" />
+    <Content Include="FCKeditor\editor\dialog\common\images\locked.gif" />
+    <Content Include="FCKeditor\editor\dialog\common\images\reset.gif" />
+    <Content Include="FCKeditor\editor\dialog\common\images\unlocked.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_about.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_about\logo_fckeditor.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_about\logo_fredck.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_about\sponsors\spellchecker_net.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_anchor.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_button.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_checkbox.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_colorselector.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_div.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_docprops.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_docprops\fck_document_preview.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_flash.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_flash\fck_flash.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_flash\fck_flash_preview.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_form.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_hiddenfield.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_image.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_image\fck_image.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_image\fck_image_preview.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_link.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_link\fck_link.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_listprop.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_paste.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_radiobutton.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_replace.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_scayt.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_scayt\scayt_dialog.css" />
+    <Content Include="FCKeditor\editor\dialog\fck_select.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_select\fck_select.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_smiley.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_source.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_specialchar.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\blank.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\controls.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\controlWindow.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\spellchecker.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\spellChecker.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\spellerStyle.css" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\wordWindow.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_table.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_tablecell.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_template.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_template\images\template1.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_template\images\template2.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_template\images\template3.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_textarea.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_textfield.html" />
+    <Content Include="FCKeditor\editor\dtd\fck_dtd_test.html" />
+    <Content Include="FCKeditor\editor\dtd\fck_xhtml10strict.js" />
+    <Content Include="FCKeditor\editor\dtd\fck_xhtml10transitional.js" />
+    <Content Include="FCKeditor\editor\fckdebug.html" />
+    <Content Include="FCKeditor\editor\fckdialog.html" />
+    <Content Include="FCKeditor\editor\fckeditor.html" />
+    <Content Include="FCKeditor\editor\fckeditor.original.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\browser.css" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\browser.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\frmactualfolder.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\frmcreatefolder.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\frmfolders.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\frmresourceslist.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\frmresourcetype.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\frmupload.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\ButtonArrow.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\Folder.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\Folder32.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\FolderOpened.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\FolderOpened32.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\FolderUp.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\ai.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\avi.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\bmp.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\cs.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\default.icon.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\dll.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\doc.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\exe.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\fla.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\gif.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\htm.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\html.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\jpg.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\js.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\mdb.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\mp3.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\pdf.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\png.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\ppt.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\rdp.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\swf.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\swt.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\txt.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\vsd.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\xls.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\xml.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\zip.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\ai.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\avi.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\bmp.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\cs.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\default.icon.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\dll.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\doc.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\exe.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\fla.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\gif.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\htm.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\html.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\jpg.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\js.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\mdb.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\mp3.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\pdf.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\png.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\ppt.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\rdp.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\swf.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\swt.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\txt.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\vsd.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\xls.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\xml.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\zip.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\spacer.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\js\common.js" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\js\fckxml.js" />
+    <Content Include="FCKeditor\editor\filemanager\connectors\aspx\config.ascx" />
+    <Content Include="FCKeditor\editor\filemanager\connectors\aspx\connector.aspx" />
+    <Content Include="FCKeditor\editor\filemanager\connectors\aspx\upload.aspx" />
+    <Content Include="FCKeditor\editor\images\anchor.gif" />
+    <Content Include="FCKeditor\editor\images\arrow_ltr.gif" />
+    <Content Include="FCKeditor\editor\images\arrow_rtl.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\angel_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\angry_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\broken_heart.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\cake.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\confused_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\cry_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\devil_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\embaressed_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\envelope.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\heart.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\kiss.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\lightbulb.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\omg_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\regular_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\sad_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\shades_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\teeth_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\thumbs_down.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\thumbs_up.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\tounge_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\whatchutalkingabout_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\wink_smile.gif" />
+    <Content Include="FCKeditor\editor\images\spacer.gif" />
+    <Content Include="FCKeditor\editor\js\fckadobeair.js" />
+    <Content Include="FCKeditor\editor\js\fckeditorcode_gecko.js" />
+    <Content Include="FCKeditor\editor\js\fckeditorcode_ie.js" />
+    <Content Include="FCKeditor\editor\lang\af.js" />
+    <Content Include="FCKeditor\editor\lang\ar.js" />
+    <Content Include="FCKeditor\editor\lang\bg.js" />
+    <Content Include="FCKeditor\editor\lang\bn.js" />
+    <Content Include="FCKeditor\editor\lang\bs.js" />
+    <Content Include="FCKeditor\editor\lang\ca.js" />
+    <Content Include="FCKeditor\editor\lang\cs.js" />
+    <Content Include="FCKeditor\editor\lang\da.js" />
+    <Content Include="FCKeditor\editor\lang\de.js" />
+    <Content Include="FCKeditor\editor\lang\el.js" />
+    <Content Include="FCKeditor\editor\lang\en-au.js" />
+    <Content Include="FCKeditor\editor\lang\en-ca.js" />
+    <Content Include="FCKeditor\editor\lang\en-uk.js" />
+    <Content Include="FCKeditor\editor\lang\en.js" />
+    <Content Include="FCKeditor\editor\lang\eo.js" />
+    <Content Include="FCKeditor\editor\lang\es.js" />
+    <Content Include="FCKeditor\editor\lang\et.js" />
+    <Content Include="FCKeditor\editor\lang\eu.js" />
+    <Content Include="FCKeditor\editor\lang\fa.js" />
+    <Content Include="FCKeditor\editor\lang\fi.js" />
+    <Content Include="FCKeditor\editor\lang\fo.js" />
+    <Content Include="FCKeditor\editor\lang\fr-ca.js" />
+    <Content Include="FCKeditor\editor\lang\fr.js" />
+    <Content Include="FCKeditor\editor\lang\gl.js" />
+    <Content Include="FCKeditor\editor\lang\gu.js" />
+    <Content Include="FCKeditor\editor\lang\he.js" />
+    <Content Include="FCKeditor\editor\lang\hi.js" />
+    <Content Include="FCKeditor\editor\lang\hr.js" />
+    <Content Include="FCKeditor\editor\lang\hu.js" />
+    <Content Include="FCKeditor\editor\lang\is.js" />
+    <Content Include="FCKeditor\editor\lang\it.js" />
+    <Content Include="FCKeditor\editor\lang\ja.js" />
+    <Content Include="FCKeditor\editor\lang\km.js" />
+    <Content Include="FCKeditor\editor\lang\ko.js" />
+    <Content Include="FCKeditor\editor\lang\lt.js" />
+    <Content Include="FCKeditor\editor\lang\lv.js" />
+    <Content Include="FCKeditor\editor\lang\mn.js" />
+    <Content Include="FCKeditor\editor\lang\ms.js" />
+    <Content Include="FCKeditor\editor\lang\nb.js" />
+    <Content Include="FCKeditor\editor\lang\nl.js" />
+    <Content Include="FCKeditor\editor\lang\no.js" />
+    <Content Include="FCKeditor\editor\lang\pl.js" />
+    <Content Include="FCKeditor\editor\lang\pt-br.js" />
+    <Content Include="FCKeditor\editor\lang\pt.js" />
+    <Content Include="FCKeditor\editor\lang\ro.js" />
+    <Content Include="FCKeditor\editor\lang\ru.js" />
+    <Content Include="FCKeditor\editor\lang\sk.js" />
+    <Content Include="FCKeditor\editor\lang\sl.js" />
+    <Content Include="FCKeditor\editor\lang\sr-latn.js" />
+    <Content Include="FCKeditor\editor\lang\sr.js" />
+    <Content Include="FCKeditor\editor\lang\sv.js" />
+    <Content Include="FCKeditor\editor\lang\th.js" />
+    <Content Include="FCKeditor\editor\lang\tr.js" />
+    <Content Include="FCKeditor\editor\lang\uk.js" />
+    <Content Include="FCKeditor\editor\lang\vi.js" />
+    <Content Include="FCKeditor\editor\lang\zh-cn.js" />
+    <Content Include="FCKeditor\editor\lang\zh.js" />
+    <Content Include="FCKeditor\editor\lang\_translationstatus.txt" />
+    <Content Include="FCKeditor\editor\plugins\autogrow\fckplugin.js" />
+    <Content Include="FCKeditor\editor\plugins\bbcode\fckplugin.js" />
+    <Content Include="FCKeditor\editor\plugins\bbcode\_sample\sample.config.js" />
+    <Content Include="FCKeditor\editor\plugins\bbcode\_sample\sample.html" />
+    <Content Include="FCKeditor\editor\plugins\dragresizetable\fckplugin.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\fckplugin.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\fck_placeholder.html" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\lang\de.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\lang\en.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\lang\es.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\lang\fr.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\lang\it.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\lang\pl.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\placeholder.gif" />
+    <Content Include="FCKeditor\editor\plugins\simplecommands\fckplugin.js" />
+    <Content Include="FCKeditor\editor\plugins\tablecommands\fckplugin.js" />
+    <Content Include="FCKeditor\editor\skins\default\fck_dialog.css" />
+    <Content Include="FCKeditor\editor\skins\default\fck_dialog_ie6.js" />
+    <Content Include="FCKeditor\editor\skins\default\fck_editor.css" />
+    <Content Include="FCKeditor\editor\skins\default\fck_strip.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\dialog.sides.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\dialog.sides.png" />
+    <Content Include="FCKeditor\editor\skins\default\images\dialog.sides.rtl.png" />
+    <Content Include="FCKeditor\editor\skins\default\images\sprites.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\sprites.png" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.arrowright.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.buttonarrow.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.collapse.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.end.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.expand.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.separator.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.start.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\fck_dialog.css" />
+    <Content Include="FCKeditor\editor\skins\office2003\fck_dialog_ie6.js" />
+    <Content Include="FCKeditor\editor\skins\office2003\fck_editor.css" />
+    <Content Include="FCKeditor\editor\skins\office2003\fck_strip.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\dialog.sides.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\dialog.sides.png" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\dialog.sides.rtl.png" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\sprites.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\sprites.png" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.arrowright.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.bg.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.buttonarrow.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.collapse.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.end.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.expand.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.separator.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.start.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\fck_dialog.css" />
+    <Content Include="FCKeditor\editor\skins\silver\fck_dialog_ie6.js" />
+    <Content Include="FCKeditor\editor\skins\silver\fck_editor.css" />
+    <Content Include="FCKeditor\editor\skins\silver\fck_strip.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\dialog.sides.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\dialog.sides.png" />
+    <Content Include="FCKeditor\editor\skins\silver\images\dialog.sides.rtl.png" />
+    <Content Include="FCKeditor\editor\skins\silver\images\sprites.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\sprites.png" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.arrowright.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.buttonarrow.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.buttonbg.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.collapse.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.end.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.expand.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.separator.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.start.gif" />
+    <Content Include="FCKeditor\editor\skins\_fckviewstrips.html" />
+    <Content Include="FCKeditor\editor\wsc\ciframe.html" />
+    <Content Include="FCKeditor\editor\wsc\tmpFrameset.html" />
+    <Content Include="FCKeditor\editor\wsc\w.html" />
+    <Content Include="FCKeditor\fckconfig.js" />
+    <Content Include="FCKeditor\fckeditor.js" />
+    <Content Include="FCKeditor\fckpackager.xml" />
+    <Content Include="FCKeditor\fckstyles.xml" />
+    <Content Include="FCKeditor\fcktemplates.xml" />
+    <Content Include="Login.aspx" />
+    <Content Include="NewsCenterControl\NewsInfoList.aspx" />
+    <Content Include="NewsCenterControl\OperatorNewsPage.aspx" />
+    <Content Include="PlatformManagement\AjaxShowCityByProvince.ashx" />
+    <Content Include="SupplierManage\AddSchoolInfo.aspx" />
+    <Content Include="SupplierManage\AddCommunityAdvisor.aspx" />
+    <Content Include="SupplierManage\AddHonoredGuest.aspx" />
+    <Content Include="SupplierManage\CommentList.aspx" />
+    <Content Include="SupplierManage\CommunityAdvisor.aspx" />
+    <Content Include="SupplierManage\GuestInterview.aspx" />
+    <Content Include="SupplierManage\HonoredGuest.aspx" />
+    <Content Include="SupplierManage\SchoolIntroduction.aspx" />
+    <Content Include="SupplierManage\SchoolList.aspx" />
+    <Content Include="SupplierManage\SupplierInfo.aspx" />
+    <Content Include="TyProductManage\AjaxHighShopAuit.aspx" />
+    <Content Include="TyProductManage\AjaxMQAduit.aspx" />
+    <Content Include="TyProductManage\HighShopAuit.aspx" />
+    <Content Include="TyProductManage\MQAudit.aspx" />
+    <Content Include="usercontrol\AreaList.ascx" />
+    <Content Include="usercontrol\CompanyList.ascx" />
+    <Content Include="usercontrol\GuestInterviewMenu.ascx" />
+    <Content Include="usercontrol\SchoolMenu.ascx" />
+    <Content Include="UserManage\AjaxUserListManage.aspx" />
+    <Content Include="UserManage\PasswordChange.aspx" />
+    <Content Include="UserManage\UserListManage.aspx" />
+    <Content Include="UserManage\UserSet.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdManagement\RecommendProductList.aspx" />
+    <Content Include="AdManagement\SanPinCenterNormalList.aspx" />
+    <Content Include="AdvertiseTicket\Default.aspx" />
+    <Content Include="AdvertiseTicket\EditTicketMessage.aspx" />
+    <Content Include="AirTicktManage\AirTicketItemInfo.aspx" />
+    <Content Include="AirTicktManage\AirTicketItemList.aspx" />
+    <Content Include="AirTicktManage\TourTeamApplyDetails.aspx" />
+    <Content Include="AirTicktManage\TourTeamApplyList.aspx" />
+    <Content Include="App_Data\ReminderEmail\AddFriendEmail.xml" />
+    <Content Include="App_Data\ReminderEmail\OrderEmail.xml" />
+    <Content Include="App_Data\ReminderEmail\RegPassEmail.xml" />
+    <Content Include="CompanyManage\AddBusinessMemeber.aspx" />
+    <Content Include="CompanyManage\AddPersonalMember.aspx" />
+    <Content Include="CompanyManage\AjaxBusinessMemeberList.aspx" />
+    <Content Include="CompanyManage\AjaxPersonalMemberList.aspx" />
+    <Content Include="CompanyManage\BusinessMemeberList.aspx" />
+    <Content Include="CompanyManage\PersonalMemberList.aspx" />
+    <Content Include="CompanyManage\SetGoogleMap.aspx" />
+    <Content Include="CompanyManage\UpdatePersonalMember.aspx" />
+    <Content Include="LineManage\AddLine.aspx" />
+    <Content Include="LineManage\AjaxFitList.aspx" />
+    <Content Include="LineManage\AjaxFitStatistics.aspx" />
+    <Content Include="LineManage\AjaxLineDetaile.aspx" />
+    <Content Include="LineManage\AjaxLineList.aspx" />
+    <Content Include="LineManage\AjaxScatteredfightList.aspx" />
+    <Content Include="LineManage\AjaxTeamLineList.aspx" />
+    <Content Include="LineManage\AjaxTeamorderManage.aspx" />
+    <Content Include="LineManage\AreaSelect.aspx" />
+    <Content Include="LineManage\FitList.aspx" />
+    <Content Include="LineManage\FitOrderDetail.aspx" />
+    <Content Include="LineManage\FitStatistics.aspx" />
+    <Content Include="LineManage\LineList.aspx" />
+    <Content Include="LineManage\OrderMsgManage.aspx" />
+    <Content Include="LineManage\QueryTour.aspx" />
+    <Content Include="LineManage\RouteAgency\AddOrderByRoute.aspx" />
+    <Content Include="LineManage\RouteAgency\NewOrders.aspx" />
+    <Content Include="LineManage\RouteAgency\OrderStateUpdate.aspx" />
+    <Content Include="LineManage\ScatteredfightList.aspx" />
+    <Content Include="LineManage\ServiceStandardList.aspx" />
+    <Content Include="LineManage\SetLeaveCity.aspx" />
+    <Content Include="LineManage\SetTourNo.aspx" />
+    <Content Include="LineManage\TeamAdd.aspx" />
+    <Content Include="LineManage\TeamorderDetail.aspx" />
+    <Content Include="LineManage\TeamorderManage.aspx" />
+    <Content Include="LineManage\TeamplanList.aspx" />
+    <Content Include="LineManage\TourDescription.aspx" />
+    <Content Include="LineManage\UpdateScatteredFightPlan.aspx" />
+    <Content Include="NewsCenterControl\AjaxGetInformationList.aspx" />
+    <Content Include="NewsCenterControl\EditInformation.aspx" />
+    <Content Include="NewsCenterControl\InformationIndustry.aspx" />
+    <Content Include="PlatformManagement\AddLineArea.aspx" />
+    <Content Include="PlatformManagement\UpdateLineArea.aspx" />
+    <Content Include="PrintPage\TouristInfo.aspx" />
+    <Content Include="ScenicManage\AjaxAll.ashx" />
+    <None Include="Config\memcached.config" />
+    <None Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.cfm" />
+    <None Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.php" />
+    <None Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.pl" />
+    <None Include="FCKeditor\editor\images\{C2BB37FA-2426-40E9-80FC-311A3C770A96}" />
+    <None Include="FCKeditor\fckutils.cfm" />
+    <None Include="kindeditor\skins\common\Thumbs.db" />
+    <Content Include="Config\Remind.xml" />
+    <Content Include="CustomerManage\AjaxByCustomerType.aspx" />
+    <Content Include="CustomerManage\AjaxBySuitProduct.aspx" />
+    <Content Include="CustomerManage\AjaxContacters.aspx" />
+    <Content Include="CustomerManage\Default.aspx" />
+    <Content Include="CustomerManage\EditCustomer.aspx" />
+    <Content Include="CustomerManage\SysMaintenance.aspx" />
+    <Content Include="DLL\OpenFlashChart.dll" />
+    <Content Include="HotelHomePageManage\HotelInfoPage.aspx" />
+    <Content Include="HotelHomePageManage\HotelManageList.aspx" />
+    <Content Include="HotelManagement\AddRever.aspx" />
+    <Content Include="HotelManagement\AjaxInterfaceData.aspx" />
+    <Content Include="HotelManagement\AjaxLocalData.aspx" />
+    <Content Include="HotelManagement\AjaxRevertInfo.aspx" />
+    <Content Include="HotelManagement\AjaxSearchOrderInfo.aspx" />
+    <Content Include="HotelManagement\FirstPageDataAdd.aspx" />
+    <Content Include="HotelManagement\GroupOrderSearch.aspx" />
+    <Content Include="HotelManagement\HotelAccountInfo.aspx" />
+    <Content Include="HotelManagement\OrderSearch.aspx" />
+    <Content Include="IM\Message.aspx" />
+    <Content Include="IM\SetGroupMember.aspx" />
+    <Content Include="NewsCenterControl\Category.aspx" />
+    <Content Include="NewsCenterControl\Keyword.aspx" />
+    <Content Include="NewsCenterControl\NewsAdd.aspx" />
+    <Content Include="NewsCenterControl\NewsList.aspx" />
+    <Content Include="NewsCenterControl\PictureUpdate.aspx" />
+    <Content Include="NewsCenterControl\SelectKeys.aspx" />
+    <Content Include="NewsCenterControl\Tag.aspx" />
+    <Content Include="Others\TicketLogs.aspx" />
+    <Content Include="ScenicManage\AddScenic.aspx" />
+    <Content Include="ScenicManage\AjaxScenicList.aspx" />
+    <Content Include="ScenicManage\EditScenicTicket.aspx" />
+    <Content Include="ScenicManage\ScenicList.aspx" />
+    <Content Include="ScenicManage\ScenicPhotos.aspx" />
+    <Content Include="ScenicManage\ScenicTicket.aspx" />
+    <Content Include="ScenicManage\SetGoogleMap.aspx" />
+    <Content Include="Statistics\AgencyActionAnalysis\AllLoginList.aspx" />
+    <Content Include="Statistics\AgencyActionAnalysis\AllOrderList.aspx" />
+    <Content Include="Statistics\AgencyActionAnalysis\Default.aspx" />
+    <Content Include="Statistics\AgencyActionAnalysis\GetAgencyLoginList.aspx" />
+    <Content Include="Statistics\AgencyActionAnalysis\GetAgencyOrderList.aspx" />
+    <Content Include="Statistics\AgencyActionAnalysis\VisitLocaList.aspx" />
+    <Content Include="Statistics\AjaxEshopList.aspx" />
+    <Content Include="Statistics\AjaxGetValidTourCompanys.aspx" />
+    <Content Include="Statistics\AjaxLineOrder.aspx" />
+    <Content Include="Statistics\AjaxLineTravelagencyList.aspx" />
+    <Content Include="Statistics\AjaxMqReNew.aspx" />
+    <Content Include="Statistics\AjaxOrderListOfCompany.aspx" />
+    <Content Include="Statistics\AjaxTradesManHistoryLoginRecordList.aspx" />
+    <Content Include="Statistics\EshopDueDate.aspx" />
+    <Content Include="Statistics\LineCompanyAnalysis.aspx" />
+    <Content Include="Statistics\AjaxLineCompanyList.aspx" />
+    <Content Include="Statistics\LineOrderDetailsList.aspx" />
+    <Content Include="Statistics\LineTravelagencyData.aspx" />
+    <Content Include="Statistics\LogManagement.aspx" />
+    <Content Include="Statistics\MQReNew.aspx" />
+    <Content Include="OpenFlashChart\Ajaxopen-flash-chart.swf" />
+    <Content Include="OpenFlashChart\swfobject.js" />
+    <Content Include="Statistics\FlashPage.aspx" />
+    <Content Include="FeedbackManage\NetWorkMarketingList.aspx" />
+    <Content Include="Statistics\SMSRemnantStatistics\Default.aspx" />
+    <Content Include="Statistics\SMSRemnantStatistics\GetSMSRemnantList.aspx" />
+    <Content Include="Statistics\TradesManHistoryLoginRecordData.aspx" />
+    <Content Include="Statistics\ValidTourCompanyList.aspx" />
+    <Content Include="Statistics\ViewedCompanyList.aspx" />
+    <Content Include="SupplierManage\QInformationManager.aspx" />
+    <Content Include="SupplierManage\SupplyFocusBannerImg.aspx" />
+    <Content Include="SupplierManage\SupplyRuleInfo.aspx" />
+    <Content Include="TongyeCenter\TongyeCenterEdit.aspx" />
+    <Content Include="TongyeCenter\TongyeCenterManager.aspx" />
+    <Content Include="TongyeCenter\TongyeNotice.aspx" />
+    <Content Include="TongyeCenter\TongyeNoticeEdit.aspx" />
+    <Content Include="TyProductManage\AjaxPlanerBuyerQuery.aspx" />
+    <Content Include="TyProductManage\LoginedRemindList.aspx" />
+    <Content Include="TyProductManage\PlanerBuyerQuery.aspx" />
+    <Content Include="usercontrol\AjaxGetAreaList.aspx" />
+    <Content Include="exceptionview.aspx" />
+    <Content Include="kindeditor\upload_json.ashx" />
+    <Content Include="kindeditor\file_manager_json.ashx" />
+    <Content Include="FeedbackManage\FeedBack.aspx" />
+    <Content Include="kindeditor\kindeditor-min.js" />
+    <Content Include="kindeditor\kindeditor.js" />
+    <Content Include="kindeditor\plugins\about.html" />
+    <Content Include="kindeditor\plugins\advtable\advtable.html" />
+    <Content Include="kindeditor\plugins\emoticons\0.gif" />
+    <Content Include="kindeditor\plugins\emoticons\1.gif" />
+    <Content Include="kindeditor\plugins\emoticons\10.gif" />
+    <Content Include="kindeditor\plugins\emoticons\100.gif" />
+    <Content Include="kindeditor\plugins\emoticons\101.gif" />
+    <Content Include="kindeditor\plugins\emoticons\102.gif" />
+    <Content Include="kindeditor\plugins\emoticons\103.gif" />
+    <Content Include="kindeditor\plugins\emoticons\104.gif" />
+    <Content Include="kindeditor\plugins\emoticons\105.gif" />
+    <Content Include="kindeditor\plugins\emoticons\106.gif" />
+    <Content Include="kindeditor\plugins\emoticons\107.gif" />
+    <Content Include="kindeditor\plugins\emoticons\108.gif" />
+    <Content Include="kindeditor\plugins\emoticons\109.gif" />
+    <Content Include="kindeditor\plugins\emoticons\11.gif" />
+    <Content Include="kindeditor\plugins\emoticons\110.gif" />
+    <Content Include="kindeditor\plugins\emoticons\111.gif" />
+    <Content Include="kindeditor\plugins\emoticons\112.gif" />
+    <Content Include="kindeditor\plugins\emoticons\113.gif" />
+    <Content Include="kindeditor\plugins\emoticons\114.gif" />
+    <Content Include="kindeditor\plugins\emoticons\115.gif" />
+    <Content Include="kindeditor\plugins\emoticons\116.gif" />
+    <Content Include="kindeditor\plugins\emoticons\117.gif" />
+    <Content Include="kindeditor\plugins\emoticons\118.gif" />
+    <Content Include="kindeditor\plugins\emoticons\119.gif" />
+    <Content Include="kindeditor\plugins\emoticons\12.gif" />
+    <Content Include="kindeditor\plugins\emoticons\120.gif" />
+    <Content Include="kindeditor\plugins\emoticons\121.gif" />
+    <Content Include="kindeditor\plugins\emoticons\122.gif" />
+    <Content Include="kindeditor\plugins\emoticons\123.gif" />
+    <Content Include="kindeditor\plugins\emoticons\124.gif" />
+    <Content Include="kindeditor\plugins\emoticons\125.gif" />
+    <Content Include="kindeditor\plugins\emoticons\126.gif" />
+    <Content Include="kindeditor\plugins\emoticons\127.gif" />
+    <Content Include="kindeditor\plugins\emoticons\128.gif" />
+    <Content Include="kindeditor\plugins\emoticons\129.gif" />
+    <Content Include="kindeditor\plugins\emoticons\13.gif" />
+    <Content Include="kindeditor\plugins\emoticons\130.gif" />
+    <Content Include="kindeditor\plugins\emoticons\131.gif" />
+    <Content Include="kindeditor\plugins\emoticons\132.gif" />
+    <Content Include="kindeditor\plugins\emoticons\133.gif" />
+    <Content Include="kindeditor\plugins\emoticons\134.gif" />
+    <Content Include="kindeditor\plugins\emoticons\14.gif" />
+    <Content Include="kindeditor\plugins\emoticons\15.gif" />
+    <Content Include="kindeditor\plugins\emoticons\16.gif" />
+    <Content Include="kindeditor\plugins\emoticons\17.gif" />
+    <Content Include="kindeditor\plugins\emoticons\18.gif" />
+    <Content Include="kindeditor\plugins\emoticons\19.gif" />
+    <Content Include="kindeditor\plugins\emoticons\2.gif" />
+    <Content Include="kindeditor\plugins\emoticons\20.gif" />
+    <Content Include="kindeditor\plugins\emoticons\21.gif" />
+    <Content Include="kindeditor\plugins\emoticons\22.gif" />
+    <Content Include="kindeditor\plugins\emoticons\23.gif" />
+    <Content Include="kindeditor\plugins\emoticons\24.gif" />
+    <Content Include="kindeditor\plugins\emoticons\25.gif" />
+    <Content Include="kindeditor\plugins\emoticons\26.gif" />
+    <Content Include="kindeditor\plugins\emoticons\27.gif" />
+    <Content Include="kindeditor\plugins\emoticons\28.gif" />
+    <Content Include="kindeditor\plugins\emoticons\29.gif" />
+    <Content Include="kindeditor\plugins\emoticons\3.gif" />
+    <Content Include="kindeditor\plugins\emoticons\30.gif" />
+    <Content Include="kindeditor\plugins\emoticons\31.gif" />
+    <Content Include="kindeditor\plugins\emoticons\32.gif" />
+    <Content Include="kindeditor\plugins\emoticons\33.gif" />
+    <Content Include="kindeditor\plugins\emoticons\34.gif" />
+    <Content Include="kindeditor\plugins\emoticons\35.gif" />
+    <Content Include="kindeditor\plugins\emoticons\36.gif" />
+    <Content Include="kindeditor\plugins\emoticons\37.gif" />
+    <Content Include="kindeditor\plugins\emoticons\38.gif" />
+    <Content Include="kindeditor\plugins\emoticons\39.gif" />
+    <Content Include="kindeditor\plugins\emoticons\4.gif" />
+    <Content Include="kindeditor\plugins\emoticons\40.gif" />
+    <Content Include="kindeditor\plugins\emoticons\41.gif" />
+    <Content Include="kindeditor\plugins\emoticons\42.gif" />
+    <Content Include="kindeditor\plugins\emoticons\43.gif" />
+    <Content Include="kindeditor\plugins\emoticons\44.gif" />
+    <Content Include="kindeditor\plugins\emoticons\45.gif" />
+    <Content Include="kindeditor\plugins\emoticons\46.gif" />
+    <Content Include="kindeditor\plugins\emoticons\47.gif" />
+    <Content Include="kindeditor\plugins\emoticons\48.gif" />
+    <Content Include="kindeditor\plugins\emoticons\49.gif" />
+    <Content Include="kindeditor\plugins\emoticons\5.gif" />
+    <Content Include="kindeditor\plugins\emoticons\50.gif" />
+    <Content Include="kindeditor\plugins\emoticons\51.gif" />
+    <Content Include="kindeditor\plugins\emoticons\52.gif" />
+    <Content Include="kindeditor\plugins\emoticons\53.gif" />
+    <Content Include="kindeditor\plugins\emoticons\54.gif" />
+    <Content Include="kindeditor\plugins\emoticons\55.gif" />
+    <Content Include="kindeditor\plugins\emoticons\56.gif" />
+    <Content Include="kindeditor\plugins\emoticons\57.gif" />
+    <Content Include="kindeditor\plugins\emoticons\58.gif" />
+    <Content Include="kindeditor\plugins\emoticons\59.gif" />
+    <Content Include="kindeditor\plugins\emoticons\6.gif" />
+    <Content Include="kindeditor\plugins\emoticons\60.gif" />
+    <Content Include="kindeditor\plugins\emoticons\61.gif" />
+    <Content Include="kindeditor\plugins\emoticons\62.gif" />
+    <Content Include="kindeditor\plugins\emoticons\63.gif" />
+    <Content Include="kindeditor\plugins\emoticons\64.gif" />
+    <Content Include="kindeditor\plugins\emoticons\65.gif" />
+    <Content Include="kindeditor\plugins\emoticons\66.gif" />
+    <Content Include="kindeditor\plugins\emoticons\67.gif" />
+    <Content Include="kindeditor\plugins\emoticons\68.gif" />
+    <Content Include="kindeditor\plugins\emoticons\69.gif" />
+    <Content Include="kindeditor\plugins\emoticons\7.gif" />
+    <Content Include="kindeditor\plugins\emoticons\70.gif" />
+    <Content Include="kindeditor\plugins\emoticons\71.gif" />
+    <Content Include="kindeditor\plugins\emoticons\72.gif" />
+    <Content Include="kindeditor\plugins\emoticons\73.gif" />
+    <Content Include="kindeditor\plugins\emoticons\74.gif" />
+    <Content Include="kindeditor\plugins\emoticons\75.gif" />
+    <Content Include="kindeditor\plugins\emoticons\76.gif" />
+    <Content Include="kindeditor\plugins\emoticons\77.gif" />
+    <Content Include="kindeditor\plugins\emoticons\78.gif" />
+    <Content Include="kindeditor\plugins\emoticons\79.gif" />
+    <Content Include="kindeditor\plugins\emoticons\8.gif" />
+    <Content Include="kindeditor\plugins\emoticons\80.gif" />
+    <Content Include="kindeditor\plugins\emoticons\81.gif" />
+    <Content Include="kindeditor\plugins\emoticons\82.gif" />
+    <Content Include="kindeditor\plugins\emoticons\83.gif" />
+    <Content Include="kindeditor\plugins\emoticons\84.gif" />
+    <Content Include="kindeditor\plugins\emoticons\85.gif" />
+    <Content Include="kindeditor\plugins\emoticons\86.gif" />
+    <Content Include="kindeditor\plugins\emoticons\87.gif" />
+    <Content Include="kindeditor\plugins\emoticons\88.gif" />
+    <Content Include="kindeditor\plugins\emoticons\89.gif" />
+    <Content Include="kindeditor\plugins\emoticons\9.gif" />
+    <Content Include="kindeditor\plugins\emoticons\90.gif" />
+    <Content Include="kindeditor\plugins\emoticons\91.gif" />
+    <Content Include="kindeditor\plugins\emoticons\92.gif" />
+    <Content Include="kindeditor\plugins\emoticons\93.gif" />
+    <Content Include="kindeditor\plugins\emoticons\94.gif" />
+    <Content Include="kindeditor\plugins\emoticons\95.gif" />
+    <Content Include="kindeditor\plugins\emoticons\96.gif" />
+    <Content Include="kindeditor\plugins\emoticons\97.gif" />
+    <Content Include="kindeditor\plugins\emoticons\98.gif" />
+    <Content Include="kindeditor\plugins\emoticons\99.gif" />
+    <Content Include="kindeditor\plugins\emoticons\qq.gif" />
+    <Content Include="kindeditor\plugins\file_manager\file_manager.css" />
+    <Content Include="kindeditor\plugins\file_manager\file_manager.html" />
+    <Content Include="kindeditor\plugins\file_manager\file_manager.js" />
+    <Content Include="kindeditor\plugins\file_manager\images\file-16.gif" />
+    <Content Include="kindeditor\plugins\file_manager\images\file-64.gif" />
+    <Content Include="kindeditor\plugins\file_manager\images\folder-16.gif" />
+    <Content Include="kindeditor\plugins\file_manager\images\folder-64.gif" />
+    <Content Include="kindeditor\plugins\file_manager\images\go-up.gif" />
+    <Content Include="kindeditor\plugins\flash.html" />
+    <Content Include="kindeditor\plugins\image\image.html" />
+    <Content Include="kindeditor\plugins\image\images\align_left.gif" />
+    <Content Include="kindeditor\plugins\image\images\align_right.gif" />
+    <Content Include="kindeditor\plugins\image\images\align_top.gif" />
+    <Content Include="kindeditor\plugins\image\images\refresh.gif" />
+    <Content Include="kindeditor\plugins\link\link.html" />
+    <Content Include="kindeditor\plugins\media.html" />
+    <Content Include="kindeditor\plugins\plainpaste.html" />
+    <Content Include="kindeditor\plugins\wordpaste.html" />
+    <Content Include="kindeditor\skins\common\blank.gif" />
+    <Content Include="kindeditor\skins\common\editor.css" />
+    <Content Include="kindeditor\skins\common\flash.gif" />
+    <Content Include="kindeditor\skins\common\loading.gif" />
+    <Content Include="kindeditor\skins\common\media.gif" />
+    <Content Include="kindeditor\skins\common\rm.gif" />
+    <Content Include="kindeditor\skins\default.css" />
+    <Content Include="kindeditor\skins\default\default.gif" />
+    <Content Include="logout.aspx" />
+    <Content Include="PlatformManagement\AjaxByRouteAgencyList.aspx" />
+    <Content Include="PlatformManagement\DataCount.aspx" />
+    <Content Include="SetCookie.aspx" />
+    <Content Include="SMSManage\Default.aspx" />
+    <Content Include="Statistics\BookList.aspx" />
+    <Content Include="Statistics\BookPeopleCount.aspx" />
+    <Content Include="Statistics\CompanyInfo.aspx" />
+    <Content Include="Statistics\LoginRecord.aspx" />
+    <Content Include="Statistics\OrderListOfCompany.aspx" />
+    <Content Include="Statistics\ProductList.aspx" />
+    <Content Include="SupplierManage\SeeSupplier.aspx" />
+    <Content Include="usercontrol\DocFileUpload.ascx" />
+    <Content Include="usercontrol\Linecontrol\TourServiceStandard.ascx" />
+    <Content Include="usercontrol\Linecontrol\TourStandardPlan.ascx" />
+    <Content Include="usercontrol\ProvinceAndCityAndAreaList.ascx" />
+    <Content Include="usercontrol\ProvinceAndCityAndCounty.ascx" />
+    <Content Include="usercontrol\RouteAgency\TourServiceStandard.ascx" />
+    <Content Include="usercontrol\StartAndEndDate.ascx" />
+    <Content Include="usercontrol\Userorder\OrderCustomer.ascx" />
+    <Content Include="yunyingcrossdomain.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>30002</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

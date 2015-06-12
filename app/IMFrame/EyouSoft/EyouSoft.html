@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>易游通</title>
+    <style>
+        BODY
+        {
+            color: #333;
+            font-size: 12px;
+            font-family: "宋体" ,Arial, Helvetica, sans-serif;
+            text-align: center;
+            background: #fff;
+            margin: 0px;
+        }
+        img
+        {
+            border: thin none;
+        }
+        table
+        {
+            border-collapse: collapse;
+            margin: 0px auto;
+            padding: 0px auto;
+        }
+        TD
+        {
+            font-size: 12px;
+            color: #0E3F70;
+            line-height: 20px;
+            font-family: "宋体" ,Arial, Helvetica, sans-serif;
+        }
+        div
+        {
+            margin: 0px auto;
+            text-align: left;
+            padding: 0px auto;
+            border: 0px;
+        }
+        textarea
+        {
+            font-size: 12px;
+            font-family: "宋体" ,Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+        select
+        {
+            font-size: 12px;
+            font-family: "宋体" ,Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+        .ff0000
+        {
+            color: #f00;
+        }
+        a
+        {
+            color: #0E3F70;
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: #f00;
+            text-decoration: underline;
+        }
+        a:active
+        {
+            color: #f00;
+            text-decoration: none;
+        }
+        .yytbj div
+        {
+            width: 206px;
+            height: 234px;
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+        .yytbj ul
+        {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 105%;
+            _margin-left: -2px;
+            height: 241px;
+            background: url(images/listylei.gif) repeat-y 104px top;
+            _background: url(images/listylei.gif) repeat-y 100px top;
+            margin-top: -3px;
+        }
+        .yytbj
+        {
+            background: none;
+            border: 1px solid #7db4d8;
+            padding-top: 2px;
+            padding-right: 3px;
+        }
+        .yytbj ul li
+        {
+            margin: 0;
+            padding: 0;
+            float: left;
+            width: 97px;
+            height: 44px;
+            color: #013d62;
+            font-weight: normal;
+            margin-left: 4px;
+            margin-right: 4px;
+            margin-top: 3px;
+            background: url(images/lityheng.gif) repeat-x 104px bottom;
+        }
+        .yytbj ul li a
+        {
+            display: block;
+            width: 97px;
+            height: 40px;
+            line-height: 40px;
+            overflow: hidden;
+            font-weight: bolder;
+        }
+        .yytbj ul li a:hover
+        {
+            background: url(images/allimg.gif) no-repeat left top;
+            text-decoration: none;
+            color: #013d62;
+        }
+        .yytbj ul li span.icon
+        {
+            display: inline-block;
+            width: 27px;
+            height: 27px;
+            background-image: url(images/allimg.gif);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            margin-top: 6px; *+margin-top:-1px!important;_margin-top:6px;margin-left:7px;}
+        .yytbj ul li span.text
+        {
+            position: relative;
+            top: -20%;
+            _top: -12%; *top:-11%!important;left:5px;}
+        .yytbj ul li span.icon1
+        {
+            background-position: 0px -40px;
+        }
+        .yytbj ul li span.icon2
+        {
+            background-position: -27px -40px;
+        }
+        .yytbj ul li span.icon3
+        {
+            background-position: 0px -67px;
+        }
+        .yytbj ul li span.icon4
+        {
+            background-position: -27px -67px;
+        }
+        .yytbj ul li span.icon5
+        {
+            background-position: 0px -94px;
+        }
+        .yytbj ul li span.icon6
+        {
+            background-position: -27px -94px;
+        }
+        .yytbj ul li span.icon7
+        {
+            background-position: 0px -121px;
+        }
+        .yytbj ul li span.icon8
+        {
+            background-position: -27px -121px;
+        }
+        .yytbj ul li span.icon9
+        {
+            background-position: 0px -148px;
+        }
+        .yytbj ul li span.icon10
+        {
+            background-position: -27px -148px;
+        }
+        .yytbjtel
+        {
+            color: #9A1E1E;
+        }
+        .kuang
+        {
+            border: 1px solid #7db4d8;
+        }
+        .yytbj1
+        {
+            padding: 5px;
+            background: url(/EyouSoftimages/yytbj.gif) repeat-x top;
+        }
+        .wenone
+        {
+            font-family: "宋体";
+            font-size: 14px;
+            font-weight: bold;
+            color: #fb4c33;
+        }
+        .wentwo
+        {
+            font-family: "宋体";
+            font-size: 14px;
+            color: #013d62;
+        }
+    </style>
+
+    <script language="javascript" type="text/javascript">
+        var _CurrentShowState = false;  //记录当前的显示状态  true:显示  false:隐藏
+        //显示或隐藏登录框
+        function IsShowLogin() {
+            var tr_login = document.getElementById("tr_login");
+            if (_CurrentShowState)
+                tr_login.style.display = "none";
+            else
+                tr_login.style.display = "";
+            _CurrentShowState = !_CurrentShowState;
+        }
+    </script>
+
+    <script type="text/javascript" src="http://resource.tongye114.com/js/jquery.js?v=10"></script>
+
+</head>
+<body oncontextmenu="return false;" style="border: 0px;">
+    <table width="210" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><img src="images/yytlogo.gif" alt="易游通5+2" width="210" height="59" /></td>
+        </tr>
+        <tr style="cursor: pointer" onclick="IsShowLogin()">
+            <td><img src="images/yytsy.gif" alt="软件试用登录" width="210" height="32" border="0" /> </td>
+        </tr>
+        <tr>
+            <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="yytbj">
+                    <tr><td width="68" height="28" align="center" background="/EyouSoft/images/bj01.gif"
+                            class="wenone"><a href="javascript:();" onclick="Go(this)" uuid="5724">组团版</a>
+                        </td>
+                        <td width="1" background="/EyouSoft/images/x.gif">
+                        </td>
+                        <td width="67" align="center" background="/EyouSoft/images/bj02.gif" class="wentwo"><a href="javascript:();" onclick="Go(this)" 
+
+uuid="6225">地接版</a>
+                        </td>
+                        <td width="1" background="/EyouSoft/images/x.gif">
+                        </td>
+                        <td width="68" align="center" background="/EyouSoft/images/bj02.gif" class="wentwo"><a href="javascript:();" onclick="Go(this)" 
+
+uuid="6227">国际版</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" background=".">
+                            <div style="margin-top: 5px; margin-right: 2px;">
+                                <ul class="count" id="menu">
+                                    <li><a class="url" href="#" target="_blank"><span class="icon icon1"></span><span
+                                        class="text">发布计划</span></a></li>
+                                    <li><a class="url" href="#" target="_blank"><span class="icon icon2"></span><span
+                                        class="text">我要报价</span></a></li>
+                                    <li><a class="url" href="#" target="_blank"><span class="icon icon3"></span><span
+                                        class="text">预订报名</span></a></li>
+                                    <li><a class="url" href="#" target="_blank"><span class="icon icon10"></span><span
+                                        class="text">计调安排</span></a></li>
+                                    <li><a class="url" href="#" target="_blank"><span class="icon icon4"></span><span
+                                        class="text">统计分析</span></a></li>
+                                    <li><a class="url" href="#" target="_blank"><span class="icon icon8"></span><span
+                                        class="text">行政中心</span></a></li>
+                                    <li><a class="url" href="#" target="_blank"><span class="icon icon5"></span><span
+                                        class="text">我要收款</span></a></li>
+                                    <li><a class="url" href="#" target="_blank"><span class="icon icon6"></span><span
+                                        class="text">我要付款</span></a></li>
+                                    <li><a class="url" href="#" target="_blank"><span class="icon icon7"></span><span
+                                        class="text">导游中心</span></a></li>
+                                    <li><a class="url" href="#" target="_blank"><span class="icon icon9"></span><span
+                                        class="text">单项服务</span></a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- <tr style="display:none" id="tr_login">
+       <td>
+       <a href="http://demo.gocn.cn/EyouSoft_Encry_Login.aspx?
+
+UUID=5724&UUEncyCode=4cb4d582543c9696e30e4e87c1a549c6911dd7ff2b0079604df4b77cef86bb845e5868b4f2f46af895adf6c4dfa6a627" target="_blank"><img 
+
+src="images/ztlogin.gif" alt="组团版" /></a>
+       <a href="http://demo.gocn.cn/EyouSoft_Encry_Login.aspx?
+
+UUID=6225&UUEncyCode=4cb4d582543c9696e30e4e87c1a549c6911dd7ff2b0079604df4b77cef86bb845e5868b4f2f46af895adf6c4dfa6a627" target="_blank"><img 
+
+src="images/djlogin.gif" alt="地接版" /></a>
+       <a href="http://demo.gocn.cn/EyouSoft_Encry_Login.aspx?
+
+UUID=6227&UUEncyCode=4cb4d582543c9696e30e4e87c1a549c6911dd7ff2b0079604df4b77cef86bb845e5868b4f2f46af895adf6c4dfa6a627" target="_blank"><img 
+
+src="images/gjlogin.gif" alt="国际版" /></a>
+       </td>
+  </tr>-->
+        <tr>
+            <td><a href="http://www.enowinfo.com/enowsoft.html" target="_blank"><img src="images/yytjs.gif" alt="易游通5+2功能介绍" width="210" height="34" 
+
+border="0" /></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://www.enowinfo.com" target="_blank"><img src="images/yytgs.gif" alt="更多介绍请访问公司网站" width="210" height="33" border="0" 
+
+/></a></td>
+        </tr>
+        <tr>
+            <td align="left" class="yytbj">
+                &nbsp;&nbsp;&nbsp; 易游通“5+2” 是专门针对旅行 社而开发的一款集内部办公管理（业 务管理、客户管理、财务管理、行政 管理、供应商管理）和外部营
+
+销管理
+                （分销管理、网站直销）于一体的旅 行社信息化管理软件。提供了旅行社 营销宣传、产品分销、在线营销和传 统业务管理相结合的电子商务营销和 企业规范
+
+管理的全新模式。
+                <br />
+                <span class="yytbjtel">咨询热线：0571-56884918，56884627<br />
+                    QQ：774931073，1397604721</span>
+            </td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+
+        var url = "http://demo.gocn.cn/EyouSoft_Encry_Login.aspx?
+
+UUEncyCode=4cb4d582543c9696e30e4e87c1a549c6911dd7ff2b0079604df4b77cef86bb845e5868b4f2f46af895adf6c4dfa6a627"
+        $(function() {
+            //初始化绑定组团数据
+            BindURL(ZTdataUrl, url, "5724");
+        })
+        function Go(thiss) {
+	    $("#menu").hide();
+            setTimeout(function(){$("#menu").show()},200);
+            var objtr = $(thiss).parent().parent();
+            objtr.find("td[class!='']").each(function() {
+                $(this).removeClass();
+                $(this).addClass("wentwo");
+                $(this).attr("background", "/EyouSoft/images/bj02.gif");
+            })
+            var obj = $(thiss).parent();
+            obj.removeClass();
+            obj.addClass("wenone");
+            obj.attr("background", "/EyouSoft/images/bj01.gif");
+            var uuid = $(thiss).attr("uuid");
+
+            switch (uuid) {
+                case "5724":
+
+                    BindURL(ZTdataUrl, url, uuid);
+                    break;
+                case "6225":
+
+                    BindURL(DJdataUrl, url, uuid);
+                    break;
+                case "6227":
+
+                    BindURL(GJdataUrl, url, uuid);
+                    break;
+            }
+            return false;
+        }
+        function BindURL(data, urls, uuid) {
+            urls += "&UUID=" + uuid + "&LoginUrl=";
+            $(".count").find("a").each(function() {
+                switch ($(this).text()) {
+                    case "发布计划":
+                        $(this).attr("href", urls + data.发布计划);
+                        break;
+                    case "我要报价":
+                        $(this).attr("href", urls + data.我要报价);
+                        break;
+                    case "预订报名":
+                        $(this).attr("href", urls + data.预订报名);
+                        break;
+                    case "计调安排":
+                        $(this).attr("href", urls + data.计调安排);
+                        break;
+                    case "统计分析":
+                        $(this).attr("href", urls + data.统计分析);
+                        break;
+                    case "行政中心":
+                        $(this).attr("href", urls + data.行政中心);
+                        break;
+                    case "我要收款":
+                        $(this).attr("href", urls + data.我要收款);
+                        break;
+                    case "我要付款":
+                        $(this).attr("href", urls + data.我要付款);
+                        break;
+                    case "导游中心":
+                        $(this).attr("href", urls + data.导游中心);
+                        break;
+                    case "单项服务":
+                        $(this).attr("href", urls + data.单项服务);
+                        break;
+                }
+            })
+        }
+        var ZTdataUrl = {
+            //            fbjh: "/TravelAgency/TourGroup/VistorSpecialGroup.aspx", //发布计划
+            //            wybj: "/TravelAgency/TourQuote/", //我要报价
+            //            ydbj: "/TravelAgency/visitors/AllVistorList.aspx", //预定报名
+            //            jdap: "/TravelAgency/TourPlan/AllTourGroup.aspx", //机调安排
+            //            tjfx: "/TravelAgency/StatReport/FinanceStatReport.aspx", //统计分析
+            //            xzzx: "/TravelAgency/ExecutiveCenter/WorkInfoList.aspx", //行政中心
+            //            wysk: "/TravelAgency/FinancialAffairs/", //我要收款
+            //            wyfk: "/TravelAgency/FinancialAffairs/Pay.aspx", //我要付款
+            //            dyzx: "/TravelAgency/CiceroniCenter/ReserveCiceroniYieldInfo.aspx", //导游中心
+            //            dxfw: "/TravelAgency/SingleOperation/"//单项服务
+            发布计划: "/MqGoPages/PublishPlan.aspx?tab=0",
+            我要报价: "/MqGoPages/PublisQuote.aspx?tab=2",
+            预订报名: "/MqGoPages/TourApply.aspx?tab=1",
+            计调安排: "/TravelAgency/TourPlan/AllTourGroup.aspx",
+            统计分析: "/TravelAgency/StatReport/FinanceStatReport.aspx",
+            行政中心: "/TravelAgency/ExecutiveCenter/WorkInfoList.aspx",
+            我要收款: "/TravelAgency/FinancialAffairs/",
+            我要付款: "/MqGoPages/Pay.aspx?tab=5",
+            导游中心: "/TravelAgency/CiceroniCenter/ReserveCiceroniYieldInfo.aspx",
+            单项服务: "/TravelAgency/SingleOperation/"
+        }
+        var DJdataUrl = {
+            发布计划: "/MqGoPages/PublishPlan.aspx?tab=0",
+            我要报价: "/MqGoPages/PublisQuote.aspx?tab=2",
+            预订报名: "/MqGoPages/TourApply.aspx?tab=1",
+            计调安排: "/TravelAgency/TourPlan/AllTourGroup.aspx",
+            统计分析: "/TravelAgency/StatReport/FinanceStatReport.aspx",
+            行政中心: "/TravelAgency/ExecutiveCenter/WorkInfoList.aspx",
+            我要收款: "/TravelAgency/FinancialAffairs/?FClass=2",
+            我要付款: "/MqGoPages/Pay.aspx?tab=5",
+            导游中心: "/TravelAgency/CiceroniCenter/ReserveCiceroniYieldInfo.aspx",
+            单项服务: "/TravelAgency/SingleOperation/"
+        };
+        var GJdataUrl = {
+            发布计划: "/MqGoPages/PublishPlan.aspx?tab=0",
+            我要报价: "/MqGoPages/PublisQuote.aspx?tab=2",
+            预订报名: "/MqGoPages/TourApply.aspx?tab=1",
+            计调安排: "/TravelAgency/TourPlan/AllTourGroup.aspx",
+            统计分析: "/TravelAgency/StatReport/FinanceStatReport.aspx",
+            行政中心: "/TravelAgency/ExecutiveCenter/WorkInfoList.aspx",
+            我要收款: "/TravelAgency/FinancialAffairs/",
+            我要付款: "/MqGoPages/Pay.aspx?tab=5",
+            导游中心: "/TravelAgency/CiceroniCenter/ReserveCiceroniYieldInfo.aspx",
+            单项服务: "/TravelAgency/SingleOperation/"
+        };
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,463 @@
+/* CSS Document */
+ul li{ text-decoration:none;}
+.ticket_wrap{width:980px;margin:0 auto; position:relative;}
+.ticket_tip{color:#333;position:absolute;top:108px;left:20px;}
+.ticket_tip a,.index_top_tips a{color:#0076FA;
+text-decoration:none;}
+.ticket_tip span{color:#f00;}
+.ticket_top{overflow:hidden;zoom:1;width:980px;}
+.ticket_top01{float:left;color:#333;}
+.ticket_top02{float:right;width:752px;overflow:hidden;zoom:1;}
+
+.ticket_top02_left{float:left;width:452px;}
+.ticket_top02_right{float:left;margin-left:10px;display:inline;}
+
+.ticket_top01{width:218px;height:342px;border:1px solid #c79bb7;}
+.ticket_top01_title{border-bottom:1px solid #c79bb7;line-height:24px;*line-height:28px;color:#bb0058;font-weight:bold;font-size:14px;width:208px;padding-left:10px;}
+.ticket_top01 p{padding-left:10px;line-height:23px;}
+.ticket_top01 p a{margin-right:10px;color:#0056f3;text-decoration:none;}
+.ticket_top01 p a.ticket_hot{color:#ff3000;text-decoration:none;}
+.ticket_top01 p a.ticket_hot:hover{color:#ff3000;text-decoration:underline;}
+.ticket_top01 .ticket_top01_center{border-top:1px dashed #ccc;border-bottom:1px dashed #ccc;margin:5px 0px;padding:3px 0px;}
+
+.ticket_top01 p a:hover{color:#ba2636;text-decoration:underline;}
+.ticket_top01 strong{display:block;margin:10px 0px 5px 10px;}
+
+.ticket_top01 .ticket_tl_img{margin:10px 0px 0px 10px;}
+.ticket_top01 .ticket_tl_img li{float:left;margin-right:10px;display:inline;text-align:center;}
+.ticket_top01 .ticket_tl_img li a{color:#0056f3;text-decoration:none;}
+.ticket_top01 .ticket_tl_img li a:hover{color:#ba2636;text-decoration:underline;}
+.ticket_tl_img img{padding:1px;border:1px solid #ccc;margin-bottom:5px;}
+/*jiaodiantu*/
+.auto_2_left_1_2{width: 452px; height: 220px;float:left;display:inline;}
+#NewsPic {width: 452px; position: relative; TOP: 0px; HEIGHT: 220px;}
+#NewsPicTxt {BORDER-TOP-width: 1px;   FONT-WEIGHT: bold; border-left-width: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-width: 1px;  MARGIN: 3px auto 0px;  color: black; FONT-FAMILY: Sans-Serif; position: relative; height: 0px; text-align: center; border-right-width: 1px}
+#NewsPicTxt a {	color: black; text-decoration: none}
+#NewsPicTxt a:hover {	color: black; text-decoration: none}
+#NewsPicTxt a:visited {	color: black; text-decoration: none}
+#NewPicTxt a:link {	color: black; text-decoration: none}
+#NewsPicTxt a:hover {	color: red}
+#NewsPic a {	text-decoration: none}
+#NewsPic a:hover {	text-decoration: none}
+#NewPic a:visited {	text-decoration: none}
+#NewsPic .Picture {	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; LEFT: 0px; border-left: #ffffff 1px solid; width: 100%; BORDER-BOTTOM: #ffffff 1px solid; position: absolute; TOP: 0px; HEIGHT: 100%}
+#NewsPic .Nav {	RIGHT: 0px; width: 100%; bottom: 0px; position: absolute; HEIGHT: 12px}
+#NewsPic .Nav span {	display: block; background: #000000; FLOAT: right; FONT: 10px Courier; border-left: #ffffff 1px solid; width: 24px; cursor: pointer; color: #ffffff; HEIGHT: 100%; TEXT-ALIGN: center}
+#NewsPic .Nav span.Cur {	background: #f8800b; border:1px solid #f38c24; color: white}
+#NewsPic .Nav span.Normal {	background: #000000; filter: Alpha(opacity=50); color: white; opacity: .5}
+#NewsPic .Nav span a {	display: block; width: 100%; color: white; position: relative; height: 100%}
+#NewsPic .Nav span a:hover {	cursor: pointer}
+/*jiaodiantu end*/
+.ticket_foc_bottom{width:452px;height:100px;padding-top:10px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_04.gif) no-repeat;line-height:30px;margin-top:14px;_margin-top:3px;}
+.ticket_foc_bottom span{display:inline-block;width:218px;margin:0px 0px 0px 10px;}
+.ticket_foc_bottom span a{font-size:14px;color:#0054de;text-decoration:none;}
+.ticket_foc_bottom span a:hover{color:#ba2636;text-decoration:underline;}
+.ticket_foc_bottom strong{display:inline-block;width:60px;font-style:normal;color:#f00;font-weight:normal;}
+.ticket_foc_bottom em{display:inline-block;width:90px;font-style:normal;color:#666;background:url(http://pic.lvmama.com/img/viewspot/vs_line01.jpg) repeat-x left 16px;margin-right:5px;}
+.ticket_foc_bottom img{ vertical-align:middle;}
+
+.ticket_help{width:280px;border:1px solid #e2d6b8;background:#fffaf0;height:72px;line-height:22px;padding-left:8px;padding-top:5px;color:#666;}
+.ticket_help p{width:140px;float:left;}
+.ticket_help p a{color:#0056f3;text-decoration:none;}
+.ticket_help p a:hover{color:#ba2636;text-decoration:underline;}
+
+.ticket_tuijian{width:288px;border:1px solid #ccc;margin-top:10px;}
+.ticket_tuijian_title{border-bottom:1px solid #ccc;height:21px;padding-top:7px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_02.gif) repeat-x;}
+.ticket_tuijian_title strong{float:left;font-size:14px;color:#bb0058;padding-left:10px;}
+.ticket_tuijian_title .more{float:right;}
+.ticket_tuijian_title a{color:#0056f3;text-decoration:none;margin-right:10px;}
+.ticket_tuijian_title a:hover{color:#ba2636;text-decoration:underline;}
+.ticket_tuijian_main{padding:8px 0px 4px 5px;overflow:hidden;zoom:1;}
+.ticket_tuijian_text{overflow:hidden;zoom:1;border-bottom:1px dashed #dbdbdd;padding-bottom:6px;margin:0px 10px 6px 0px;}
+.ticket_tuijian_text_left{width:200px;float:left;margin-left:5px;display:inline;color:#666;font-family:Verdana;line-height:20px;}
+.ticket_tuijian_text_right{width:60px;float:right;color:#f00;line-height:20px;}
+.ticket_tuijian_text_left a{color:#0056f3;text-decoration:none;font-size:14px;}
+.ticket_tuijian_text_left a:hover{color:#ba2636;text-decoration:underline;}
+.ticket_tuijian_text_right em{color:#666;background:url(http://pic.lvmama.com/img/viewspot/vs_line01.jpg) repeat-x 0px 7px;font-style:normal}
+
+.ticket_hot10{overflow:hidden;zoom:1;}
+
+.ticket_ten{width:288px;border:1px solid #ccc;float:right;}
+.ticket_ten_title{border-bottom:1px solid #ccc;height:21px;padding-top:7px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_02.gif) repeat-x;}
+.ticket_ten_title strong{float:left;font-size:14px;color:#BB0058;padding-left:10px;}
+.ticket_ten_title .more{float:right;}
+.ticket_ten_title a{color:#0056f3;text-decoration:none;margin-right:10px;}
+.ticket_ten_title a:hover{color:#ba2636;text-decoration:underline;}
+.ticket_ten_main{padding:10px 0px 5px 5px;*padding:10px 0px 2px 5px;_padding:10px 0px 3px 5px;overflow:hidden;zoom:1;}
+.ticket_ten_text{overflow:hidden;zoom:1;margin:0px 10px 20px 0px;}
+.ticket_ten_text_left{width:100px;float:left;margin-left:5px;display:inline;color:#666;font-family:Verdana;line-height:20px;}
+.ticket_ten_text_right{width:160px;float:right;color:#555;line-height:20px;}
+.ticket_ten_text_right a{color:#0056f3;text-decoration:none;}
+.ticket_ten_text_right a:hover{color:#ba2636;text-decoration:underline;}
+.ticket_ten_text_right em{color:#666;background:url(http://pic.lvmama.com/img/viewspot/vs_line01.jpg) repeat-x 0px 7px;font-style:normal}
+.ticket_ten_text_right strong{color:#f00;}
+.ticket_ten_text_left img{padding:1px; border:1px solid #ccc;}
+
+
+.ticket_comment{width:288px;border:1px solid #ccc;float:right;margin-top:10px;}
+.ticket_comment_title,ticket_top02_right_title{border-bottom:1px solid #ccc;height:21px;padding-top:7px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_02.gif) repeat-x;}
+.ticket_top02_right_title{width:260px;border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;height:21px;padding-top:7px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_02.gif) repeat-x;}
+.ticket_comment_title strong{float:left;font-size:14px;color:#BB0058;padding-left:10px;}
+.ticket_top02_right_title strong{float:left;font-size:14px;color:#BB0058;padding-left:10px;}
+.ticket_comment_title .more{float:right;}
+.ticket_comment_title a{color:#0056f3;text-decoration:none;margin-right:10px;}
+.ticket_comment_title a:hover{color:#ba2636;text-decoration:underline;}
+.ticket_comment_main{padding:8px 0px 0px 0px;*padding:2px 0px 0px 0px;overflow:hidden;zoom:1;}
+.ticket_comment_text{margin:0px 0px 5px 10px;color:#1c1c1c;line-height:24px;}
+.ticket_comment_text span{color:#bb0058;}
+.ticket_comment_text p{color:#444;}
+.ticket_comment_text a{color:#0056f3;text-decoration:none;font-weight:bold;}
+.ticket_comment_text a:hover{color:#ba2636;text-decoration:underline;}
+
+.ticket_search_banner{width:980px;overflow:hidden;zoom:1;margin:10px 0px;}
+.ticket_search{float:left;width:678px;height:72px;border:1px solid #e2d6b8;background:#fffaf0;overflow:hidden;zoom:1;}
+.ticket_search_left{float:left;font-size:14px;padding:20px 0px 0px 30px;}
+.ticket_search_left strong{color:#bb0058;}
+.ticket_search_left span{color:#f00;}
+
+.ticket_search_right{float:left;}
+.ticket_search_input{float:left;width:369px;height:23px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_search_bg.gif) no-repeat;border:none;margin:10px 0px 10px 10px;padding:5px 0px 2px 2px;line-height:24px;font-size:14px;color:#333;}
+.ticket_banner{float:right;}
+
+.ticket_search_button{margin:10px 0px 0px 0px; display:block;float:left;}
+.ticket_search_text{width:380px;margin-left:10px;}
+.ticket_search_text a{color:#0056f3;text-decoration:none;}
+.ticket_search_text a:hover{color:#ba2636;text-decoration:underline;}
+.ticket_search_text a.ticket_search_hot{color:#ff3000;text-decoration:none;}
+.ticket_search_text a.ticket_search_hot:hover{color:#ff3000;text-decoration:underline;}
+
+
+
+
+.dis { display: block } 
+.undis { display: none } 
+#cntR,#cntR2{ width:680px } 
+#NewsTop,#NewsTop3{ clear: both; margin-bottom:10px;} 
+#NewsTop2,#NewsTop4{ clear: both;} 
+#NewsTop P,#NewsTop2 P,#NewsTop3 P,#NewsTop4 P  { float: left;  } 
+#NewsTop P.topTit,#NewsTop2 P.topTit,#NewsTop3 P.topTit,#NewsTop4 P.topTit{line-height:30px;display:block;font-weight:bold;width:160px;} 
+#NewsTop P.topC0,#NewsTop2 P.topC0,#NewsTop3 P.topC0,#NewsTop4 P.topC0 {line-height:30px;border-left:1px #ccc solid;border-right:1px #ccc solid;padding:0 10px; cursor:pointer} 
+#NewsTop P.topC1,#NewsTop2 P.topC1,#NewsTop3 P.topC1,#NewsTop4 P.topC1 {line-height:30px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_11.gif) top left repeat-x;padding:0 10px; border-left:1px #ccc solid;border-right:1px #ccc solid;font-weight:bold;color:#d7008e;cursor:pointer;} 
+
+#NewsTop #NewsTop_tit{width:680px;height:30px;line-height:30px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_10.gif) left top;color:#333;} 
+#NewsTop2 #NewsTop_tit2 {width:680px;height:30px;line-height:30px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_12.gif) left top;color:#333;} 
+#NewsTop3 #NewsTop_tit3 {width:708px;height:30px;line-height:30px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_14.gif) left top;color:#333;} 
+#NewsTop4 #NewsTop_tit4 {width:708px;height:30px;line-height:30px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_15.gif) left top;color:#333;} 
+#NewsTop #NewsTop_cnt,#NewsTop2 #NewsTop_cnt2{width:663px;border-left:1px solid #DADADA;border-bottom:1px solid #DADADA;border-right:1px solid #DADADA;padding:15px 0 15px 15px;text-align:left;display:inline-block;line-height:17px;*line-height:19px;}
+#NewsTop3 #NewsTop_cnt3{width:691px;border-left:1px solid #DADADA;border-bottom:1px solid #DADADA;border-right:1px solid #DADADA;padding:15px 0 15px 15px;text-align:left;display:inline-block;line-height:17px;*line-height:19px;}
+#NewsTop4 #NewsTop_cnt4 {width:691px;border-left:1px solid #DADADA;border-bottom:1px solid #DADADA;border-right:1px solid #DADADA;padding:15px 0 15px 15px;text-align:left;display:inline-block;line-height:17px;*line-height:19px;}
+.ep_mdbcn{width:680px;float:left;}
+
+#NewsTop_tit strong,#NewsTop_tit2 strong,#NewsTop_tit3 strong,#NewsTop_tit4 strong,.view_jdk_title span{font-weight:normal;margin-right:10px;float:right;display:inline;}
+#NewsTop_tit strong a,#NewsTop_tit2 strong a,#NewsTop_tit3 strong a,#NewsTop_tit4 strong a,.view_jdk_title span a{color:#0056f3;text-decoration:none;}
+#NewsTop_tit strong a:hover,#NewsTop_tit2 strong a:hover,#NewsTop_tit3 strong a:hover,#NewsTop_tit4 strong a:hover,.view_jdk_title span a:hover{color:#ba2636;text-decoration:underline;}
+.ep_zlimg{float:left;}
+.ep_qh1{float:right;width:444px;}
+.ep_qh1 li{text-align:center;float:left;margin:2px 25px 6px;display:inline;color:#666;}
+.ep_qh1 li strong{display:block;}
+.ep_qh1 li img{padding:1px; border:1px solid #ccc;}
+.ep_qh1 li a{color:#0056f3;text-decoration:none;}
+.ep_qh1 li a:hover{color:#ba2636;text-decoration:underline;}
+.ep_qh1 li h2{font-weight:bold;}
+.ep_qh1 li em{background:url(http://pic.lvmama.com/img/viewspot/vs_line01.jpg) repeat-x left 7px;font-style:normal;}
+.ep_qh1 li h4{color:#f00;display:inline;font-weight:normal;font-size:12px;}
+
+.ep_qh2{height:240px;}
+.ep_qh2 li{float:left;margin:0px 15px 20px 0px;display:inline;color:#666;}
+.ep_qh2 li strong{display:block;font-weight:normal;}
+.ep_qh2 li img{padding:1px; border:1px solid #ccc;float:left;margin-right:10px;display:inline;}
+.ep_qh2 li a{color:#0056f3;text-decoration:none;}
+.ep_qh2 li a:hover{color:#ba2636;text-decoration:underline;}
+.ep_qh2 li p{float:right;width:170px;margin-top:5px;line-height:22px;}
+.ep_qh2 li .view_em1 a{color:#0051d8;text-decoration:none;font-style:normal;}
+.ep_qh2 li .view_em1 a:hover{color:#0051d8;text-decoration:underline;}
+.ep_qh2 li .view_em2 a{font-style:normal;font-size:12px;color:#ee2700;text-decoration:none;}
+.ep_qh2 li .view_em2 a:hover{color:#ee2700;text-decoration:underline;}
+
+.view_zlimg{float:left;overflow:hidden;zoom:1;}
+.view_zlimg_left{float:left;}
+.view_zlimg_left img{padding:1px;border:1px solid #ccc;margin-right:10px;}
+.view_zlimg_right{float:left;width:310px;line-height:20px;color:#555}
+.view_zlimg_right em{font-style:normal;color:#ec2c00}
+.view_zlimg_right p{color:#333;}
+.view_zlimg_right p a{color:#0051d8;text-decoration:none;}
+.view_zlimg_right p a:hover{color:#ba2636;text-decoration:underline;}
+.view_zlimg_right h1{display:block;}
+.view_zlimg_right h1 a{font-size:14px;font-weight:bold;color:#4b3950;text-decoration:none;}
+.view_zlimg_right h1 a:hover{color:#ba2636;text-decoration:underline;}
+.view_zlimg_right h1 strong{font-weight:normal;color:#0051d8}
+.view_zlimg_right h1 strong a{font-size:12px;font-weight:normal;color:#0051d8;text-decoration:none;}
+.view_zlimg_right h1 strong a:hover{color:#ba2636;text-decoration:underline;}
+.view_qh1{float:right;width:190px;}
+.view_qh1 li{text-align:center;float:left;margin:2px 25px 6px;display:inline;color:#666;}
+.view_qh1 li strong{display:block;}
+.view_qh1 li img{padding:1px; border:1px solid #ccc;}
+.view_qh1 li a{color:#0056f3;text-decoration:none;}
+.view_qh1 li a:hover{color:#ba2636;text-decoration:underline;}
+.view_qh1 li h2{font-weight:bold;}
+.view_qh1 li em{background:url(http://pic.lvmama.com/img/viewspot/vs_line01.jpg) repeat-x left 7px;font-style:normal;}
+.view_qh1 li h4{color:#f00;display:inline;font-weight:normal;font-size:12px;}
+
+.ticket_tc{overflow:hidden;zoom:1;margin-bottom:10px;*margin-bottom:0px;}
+.ticket_t{float:left;width:680px;}
+.ticket_c{float:right;width:290px;}
+.ticket_t_top{width:658px;border:1px solid #f3dfef;background:#fff5fd;line-height:30px;padding:0 0 0 20px;color:#555;margin-bottom:10px;}
+.ticket_t_top span{color:#ff3000}
+.ticket_t_top a{color:#0056f3;text-decoration:none;}
+.ticket_t_top a:hover{color:#ba2636;text-decoration:underline;}
+
+.ticket_allcity{width:978px;border:1px solid #ccc;margin:10px 0px 10px 0px;}
+.ticket_allcity_title{width:978px;border-bottom:1px solid #ccc;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_13.gif) repeat-x;line-height:26px;color:#bb0058;font-size:14px;font-weight:bold;text-indent:1em;}
+.ticket_allcity_main{width:960px;height:50px;padding:10px 0px 0px 5px;}
+.ticket_allcity_main a{color:#0056f3;text-decoration:none;margin:0px 10px;line-height:22px;}
+.ticket_allcity_main a:hover{color:#ba2636;text-decoration:underline;}
+.ticket_allcity_main a.ticket_bottom_hot{color:#ff3000;text-decoration:none;}
+.ticket_allcity_main a.ticket_bottom_hot:hover{color:#ff3000;text-decoration:underline;}
+
+
+/*view_index*/
+.view_wrap{width:980px;margin:0 auto;}
+.view_tip{color:#333;padding:8px 0px 0px 10px;}
+.view_tip span{color:#f00;}
+.view_top{overflow:hidden;zoom:1;width:980px;margin-bottom:10px;}
+.view_top_left{width:188px;height:360px;float:left;}
+.view_top01{float:left;color:#333;}
+.view_top02{float:right;width:780px;overflow:hidden;zoom:1;}
+
+.view_top02_left{float:left;width:508px;}
+.view_top02_right{float:left;margin-left:10px;display:inline;}
+
+.view_top01{width:188px;height:247px;border:1px solid #c79bb7;}
+.view_top01_title{border-bottom:1px solid #c79bb7;line-height:24px;*line-height:28px;color:#bb0058;font-weight:bold;font-size:14px;width:178px;padding-left:10px;}
+.view_top01 p{padding-left:10px;line-height:23px;}
+.view_top01 p a{margin-right:15px;color:#0056f3;text-decoration:none;}
+.view_top01 p a.view_hot{color:#ff3000;text-decoration:none;}
+.view_top01 p a.view_hot:hover{color:#ff3000;text-decoration:underline;}
+.view_top01 .view_top01_center{border-top:1px dashed #ccc;margin:5px 0px;padding:3px 0px;}
+
+
+.view_top01 p a:hover{color:#ba2636;text-decoration:underline;}
+.view_top01 strong{display:block;margin:10px 0px 5px 10px;}
+
+.view_top01 .view_tl_img{margin:10px 0px 0px 10px;}
+.view_top01 .view_tl_img li{float:left;margin-right:10px;display:inline;text-align:center;}
+.view_top01 .view_tl_img li a{color:#0056f3;text-decoration:none;}
+.view_top01 .view_tl_img li a:hover{color:#ba2636;text-decoration:underline;}
+.view_tl_img img{padding:1px;border:1px solid #ccc;margin-bottom:5px;}
+
+
+.view_search{width:170px;height:90px;background:#fdf6fa;border:1px solid #d8c7d2;margin-top:10px;_margin-top:0px;color:#333;padding:10px 9px 0;}
+.view_input{width:165px;height:20px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_search_bg.gif) no-repeat;border:none;padding:4px 0px 0px 5px;border:1px solid #aca4a9;margin:5px 0px;}
+.view_search img{margin-left:100px;}
+
+
+/*TOP*/
+.l {	FLOAT: left}
+.r {	FLOAT: right}
+.w1 {	WIDTH: 648px}
+.w2 {	WIDTH: 290px}
+.w3 {	WIDTH: 234px}
+.w4 {	WIDTH: 402px}
+.w5 {	WIDTH: 318px}
+.w6 {	}
+.cf {	CLEAR: both; DISPLAY: block; FONT-SIZE: 1px; LINE-HEIGHT: 1px; HEIGHT: 0px}
+.yspace {float:right;}
+.block {	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: #fff; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid}
+.btl {	DISPLAY: block; FONT-SIZE: 1px; LINE-HEIGHT: 1px; POSITION: relative; HEIGHT: 6px}
+.btr {	DISPLAY: block; FONT-SIZE: 1px; LINE-HEIGHT: 1px; POSITION: relative; HEIGHT: 6px}
+.bbl {	DISPLAY: block; FONT-SIZE: 1px; LINE-HEIGHT: 1px; POSITION: relative; HEIGHT: 6px}
+.sort .title {	BACKGROUND: url(../images/b1t.jpg) repeat-x; HEIGHT: 32px}
+.sort .title H2 {	BORDER-RIGHT: #ccc 1px solid; FONT-SIZE: 1.1em; LEFT: -1px; POSITION: relative; TOP: -1px; HEIGHT: 27px}
+.sort .title H2 SPAN {	PADDING-LEFT: 27px; LINE-HEIGHT: 27px}
+.sort .title LI {	FONT-SIZE: 1.1em; BACKGROUND: url(../images/b1tDot.jpg) no-repeat right 1px; FLOAT: left; LINE-HEIGHT: 28px; HEIGHT: 28px; TEXT-ALIGN: center}
+.sort .title LI SPAN {	LEFT: -2px; FLOAT: left; POSITION: relative; TOP: -1px; HEIGHT: 33px}
+.sort .title .current A:link {	COLOR: #fff}
+.sort .title .current A:visited {	COLOR: #fff}
+.sort .txt {	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0.4em}
+.sort .txt LI {	PADDING-RIGHT: 0px; PADDING-LEFT: 28px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 22px; PADDING-TOP: 0px; BORDER-BOTTOM: #ddd 1px dashed; HEIGHT: 22px}
+.sort .txt LI.more {	PADDING-RIGHT: 10px; BORDER-TOP: #eee 1px solid; PADDING-LEFT: 8px; BACKGROUND: #f8f8f8; PADDING-BOTTOM: 6px; MARGIN: 0px 0px 3px; PADDING-TOP: 8px; BORDER-BOTTOM: #eee 1px solid}
+.sort .numBig {	WIDTH: 20px; HEIGHT: 54px; TEXT-ALIGN: center}
+.sort .numBig SPAN {	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 1.2em; WIDTH: 20px; COLOR: #fff; LINE-HEIGHT: 20px; BORDER-BOTTOM: #fff 1px solid; HEIGHT: 20px}
+.sort .productImg {	HEIGHT: 74px}
+.sort .productImg IMG {	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #ccc 1px; PADDING-TOP: 1px; BORDER-BOTTOM: #ccc 1px solid}
+.sort .productInfo H3 {	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 1.1em; PADDING-BOTTOM: 3px; LINE-HEIGHT: 1.1em; PADDING-TOP: 1px}
+.sort .productInfo P {	COLOR: #666; LINE-HEIGHT: 1.4em}
+.sort1 {	}
+.sort1 .title {	BACKGROUND: url(../images/b1t.jpg) repeat-x; HEIGHT: 32px}
+.sort1 .title H2 {	BORDER-RIGHT: #ccc 1px solid; FONT-SIZE: 1.1em; LEFT: -1px; POSITION: relative; TOP: -1px; HEIGHT: 27px}
+.sort1 .title H2 SPAN {	PADDING-LEFT: 27px; LINE-HEIGHT: 27px}
+.sort1 .title LI {	FONT-SIZE: 1.1em; BACKGROUND: url(../images/b1tDot.jpg) no-repeat right 1px; FLOAT: left; LINE-HEIGHT: 28px; HEIGHT: 28px; TEXT-ALIGN: center}
+.sort1 .title LI SPAN {	LEFT: -2px; FLOAT: left; POSITION: relative; TOP: -1px; HEIGHT: 33px}
+.sort1 .title .current A:link {	COLOR: #fff}
+.sort1 .title .current A:visited {	COLOR: #fff}
+.sort1 .txt {	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0.4em}
+.sort1 .txt LI {	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px;}
+.sort1 .txt LI.listHeight { HEIGHT: 26px;color:#555;}
+.sort1 .txt LI.listHeight span{color:#0051d8;padding:0px 10px 0px 5px;}
+.sort1 .txt LI.listHeight strong{font-size:11px;background:url(http://pic.lvmama.com/img/view_ticket/view_num.gif) no-repeat;display:inline-block;width:15px;height:12px;padding:1px 1px 0px 0px;color:#fff;text-align:center;font-weight:normal;margin-right:5px;}
+
+.sort1 .txt LI.more {	PADDING-RIGHT: 10px; BORDER-TOP: #eee 1px solid; PADDING-LEFT: 8px; BACKGROUND: #f8f8f8; margin-bottom:6px;PADDING-TOP: 4px;_PADDING-TOP: 2px; BORDER-BOTTOM: #eee 1px solid}
+.sort1 .numBig {	WIDTH: 20px; HEIGHT: 54px; TEXT-ALIGN: center}
+.sort1 .numBig SPAN {	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 1.2em; WIDTH: 20px; COLOR: #fff; LINE-HEIGHT: 20px; BORDER-BOTTOM: #fff 1px solid; HEIGHT: 20px}
+.sort1 .productImg {	HEIGHT: 74px}
+.sort1 .productImg IMG {margin-right:5px;BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #ccc 1px; PADDING-TOP: 1px; BORDER-BOTTOM: #ccc 1px solid}
+.sort1 .productInfo H3 {	 FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; LINE-HEIGHT:12px; PADDING-TOP: 1px}
+.sort1 .productInfo P {	COLOR: #666; LINE-HEIGHT: 1.4em}
+.hotShop {width:260px	}
+.hotShop .title H2 {	BACKGROUND: url(../images/p.jpg) #fff no-repeat 5px 4px; WIDTH: 78px}
+.hotShop .title H2 SPAN {	COLOR: #ff6e00}
+.hotShop .title UL {	PADDING-LEFT: 12px}
+.hotShop .title LI {	WIDTH: 70px}
+.hotShop .title LI SPAN {	WIDTH: 70px}
+.hotShop .title .current SPAN {	FONT-WEIGHT: bold; BACKGROUND: url(../images/hotShopCurrent.jpg) no-repeat}
+.hotShop .txt {	}
+.hotShop .txt11 {}
+.hotShop .txt .num1 {	BACKGROUND: url(../images/p1.gif) no-repeat 10px 5px}
+.hotShop .txt .num2 {	BACKGROUND: url(../images/p2.gif) no-repeat 10px 5px}
+.hotShop .txt .num3 {	BACKGROUND: url(../images/p3.gif) no-repeat 10px 5px}
+.hotShop .txt .num4 {	BACKGROUND: url(../images/p4.gif) no-repeat 10px 5px}
+.hotShop .txt .num5 {	BACKGROUND: url(../images/p5.gif) no-repeat 10px 5px}
+.hotShop .txt .num6 {	BACKGROUND: url(../images/p6.gif) no-repeat 10px 5px}
+.hotShop .txt .num7 {	BACKGROUND: url(../images/p7.gif) no-repeat 10px 5px}
+.hotShop .txt .num8 {	BACKGROUND: url(../images/p8.gif) no-repeat 10px 5px}
+.hotShop .txt .num9 {	BACKGROUND: url(../images/p9.gif) no-repeat 10px 5px}
+.hotShop .numBig {	BACKGROUND: #ff7800}
+.hotShop .numBig SPAN {	BACKGROUND: #f30}
+.hotShop .productImg {	PADDING-LEFT: 0px}
+.hotShop .productInfo {	 HEIGHT: 80px}
+
+.hotShop .productInfo H3 {	COLOR: #666;}
+.hotShop .productInfo H3 a{	COLOR: #0051d8; TEXT-DECORATION: none;line-height:16px;}
+.hotShop .productInfo H3 a:hover {	COLOR: #fa2636;TEXT-DECORATION: underline;}
+.hotShop .productInfo H3 span {background:url(http://pic.lvmama.com/img/view_ticket/view_num.gif) no-repeat;display:inline-block;width:15px;height:12px;padding:1px 1px 0px 0px;font-size:11px;color:#fff;text-align:center;}
+
+
+.view_center{overflow:hidden;zoom:1;width:980px;margin-bottom:10px;}
+.view_center_left{float:left;width:708px;}
+.view_center_right{float:right;width:262px;}
+.view_tese{width:708px;overflow:hidden;zoom:1;}
+.view_fenlei{width:708px;overflow:hidden;zoom:1;}
+.view_zt,.view_photos,.view_comment,.view_bbs{width:260px;border:1px solid #ccc;margin-bottom:10px;}
+.view_right_title{width:260px;height:21px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_13.gif) repeat-x;padding-top:7px;border-bottom:1px solid #ccc;}
+.view_right_title strong {
+color:#BB0058;
+float:left;
+font-size:14px;
+padding-left:10px;
+}
+.view_zt_main img{margin:10px 0px 0px 5px;}
+.view_zt_ul{margin-left:10px;}
+.view_zt_ul li{background:url(http://pic.lvmama.com/img/view_ticket/view_li_bg.gif) left center no-repeat;padding-left:10px;line-height:24px;}
+.view_zt_ul li a{color:#0051d8;text-decoration:none;}
+.view_zt_ul li a:hover{color:#ba2636;text-decoration:underline;}
+
+/*photo*/
+#mainbody {width:250px;margin:5px;}
+#mainphoto {cursor:pointer;display:block;}
+#photos {width:240px;height:54px;border:1px solid #222;overflow:hidden;margin:0 auto;}
+#showArea img {display:block;float:left;margin:1px 0;cursor:pointer;border:1px solid #222}
+.txt_1 {font:bold 24px Verdana, Tahoma;color:#fff;}
+#maiWord{text-align:center;}
+.view_photos_main{padding-bottom:10px;}
+
+.view_comment_ul,.view_bbs_ul{margin-left:10px;color:#666;padding:5px 0px;}
+.view_comment_ul li,.view_bbs_ul li{line-height:26px;}
+.view_comment_ul li a,.view_bbs_ul li a{color:#0051d8;text-decoration:none;}
+.view_comment_ul li a:hover,.view_bbs_ul li a:hover{color:#ba2636;text-decoration:underline;}
+.view_comment_ul span,.view_bbs_ul span{color:#333;}
+.view_bbs_ul strong{color:#db0058;font-weight:normal;margin-right:5px;}
+.view_bbs_ul strong a{color:#db0058;text-decoration:none;}
+.view_bbs_ul strong a:hover{color:#db0058;text-decoration:underline;}
+
+.view_ep_ul{font-size:14px;}
+.view_ep_ul li{line-height:24px;float:left;width:334px;}
+.view_ep_ul a{color:#0051d8;text-decoration:none;}
+.view_ep_ul a:hover{color:#ba2636;text-decoration:underline;}
+.view_ep_ul strong a{font-weight:normal;color:#ee2700;text-decoration:none;}
+.view_ep_ul strong a:hover{color:#ee2700;text-decoration:underline;}
+
+.view_tab{
+position:relative;width:190px;
+}
+/*兼容IE6:IE6下宽度不够*/
+.view_tab div{
+position:absolute;
+top:20px;
+left:0;
+width:158px;
+height:44px;
+border:solid #cbc0c4;
+border-width:0 1px 1px;
+background:#fcfdf0;
+}
+.view_tab div{
+display:none;
+}
+
+.view_tab .view_block{
+display:block;
+}
+
+/*选中的容器*/
+.view_tab h2{
+font-style:normal;
+font-size:12px;
+float:left;
+width:90px;
+height:20px;
+line-height:20px;
+color:#2b0030;
+cursor:pointer;
+text-align:center;
+background:#eee url(http://pic.lvmama.com/img/view_ticket/view_tab.gif) no-repeat;
+
+}
+/*默认标题样式*/
+.view_tab .view_up{
+font-style:normal;
+font-size:12px;
+float:left;
+width:90px;
+height:20px;
+line-height:20px;
+color:#2b0030;
+cursor:pointer;
+text-align:center;
+background:#fff url(http://pic.lvmama.com/img/view_ticket/view_tab1.gif) no-repeat;
+}
+.view_box_tese{overflow:hidden;zoom:1;border-bottom:1px dashed #ccc;padding-bottom:15px;margin:0px 10px 15px 0px;}
+.view_box_tese1{overflow:hidden;zoom:1;border-bottom:1px dashed #ccc;padding-bottom:15px;margin:0px 10px 0px 0px;}
+.view_block{padding:10px;}
+.view_block a{color:#120f0f;text-decoration:none;margin:0px 5px;line-height:22px;}
+.view_block a:hover{color:#ba2636;text-decoration:underline;}
+.view_num{float:left;background:url(http://pic.lvmama.com/cmt/img/larger_star_bg.gif) no-repeat left top;color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;margin:0 0 0 3px;padding:0px 7px;}
+.view_block img{float:left;margin-left:10px;display:inline;}
+
+.view_jdk{margin-top:10px;}
+.view_comm{color:#323232;line-height:24px;padding-left:10px;}
+.view_comm strong{color:#ff3000;}
+.view_jdk ul {padding:10px 0px 0px 15px;*padding:10px 0px 15px 15px;_padding:10px 0px 10px 15px;overflow:hidden;zoom:1;}
+.view_jdk ul li{float:left;display:inline;margin:0px 10px 10px 0px;line-height:20px; overflow:hidden;zoom:1;width:220px;}
+.view_jdk ul li img{float:left;padding:1px;border:1px solid #ccc;margin-right:5px; display:inline; }
+.view_jdk_right{float:left;width:110px;}
+.view_jdk ul li strong{display:block;color:#4b3950;font-size:14px;font-weight:bold;margin-top:5px;}
+.view_jdk ul li em{display:block;color:#4b3950;font-style:normal;}
+.view_jdk ul li a{color:#0060ff;text-decoration:none;font-weight:bold;}
+.view_jdk ul li a:hover{color:#ba2636;text-decoration:underline;}
+.view_jdk{width:706px;border:1px solid #ccc;}
+.view_jdk_title{width:706px;border-bottom:1px solid #ccc;height:21px;padding-top:7px;background:url(http://pic.lvmama.com/img/view_ticket/ticket_images_02.gif) repeat-x;}
+.view_jdk_title strong{float:left;font-size:14px;color:#bb0058;padding-left:10px;}
+
+.view_jdk_bottom{width:668px;line-height:30px;margin:0px 10px 10px;background:#f8f4e3;padding:0px 10px;font-size:14px;}
+.view_jdk_bottom a{color:#0060ff;text-decoration:none;font-size:12px;margin-right:10px;}
+.view_jdk_bottom a:hover{color:#0060ff;text-decoration:underline;}
+.view_jdk_bottom span{color:#ff1e00;}
+
+.chengnuo img{margin-top:10px;}
+
+.view_seo{width:978px;border:1px solid #ccc;height:100px;margin-bottom:10px;}
+
+.view_top_left .view_top01 a.placehot{color:#f00;}
+.view_center .view_center_left a.placehot{color:#f00;}
+.view_center .view_center_right a.placehot{color:#f00;}
+

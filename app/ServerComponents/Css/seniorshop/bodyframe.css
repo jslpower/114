@@ -1,0 +1,138 @@
+/* CSS Document code by 11447@sohu.com*/
+@charset "gb2312";
+BODY {font-size:12px;font-family:"宋体",Arial, Helvetica, sans-serif; text-align: center; background:#fff; margin:0px;}input,textarea,select {font-size:12px;font-family:"宋体",Arial, Helvetica, sans-serif;}
+div,img { behavior:url(../js/1215757920_1288632e.htc)}
+img {border: thin none;}table{	border-collapse:collapse;}TD {FONT-SIZE: 12px; line-height: 20px;}sup { color:#5B8E12;}.ff0000 {color:#f00;}
+ul {list-style:none;	margin:0px;	padding:0px;}
+li {line-height:150%;	list-style-type:none;}
+a {TEXT-DECORATION: none;}
+a:hover {TEXT-DECORATION: underline;}
+a:active {TEXT-DECORATION: none;}
+h1,h2,h3,h4,h5 {margin: 0px;padding: 0px;}
+h1{ font-size:16px;}
+.clear { clear:both;}
+
+.topmenu { background:url(/images/seniorshop/topmenu.gif) repeat-x; height:19px; margin-bottom:5px; padding-top:8px;}
+.raceShow{background-color:#F9FBFC;border:solid 1px #D6E2F0;position:absolute; top:-15px; display:none;width:80px;height:70px;padding:5px;font-size:14px;}
+.raceShow a.raceShowm:link,a.raceShowm:visited,a.raceShowm:hover{ font-size:12px; display:block;width:80px; height:22px; padding-top:2px;}
+.raceShow a:hover { background:#D6E2F0}
+#topbar-l,.topbar-l { width:105px; overflow:hidden; height:14px; float:left; text-align:left; padding-left:10px;}
+.topbar-r { width:500px; float:right; text-align:right;}
+
+.logoimg { width:150px; height:60px; float:left; border:1px solid #aaa; margin-left:10px; overflow:hidden;}
+.name { display:inline;  float:left; font-size:40px; font-family:黑体; padding:20px 0 0 10px; text-align:left; line-height:40px;}
+.name-id {display:inline; white-space:nowrap; font-size:12px;  padding-left:10px; }
+
+
+
+.mainbox { width:960px; clear:both; margin:0 auto; margin-top:8px;}
+.left { width:265px; float:left}
+.right { width:680px; float: right; text-align:left}
+.loginbar { font-size:14px; text-align:left; font-weight:bold;}
+.login { height:98px; padding:5px; text-align:left; line-height:24px;}
+.login .login-left { float:left; width:160px;}
+.deng{ width:92px; line-height:18px; margin-top:10px; text-align:center;}
+.login .login-right { float:left; width:70px; line-height:50px;}
+.login .login-right input { border:0px solid #fff; width:68px; height:43px;}
+.leftlinetitle { height:37px; margin-top:5px;}
+.leftlinetitle a { display:block; height:37px; text-decoration:none}
+.firendbar { padding:5px 0px 5px 15px; text-align:left;margin:15px auto 0px auto; clear:both; width:960px;}
+.firendlist {padding:5px 0px 5px 15px; width:960px;margin:0 auto;}
+.firendlist ul li{ width:130px; float:left; height:25px; text-align:left;}
+.fouse { width:385px; float:left;}
+.newsleft { width:287px; float:right;}
+.newsleft ul { padding:5px;}
+.newsleft ul li { line-height:25px;}
+
+.bar-line-mid { width:415px; float:left; padding-top:8px;}
+.bar-line-mid1 { width:533px; float:left; padding-top:0px; padding-left:10PX;}
+.bar-line-more { width:105px; float:right; padding-top:8px;}
+
+/*mayadd*/
+.maintop5{ margin-top:5px;}
+
+        .state1
+        {
+            background: url(/images/UserPublicCenter/state1.gif) no-repeat 2px;
+            color: #FF0000;
+            border: 1px solid #FF0000;
+        }
+        .state2
+        {
+            background: url(/images/UserPublicCenter/state2.gif) no-repeat 2px;
+            color: #E48B00;
+            border: 1px solid #E48B00;
+        }
+        .state3
+        {
+            background: url(/images/UserPublicCenter/state3.gif) no-repeat 2px;
+            color: #0296DB;
+            border: 1px solid #0296DB;
+        }
+        .state4
+        {
+            background: url(/images/UserPublicCenter/state4.gif) no-repeat 2px;
+            color: #A4188A;
+            border: 1px solid #A4188A;
+        }
+        .state5
+        {
+            background: url(/images/UserPublicCenter/state5.gif) no-repeat 2px;
+            color: #09954E;
+            border: 1px solid #09954E;
+        }
+.keman {border:1px solid #c00; background:#FFD188; color:#6F380D; font-size:12px;height:13px; padding:3px 5px 0px 5px;}
+
+.tings {border:1px solid #9D9EA0; background:#DADADA; color:#5D5D5D; font-size:12px; font-size:12px;height:13px; padding:3px 5px 0px 5px;}
+/*maytianjia*/
+.maint10{ margin-top:10px;}
+ .yuezhi{ width:118px; float:left; padding-top:5px; text-align:center; }
+.leftn { width:263px; float:left; text-align:left;}
+.rightn { width:680px; float: right; text-align:left} 
+/*neiye*/
+
+.neileftxx{width:260px;}
+/*end*/
+/* xianluxx*/
+.xianluhangcloer{width:680px;}
+
+.xianluleft10{ margin:auto; padding:0}
+.newsdetail2 { width:680px; margin-top:3px; text-align:left;} 
+.xianluhangleft{ width:500px; float:left; text-align:center; padding-top:8px;}
+.xianluhangright{ width:150px; float:right; margin:0; padding-right:3px; padding-top:5px;}
+.xianluhangright span.zhuangtai{ width:30px; height:15px;}
+
+.trl_right ul li.qianzheng{width:200px;float:left;}
+.trl_xin{width:658px;float:left; padding:10px; border:1px solid #b7dcee;}
+.trl_imgleft{width:295px;height:195px; border:1px solid #b7dcee;float:left;}
+.trl_right{float:left;width:343px;padding-left:10px;}
+.huang16{ font-family:Arial, "瀹嬩綋" ;font-size:24px; color:#ff7b19; font-weight:bold;}
+.lvse90{ font-size:12px; color:#5d9307; font-weight:bold;}
+.haohuayl{ background-color:#f5f5f5; color:#868686;padding:3px;}
+.trl_right li{float:left;width:343px;padding:4px 0;}
+.trl_right ul li.tuan{float:right;width:120px; text-align:right; color:#F00;}
+.diyigeli{ padding:0px;}
+
+.trl_h{ width:680px; height:29px; clear:both;}
+.trl_d_h img { padding-right:15px;}
+.trl_d_anpai img { padding-right:15px;}
+.trl_d_anpaiday { margin-left:30px; width:100px; height:20px; float:left; padding-top:10px;}
+ .zhu , .can { width:150px; float:left; height:20px; overflow:hidden; padding-top:10px;}
+ 
+ /*高级网店头部样式*/
+ #top { height:19px; text-align:left;background:url(/images/seniorshop/topmenu.gif) repeat-x; margin-bottom:5px; padding-top:8px; }
+.topda { width:970px; margin:0 auto; padding:0;}
+.topda .daleft{ width:460px; float:left}
+.topda .daright{ width:510px; float:left; text-align:right}
+.topda .daright a { color:#333;}
+.topmenu { background:url(/images/seniorshop/topmenu.gif) repeat-x; height:19px; margin-bottom:5px; padding-top:8px;}
+
+/*特色线路*/
+.xianlutese{ background:url(/images/seniorshop/1231.jpg) left top;width:674px;float:left;padding:3px; margin:10px 0;}
+.xianlutese2{ background:#fff;width:664px;float:left;padding:5px;float:left; line-height:22px;}
+.mudizi{ float:left; font-size:14px; color:#0071A9; font-weight:bold;}.mudizi a{ color:#0071A9;}
+
+#tt {position:absolute; display:block; background:url(/images/seniorshop/tt_left.gif) top left no-repeat}
+#tttop {display:block; height:5px; margin-left:5px; background:url(/images/seniorshop/tt_top.gif) top right no-repeat; overflow:hidden}
+#ttcont {display:block; padding:2px 12px 3px 7px; margin-left:5px; background:#429A3B; color:#FFF}
+#ttbot {display:block; height:5px; margin-left:5px; background:url(/images/seniorshop/tt_bottom.gif) top right no-repeat; overflow:hidden}

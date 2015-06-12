@@ -1,0 +1,69 @@
+﻿/* CSS Document code by 11447@sohu.com*/
+BODY {color:#333;font-size:12px;font-family:"宋体",Arial, Helvetica, sans-serif; text-align: center; background:#fff; margin:0px;}input,textarea,select {font-size:12px;font-family:"宋体",Arial, Helvetica, sans-serif;COLOR: #333;}
+img {border: thin none;}table{	border-collapse:collapse;}TD {FONT-SIZE: 12px; COLOR: #333; line-height: 20px;}sup { color:#5B8E12;}ul {list-style:none;	margin:0px;	padding:0px;}li {line-height:150%;	list-style-type:none;margin:0;padding:0;}
+a {COLOR:#074387; TEXT-DECORATION: none;}a:hover {COLOR:#f00; TEXT-DECORATION: underline;}a:active {color:#f00; TEXT-DECORATION: none;}
+.ff0000 {color:#f00;}
+a.ff0000 { color:#f00;}
+.body {width:970px;clear:both; margin:0 auto; padding-top:10px;}
+.margin5 { margin-top:5px;}
+.margin10 { margin-top:10px;}
+.margin15 { margin-top:15px;}
+.midd {margin-top:5px;}
+.clear { clear:both;}
+#top,.indextabtop,.tabone-on,.worform2 input,.worform3 input,.chahuoc,.chaditu,.combar,.newsbar1,.newsbar2,.airform2 input { background-image:url(/images/UserPublicCenter/sitebarbj.gif);}
+.menu a,.menu a span,.indextabtop li h2,.indextabtop li h3 { background-image:url(/images/UserPublicCenter/header.gif);}
+
+#top { background-repeat:repeat-x; height:26px; text-align:left}
+.topda { width:970px; margin:0 auto; padding:0; padding-top:5px;}
+.topda .daleft{ width:440px; float:left}
+.topda .daright{ width:530px; float:left; text-align:right;margin-top:-6px;_margin-top:-4px;}
+.topda .daright a { color:#333;vertical-align:middle;}
+
+#header { width:970px; height:79px; border-bottom:4px solid #EB6F00; clear:both; margin:0 auto;}
+.logo { width:170px; height:70px; float:left; margin-top:9px;}
+.eare { width:655px; float:left; margin-left:15px; margin-top:10px; text-align:left;}
+.eare span { font-size:30px; font-weight:bold; font-family:黑体}
+
+.menu { width:670px; float:left;margin-left:15px; margin-top:10px;}
+.menu ul { margin:0 auto; padding:0;list-style:none;}
+.menu ul li { display:inline; float:left; margin-right:2px;}
+.menu a {font-size:16px; line-height:16px; font-weight:bold; float:left; background-position:-0px -0px; margin:0;padding:0 0 0 4px;text-decoration:none;}
+.menu a:hover { color:#f00;}
+.menu a span {float:left;display:block;background-position:100% -0px; padding:5px 8px 4px 8px;color:#467002;}
+.menu a span {float:none;}
+.menu a:hover span {color:#DC691C;}
+.menu a:hover {background-position:-14px -0px;}
+.menu a:hover span {background-position:100% -30px;}
+.menu .on a { color:#fff;  line-height:16px; background-position:-28px -0px; margin:0;padding:0 0 0 4px;text-decoration:none;}
+.menu .on a:hover { color:#f00;}
+.menu .on a span{float:left;display:block;background-position:100% -60px; padding:5px 10px 4px 8px;color:#fff;}
+.menu .on a span {float:none;}
+.tymq { width:99px; height:76px; float:right; margin-top:3px; margin-right:5px;}
+.friendlink { width:960px; margin:0 auto; padding:0; background:#EBF1F6; border-bottom:1px solid #B7C8D8; height:17px; color:#999; font-weight:bold; text-align:left; padding-top:5px; padding-left:10px; clear:both}
+.friendlinkword { width:940px; padding:10px 15px; margin:0 auto; color:#666;}
+.friendlinkword a{ color:#333;}
+.bottom { border-top:1px solid #E2E6F1; width:970px; margin:0 auto; height:60px; background:url(/images/UserPublicCenter/bottom.gif) no-repeat center top;}
+.bottomright { float:right; width:155px; height:50px;}
+.bottomleft { width:650px; height:60px; float:left; padding-left:150px; padding-top:20px;}
+.bottomleft a { color:#333;}
+.lv a{ color:#467002;}
+.boxhover a img{ border:1px solid #EAEAEA; padding:2px;}
+.boxhover a:hover img{ border:1px solid #f60; padding:2px;}
+.white12 { color:#fff; font-size:12px;}
+.white14 { color:#fff; font-size:14px;}
+.bitian{ height:18px; padding-top:5px;	border:1px solid #A7A6AA;	color:#000;	background-image: url(/images/UserPublicCenter/shurukuangbg.gif); background-repeat:no-repeat; background-position:top right; font-size:14px; font-weight:bold;}
+.bitian1{ height:15px; padding-top:3px;	border:1px solid #A7A6AA;color:#000;background-image: url(/images/UserPublicCenter/shurukuangbg.gif); background-repeat:no-repeat; background-position:top right;}
+.bitian2{ height:15px; padding-top:3px;	border:1px solid #A7A6AA;color:#666;background-image: url(/images/UserPublicCenter/shurukuangbg_b.gif); background-repeat:no-repeat; background-position:top right;}
+
+.tist { margin-left:5px; padding:5px; width:90%; float:left; border:1px solid #B3CAEB; background:#F3FAFF;}
+.redtist { margin-left:5px; padding:5px; width:90%; float:left; border:1px solid red; background:#FFF1F1;}
+
+.loginedbox { width:190px; height:120px; padding-top:5px; line-height:150%; text-align:center;}
+.loginedbox img { float:left; border:1px solid #f5f5f5; margin-left:10px;}
+.loginedboxdiv { text-align:left; padding:5px 0 0 10px; clear:both;}
+.loginedboxdiv img{border:0px;margin:0px; clear:both; margin-top:3px;}
+.boxbanner {width:970px; clear:both;padding-top:10px; margin:0 auto}
+.boxbanner2 {width:225px; clear:both; padding-top:10px; margin:0 auto}
+.chengshi {width: 99%;}
+.chengshi ul {margin-bottom: 8px;padding: 5px;}
+.chengshi ul li {display: inline-block;float: left; width: 80px;}

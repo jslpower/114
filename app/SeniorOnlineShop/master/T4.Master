@@ -1,0 +1,493 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="T4.master.cs" Inherits="SeniorOnlineShop.master.T4" %>
+
+<%@ Import Namespace="EyouSoft.Common" %>
+<%@ Register Assembly="ControlLibrary" Namespace="ControlLibrary" TagPrefix="cc1" %>
+<%@ Register Src="~/usercontrol/ShopHead.ascx" TagName="ShopHead" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>专线网店</title>
+</head>
+<head>
+    <link href="<%=CssManage.GetCssFilePath("T4.shop.css") %>" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="<%=JsManage.GetJsFilePath("jquery") %>"></script>
+
+    <script type="text/javascript">
+        function sTours() {
+            var params = {
+                RouteName: $.trim($("#txtRouteName").val()),
+                Days: $.trim($("#txtDays").val()),
+                StartDate: $.trim($("#txtStartDate").val()),
+                EndDate: $.trim($("#txtEndDate").val())
+            };
+
+            var sPage = '<%=Utils.GenerateShopPageUrl2("/TourList2", this.CompanyId) %>';
+            window.location.href = sPage + "&" + $.param(params);
+        }
+
+        $(document).ready(function() {
+            $("#txtStartDate").focus(function() {
+                WdatePicker({
+                    onpicked: function() {
+                        $("#txtEndDate")[0].focus();
+                    }
+                });
+            });
+            $("#txtStartDate,#txtEndDate").focus(function() {
+                WdatePicker();
+            });
+
+            $("#btnSearchTours").bind("click", function() { sTours(); });
+        });
+    </script>
+
+    <asp:ContentPlaceHolder ID="HeadPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!--header-->
+    <div id="top">
+        <uc1:ShopHead ID="ShopHead1" runat="server" />
+    </div>
+    <asp:PlaceHolder runat="server" ID="phDefaultHead" Visible="false">
+        <div class="topbanner" style="<%=STYHeadBanner%>">
+            <div class="logoimg">
+                <a href="index.html">
+                    <img src="" width="160" height="52" border="0" runat="server" id="imgHeadLogo" alt="" /></a></div>
+            <div class="name">
+                <ul>
+                    <li class="name-top">
+                        <asp:Literal runat="server" ID="ltrHeadLogoName"></asp:Literal>
+                    </li>
+                    <li class="name-id">&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </asp:PlaceHolder>
+    <asp:PlaceHolder runat="server" ID="phPersonalizeHead" Visible="false">
+        <div class="topbanner_personalize">
+            <asp:Literal runat="server" ID="ltrPersonalizeHead"></asp:Literal>
+        </div>
+    </asp:PlaceHolder>
+    <div class="nav" style="position: relative; z-index: 999">
+        <ul>
+            <li><a href='javascript:void(0)' id="lnkSY" runat="server">首 页</a></li>
+            <li><a href='javascript:void(0)' id="lnkSPJH" runat="server">散拼计划</a></li>
+            <li><a href='javascript:void(0)' id="lnkTDDZ" runat="server">团队定制</a></li>
+            <li><a href='javascript:void(0)' id="lnkCYZN" runat="server">出游指南</a></li>
+            <!--<li><a href='javascript:void(0)' id="lnkJPYD" runat="server">机票预定</a></li>
+            <li><a href='javascript:void(0)' id="lnkJDYD" runat="server">酒店预定</a></li> -->
+        </ul>
+    </div>
+    <!--header end-->
+    <!--mainbox-->
+    <div class="mainbox">
+        <!--left-->
+        <div class="left">
+            <div class="leftn">
+                <div class="neileftk">
+                    <div class="neilefth">
+                        公司档案</div>
+                    <div class="neileftxx">
+                        <div class="neilist">
+                            <p>
+                                品牌名称：</p>
+                            <p>
+                                <span>
+                                    <asp:Literal runat="server" ID="ltrCompanyBrandName"></asp:Literal>
+                                </span>
+                            </p>
+                            <p>
+                                联系人：<asp:Literal runat="server" ID="ltrContactName"></asp:Literal>
+                            </p>
+                            <p>
+                                手机：<asp:Literal runat="server" ID="ltrContactMobile"></asp:Literal></p>
+                            <p>
+                                电话：<asp:Literal runat="server" ID="ltrContactTelephone"></asp:Literal>
+                            </p>
+                            <p>
+                                传真：<asp:Literal runat="server" ID="ltrContactFax"></asp:Literal></p>
+                            <p>
+                                地址：<asp:Literal runat="server" ID="ltrContactAddress"></asp:Literal></p>
+                            <p>
+                                名片：</p>
+                            <p>
+                                <img src="" width="237" height="132" runat="server" id="imgCompanyCard" /></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login">
+                <asp:PlaceHolder ID="phNoLogin" runat="server">
+                    <div class="login-left">
+                        用户名：<input name="u" id="u" type="text" size="15" /><br />
+                        密&nbsp;&nbsp;&nbsp; 码：<input name="p" id="p" type="password" size="15" /><br />
+                        <%--验证码：--%><input name="vc" id="vc" type="hidden" size="6" />
+                        &nbsp;<span id="errSpan" style="color: red;"></span><br />
+                    </div>
+                    <div class="login-right">
+                        <input type="submit" id="btnLogin" value="提交" runat="server" /></div>
+                    <div style="clear: both;">
+                    </div>
+                    <div class="deng">
+                        <a href="<%= Domain.UserPublicCenter + "/Register/CompanyUserRegister.aspx" %>">组团社(零售商)注册</a></div>
+                </asp:PlaceHolder>
+                <asp:PlaceHolder ID="phLogin" runat="server">
+                    <div style="display: block; text-align: center" id="spanLogin">
+                        <br>
+                        欢迎您，<asp:Literal ID="ltrUserName" runat="server"></asp:Literal>&nbsp;&nbsp;&nbsp;<a
+                            class="huizi" href="#" id="linkLogout" runat="server">【退出】</a></div>
+                </asp:PlaceHolder>
+            </div>
+            <div class="leftn">
+                <div class="neileftk">
+                    <div class="neilefth">
+                        查询接口</div>
+                    <div class="neileftxx">
+                        <div id="header">
+                            <ul id="menu">
+                                <li class="sec2">线路查询</li>
+                                <!--<li class="sec1">酒店查询 </li>
+                                <li class="sec1">机票查询</li>-->
+                            </ul>
+                            <!--内容显示区域-->
+                            <ul id="main">
+                                <li class="block">
+                                    <div class="query">
+                                        <table class="lquery-left">
+                                            <tr>
+                                                <td height="27">
+                                                    线路名称：
+                                                </td>
+                                                <td>
+                                                    <input name="txtRouteName" id="txtRouteName" type="text" size="25">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="27">
+                                                    天 数：
+                                                </td>
+                                                <td>
+                                                    <input name="txtDays" id="txtDays" type="text" size="25" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="27">
+                                                    出发时间：
+                                                </td>
+                                                <td>
+                                                    <input name="txtStartDate" id="txtStartDate" class="borderlv" type="text" size="5"
+                                                        style="width: 70px" />至<input name="txtEndDate" id="txtEndDate" class="borderlv"
+                                                            type="text" size="5" style="width: 70px;" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="27">
+                                                </td>
+                                                <td>
+                                                    <div class="query-right">
+                                                        <input type="button" name="Submit" value="查询" id="btnSearchTours" /></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="unblock">
+                                    <div class="query">
+                                        <table class="lquery-left">
+                                            <tr>
+                                                <td height="27">
+                                                    选择城市：
+                                                </td>
+                                                <td>
+                                                    <select id="txtCityId" name="txtCityId" __msh_save_visibility="inherit">
+                                                        <option value="" selected="selected">选择城市</option>
+                                                        <option value="150">A 安阳</option>
+                                                        <option value="245">A 鞍山</option>
+                                                        <option value="259">A 阿拉善盟</option>
+                                                        <option value="36">A 安庆</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="27">
+                                                    入住时间：
+                                                </td>
+                                                <td>
+                                                    <input name="textfield" type="text" size="20">
+                                                    <img src="<%=ImageServerUrl %>/T4/images/date.gif" width="18" height="12" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="27">
+                                                    离店时间：
+                                                </td>
+                                                <td>
+                                                    <input name="textfield2" type="text" size="20" />
+                                                    <img src="<%=ImageServerUrl %>/T4/images/date.gif" width="18" height="12" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="27">
+                                                    价格范围：
+                                                </td>
+                                                <td>
+                                                    <select id="ddlPrice" name="ddlPrice" __msh_save_visibility="inherit">
+                                                        <option value="" selected="selected">不限</option>
+                                                        <option value="1200">1200元以上</option>
+                                                        <option value="800">801--1200元</option>
+                                                        <option value="500">501--800元</option>
+                                                        <option value="400">401--500元</option>
+                                                        <option value="300">301--400元</option>
+                                                        <option value="200">201--300元</option>
+                                                        <option value="100">200元以下</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="27">
+                                                    酒店等级：
+                                                </td>
+                                                <td>
+                                                    <select id="ddlLevel" name="ddlLevel" __msh_save_visibility="inherit">
+                                                        <option value="" selected="selected">不限</option>
+                                                        <option value="1">挂牌五星级</option>
+                                                        <option value="76">相当于五星级</option>
+                                                        <option value="2">挂牌四星级</option>
+                                                        <option value="77">相当于四星级</option>
+                                                        <option value="3">挂牌三星级</option>
+                                                        <option value="78">相当于三星级</option>
+                                                        <option value="152">挂牌二星级</option>
+                                                        <option value="60">二星及以下</option>
+                                                        <option value="61">度假村</option>
+                                                        <option value="63">经济连锁酒店</option>
+                                                        <option value="62">招待所</option>
+                                                        <option value="79">农家乐</option>
+                                                        <option value="64">青年旅社</option>
+                                                        <option value="65">家庭旅馆</option>
+                                                        <option value="80">酒店式公寓</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="27">
+                                                    酒店名称：
+                                                </td>
+                                                <td>
+                                                    <input name="textfield2" type="text" size="20" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="27">
+                                                </td>
+                                                <td>
+                                                    <div class="query-right">
+                                                        <input type="submit" name="Submit" value="查询" /></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li class="unblock">
+                                    <div class="query">
+                                        <table class="lquery-left">
+                                            <tr>
+                                                <td height="27">
+                                                    出发城市：
+                                                </td>
+                                                <td>
+                                                    <select id="txtCityId" name="txtCityId" __msh_save_visibility="inherit">
+                                                        <option value="" selected="selected">选择城市</option>
+                                                        <option value="150">A 安阳</option>
+                                                        <option value="245">A 鞍山</option>
+                                                        <option value="259">A 阿拉善盟</option>
+                                                        <option value="36">A 安庆</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="27">
+                                                    到达城市：
+                                                </td>
+                                                <td>
+                                                    <select id="txtCityId" name="txtCityId" __msh_save_visibility="inherit">
+                                                        <option value="" selected="selected">选择城市</option>
+                                                        <option value="150">A 安阳</option>
+                                                        <option value="245">A 鞍山</option>
+                                                        <option value="259">A 阿拉善盟</option>
+                                                        <option value="36">A 安庆</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="27">
+                                                    时 间：
+                                                </td>
+                                                <td>
+                                                    <input name="textfield2" type="text" size="20" />
+                                                    <img src="<%=ImageServerUrl %>/T4/images/date.gif" width="18" height="12" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="27">
+                                                </td>
+                                                <td>
+                                                    <div class="query-right">
+                                                        <input type="submit" name="Submit" value="查询" /></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--内容显示区域-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leftn">
+                <div class="neileftk">
+                    <div class="neilefth">
+                        常用工具</div>
+                    <div class="neileftxx">
+                        <table width="240" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td height="37" align="center">
+                                    <a href="href='javascript:void(0)'" target="_blank">
+                                        <img src="<%=ImageServerUrl %>/T4/images/tool_03.gif" width="105" height="26" border="0" /></a>
+                                </td>
+                                <td height="37" align="center">
+                                    <a href="http://site.baidu.com/list/wannianli.htm" target="_blank">
+                                        <img src="<%=ImageServerUrl %>/T4/images/tool_05.gif" width="105" height="26" border="0" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="37" align="center">
+                                    <a href="href='javascript:void(0)'" target="_blank">
+                                        <img src="<%=ImageServerUrl %>/T4/images/tool_09.gif" width="105" height="26" border="0" /></a>
+                                </td>
+                                <td height="37" align="center">
+                                    <a href="http://www.ip138.com/post/" target="_blank">
+                                        <img src="<%=ImageServerUrl %>/T4/images/tool_10.gif" width="105" height="26" border="0" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="37" align="center">
+                                    <a href="http://qq.ip138.com/train/" target="_blank">
+                                        <img src="<%=ImageServerUrl %>/T4/images/tool_13.gif" width="105" height="26" border="0" /></a>
+                                </td>
+                                <td height="37" align="center">
+                                    <a href="http://qq.ip138.com/idsearch/" target="_blank">
+                                        <img src="<%=ImageServerUrl %>/T4/images/tool_14.gif" width="105" height="26" border="0" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="37" align="center">
+                                    <a href="http://weather.tq121.com.cn/" target="_blank">
+                                        <img src="<%=ImageServerUrl %>/T4/images/tool_17.gif" width="105" height="26" border="0" /></a>
+                                </td>
+                                <td height="37" align="center">
+                                    <a href="http://www.ip138.com/sj/index.htm" target="_blank">
+                                        <img src="<%=ImageServerUrl %>/T4/images/tool_18.gif" width="105" height="26" border="0" /></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="37" align="center">
+                                    <a href="http://www.hao123.com/haoserver/kuaidi.htm" target="_blank">
+                                        <img src="<%=ImageServerUrl %>/T4/images/tool_21.gif" width="105" height="26" border="0" /></a>
+                                </td>
+                                <td height="37" align="center">
+                                    <a href="http://www.ip138.com/ips8.asp" target="_blank">
+                                        <img src="<%=ImageServerUrl %>/T4/images/tool_22.gif" width="105" height="26" border="0" /></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="leftn">
+                <div class="neileftk">
+                    <div class="neilefth">
+                        <div style="float: left">
+                            最新旅游动态</div>
+                        <div style="float: right; margin-right: 10px;">
+                            <a href="<%= Utils.GenerateShopPageUrl2("/NewsList2", this.CompanyId)%>">更多>></a>
+                        </div>
+                    </div>
+                    <div class="neileftxx">
+                        <div class="newslist">
+                            <ul>
+                                <cc1:CustomRepeater ID="rptNews" runat="server" EmptyText="<li>暂无最新旅游动态</li>">
+                                    <ItemTemplate>
+                                        <li>·<a href="<%#Utils.GenerateShopPageUrl2("/News_"+Eval("ID"), this.CompanyId) %>"><%#Utils.GetText(Eval("Title").ToString(),18,true)%></a></li>
+                                    </ItemTemplate>
+                                </cc1:CustomRepeater>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 265px;">
+                <iframe border="0" name="play" marginwidth="0" marginheight="0" src="http://www.soso.com/tb.q"
+                    frameborder="0" width="260" scrolling="no" height="195"></iframe>
+            </div>
+            <div style="height: 15px;">
+            </div>
+        </div>
+        <!--left end-->
+        <!--right-->
+        <div class="right">
+            <asp:ContentPlaceHolder ID="MainPlaceHolder" runat="server">
+                <!--右侧主体区-->
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--right end-->
+        <asp:ContentPlaceHolder ID="GuidebookPlaceHolder" runat="server">
+            <!--出游指南区-->
+        </asp:ContentPlaceHolder>
+        <div class="bottom">
+            <div class="bottomtk">
+                <div class="bottomth">
+                    友情链接
+                </div>
+                <div class="bottomxx">
+                    <div class="firendlist">
+                        <ul>
+                            <asp:Repeater ID="rptLinks" runat="server">
+                                <ItemTemplate>
+                                    <li><a target="_blank" href="<%#Eval("LinkAddress") %>">·<%#Eval("LinkName") %></a></li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px;">
+        <tr>
+            <td align="center" bgcolor="#95C55E" height="3">
+            </td>
+        </tr>
+        <tr>
+            <td height="97" align="center" bgcolor="#FFFFFF">
+                <a href="javascript:void(0)" runat="server" id="lnkSY1">首 页</a> | <a href="javascript:void(0)"
+                    runat="server" id="lnkSPJH1">散拼计划</a> | <a href="javascript:void(0)" runat="server"
+                        id="lnkTDDZ1">团队定制</a> | <a href="javascript:void(0)" runat="server" id="lnkCYZN1">出游指南</a>
+                |
+                <!--<a href="javascript:void(0)" runat="server" id="lnkJPYD1">机票预定</a> | 
+                <a href="javascript:void(0)" runat="server" id="lnkJDYD1">酒店预定</a> | -->
+                <a href="javascript:void(0)" runat="server" id="lnkGYWM1">关于我们 </a>
+                <br />
+                <br />
+                <asp:Literal ID="ltrCopyRight" runat="server"></asp:Literal><br />
+            </td>
+        </tr>
+    </table>
+    <div>
+    </div>
+    </form>
+</body>
+</html>

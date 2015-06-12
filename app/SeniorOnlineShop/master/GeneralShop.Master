@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GeneralShop.master.cs"
+    Inherits="SeniorOnlineShop.master.GeneralShop" %>
+
+<%@ Import Namespace="EyouSoft.Common" %>
+<%@ Register Src="~/GeneralShop/GeneralShopControl/PageHead.ascx" TagName="PageHead"
+    TagPrefix="uc1" %>
+<%@ Register Src="~/GeneralShop/GeneralShopControl/CityAndMenu.ascx" TagName="PageMenu"
+    TagPrefix="uc1" %>
+<%@ Register Src="~/GeneralShop/GeneralShopControl/PageFoot.ascx" TagName="PageFoot"
+    TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <uc1:PageHead runat="server" ID="PageHead1" />
+    <uc1:PageMenu runat="server" ID="PageMenu1" />
+    <div class="hr_10">
+    </div>
+    <div class="xinmain">
+        <div class="xinleft">
+            <img src="<%= ImagePath %>"
+                width="652" height="182" alt=" " /></div>
+        <div class="xinright">
+            <div class="xinright_t">
+            <%=EyouSoft.Common.Utils.GetCompanyLevImg(Companylev)%> <asp:Literal ID="ltrCompanyName" runat="server"></asp:Literal></div>
+            <div class="xinright_c">
+                <div class="xinrightlogo">
+                    <img src="<%= LogoPath %>" width="95" height="62" /></div>
+                <div class="xinrightwenzi" style="text-align:left">
+                    品牌名称：<span class="xinlv"><a runat="server" id="abannerName" style="cursor:pointer" class="xinlv"><asp:Literal runat="server" ID="ltrBrandName"></asp:Literal></a></span><br />
+                    所在区域：<asp:Literal runat="server" ID="ltrprovince"></asp:Literal><asp:Literal runat="server" ID="ltrcity"></asp:Literal> <asp:Literal runat="server" ID="ltrarea"></asp:Literal>
+                    <br />
+                    公司类型：<asp:Literal runat="server" ID="ltrCompanyType"></asp:Literal>
+                </div>
+            </div>
+            <div class="xinright_b">
+                <li style="text-align:left; overflow:hidden; height:20px;" ><strong>联系人：</strong><asp:Literal runat="server" ID="ltrContact"></asp:Literal></li>
+                <li style="text-align:left; overflow:hidden; height:20px;" title="<%=Contacttel %>" ><strong>客服电话：</strong><asp:Literal runat="server" ID="ltrTel"></asp:Literal></li>
+                <li style="text-align:left; overflow:hidden; height:20px;" title="<%=ContactFax %>" ><strong>客服传真：</strong><asp:Literal runat="server" ID="ltrFax"></asp:Literal></li>
+                <li style="text-align:left; overflow:hidden; height:20px;" class="xindizhi" title="<%=CompanyAddress %>"><strong>地址：</strong><asp:Literal runat="server" ID="ltrAddress"></asp:Literal></li></div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div style="clear: both">
+    </div>
+    <uc1:PageFoot runat="server" ID="PageFoot1" />
+    </form>
+</body>
+</html>

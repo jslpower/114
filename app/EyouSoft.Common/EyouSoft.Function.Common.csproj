@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F83F92A-AC73-4736-9449-EF69355C98B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EyouSoft.Common</RootNamespace>
+    <AssemblyName>EyouSoft.PresentationCommon</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Adpost.Ticket, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\Adpost.Ticket.dll</HintPath>
+    </Reference>
+    <Reference Include="AntiXSSLibrary, Version=3.1.3524.16873, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EntLibContrib.Data.MySql, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EntLibContrib.Data.MySql.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.AOPHandler, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.AOPHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.BackgroundServices, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.BackgroundServices.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.BusinessLogWriter, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.BusinessLogWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Cache.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.Cache.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Cache.Facade, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.Cache.Facade.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Component.Factory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.Component.Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Config, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Exception.Facade, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.Exception.Facade.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.HotelBI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.HotelBI.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.IBLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.IBLL.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.IDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.IDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Oracle.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\EyouSoft.Oracle.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Security.Membership, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EyouSoft.Security.Membership\bin\Debug\EyouSoft.Security.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\Memcached.ClientLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.1.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\底层库\Lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Net20, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UserPublicCenter\Dll\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigModel\ConfigModel.cs" />
+    <Compile Include="ConfigModel\CssManageTagHandler.cs" />
+    <Compile Include="ConfigModel\ImageManageTagHandler.cs" />
+    <Compile Include="ConfigModel\JSManageTagHandler.cs" />
+    <Compile Include="CssManage.cs" />
+    <Compile Include="DataProtection\ConnectionInfo.cs" />
+    <Compile Include="DataProtection\DataProtector.cs" />
+    <Compile Include="DataProtection\HashCrypto.cs" />
+    <Compile Include="DataProtection\IHashCrypto.cs" />
+    <Compile Include="Domain.cs" />
+    <Compile Include="Enum\TravelPermission.cs" />
+    <Compile Include="Enum\YuYingPermission.cs" />
+    <Compile Include="FormValidator.cs" />
+    <Compile Include="Function\ChineseSpell.cs" />
+    <Compile Include="Function\Email.cs" />
+    <Compile Include="Function\EnumHandle.cs" />
+    <Compile Include="Function\FileDirectory.cs" />
+    <Compile Include="Function\MakeThumbnail.cs" />
+    <Compile Include="Function\MessageBox.cs" />
+    <Compile Include="Function\StringValidate.cs" />
+    <Compile Include="Function\UploadFile.cs" />
+    <Compile Include="IdentifyingCode\IdentifyingCode.cs" />
+    <Compile Include="ImageManage.cs" />
+    <Compile Include="JsManage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerializationHelper.cs" />
+    <Compile Include="UserManage.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlipayClass\AlipayParameters.cs" />
+    <Compile Include="AlipayClass\alipay_function.cs" />
+    <Compile Include="AlipayClass\alipay_notify.cs" />
+    <Compile Include="AlipayClass\alipay_service.cs" />
+    <Compile Include="AlipayClass\CreateSSL.cs" />
+    <Compile Include="AlipayClass\Distribute_royalty.cs" />
+    <Compile Include="AlipayClass\Distribute_royalty_Result.cs" />
+    <Compile Include="AlipayClass\QianYue.cs" />
+    <Compile Include="AlipayClass\Query_Customer.cs" />
+    <Compile Include="AlipayClass\Query_Customer_Result.cs" />
+    <Compile Include="AlipayClass\RefundNoPwd.cs" />
+    <Compile Include="AlipayClass\Refund_Distribute_Parameter.cs" />
+    <Compile Include="AlipayClass\Refund_Distribute_Result.cs" />
+    <Compile Include="AlipayClass\Refund_Platform_Parameter.cs" />
+    <Compile Include="AlipayClass\Refund_Platform_Result.cs" />
+    <Compile Include="AlipayClass\Royalty_Parameters.cs" />
+    <Compile Include="ConfigModel\WeatherManageTagHandler.cs" />
+    <Compile Include="ConfigModel\WeatherModel.cs" />
+    <Compile Include="Enum\EnumObj.cs" />
+    <Compile Include="Function\ImageHelper.cs" />
+    <Compile Include="OlServerUtility.cs" />
+    <Compile Include="URLREWRITE\Car.cs" />
+    <Compile Include="URLREWRITE\Hotel.cs" />
+    <Compile Include="URLREWRITE\Infomation.cs" />
+    <Compile Include="URLREWRITE\ScenicSpot.cs" />
+    <Compile Include="QuotedPrintable.cs" />
+    <Compile Include="ReminderEmail\ReminderEmailHelper.cs" />
+    <Compile Include="ReminderEmail\ReminderEmailReader.cs" />
+    <Compile Include="Enum\AirTicketNavigation.cs" />
+    <Compile Include="Enum\SiteOperationsCenterModule.cs" />
+    <Compile Include="OpenFlashChart.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="PageTitle.cs" />
+    <Compile Include="TenpayClass\BaseSplitRequestHandler.cs" />
+    <Compile Include="TenpayClass\ClientResponseHandler.cs" />
+    <Compile Include="TenpayClass\MD5Util.cs" />
+    <Compile Include="TenpayClass\PayRequestHandler.cs" />
+    <Compile Include="TenpayClass\PayResponseHandler.cs" />
+    <Compile Include="TenpayClass\RequestHandler.cs" />
+    <Compile Include="TenpayClass\ResponseHandler.cs" />
+    <Compile Include="TenpayClass\ScriptClientResponseHandler.cs" />
+    <Compile Include="TenpayClass\TenpayHttpClient.cs" />
+    <Compile Include="TenpayClass\TenpayParameters.cs" />
+    <Compile Include="TenpayClass\TenpayUtil.cs" />
+    <Compile Include="TenpayClass\TrustRefund.cs" />
+    <Compile Include="TenpayClass\trustRefundQuerys.cs" />
+    <Compile Include="TenpayClass\TrustRefundResponseHandler.cs" />
+    <Compile Include="UpdateUserPwd.cs" />
+    <Compile Include="URLREWRITE\Plane.cs" />
+    <Compile Include="URLREWRITE\StaticPage.cs" />
+    <Compile Include="URLREWRITE\SubStation.cs" />
+    <Compile Include="URLREWRITE\SupplierInfo.cs" />
+    <Compile Include="URLREWRITE\tonghang.cs" />
+    <Compile Include="URLREWRITE\Tour.cs" />
+    <Compile Include="URLREWRITE\TravelProtects.cs" />
+    <Compile Include="URLREWRITE\UrlReWriteUtils.cs" />
+    <Compile Include="URLREWRITE\visa.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

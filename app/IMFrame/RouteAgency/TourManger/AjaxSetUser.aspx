@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AjaxSetUser.aspx.cs" Inherits="IMFrame.RouteAgency.TourManger.AjaxSetUser" %>

@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ScenicSpotsT1.master.cs" Inherits="SeniorOnlineShop.master.ScenicSpotsT1" %>
+
+<%@ Import Namespace="EyouSoft.Common" %>
+<%@ Register Assembly="ControlLibrary" Namespace="ControlLibrary" TagPrefix="cc1" %>
+<%@ Register src="../scenicspots/usercontrol/GoogleMapControl.ascx" tagname="GoogleMapControl" tagprefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>景点网店</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>    
+</head>
+<head>
+    <asp:ContentPlaceHolder ID="HeadPlaceHolder" runat="server">
+    <!--head place holder-->
+    </asp:ContentPlaceHolder>    
+    <link href="<%=CssManage.GetCssFilePath("ScenicSpots.T1.style.css") %>" rel="stylesheet" type="text/css" />    
+    <script type="text/javascript" src="<%=JsManage.GetJsFilePath("jquery") %>"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrap">
+    	<asp:Literal runat="server" ID="ltrHeadBanner"></asp:Literal>
+        <!--menu start-->
+        <div class="menu">
+        	<ul id="parentMenu">
+            	<li><a href="" runat="server" id="lnkSY">首页</a></li>
+            	<li><a href="" runat="server" id="lnkJQMP">景区门票</a></li>
+                <li><a href="" runat="server" id="lnkJQDT">景区动态</a></li>
+                <li><a href="" runat="server" id="lnkJQMT">景区美图</a></li>
+                <li><a href="" runat="server" id="lnkJQGL">景区攻略</a></li>
+                <li><a href="" runat="server" id="lnkJQDY">景区导游</a></li>
+                <li><a href="" runat="server" id="lnkLXWM">联系我们</a></li>
+            </ul>
+      </div>
+    <!--menu end-->
+        <!--main start-->
+        <div class="main">
+       		<!--sidebar start-->
+        	<div class="sidebar">
+        	    <asp:PlaceHolder runat="server" ID="phLeftContactUs">
+            	    <div class="sidebar_1">
+                	    <p class="more"><span>联系我们</span><a href="" runat="server" id="lnkLXWM1"> >> 更多...</a></p>
+                   	    <div class="sidebar_1_text">
+                    	    <img src="<%=ImageServerUrl %>/scenicspots/T1/images/jinqulog.gif" class="jqlog" alt="" runat="server" id="imgLogo" />
+                            <ul>
+                        	    <li>联系人：<asp:Literal runat="server" ID="ltrContacter"></asp:Literal> </li>
+                                <li>电话：<asp:Literal runat="server" ID="ltrTelephone"></asp:Literal></li>
+                                <li>传真：<asp:Literal runat="server" ID="ltrFax"></asp:Literal></li>
+                                <li>网址：<asp:Literal runat="server" ID="ltrWebsite"></asp:Literal></li>
+                                <li>地址：<asp:Literal runat="server" ID="ltrAddress"></asp:Literal></li>
+                                <li><asp:Literal runat="server" ID="ltrMQ"></asp:Literal>
+                                <label><asp:Literal runat="server" ID="ltrQQ"></asp:Literal></label>
+                              </li>
+                          </ul>
+                        </div>
+                    </div>
+                </asp:PlaceHolder>
+                <div class="sidebar_1">
+                	<p class="more"><span>景区动态</span><a href="" runat="server" id="lnkJQDT1"> >> 更多...</a></p>
+                   	<div class="sidebar_1_text">
+                        <ul>
+                            <cc1:CustomRepeater ID="rptJQDT" runat="server" EmptyText="<li class='c999'>暂无景区动态</li>">
+                                <ItemTemplate>
+                                    <li><a href="<%#Utils.GenerateShopPageUrl2("/scenicinfodetail_"+Eval("ID")+"_2", this.CompanyId) %>" title="<%# Eval("Title") %>">·<%#Utils.GetText(Eval("Title").ToString(),14,true)%></a></li>
+                                </ItemTemplate>
+                            </cc1:CustomRepeater>
+                        </ul>
+                    </div>
+                </div>
+                <asp:PlaceHolder runat="server" ID="phLeftGoogleMap">
+                    <div class="sidebar_1">
+                        <uc1:GoogleMapControl ID="GoogleMapControl1" runat="server" />
+                    </div>    
+                </asp:PlaceHolder>            
+                <div class="sidebar_1">
+                	<p class="more"><span>景区线路</span><a href="" runat="server" id="lnkJQXL"> >> 更多...</a></p>
+                   	<div class="sidebar_1_text">
+                        <ul>
+                            <cc1:CustomRepeater ID="rptJQXL" runat="server" EmptyText="<li class='c999'>暂无景区线路</li>">
+                                <ItemTemplate>
+                                    <li><a href="<%#Utils.GenerateShopPageUrl2("/scenicinfodetail_"+Eval("ID")+"_0", this.CompanyId) %>" title="<%# Eval("Title") %>">·<%#Utils.GetText(Eval("Title").ToString(),14,true)%></a></li>
+                                </ItemTemplate>
+                            </cc1:CustomRepeater>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--sidebar end-->
+            <!--sidebar02 start-->
+            <asp:ContentPlaceHolder ID="MainPlaceHolder" runat="server">
+                <!--主体区-->
+            </asp:ContentPlaceHolder>
+            <div class="clearboth">
+            </div>
+            <!--sidebar02 end-->
+            <div class="friendlink">
+            	<p><b><font class="C_G">友情链接：</font></b>
+            	    <asp:Literal runat="server" ID="ltrLinks"></asp:Literal>
+            	</p>
+            </div>
+        </div>
+        <!--main end-->
+        <div class="copyright" style="text-align:center">
+        	<asp:Literal runat="server" ID="ltrCopyright"></asp:Literal>
+            <div class="clearboth"></div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
