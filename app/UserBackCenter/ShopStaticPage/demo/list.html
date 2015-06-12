@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>高级网店</title>
+<link href="css/bodyframe.css" rel="stylesheet" type="text/css" />
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/jquerymin.js"></script>
+<script language="javascript" src="js/TourStateToolTip.js"></script>
+<script language="javascript">
+$(document).ready(function(){
+//隔行,滑动,点击 变色.+ 单选框选中的行 变色:
+$('.liststyle tbody tr:even').addClass('odd');
+	$('.liststyle tbody tr').hover(
+		function() {$(this).addClass('highlight');},
+		function() {$(this).removeClass('highlight');}
+	);
+
+	// 如果单选框默认情况下是选择的，变色.
+	$('.liststyle input[type="radio"]:checked').parents('tr').addClass('selected');
+	
+	// 单选框
+	$('.liststyle tbody tr').click(
+		function() {
+			$(this).siblings().removeClass('selected');
+			$(this).addClass('selected');
+			$(this).find('input[type="radio"]').attr('checked','checked');
+		}
+	);
+$("#div_showList1").mouseover(function(){$("#div_showList2").show();$("#div_showList2").load("date.html");});
+$("#div_showList1").mouseout(function(){$("#div_showList2").hide();});
+});
+</script>
+
+</head>
+
+<body>
+<div class="topmenu">
+<a href="#" class="topbar-l">欢迎您，王二王二王二王二</a><div id="topbar-l"> &nbsp;<a href="javascript:void(0)" onfocus=this.blur()></a></div>
+<div id="racePop" class="raceShow">
+<a href="../zx/index.html" class="raceShowm"><img src="../images/queico.gif" />专线后台</a>
+<a href="#" class="raceShowm"><img src="../images/queico.gif" />组团后台</a>
+<a href="../dj/index.html" class="raceShowm"><img src="../images/queico.gif" />地接后台</a></div>
+
+<div class="topbar-r"><a href="#">线路预订</a> | <a href="#">机票预订</a> | <a href="#">办公软件</a> | <a href="#">短信中心</a> | <a href="#">同业互动</a> | <a href="#">意见反馈</a> | <a href="#">同业MQ</a> | <a href="#">帮助中心</a> | <a href="#">退出</a></div>
+</div>
+
+
+<div class="topbanner">
+	<div class="logoimg"><a href="index.html"><img src="images/logo.gif" width="150" height="60" border="0" /></a></div>
+	<div class="name">中国MQ旅行社有限公司<div class="name-id">营业执照号：L-CN-45788X</div></div>
+	
+</div>
+<div class="nav">
+	<ul>
+		<li><a href="index.html">首 页</a></li>
+		<li><a href="list.html" class="nav-on">散拼计划</a></li>
+		<li><a href="baojia.html">最新报价</a></li>
+		<li><a href="mudidi.html">出游指南</a></li>
+		<li><a href="ziyuan.html">旅游资源推荐</a></li>
+		<li><a href="newlist.html">最新动态</a></li>
+		<li><a href="callus.html">关于我们</a></li>
+	</ul>
+</div>
+<div class="mainbox">
+	<div class="left">
+		<div class="loginbar">同行登录口</div>
+		<div class="login">
+		<div class="login-left">
+		 用户名：<input name="textfield" type="text" size="15" />
+	      <br />
+		 密&nbsp; 码：<input name="textfield2" type="text" size="15" />
+		 <br />
+		 验证码：<input name="textfield3" type="text" size="6" /></div>
+		 <div style="width:92px; float:right;">
+		 <div class="login-right">
+		     <input type="submit" name="Submit" value="提交" />
+   		   </div>
+				 <div class="deng"><a href="#" class="FF6600">组团社(零售商)
+注  册</a></div>
+		 </div>
+	  </div>
+	  <div style="height:15px;"></div>
+	  <div class="leftn">
+	<div class="neileftk"><div class="neilefth">公司档案</div>
+	<div class="neileftxx"><table width="94%" border="0" align="center" cellpadding="0" cellspacing="0" class="maintop5">
+  <tr>
+    <td align="left" style="font-weight:bold; font-size:14px;">品牌名称：     <script language="JavaScript">
+<!-- Begin
+text = "京都假日！"; //显示的文字
+color1 = "blue"; //文字的颜色
+color2 = "red"; //转换的颜色
+fontsize = "6"; //字体大小
+speed = 100; //转换速度 (1000 = 1 秒) 
+i = 0;
+if (navigator.appName == "Netscape") {
+document.write("<layer id=a visibility=show></layer><br><br><br>");
+}
+else {
+document.write("<div id=a></div>");
+}
+function changeCharColor() {
+if (navigator.appName == "Netscape") {
+document.a.document.write("<center><font face=arial size =" + fontsize + "><font color=" + color1 + 
+">");
+for (var j = 0; j < text.length; j++) {
+if(j == i) {
+document.a.document.write("<font face=arial color=" + color2 + ">" + Text.charAt(i) + "</font>");
+}
+else {
+document.a.document.write(text.charAt(j));
+}
+}
+document.a.document.write('</font></font></center>');
+document.a.document.close();
+}
+if (navigator.appName == "Microsoft Internet Explorer") {
+str = "<center><font face=arial size=" + fontsize + "><font color=" + color1 + ">";
+for (var j = 0; j < text.length; j++) {
+if( j == i) {
+str += "<font face=arial color=" + color2 + ">" + text.charAt(i) + "</font>";
+}
+else {
+str += text.charAt(j);
+}
+}
+str += "</font></font></center>";
+a.innerHTML = str;
+}
+(i == text.length) ? i=0 : i++;
+}
+setInterval("changeCharColor()", speed);
+// End -->
+</script>	</td>
+  </tr>
+  <tr>
+    <td align="left">出港城市：杭州,宁波</td>
+  </tr>
+  <tr>
+    <td align="left">联系人：<span class="lvsezi">沈秀清</span>&nbsp;<img src="images/mqonline.gif" width="70" height="18" /></td>
+  </tr>
+  <tr>
+    <td>      手机：18958276200  13699899887 </td>
+  </tr>
+  <tr>
+    <td>电话：0571-81575769 56989998 宁波：1573-88848888</td>
+  </tr>
+  
+  <tr>
+    <td>传真：0571-85335075 </td>
+  </tr>
+  <tr>
+    <td> 地址： 杭州市体育场路225号 </td>
+  </tr>
+  <tr>
+    <td>
+	  <table width="252" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="xins">会员信用</td>
+        </tr>
+        <tr>
+          <td class="xinz"><table border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>服务承诺 <img src="images/Commitico16.gif"/><span class="hui">已发布承诺书，查看详细</span></td>
+            </tr>
+            <tr>
+              <td align="center"><a href="xinyu.html" title="信用指数60"><img src="images/cardico2.gif" width="16" height="16" alt="信用指数60" style="margin-bottom:-3px;" />信用100分</a> <a href="xinyu.html"><img src="images/use16.gif" width="14" height="14" style="margin-bottom:-3px;"/>活跃:200分</a> <a href="xinyu.html"><img src="images/cardico3.gif" width="16" height="16" style="margin-bottom:-3px;"/>推荐:60次</a></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td class="xinx">&nbsp;</td>
+        </tr>
+      </table>
+	  </td>
+  </tr>
+ 
+  
+  
+  
+  
+ 
+</table>
+</div></div>
+	  </div>
+	  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:10px; border:1px solid #B5CBD0;">
+  <tr>
+    <td><img src="images/mingpian.gif" width="261" height="142" /></td>
+  </tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="2" cellspacing="0" style="margin-top:10px; border:1px solid #B5CBD0;">
+        <tr>
+          <td width="34%" height="20" align="center" valign="bottom"><a href="http://www.travelsky.com/travelsky/static/home/" target="_blank"><img src="images/fly.gif" width="18" height="18" /> 航班查询</a></td>
+          <td width="33%" align="center" valign="bottom"><a href="http://qq.ip138.com/train/" target="_blank"><img src="images/huoche.gif" width="18" height="18" /> 火车查询</a></td>
+        </tr>
+        <tr>
+          <td height="20" align="center" valign="bottom"><a href="http://weather.tq121.com.cn/" target="_blank"><img src="images/tianqi.gif" width="18" height="18" /> 天气查询</a></td>
+          <td align="center" valign="bottom"><a href="http://www.hao123.com/haoserver/kuaidi.htm" target="_blank"><img src="images/kuaid.gif" width="18" height="18" border="0" /> 快递查询</a></td>
+        </tr>
+        <tr>
+          <td height="20" align="center" valign="bottom"><a href="http://site.baidu.com/list/wannianli.htm" target="_blank"><img src="images/wnl.gif" width="18" height="18" /> 万 年 历</a></td>
+          <td align="center" valign="bottom"><a href="http://www.ip138.com/post/" target="_blank"><img src="images/youbian.gif" width="18" height="18" /> 邮编查询</a></td>
+        </tr>
+        <tr>
+          <td height="20" align="center" valign="bottom"><a href="http://qq.ip138.com/idsearch/" target="_blank"><img src="images/sfz.gif" width="18" height="18" /> 身 份 证</a></td>
+          <td align="center" valign="bottom"><a href="http://www.ip138.com/sj/index.htm" target="_blank"><img src="images/shouji.gif" width="18" height="18" /> 手机号码</a></td>
+        </tr>
+        <tr>
+          <td height="20" align="center" valign="bottom"><a href="http://www.ip138.com/ips8.asp" target="_blank"><img src="images/ip.gif" width="18" height="18" /> IP&nbsp; 查询</a></td>
+          <td align="center" valign="bottom">&nbsp;</td>
+        </tr>
+      </table>
+	  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:15px;">
+  <tr>
+    <td><iframe border="0" name="play" marginwidth="0" marginheight="0" src="http://www.soso.com/tb.q" frameborder="0" width="260" scrolling="no" height="195"></iframe></td>
+  </tr>
+</table>
+
+
+	</div>
+	<div class="rightn">
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="neiringhtn"><div class="bar-line-title1">我的旅游线路</div>
+		  <div class="bar-line-mid1">
+		   
+		   
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td> <select style="width:60px;">
+					<option>全部</option>
+					<option>杭州出港</option>
+					<option>宁波出港</option>
+					<option>温州出港</option>
+					<option>上海出港</option>
+					<option>绍兴出港</option>
+					<option>衢州出港</option>
+			</select>
+		    线路名称<input name="textfield4" type="text" size="18" />
+			天数<input name="textfield42" type="text" size="3" />
+			出团日期<input name="textfield43" type="text" size="8" />至<input name="textfield43" type="text" size="8" /> <input type="submit" name="Submit2" value="搜索" />
+
+			</td>
+              </tr>
+            </table>
+		  </div>
+		</td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#E3E3E3" class="liststyle">
+ <thead> <tr>                                    
+    <th width="42%">团队基本信息</th>
+    <th width="17%">出团时间/空位          </th>
+    <th width="19%">价格(门市|同行)</th>
+    <th width="8%">单房差</th>
+    <th width="7%">操作</th>
+    <th width="6%">查看</th>
+ </tr></thead>
+  <tbody>
+  <tr>
+    <td align="left"><div class="listtitle"><img src="images/ico.gif" width="11" height="11" /><span class="state1" onmouseover="tooltip.show('<strong>推荐理由：</strong>人多就便宜，来就联系哦');" onmouseout="tooltip.hide();">推荐</span> <a href="listxx.html">广州、肇庆、珠海、深圳六天五晚精华游</a></div></td>
+    <td align="center">04/16(周五)/剩:10 <br />
+      全部出团日期&gt;&gt; </td>
+    <td align="center">门市价:￥2980/2650<br />
+      同行价:￥2980/2650</td>
+    <td align="center">￥200/150</td>
+    <td align="center" width="80"><a href="listxx.html" class="goumai0">预订</a><br />
+
+    <img src="images/MQWORD.gif" width="49" height="16" /></td><td>56</td>
+  </tr>
+ <tr>
+  <tr>
+    <td align="left"><div class="listtitle"><img src="images/ico.gif" width="11" height="11" /><span class="state1" onmouseover="tooltip.show('<strong>推荐理由：</strong>人多就便宜，来就联系哦');" onmouseout="tooltip.hide();">推荐</span> <a href="listxx.html">衢州+婺源赏花4天自由行</a></div></td>
+    <td align="center">04/16(周五)/剩:10 <br />
+      全部出团日期&gt;&gt; </td>
+    <td align="center">门市价:￥2980/2650<br />
+      同行价:￥2980/2650</td>
+    <td align="center">￥200/150</td>
+    <td align="center" width="80"><a href="javascript:void(0)" onclick="OpenOperatorDialog2();" class="goumai0">预订</a><br />
+
+    <img src="images/MQWORD.gif" width="49" height="16" /></td><td>56</td>
+  </tr>
+ <tr>
+  <tr>
+    <td align="left"><div class="listtitle"><img src="images/ico.gif" width="11" height="11" /><span class="state1" onmouseover="tooltip.show('<strong>推荐理由：</strong>人多就便宜，来就联系哦');" onmouseout="tooltip.hide();">推荐</span> <a href="listxx.html">丽江4天特惠自由行（早去午回/金鹿航空）</a></div></td>
+    <td align="center">04/16(周五)/剩:10 <br />
+      全部出团日期&gt;&gt; </td>
+    <td align="center">门市价:￥2980/2650<br />
+      同行价:￥2980/2650</td>
+    <td align="center">￥200/150</td>
+    <td align="center" width="80"><a href="javascript:void(0)" onclick="OpenOperatorDialog2();" class="goumai0">预订</a><br />
+
+    <img src="images/MQWORD.gif" width="49" height="16" /></td><td>56</td>
+  </tr>
+ <tr>
+  <tr>
+    <td align="left"><div class="listtitle"><img src="images/ico.gif" width="11" height="11" /><span class="state1" onmouseover="tooltip.show('<strong>推荐理由：</strong>人多就便宜，来就联系哦');" onmouseout="tooltip.hide();">推荐</span> <a href="listxx.html">香港迪士尼乐园门票合家欢套票（2大1小）</a></div></td>
+    <td align="center">04/16(周五)/剩:10 <br />
+      全部出团日期&gt;&gt; </td>
+    <td align="center">门市价:￥2980/2650<br />
+      同行价:￥2980/2650</td>
+    <td align="center">￥200/150</td>
+    <td align="center" width="80"><a href="javascript:void(0)" onclick="OpenOperatorDialog2();" class="goumai0">预订</a><br />
+
+    <img src="images/MQWORD.gif" width="49" height="16" /></td><td>56</td>
+  </tr>
+ <tr>
+  <tr>
+    <td align="left"><div class="listtitle"><img src="images/ico.gif" width="11" height="11" /><span class="state1" onmouseover="tooltip.show('<strong>推荐理由：</strong>人多就便宜，来就联系哦');" onmouseout="tooltip.hide();">推荐</span> <a href="listxx.html">巴厘岛6天自由行（早去晚回/鹰航/4晚住宿）</a></div></td>
+    <td align="center">04/16(周五)/剩:10 <br />
+      全部出团日期&gt;&gt; </td>
+    <td align="center">门市价:￥6000/5000<br />
+      同行价:￥5800/4800</td>
+    <td align="center">￥200/150</td>
+    <td align="center" width="80"><a href="javascript:void(0)" onclick="OpenOperatorDialog2();" class="goumai0">预订</a><br />
+
+    <img src="images/MQWORD.gif" width="49" height="16" /></td><td>56</td>
+  </tr>
+ <tr>
+  </tbody>
+</table>   
+     
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          
+          <td><div class="digg"><span>每页显示40条 共5322条信息，共200页</span><span class="disabled"> 上一页 </span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?page=6">6</a><a href="#?page=7">7</a>...<a href="#?page=199">199</a><a href="#?page=200">200</a><a href="#?page=2"> 下一页 </a></div></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+	</div>
+	</div>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:10px;">
+  <tr>
+    <td align="center" class="bottom1"><br />
+      杭州大山旅行社有限公司 | 公司介绍 | 关于我们
+      <br />
+    公司地址：天目山路18号909 电话：0571-55587774&nbsp;<img src="images/MQWORD.gif" width="49" height="16" />&nbsp;&nbsp;<img src="images/qq.gif" width="61" height="16" />&nbsp;&nbsp;<img src="images/msn1.gif" width="67" height="17" /><br />
+    <br />
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

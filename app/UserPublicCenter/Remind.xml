@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Remind>
+  <hour hourtype="1" sumhour="4"></hour>
+  <hour hourtype="2" sumhour="4"></hour>
+  <TitleType category="注册" titleLink="/Register/CompanyUserRegister.aspx" id="1" UpValue="" DownValue="加盟成功！" />  
+  <TitleType category="发布" titleLink="http://customer.tongye114.com/Default.aspx#page%3A%2Frouteagency%2Faddquicktour.aspx" id="2" UpValue="" DownValue="最新产品" />  
+  <TitleType category="购买" titleLink="" id="3" UpValue="线路促销大卖 " DownValue="" />
+  <TitleType category="" titleLink="" id="4" UpValue="客人收满发班，恭喜！" DownValue="" />
+  <TitleType category="充值" titleLink="Default.aspx#page%3A%2Fsmscenter%2Fsendsms.aspx" id="5" UpValue="短信" DownValue="成功" />
+  <TitleType category="发布" titleLink="/SupplierInfo/PublishSupplierInfo.aspx" id="6" UpValue="" DownValue="供求信息" />
+  <TitleType category="预订" titleLink="/PlaneInfo/PlaneListPage.aspx" id="7" UpValue="成功" DownValue="机票" />
+  <TitleType category="预订" titleLink="/hotel_362" id="8" UpValue="成功" DownValue="酒店" />
+  <TitleType category="" titleLink="" id="9" UpValue="成功预定散客线路" DownValue="" />
+  <TitleType category="同业MQ" titleLink="http://im.tongye114.com/" id="10" UpValue="为" DownValue="好友" />
+  <TitleType category="留言询价" titleLink="http://im.tongye114.com/" id="11" UpValue="" DownValue="成功" />
+</Remind>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D261EAC-B956-470F-8F43-ABB38BE7A6AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>底层库</RootNamespace>
+    <AssemblyName>底层库</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Content Include="Config\IBLL.Configuration.xml" />
+    <Content Include="Config\IDAL.Configuration.xml" />
+    <Content Include="Config\Remind.xml" />
+    <Content Include="Lib\Adpost.Ticket.dll" />
+    <Content Include="Lib\Adpost.Ticket.xml" />
+    <Content Include="Lib\AntiXSSLibrary.dll" />
+    <Content Include="Lib\Discuz.Toolkit.dll" />
+    <Content Include="Lib\EntLibContrib.Data.MySql.dll" />
+    <Content Include="Lib\EyouSoft.AOPHandler.dll" />
+    <Content Include="Lib\EyouSoft.BackgroundServices.dll" />
+    <Content Include="Lib\EyouSoft.BLL.dll" />
+    <Content Include="Lib\EyouSoft.BLL.XML" />
+    <Content Include="Lib\EyouSoft.BLL.XmlSerializers.dll" />
+    <Content Include="Lib\EyouSoft.BusinessLogWriter.dll" />
+    <Content Include="Lib\EyouSoft.Cache.Core.dll" />
+    <Content Include="Lib\EyouSoft.Cache.Facade.dll" />
+    <Content Include="Lib\EyouSoft.Common.dll" />
+    <Content Include="Lib\EyouSoft.Component.Factory.dll" />
+    <Content Include="Lib\EyouSoft.Config.dll" />
+    <Content Include="Lib\EyouSoft.DAL.dll" />
+    <Content Include="Lib\EyouSoft.DAL.xml" />
+    <Content Include="Lib\EyouSoft.Exception.Facade.dll" />
+    <Content Include="Lib\EyouSoft.HotelBI.dll" />
+    <Content Include="Lib\EyouSoft.HotelBI.XML" />
+    <Content Include="Lib\EyouSoft.IBLL.dll" />
+    <Content Include="Lib\EyouSoft.IBLL.xml" />
+    <Content Include="Lib\EyouSoft.IDAL.dll" />
+    <Content Include="Lib\EyouSoft.Model.dll" />
+    <Content Include="Lib\EyouSoft.Model.xml" />
+    <Content Include="Lib\EyouSoft.OpenRelation.Model.dll" />
+    <Content Include="Lib\EyouSoft.OpenRelation.Model.XML" />
+    <Content Include="Lib\EyouSoft.Oracle.DAL.dll" />
+    <Content Include="Lib\EyouSoft.Security.Membership.dll" />
+    <Content Include="Lib\EyouSoft.Security.Membership.xml" />
+    <Content Include="Lib\EyouSoft.SSOComponent.dll" />
+    <Content Include="Lib\EyouSoft.SSOComponent.xml" />
+    <Content Include="Lib\EyouSoft.SSOComponent.XmlSerializers.dll" />
+    <Content Include="Lib\IBLL.Configuration.xml" />
+    <Content Include="Lib\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Lib\IDAL.Configuration.xml" />
+    <Content Include="Lib\log4net.dll" />
+    <Content Include="Lib\Memcached.ClientLibrary.dll" />
+    <Content Include="Lib\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
+    <Content Include="Lib\Microsoft.Practices.EnterpriseLibrary.Caching.xml" />
+    <Content Include="Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="Lib\Microsoft.Practices.EnterpriseLibrary.Common.xml" />
+    <Content Include="Lib\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="Lib\Microsoft.Practices.EnterpriseLibrary.Data.xml" />
+    <Content Include="Lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" />
+    <Content Include="Lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml" />
+    <Content Include="Lib\Microsoft.Practices.ObjectBuilder2.dll" />
+    <Content Include="Lib\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="Lib\Microsoft.Practices.Unity.dll" />
+    <Content Include="Lib\Microsoft.Practices.Unity.Interception.Configuration.dll" />
+    <Content Include="Lib\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="Lib\MySql.Data.dll" />
+    <Content Include="Lib\Newtonsoft.Json.dll" />
+    <Content Include="Lib\WebSampleHelper.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\memcached.config" />
+    <None Include="Config\Web.config" />
+  </ItemGroup>
+</Project>

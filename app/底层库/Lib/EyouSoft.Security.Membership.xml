@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EyouSoft.Security.Membership</name>
+    </assembly>
+    <members>
+        <member name="T:EyouSoft.Security.Membership.Utility">
+            <summary>
+            utility
+            </summary>
+            Author:汪奇志 2010-06-30
+        </member>
+        <member name="M:EyouSoft.Security.Membership.Utility.GetCurrentWebMasterArea">
+            <summary>
+            获取当前用户(运营后台)用户分管的区域范围 多个用","间隔
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.Utility.GetCurrentUserArea">
+            <summary>
+            获取当前用户分管的线路区域 多个线路区域用","间隔 管理员用户返回null
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.Utility.GetCurrentUserCompanyId">
+            <summary>
+            获取当前登录用户的公司编号 未登录返回null
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EyouSoft.Security.Membership.TicketType">
+            <summary>
+            凭据类型
+            </summary>
+        </member>
+        <member name="F:EyouSoft.Security.Membership.TicketType.UserCookieName">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="F:EyouSoft.Security.Membership.TicketType.MasterCookieName">
+            <summary>
+            管理员
+            </summary>
+        </member>
+        <member name="T:EyouSoft.Security.Membership.UserProvider">
+            <summary>
+            用户账号操作
+            1.系统登陆、退出
+            2.权限验证
+            3.用户更新
+            </summary>
+        </member>
+        <member name="F:EyouSoft.Security.Membership.UserProvider._Key">
+            <summary>
+            加密KEY
+            </summary>
+        </member>
+        <member name="F:EyouSoft.Security.Membership.UserProvider._IV">
+            <summary>
+            解密IV
+            </summary>
+        </member>
+        <member name="F:EyouSoft.Security.Membership.UserProvider.CookieExpireTime">
+            <summary>
+            COOKIE有效时间
+            </summary>
+        </member>
+        <member name="F:EyouSoft.Security.Membership.UserProvider.TicketExpireTime">
+            <summary>
+            凭据有效时间
+            </summary>
+        </member>
+        <member name="F:EyouSoft.Security.Membership.UserProvider.UserCookieName">
+            <summary>
+            用户COOKIE名称
+            </summary>
+        </member>
+        <member name="F:EyouSoft.Security.Membership.UserProvider.MasterCookieName">
+            <summary>
+            管理员COOKIE名称
+            </summary>
+        </member>
+        <member name="F:EyouSoft.Security.Membership.UserProvider.crypto">
+            <summary>
+            加解密对象
+            </summary>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.UserLogin(System.String,System.String)">
+            <summary>
+            用户登陆
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">密码</param>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.APIUserLogin(System.String,System.String,EyouSoft.SSOComponent.Entity.PasswordType)">
+            <summary>
+            API用户登陆
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">密码</param>
+            <param name="PwdType">密码类型</param>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.UserLogout">
+            <summary>
+            用户退出
+            </summary>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.GetUser">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.UpdateUser(EyouSoft.Model.CompanyStructure.CompanyUser)">
+            <summary>
+            更新用户信息
+            </summary>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.ValidateUser(EyouSoft.SSOComponent.Entity.UserInfo)">
+            <summary>
+            验证用户
+            </summary>
+            <param name="User">用户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.CheckGrant(System.Int32)">
+            <summary>
+            验证用户权限
+            </summary>
+            <param name="PermissionID">权限号</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.CreateLoginTicket(EyouSoft.SSOComponent.Entity.DecryptLoginTicket)">
+            <summary>
+            创建登录凭据
+            </summary>
+            <param name="LoginTicket">原始登录凭据</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.GetLoginTicket(EyouSoft.Security.Membership.TicketType)">
+            <summary>
+            获取用户登录信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.MasterLogin(System.String,System.String)">
+            <summary>
+            管理员登录
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">用户密码</param>
+            <returns>管理员信息</returns>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.MasterLogout(System.String)">
+            <summary>
+            管理员退出
+            </summary>
+            <param name="UID">用户编号</param>
+            <param name="PWD">用户密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.ValidateUser(EyouSoft.SSOComponent.Entity.MasterUserInfo)">
+            <summary>
+            验证用户
+            </summary>
+            <param name="User">管理员信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.CheckMasterGrant(System.Int32)">
+            <summary>
+            验证管理员权限
+            </summary>
+            <param name="PermissionID">权限号</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.UpdateMasterInfo(EyouSoft.SSOComponent.Entity.MasterUserInfo)">
+            <summary>
+            更新管理员信息
+            </summary>
+            <param name="User">用户编号</param>
+        </member>
+        <member name="M:EyouSoft.Security.Membership.UserProvider.GetMaster">
+            <summary>
+            获取管理员信息
+            </summary>
+            <param name="UID">用户编号</param>
+            <returns>管理员信息</returns>
+        </member>
+    </members>
+</doc>

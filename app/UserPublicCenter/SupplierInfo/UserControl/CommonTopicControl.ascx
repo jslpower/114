@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CommonTopicControl.ascx.cs" Inherits="UserPublicCenter.SupplierInfo.UserControl.CommonTopicControl" %>
+<div runat="server" id="mainDiv"></div>

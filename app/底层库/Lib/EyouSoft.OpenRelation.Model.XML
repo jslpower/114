@@ -1,0 +1,614 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EyouSoft.OpenRelation.Model</name>
+    </assembly>
+    <members>
+        <member name="T:EyouSoft.OpenRelation.Utils">
+            <summary>
+            EyouSoft Open Relation Utils
+            </summary>
+            Author:汪奇志 DateTime:20100-04-01
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Utils.WebRequestTimeout">
+            <summary>
+            WebRequest Timeout
+            </summary>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.GetAppSetting(System.String)">
+            <summary>
+            get app setting
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.InvertJSON``1(System.String)">
+            <summary>
+            JSON转为对象
+            </summary>
+            <param name="json">JSON DATA</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.ConvertJSON``1(``0)">
+            <summary>
+            对象转为JSON
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="TObject">待转对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.CreateRequest(EyouSoft.OpenRelation.Model.MRequestInfo)">
+            <summary>
+            发送指令，远程服务器务必返回EyouSoft.OpenRelation.Model.MResponseInfo json data string
+            </summary>
+            <param name="requestInfo">http request post info</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.GetAppKey">
+            <summary>
+            get appkey
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.GetMiddlewareURI">
+            <summary>
+            get middleware uri 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.GetURI(EyouSoft.OpenRelation.Model.SystemType)">
+            <summary>
+            get uri
+            </summary>
+            <param name="systemType">system type</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.GetIsEnable">
+            <summary>
+            获取是否启用数据同步操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.ValidateRequest(System.String,EyouSoft.OpenRelation.Model.MRequestInfo@)">
+            <summary>
+            验证请求信息
+            </summary>
+            <param name="requestString">请求指令字符串 MRequestInfo json data</param>
+            <param name="requestInfo">out EyouSoft.OpenRelation.Model.MRequestInfo</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.GetLocalSyncFilePath">
+            <summary>
+            获取当前系统处理程序路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.GetIsSync">
+            <summary>
+            获取是否执行数据同步操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.GetInt(System.String,System.Int32)">
+            <summary>
+            将字符串转化为数字(有符号整数) 若值不是数字返回defaultValue
+            </summary>
+            <param name="key">字符串</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.GetInt(System.String)">
+            <summary>
+            将字符串转化为数字(有符号整数) 若值不是数字返回0
+            </summary>
+            <param name="key">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Utils.GetExistsUserType">
+            <summary>
+            获取用户是否存在验证方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.MExceptionInfo">
+            <summary>
+            处理异常信息业务实体
+            </summary>
+            Author:汪奇志 2011-04-01
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Model.MExceptionInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MExceptionInfo.ExecptionId">
+            <summary>
+            异常编号
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MExceptionInfo.SystemType">
+            <summary>
+            请求系统类型
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MExceptionInfo.InstructionCode">
+            <summary>
+            请求代码 http request post info json data
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MExceptionInfo.ExceptionCode">
+            <summary>
+            错误代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MExceptionInfo.ExceptionDesc">
+            <summary>
+            错误描述
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MExceptionInfo.ExceptionTime">
+            <summary>
+            异常时间
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.MUserBaseInfo">
+            <summary>
+            用户基本信息业务实体
+            </summary>
+            Author:汪奇志 DateTime:2011-04-01
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.MBaseInfo">
+            <summary>
+            基本信息业务实体
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MBaseInfo.SystemType">
+            <summary>
+            系统类型
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MBaseInfo.PlatformCompanyId">
+            <summary>
+            平台公司编号
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MBaseInfo.SystemCompanyType">
+            <summary>
+            系统公司类型，用来确定各个系统专线、组团、供应商公司是否存在于一个表内，若存在于一个表内用ZX
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MBaseInfo.SystemCompanyId">
+            <summary>
+            系统公司编号
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MBaseInfo.PlatformCompanyType">
+            <summary>
+            平台公司类型，默认为ZT，由此来决定在大平台创建的公司类型
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MBaseInfo.ProvinceName">
+            <summary>
+            省份名称
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MBaseInfo.CityName">
+            <summary>
+            城市名称
+            </summary>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Model.MUserBaseInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MUserBaseInfo.SystemUserId">
+            <summary>
+            系统用户编号
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MUserBaseInfo.PlatformUserId">
+            <summary>
+            平台用户编号
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.MUserInfo">
+            <summary>
+            用户信息业务实体
+            </summary>
+            Author:汪奇志 DateTime:2011-04-01
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Model.MUserInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MUserInfo.UserName">
+            <summary>
+            登录账号
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MUserInfo.Password">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MUserInfo.RealName">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MUserInfo.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MUserInfo.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MUserInfo.Telephone">
+            <summary>
+            电话
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MUserInfo.Fax">
+            <summary>
+            传真
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MUserInfo.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MUserInfo.MSN">
+            <summary>
+            MSN
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MUserInfo.QQ">
+            <summary>
+            QQ
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.MExistsUserInfo">
+            <summary>
+            用户是否存在信息业务实体
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MExistsUserInfo.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MExistsUserInfo.Email">
+            <summary>
+            用户邮箱
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MExistsUserInfo.ExistsUserType">
+            <summary>
+            用户是否存在验证方式（无须赋值，由中间处理程序来决定）
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MExistsUserInfo.SystemUserId">
+            <summary>
+            系统用户编号，修改时务必赋值
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MExistsUserInfo.SystemType">
+            <summary>
+            系统类型，修改时务必赋值
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.MRequestInfo">
+            <summary>
+            http request post info
+            </summary>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Model.MRequestInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MRequestInfo.AppKey">
+            <summary>
+            app key
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MRequestInfo.RequestSystemType">
+            <summary>
+            发起请求系统类型
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MRequestInfo.InstructionType">
+            <summary>
+            指令类型
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MRequestInfo.InstructionCode">
+            <summary>
+            指令代码，相应实体的JSON格式数据，实体类型根据指令类型来确定
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MRequestInfo.RequestUriString">
+            <summary>
+            处理程序资源URI
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.MResponseInfo">
+            <summary>
+            http response write info
+            </summary>
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Model.MResponseInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MResponseInfo.IsSuccess">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MResponseInfo.ErrorCode">
+            <summary>
+            错误代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MResponseInfo.Desc">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MResponseInfo.InstructionType">
+            <summary>
+            指令类型（请求时的指令类型）
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MResponseInfo.InstructionCode">
+            <summary>
+            相应JSON格式数据，类型根据指令类型来确定
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.MRCreateUserInfo">
+            <summary>
+            创建公司或用户返回信息业务实体
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MRCreateUserInfo.PlatformCompanyId">
+            <summary>
+            平台公司编号，创建公司、用户时返回
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MRCreateUserInfo.PlatformUserId">
+            <summary>
+            平台用户编号，创建公司、用户时返回
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.SystemType">
+            <summary>
+            系统类型
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.SystemType.YYT">
+            <summary>
+            易游通
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.SystemType.TYT">
+            <summary>
+            同业通
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.SystemType.Platform">
+            <summary>
+            平台
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.SystemCompanyType">
+            <summary>
+            系统公司类型，用来确定各个系统专线、组团、供应商公司是否存在于一个表内，若存在于一个表内用ZX
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.SystemCompanyType.ZX">
+            <summary>
+            专线
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.SystemCompanyType.ZT">
+            <summary>
+            组团
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.SystemCompanyType.GY">
+            <summary>
+            供应商
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.InstructionType">
+            <summary>
+            指令类型
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.InstructionType.None">
+            <summary>
+            空白指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.InstructionType.CreateCompany">
+            <summary>
+            创建公司信息指令，中间处理程序会根据是否存在公司相应关系决定是否创建公司
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.InstructionType.CreateUser">
+            <summary>
+            创建用户信息指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.InstructionType.UpdateCompany">
+            <summary>
+            更新公司信息指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.InstructionType.UpdateUser">
+            <summary>
+            更新用户信息指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.InstructionType.DeleteCompany">
+            <summary>
+            删除公司信息指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.InstructionType.DeleteUser">
+            <summary>
+            删除用户信息指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.InstructionType.ExistsUser">
+            <summary>
+            用户是否存在指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.InstructionType.UserPermission">
+            <summary>
+            获取用户系统权限
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.Gender.L">
+            <summary>
+            女
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.Gender.G">
+            <summary>
+            男
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.ExistsUserType">
+            <summary>
+            用户是否存在验证方式
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.ExistsUserType.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.ExistsUserType.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.ExistsUserType.Both">
+            <summary>
+            用户名及邮箱
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.PlatformCompanyType">
+            <summary>
+            平台公司类型
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.PlatformCompanyType.ZX">
+            <summary>
+            专线
+            </summary>
+        </member>
+        <member name="F:EyouSoft.OpenRelation.Model.PlatformCompanyType.ZT">
+            <summary>
+            组团
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.MCompanyInfo">
+            <summary>
+            公司信息业务实体
+            </summary>
+            Author:汪奇志 DateTime:2011-04-01
+        </member>
+        <member name="M:EyouSoft.OpenRelation.Model.MCompanyInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCompanyInfo.CompanyName">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCompanyInfo.ContactName">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCompanyInfo.ContactTelephone">
+            <summary>
+            联系电话
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCompanyInfo.ContactMobile">
+            <summary>
+            联系手机
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCompanyInfo.ContactFax">
+            <summary>
+            联系传真
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCompanyInfo.Address">
+            <summary>
+            联系地址
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCompanyInfo.ContactEmail">
+            <summary>
+            联系邮箱
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCompanyInfo.ContactMSN">
+            <summary>
+            联系人MSN
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCompanyInfo.ContactQQ">
+            <summary>
+            联系人QQ
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCompanyInfo.ContactGender">
+            <summary>
+            联系人性别
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCompanyInfo.Domain">
+            <summary>
+            域名
+            </summary>
+        </member>
+        <member name="T:EyouSoft.OpenRelation.Model.MCUInfo">
+            <summary>
+            公司及用户信息业务实体
+            </summary>
+            Author:汪奇志 DateTime:2011-04-02
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCUInfo.CompanyInfo">
+            <summary>
+            公司信息
+            </summary>
+        </member>
+        <member name="P:EyouSoft.OpenRelation.Model.MCUInfo.UserInfo">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AirTicket.master.cs"
+    Inherits="UserPublicCenter.MasterPage.AirTicket" %>
+
+<%@ Import Namespace="EyouSoft.Common" %>
+<%@ Register Src="../WebControl/PageHead.ascx" TagName="PageHead" TagPrefix="uc1" %>
+<%@ Register Src="../WebControl/CityAndMenu.ascx" TagName="CityAndMenu" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+</head>
+<body>
+    <form id="form1" runat="server">
+    <uc1:PageHead ID="PageHead1" runat="server" />
+    <uc1:CityAndMenu ID="CityAndMenu1" runat="server" HeadMenuIndex="3" />
+    <div class="main">
+        <!--sidebar start-->
+        <div class="sidebar">
+            <h1>
+                <img alt="机票平台" src="<%=ImageServerPath %>/images/jipiao/left_menu_title.jpg" width="148"
+                    height="32" /></h1>
+            <ul>
+                <li><span><a target="_blank" href="/PlaneInfo/PlaneListPage.aspx">散客预订</a></span></li>
+                <li id="liAirQuery"><span><a href="/AirTickets/TeamBook/TicketSearch.aspx">团队预订/散拼</a></span></li>
+                <li id="liOrderManage"><span><a href="javascript:;">机票订单管理</a></span></li>
+                <li class="two_menu" style="display: none;"><a href="/AirTickets/OrderManage/CurrentOrderList.aspx">
+                    ·当前最新订单</a> <a href="/AirTickets/OrderManage/PrintTicketJournal.aspx">·机票告知单打印</a>
+                    <a href="/AirTickets/OrderManage/ReportList.aspx">·报表</a> </li>
+                <li id="liVisitorManage"><span><a href="javascript:;">机票常旅客</a></span></li>
+                <li class="two_menu" style="display: none;"><a href="/AirTickets/VisitorManage/VisitorsPage.aspx">
+                    ·常旅客添加</a> <a href="/AirTickets/VisitorManage/VisitorList.aspx">·常旅客查询/修改 </a>
+                </li>
+            </ul>
+            <span id="spanAirGongYinLink" runat="server" style="margin-top: 5px; display: block;">
+                <a href="<%=Domain.UserBackCenter %>/TicketsCenter/Default.aspx" target="_blank"
+                    title="点击进入供应商后台">
+                    <img alt="点击进入供应商后台" src="<%=ImageServerPath %>/images/jipiao/gys_admin.jpg" /></a></span>
+        </div>
+        <!--sidebar02 start-->
+        <div class="sidebar02">
+            <span class="sidebar02_toptext">您好，<asp:Literal ID="ltrUserName" runat="server"></asp:Literal>
+                欢迎登录同业114，您已登录 <em>
+                    <asp:Literal ID="ltrLoginCount" runat="server"></asp:Literal>次</em>,上次登陆是 <em>
+                        <asp:Literal ID="ltrLastLoginTime" runat="server"></asp:Literal></em>
+            </span>
+            <div class="sub_menu" style="display: none;">
+                <span>机票 >> 首页</span>
+                <div class="sub_menu_right">
+                    &nbsp;</div>
+            </div>
+            <!-- sidebar02_con start-->
+            <asp:ContentPlaceHolder ID="c1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- sidebar02_con end-->
+        </div>
+        <!--sidebar02 end-->
+        <div class="clearboth">
+        </div>
+    </div>
+    <div class="bottom" style="margin-top: 10px">
+        <div class="bottomleft">
+            <% EyouSoft.Model.SystemStructure.SystemInfo Model = EyouSoft.BLL.SystemStructure.SystemInfo.CreateInstance().GetSystemModel();
+               if (Model != null)
+               {
+                   Response.Write(Model.AllRight);
+               }
+               Model = null;
+            %>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function Hide_Show_Div(obj) {
+            var $obj = $(obj).next();
+            if ($obj.css("display") == "none") {
+                $obj.css("display", "");
+            } else {
+                $obj.css("display", "none");
+            }
+        }
+        $(function() {
+            var nindex = <%=_NaviagtionIndex %>;
+            if (nindex == 1) {
+                $("#liAirQuery").find("a").addClass("default");
+            } else if (nindex == 2) {
+                $("#liOrderManage").find("a").addClass("default");
+                Hide_Show_Div($("#liOrderManage").get(0));
+            } else if (nindex == 3) {
+                $("#liVisitorManage").find("a").addClass("default");
+                Hide_Show_Div($("#liVisitorManage").get(0));
+            }
+            $("#liOrderManage,#liVisitorManage").click(function() {
+                Hide_Show_Div(this);
+            });
+        });
+    
+    </script>
+
+    </form>
+</body>
+</html>

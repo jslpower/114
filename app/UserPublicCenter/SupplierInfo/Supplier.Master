@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage/PublicCenterMasterPage.Master"
+    CodeBehind="Supplier.Master.cs" Inherits="UserPublicCenter.SupplierInfo.Supplier" %>
+
+<%@ Register Src="../WebControl/CityAndMenu.ascx" TagName="CityAndMenu" TagPrefix="uc1" %>
+
+<%@ Import Namespace="EyouSoft.Common" %>
+<asp:Content runat="server" ID="SupplierInfo" ContentPlaceHolderID="Main">
+
+    <script type="text/javascript" src="<%=JsManage.GetJsFilePath("jquery") %>"></script>
+
+    <uc1:CityAndMenu ID="CityAndMenu1" HeadMenuIndex="9" runat="server" />
+    <table style="margin-top: 10px;" width="970" align="center" border="0" cellpadding="0"
+        cellspacing="0">
+        <tbody>
+            <tr>
+                <td>
+                    <asp:Literal runat="server" ID="ltrAdvBraner"></asp:Literal>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="hangbg" width="970" align="center" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td width="10">
+                    &nbsp;
+                </td>
+                <td class="hangup" id="td1">
+                    <a href="<%= Utils.GeneratePublicCenterUrl("/SupplierInfo/SupplierInfo.aspx", CityId) %>">供求信息</a>
+                </td>
+                <td class="hangup" id="td2">
+                    <%--<a href="<%= Utils.GeneratePublicCenterUrl("/SupplierInfo/InfoArticle.aspx", CityId) %>">行业资讯</a>--%>
+                </td>
+                <%--<td class="hangup" id="td3">
+                    <a href="<%= Utils.GeneratePublicCenterUrl("/SupplierInfo/HonoredGuest.aspx", CityId) %>">嘉宾访谈</a>
+                </td>--%>
+                <td class="hangup" id="td4">
+                    <%--<a href="<%= Utils.GeneratePublicCenterUrl("/SupplierInfo/SchoolIntroduction.aspx", CityId) %>">同业学堂</a>--%>
+                </td>
+                <td style="padding-left: 30px;">
+                    <asp:Literal runat="server" ID="ltrRelease"></asp:Literal>
+                </td>
+                <td class="hangxinxi">
+                    <div id="marquee" style="overflow: hidden; width: 280px; height: 15px;">
+                        <ul>
+                            <asp:Literal runat="server" ID="ltrSummaryCount"></asp:Literal>
+                        </ul>
+                        <%--<ul>
+                            <li>注册用户<strong>(18812人)</strong>本周供需信息<strong>(2039条)</strong></li>
+                            <li>杭州易诺旅行社新用户加入</li>
+                        </ul>--%>
+                    </div>
+                </td>
+                <td width="10">
+                    &nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <asp:ContentPlaceHolder ID="SupplierMain" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#td<%= menuindex %>").removeClass("hangup");
+            $("#td<%= menuindex %>").addClass("hangon");
+        });
+    </script>
+
+</asp:Content>

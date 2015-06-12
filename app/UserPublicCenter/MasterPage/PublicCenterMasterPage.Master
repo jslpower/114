@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PublicCenterMasterPage.master.cs"
+    Inherits="UserPublicCenter.PublicCenterMasterPage" %>
+
+<%@ Import Namespace="EyouSoft.Common" %>
+<%@ Register Src="../WebControl/PageHead.ascx" TagName="PageHead" TagPrefix="uc1" %>
+<%@ Register Src="../WebControl/PageFoot.ascx" TagName="PageHead" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <link href="<%=CssManage.GetCssFilePath("body") %>" rel="stylesheet" type="text/css" />
+    <link href="<%=CssManage.GetCssFilePath("indexmain") %>" rel="stylesheet" type="text/css" />
+
+  
+
+    <form id="form1" runat="server">
+    <div>
+        <uc1:PageHead ID="PageHead1" runat="server" />
+        <asp:ContentPlaceHolder ID="Main" runat="server">
+        </asp:ContentPlaceHolder>
+        <uc2:PageHead ID="PageFoot1" runat="server" />
+    </div>
+
+    <script type="text/javascript">
+
+    </script>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>操作提示</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<script>
+function CheckOrbberInstalled()
+{
+	try{
+		var objhttp=new ActiveXObject("orbbertongye114.Install");
+		if(objhttp != null)
+			return true;
+		else
+			return false;
+	}
+	catch(e)
+	{
+		alert("该操作需要 ACTIVEX 支持，或者未正确安装同业MQ软件，请仔细查看操作提示");
+		return false;
+	}
+	
+	return false;
+}
+</script>
+<style>
+<!--
+BODY { 	color:#333;	font-size:12px;	font-family:"宋体",Arial, Helvetica, sans-serif;	text-align: center;	background:#fff;margin:0px;}
+img {	border: thin none;}
+table{	border-collapse:collapse; margin:0px auto; padding:0px auto; }
+TD {	FONT-SIZE: 12px; COLOR: #0E3F70; line-height: 20px;  FONT-FAMILY:"宋体",Arial, Helvetica, sans-serif; }
+div {	margin: 0px auto;	text-align: left;	padding:0px auto;	border:0px;}
+textarea {	font-size:12px;	font-family:"宋体",Arial, Helvetica, sans-serif;	COLOR: #333;}
+select {	font-size:12px;	font-family:"宋体",Arial, Helvetica, sans-serif;	COLOR: #333;}
+.ff0000 {color:#f00;}
+a.downloadStyle {color:red;font-size:16px;TEXT-DECORATION: underline;}
+a.downloadStyle:hover{color:f00;font-size:16px;}
+a.downloadStyle:active {color:f00;font-size:16px;}
+a.downloadStyle:visited {color:red;font-size:16px;TEXT-DECORATION: underline;}
+a {COLOR:#0E3F70; TEXT-DECORATION: none;}
+a:hover {COLOR:#f00; TEXT-DECORATION: underline;}
+a:active {color:#f00; TEXT-DECORATION: none;}	
+a:visited {	color: #0E3F70;}
+-->
+</style>
+</head>
+<body>
+<script>
+
+	var boolFals=CheckOrbberInstalled(); 
+
+	if(boolFals==true)
+	{ 
+		location.href='tongye114://mored.orb/cmd=msg?uid=22547';
+		setTimeout("location.href='http://customer.tongye114.com'", 500 );
+	}
+
+</script>
+<table width="600" border="0" align="center" cellpadding="3" cellspacing="0" style="margin-top:50px; border:1px solid #79AFD4;">
+  <tr>
+
+    <td bgcolor="#A2CDEB"><strong>操作提示：</strong></td>
+  </tr>
+  <tr>
+    <td align="left"><h3>
+        一、该操作需要 ACTIVEX 支持……</h3>
+      <span style="color:#000000;">此网站使用 ActiveX 控件来确定您的计算机正在运行的软件版本。如果看到 ActiveX 警告，请确保在安装该控件或允许该控件运行之前。</span><br />
+      <img src="http://im.tongye114.com/images/tishi.gif" width="362" height="211" /><br />
+
+	  <h3>二、请确保您的操作系统安装了MQ软件，如未安装，请点击<a href="http://im.tongye114.com" alt="下载MQ软件" class="downloadStyle">下载</a></h3><div align="center"><img src="http://im.tongye114.com/images/btn_04.gif" alt="下载MQ软件" width="187" height="52" /></div>
+        </td>
+  </tr>
+</table>
+</body>
+</html>

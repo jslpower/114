@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NewPublicCenter.master.cs" Inherits="UserPublicCenter.MasterPage.NewPublicCenter" %>
+<%@ Register Src="/WebControl/PageHead.ascx" TagName="PageHead" TagPrefix="uc1" %>
+<%@ Register Src="/WebControl/CityAndMenu.ascx"TagName="PageMenu" TagPrefix="uc2" %>
+<%@ Register Src="/WebControl/PageFoot.ascx" TagName="PageFoot" TagPrefix="uc4" %>
+<%@ Import Namespace="EyouSoft.Common" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title runat="server"></title>    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+  
+  <div>
+    <uc1:PageHead ID="PageHead1" runat="server" />
+    <uc2:PageMenu ID="PageMenu1" runat="server" />
+    <asp:ContentPlaceHolder ID="c1" runat="server">
+    </asp:ContentPlaceHolder>
+        
+  </div>
+   
+   <asp:ContentPlaceHolder ID="c2" runat="server">
+   </asp:ContentPlaceHolder>
+    <uc4:PageFoot ID="PageFoot1" runat="server" />
+</body>
+</html>

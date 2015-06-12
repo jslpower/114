@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage/NewPublicCenter.Master"
+ CodeBehind="SupplierNew.master.cs" Inherits="UserPublicCenter.SupplierInfo.SupplierNew" %>
+ <%@ Register Src="../WebControl/InfomationControl/HotRouteRecommend.ascx" TagName="HotRouteRecommend"
+    TagPrefix="uc2" %>
+<%@ Register src="../WebControl/LeftList.ascx" tagname="LeftList" tagprefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    
+    <link href="<%= EyouSoft.Common.CssManage.GetCssFilePath("news2011") %>" rel="Stylesheet" type="text/css" />
+    <link href="<%= EyouSoft.Common.CssManage.GetCssFilePath("gongqiu2011") %>" rel="Stylesheet" type="text/css" />
+    <link href="<%= EyouSoft.Common.CssManage.GetCssFilePath("boxy2011") %>" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="SupplierHead" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="c1" runat="server">
+        <script type="text/javascript" src="<%=EyouSoft.Common.JsManage.GetJsFilePath("boxy") %>"></script>
+        <!--新闻列表开始-->
+        <%if(adv!=null){ %>
+        <div id="news-list-ad"><a href="<%= UserPublicCenter.SupplierInfo.SupplierCom.SetUrlHttp(adv.RedirectURL) %>" title=""><img style=" width:969px; height:70px;" src="<% = EyouSoft.Common.Domain.FileSystem + adv.ImgPath%>" alt="banner图片" /></a></div> 
+        <%} %>
+        <div class="body" style="overflow: hidden">
+            <!-左边边 开始-->
+            <div id="supply-bar">
+            <asp:ContentPlaceHolder ID="Show" runat="server">
+                    
+            </asp:ContentPlaceHolder>
+            <uc1:LeftList ID="LeftList1" runat="server" />
+            </div>
+            <!--左边边 结束-->
+            <asp:ContentPlaceHolder ID="SupplierBody" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="hr-10">
+            </div>
+            
+            
+            <style>
+            .btmContent
+            {
+                _margin-top: 0px;
+            }
+            div.btmMain
+            {
+                height: auto;
+            }
+            ul.hotLine li
+            {
+                margin-bottom: 5px;
+                padding-bottom: 5px;
+                border-bottom: 1px dashed #CCC;
+                line-height: 22px;
+            }
+            ul.hotLine li b
+            {
+                font-size: 14px;
+            }
+            .friendlink
+            {
+                margin-top: -30px; *+margin-top:0!important;_margin-top:-20px;}</style>
+        <!--bottom nav 热门线路 start-->
+        <uc2:HotRouteRecommend ID="HotRouteRecommend1" runat="server" />
+        <!--bottom nav 热门线路 end-->
+        <!--同业114分站-->
+        <div class="fenzhan">
+            <h2>
+                同业114分站</h2>
+            <div class="list">
+                <a href="<%=EyouSoft.Common.URLREWRITE.SubStation.CityUrlRewrite(19) %>">北京同业网</a>&nbsp;&nbsp;
+                <a href="<%=EyouSoft.Common.URLREWRITE.SubStation.CityUrlRewrite(48) %>">广州同业网</a>&nbsp;&nbsp;
+                <a href="<%=EyouSoft.Common.URLREWRITE.SubStation.CityUrlRewrite(362) %>">杭州同业网</a>&nbsp;&nbsp;
+                <a href="<%=EyouSoft.Common.URLREWRITE.SubStation.CityUrlRewrite(292) %>">上海同业网</a>&nbsp;&nbsp;
+                <a href="<%=EyouSoft.Common.URLREWRITE.SubStation.CityUrlRewrite(192) %>">南京同业网</a>&nbsp;&nbsp;
+                <a href="<%=EyouSoft.Common.URLREWRITE.SubStation.CityUrlRewrite(257) %>">济南同业网</a>&nbsp;&nbsp;
+                <a href="<%=EyouSoft.Common.URLREWRITE.SubStation.CityUrlRewrite(367) %>">宁波同业网</a>&nbsp;&nbsp;
+                <a href="<%=EyouSoft.Common.URLREWRITE.SubStation.CityUrlRewrite(352) %>">昆明同业网</a>&nbsp;&nbsp;
+                <a href="<%=EyouSoft.Common.URLREWRITE.SubStation.CityUrlRewrite(225) %>">沈阳同业网</a>
+            </div>
+        </div>
+        <!---->
+            
+    </div>
+    
+        
+    
+    
+    
+    
+        
+    
+    
+    
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="c2" runat="server">
+    
+    <asp:ContentPlaceHolder ID="SupplierBottom" runat="server">
+    
+    </asp:ContentPlaceHolder>
+    
+</asp:Content>

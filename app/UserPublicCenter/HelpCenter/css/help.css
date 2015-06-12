@@ -1,0 +1,91 @@
+/* CSS Document */
+@charset "gb2312";
+BODY { 	color:#333;	font-size:12px;	font-family:"ËÎÌו",Arial, Helvetica, sans-serif;margin:0px; text-align:center;}
+
+td {	font-size: 12px;	line-height: 20px;}
+
+img { border:0px;}
+a:link {color: #333;	text-decoration: none;}
+a:visited {color: #333;  	text-decoration: none;}
+a:hover {color: #ff0000;  font-size:12px;	text-decoration: underline;}
+a:active {font-size:12px;	color: #ff0000;}
+ul {list-style:none;	margin:0px;	padding:0px;}li {line-height:150%;	list-style-type:none;margin:0;padding:0;}
+.shang10{ margin-top:2px;}.shang11{ margin-top:10px;}
+.xia10{ margin-bottom:10px;}
+.zuobiankuang{ border:1px solid #D5D5D5; border-top:0px; background:url(../images/shiyongzhinanbg.gif) repeat-x bottom;}
+.ruheup{ background:url(../images/ruheq.gif); height:24px; width:135px; float:left; padding-left:25px; padding-top:3px;color: #333; margin-top:5px; text-align:left; font-size:14px;}
+a.ruheup:hover,a.ruheup:active{ background:url(../images/ruhex.gif); color:#CC0000; text-decoration:none; font-size:14px;}
+.hplefthang{ background:url(../images/lefthangbg.gif) no-repeat; height:25px; width:170px; font-size:14px; color:#333; font-weight:bold; text-align:left; padding:3px 0px 0px 10px; }
+.hpleftkuang{ border:1px solid #CDCDCD; border-top:0px; padding:5px 0px 5px 15px; text-align:left; font-size:14px; background:#FFFDDB;}
+.hpleftkuang ul li{ color:#333; line-height:22px;font-size:14px;}
+.hpleftkuang ul li a:hover,.hpleftkuang ul li a:active{ color:#ff0000;font-size:14px;}
+
+.chengse14{ color:#FF6600; font-size:14px; font-weight:bold;}
+.shiyitu1,.shiyitu2,.shiyitu3,.shiyitu4,.shiyitu5,.shiyitu6,.shiyitu7,.shiyitu8,.shiyitu9{ background:url(../images/shiyi.gif);}
+.shiyitu1{ background-position:-0px -0px; height:26px; width:98px; float:left; font-size:14px; color:#5A5A5A; padding-top:6px;}
+a.shiyitu1:hover,a.shiyitu1:active{ background-position:-0px -33px; color:#5A5A5A; font-size:14px; text-decoration:none;}
+.shiyitu2{ background-position:-0px -66px; height:23px; width:123px; float:left; font-size:12px; color:#5A5A5A; padding-top:3px;}
+a.shiyitu2:hover,a.shiyitu2:active{ background-position:-0px -93px; color:#5A5A5A; font-size:12px; text-decoration:none;}
+.shiyitu3{ background-position:-0px -120px; height:23px; width:76px; float:left; font-size:12px; color:#5A5A5A; padding-top:3px;}
+a.shiyitu3:hover,a.shiyitu3:active{ background-position:-0px -147px; color:#5A5A5A; font-size:12px; text-decoration:none;}
+
+.shiyitu4{ background-position:-0px -174px; height:26px; width:98px; float:left; font-size:14px; color:#5A5A5A; padding-top:6px;}
+a.shiyitu4:hover,a.shiyitu4:active{ background-position:-0px -207px; color:#5A5A5A; font-size:14px; text-decoration:none;}
+.shiyitu5{ background-position:-0px -240px; height:23px; width:123px; float:left; font-size:12px; color:#5A5A5A; padding-top:3px;}
+a.shiyitu5:hover,a.shiyitu5:active{ background-position:-0px -267px; color:#5A5A5A; font-size:12px; text-decoration:none;}
+.shiyitu6{ background-position:-0px -294px; height:23px; width:77px; float:left; font-size:12px; color:#5A5A5A; padding-top:3px;}
+a.shiyitu6:hover,a.shiyitu6:active{ background-position:-0px -321px; color:#5A5A5A; font-size:12px; text-decoration:none;}
+
+.shiyitu7{ background-position:-0px -348px; height:26px; width:98px; float:left; font-size:14px; color:#5A5A5A; padding-top:6px;}
+a.shiyitu7:hover,a.shiyitu7:active{ background-position:-0px -381px; color:#5A5A5A; font-size:14px; text-decoration:none;}
+.shiyitu8{ background-position:-0px -414px; height:23px; width:123px; float:left; font-size:12px; color:#5A5A5A; padding-top:3px;}
+a.shiyitu8:hover,a.shiyitu8:active{ background-position:-0px -441px; color:#5A5A5A; font-size:12px; text-decoration:none;}
+.shiyitu9{ background-position:-0px -468px; height:23px; width:77px; float:left; font-size:12px; color:#5A5A5A; padding-top:3px;}
+a.shiyitu9:hover,a.shiyitu9:active{ background-position:-0px -495px; color:#5A5A5A; font-size:12px; text-decoration:none;}
+
+.kuaijiehang{ background:url(../images/helpkjbg.gif) repeat-x; height:29px; text-align:left; padding-left:10px; font-weight:bold; font-size:14px;}
+.kjjuang{border:1px solid #C4C4C4; height:225px; background:url(../images/kuaijiebg.gif) repeat-x bottom;}
+.kjjuang1{border:1px solid #C4C4C4; height:225px; background:url(../images/zengzhifuwubg.gif) repeat-x bottom;}
+.kjzc {  padding:5px 10px 10px 20px;}
+.kjzc ul li{ background:url(../images/kjdian.gif) no-repeat left center; padding-left:10px; line-height:22px;color:#333; text-align:left;}
+.kjzc ul li a{color:#333;}
+.kjzc1 {  padding:5px 15px 5px 25px;}
+.kjzc1 ul li{ background:url(../images/kjdian.gif) no-repeat left center; padding-left:10px; line-height:17px;color:#333; text-align:left;}
+.kjzc1 ul li a{color:#333;}
+.kjzc2 {  padding:5px 10px 10px 20px;}
+.kjzc2 ul li{ background:url(../images/zengzhifuwudian.gif) no-repeat left center; padding-left:17px; line-height:22px;color:#333; text-align:left;}
+.kjzc2 ul li a{color:#333;}
+.kjzc3 {  padding:5px 10px 10px 20px;}
+.kjzc3 ul li{ background:url(../images/newsdot.gif) no-repeat left center; padding-left:12px; line-height:24px;color:#333; text-align:left;}
+.kjzc3 ul li a{color:#333;}
+.kuaijiebbg{ background:url(../images/kuaijiebbg.gif) repeat-x bottom;}
+.daohang{background:#FFF6EE; border-bottom:1px solid #FED6B3; height:22px; color:#666; text-align:left; padding-left:15px;}
+.daohang a:link,.daohang a:visited{ color:#0044DD;}
+.daohang a:hover{ color: #ff0000;}
+.leftmenu{float:left; padding-left:5px; color:#333; font-size:14px}
+.leftmenu a:link,.leftmenu a:active{ font-size:14px; color:#333;}
+.leftmenu a:hover{ font-size:14px;}
+.helpanbg{ background:url(../images/helpanbg.gif) repeat-x bottom; padding:3px; border:1px solid #A9D4EE; text-align:center; margin:3px;}
+.helpanbg a:link,.helpanbg a:visited{color:#0044DD;}
+.zi16{ font-size:18px; padding:5px; text-align:left; background:#F0F0F0;}
+.lanse{ color:#0044DD;}
+.lanse a:link{ color:#0044DD; }
+.heise14{ color:#333; font-size:14px;}
+.heise12{ color:#333; font-size:12px;}
+a.zlink:link {
+	color: #F60;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+a.zlink:visited {
+	color: #F60;
+	text-decoration: none;
+	font-size: 14px;
+}
+a.zlink:hover {color: #ff0000;  font-size:12px;	text-decoration: underline;}
+a.zlink:active {
+	font-size:14px;
+	color: #ff0000;
+}
+

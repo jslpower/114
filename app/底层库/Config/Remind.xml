@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Remind>
+  <TitleType category="发布团队" titleLink="http://www.baidu.com" id="0" />  
+  <TitleType category="运营后台" titleLink="http://www.baidu.com" id="1" />
+  <TitleType category="公司操作" titleLink="http://www.baidu.com" id="2" />
+  <TitleType category="线路操作" titleLink="http://www.baidu.com" id="3" />
+  <TitleType category="平台服务" titleLink="http://www.baidu.com" id="4" />
+  <TitleType category="订单操作" titleLink="http://www.baidu.com" id="5" />
+  <TitleType category="账户登录" titleLink="http://www.baidu.com" id="6" />  
+</Remind>

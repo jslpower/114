@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--BLL对象映射-->
+<configuration>
+
+  <configSections>
+    <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Microsoft.Practices.Unity.Configuration" />
+  </configSections>
+  <unity>
+    <typeAliases>
+      <typeAlias alias="interface"
+			   type="Microsoft.Practices.Unity.InterceptionExtension.InterfaceInterceptor, Microsoft.Practices.Unity.Interception" />
+      <typeAlias alias="singleton" type="Microsoft.Practices.Unity.ContainerControlledLifetimeManager, Microsoft.Practices.Unity" />
+
+      <typeAlias alias="ITest"
+			   type="EyouSoft.IBLL.ITest, EyouSoft.IBLL" />
+      <typeAlias alias="TestBLL"
+			   type="EyouSoft.BLL.TestBLL, EyouSoft.BLL" />
+      <typeAlias alias="ITestBLL"
+			   type="EyouSoft.IBLL.ITestBLL, EyouSoft.IBLL" />
+      <typeAlias alias="TestBLL2"
+			   type="EyouSoft.BLL.Test.TestBLL2, EyouSoft.BLL" />
+
+      <!-- MQ相关信息(MQStructure) 开始 -->
+      <typeAlias alias="IIMAcceptMsgPeople" type="EyouSoft.IBLL.MQStructure.IIMAcceptMsgPeople, EyouSoft.IBLL" />
+      <typeAlias alias="IMAcceptMsgPeople" type="EyouSoft.BLL.MQStructure.IMAcceptMsgPeople, EyouSoft.BLL" />
+      <typeAlias alias="IIMCommendComapny" type="EyouSoft.IBLL.MQStructure.IIMCommendComapny, EyouSoft.IBLL" />
+      <typeAlias alias="IMCommendComapny" type="EyouSoft.BLL.MQStructure.IMCommendComapny, EyouSoft.BLL" />
+      <typeAlias alias="IIMFriendList" type="EyouSoft.IBLL.MQStructure.IIMFriendList, EyouSoft.IBLL" />
+      <typeAlias alias="IMFriendList" type="EyouSoft.BLL.MQStructure.IMFriendList, EyouSoft.BLL" />
+      <typeAlias alias="IIMGroupList" type="EyouSoft.IBLL.MQStructure.IIMGroupList, EyouSoft.IBLL" />
+      <typeAlias alias="IMGroupList" type="EyouSoft.BLL.MQStructure.IMGroupList, EyouSoft.BLL" />
+      <typeAlias alias="IIMMember" type="EyouSoft.IBLL.MQStructure.IIMMember, EyouSoft.IBLL" />
+      <typeAlias alias="IMMember" type="EyouSoft.BLL.MQStructure.IMMember, EyouSoft.BLL" />
+      <typeAlias alias="IIMMessage" type="EyouSoft.IBLL.MQStructure.IIMMessage, EyouSoft.IBLL" />
+      <typeAlias alias="IMMessage" type="EyouSoft.BLL.MQStructure.IMMessage, EyouSoft.BLL" />
+      <typeAlias alias="IIMMessageUrl" type="EyouSoft.IBLL.MQStructure.IIMMessageUrl, EyouSoft.IBLL" />
+      <typeAlias alias="IMMessageUrl" type="EyouSoft.BLL.MQStructure.IMMessageUrl, EyouSoft.BLL" />
+      <typeAlias alias="IIMServiceMQ" type="EyouSoft.IBLL.MQStructure.IIMServiceMQ, EyouSoft.IBLL" />
+      <typeAlias alias="IMServiceMQ" type="EyouSoft.BLL.MQStructure.IMServiceMQ, EyouSoft.BLL" />
+      <!-- MQ相关信息(MQStructure) 结束 -->
+
+      <!-- 常用工具相关(ToolStructure) 开始 -->
+      <typeAlias alias="ICompanyDayMemo" type="EyouSoft.IBLL.ToolStructure.ICompanyDayMemo, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyDayMemo" type="EyouSoft.BLL.ToolStructure.CompanyDayMemo, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyFileUpload" type="EyouSoft.IBLL.ToolStructure.ICompanyFileUpload, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyFileUpload" type="EyouSoft.BLL.ToolStructure.CompanyFileUpload, EyouSoft.BLL" />
+      <typeAlias alias="IMsgTipRecord" type="EyouSoft.IBLL.ToolStructure.IMsgTipRecord, EyouSoft.IBLL" />
+      <typeAlias alias="MsgTipRecord" type="EyouSoft.BLL.ToolStructure.MsgTipRecord, EyouSoft.BLL" />
+
+      <typeAlias alias="IReceivables" type="EyouSoft.IBLL.ToolStructure.IReceivables, EyouSoft.IBLL" />
+      <typeAlias alias="Receivables" type="EyouSoft.BLL.ToolStructure.Receivables, EyouSoft.BLL" />
+      <typeAlias alias="IFundRegister" type="EyouSoft.IBLL.ToolStructure.IFundRegister, EyouSoft.IBLL" />
+      <typeAlias alias="FundRegister" type="EyouSoft.BLL.ToolStructure.FundRegister, EyouSoft.BLL" />
+      <typeAlias alias="IPayments" type="EyouSoft.IBLL.ToolStructure.IPayments, EyouSoft.IBLL" />
+      <typeAlias alias="Payments" type="EyouSoft.BLL.ToolStructure.Payments, EyouSoft.BLL" />
+      <!-- 常用工具相关(ToolStructure) 结束 -->
+
+      <!-- 团队相关(TourStructure) 开始 -->
+      <typeAlias alias="ITour" type="EyouSoft.IBLL.TourStructure.ITour, EyouSoft.IBLL" />
+      <typeAlias alias="Tour" type="EyouSoft.BLL.TourStructure.Tour, EyouSoft.BLL" />
+      <typeAlias alias="ITourOrder" type="EyouSoft.IBLL.TourStructure.ITourOrder, EyouSoft.IBLL" />
+      <typeAlias alias="TourOrder" type="EyouSoft.BLL.TourStructure.TourOrder, EyouSoft.BLL" />
+      <typeAlias alias="ITourOrderCustomer" type="EyouSoft.IBLL.TourStructure.ITourOrderCustomer, EyouSoft.IBLL" />
+      <typeAlias alias="TourOrderCustomer" type="EyouSoft.BLL.TourStructure.TourOrderCustomer, EyouSoft.BLL" />
+      <typeAlias alias="IRateOrder" type="EyouSoft.IBLL.TourStructure.IRateOrder, EyouSoft.IBLL" />
+      <typeAlias alias="RateOrder" type="EyouSoft.BLL.TourStructure.RateOrder, EyouSoft.BLL" />
+      <typeAlias alias="IRouteBasicInfo" type="EyouSoft.IBLL.TourStructure.IRouteBasicInfo, EyouSoft.IBLL" />
+      <typeAlias alias="RouteBasicInfo" type="EyouSoft.BLL.TourStructure.RouteBasicInfo, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyContractSignet" type="EyouSoft.IBLL.TourStructure.ICompanyContractSignet,EyouSoft.IBLL" />
+      <typeAlias alias="CompanyContractSignet" type="EyouSoft.BLL.TourStructure.CompanyContractSignet,EyouSoft.BLL" />
+      <!-- 团队相关(TourStructure) 结束 -->
+
+      <!-- 系统信息相关(SystemStructure) 开始 -->
+      <typeAlias alias="ICompanyCityAd" type="EyouSoft.IBLL.SystemStructure.ICompanyCityAd, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyCityAd" type="EyouSoft.BLL.SystemStructure.CompanyCityAd, EyouSoft.BLL" />
+      <typeAlias alias="ISysArea" type="EyouSoft.IBLL.SystemStructure.ISysArea, EyouSoft.IBLL" />
+      <typeAlias alias="SysArea" type="EyouSoft.BLL.SystemStructure.SysArea, EyouSoft.BLL" />
+      <typeAlias alias="ISysCompanyDomain" type="EyouSoft.IBLL.SystemStructure.ISysCompanyDomain, EyouSoft.IBLL" />
+      <typeAlias alias="SysCompanyDomain" type="EyouSoft.BLL.SystemStructure.SysCompanyDomain, EyouSoft.BLL" />
+      <typeAlias alias="ISysFriendLink" type="EyouSoft.IBLL.SystemStructure.ISysFriendLink, EyouSoft.IBLL" />
+      <typeAlias alias="SysFriendLink" type="EyouSoft.BLL.SystemStructure.SysFriendLink, EyouSoft.BLL" />
+      <typeAlias alias="ISystemConfig" type="EyouSoft.IBLL.SystemStructure.ISystemConfig, EyouSoft.IBLL" />
+      <typeAlias alias="SystemConfig" type="EyouSoft.BLL.SystemStructure.SystemConfig, EyouSoft.BLL" />
+      <typeAlias alias="ISystemInfo" type="EyouSoft.IBLL.SystemStructure.ISystemInfo, EyouSoft.IBLL" />
+      <typeAlias alias="SystemInfo" type="EyouSoft.BLL.SystemStructure.SystemInfo, EyouSoft.BLL" />
+      <typeAlias alias="ISystemUser" type="EyouSoft.IBLL.SystemStructure.ISystemUser, EyouSoft.IBLL" />
+      <typeAlias alias="SystemUser" type="EyouSoft.BLL.SystemStructure.SystemUser, EyouSoft.BLL" />
+      <typeAlias alias="ISysCity" type="EyouSoft.IBLL.SystemStructure.ISysCity, EyouSoft.IBLL" />
+      <typeAlias alias="SysCity" type="EyouSoft.BLL.SystemStructure.SysCity, EyouSoft.BLL" />
+      <typeAlias alias="ISysProvince" type="EyouSoft.IBLL.SystemStructure.ISysProvince, EyouSoft.IBLL" />
+      <typeAlias alias="SysProvince" type="EyouSoft.BLL.SystemStructure.SysProvince, EyouSoft.BLL" />
+      <typeAlias alias="ISysOnlineUser" type="EyouSoft.IBLL.SystemStructure.ISysOnlineUser, EyouSoft.IBLL" />
+      <typeAlias alias="SysOnlineUser" type="EyouSoft.BLL.SystemStructure.SysOnlineUser, EyouSoft.BLL" />
+      <typeAlias alias="ISysPermission" type="EyouSoft.IBLL.SystemStructure.ISysPermission, EyouSoft.IBLL" />
+      <typeAlias alias="SysPermission" type="EyouSoft.BLL.SystemStructure.SysPermission, EyouSoft.BLL" />
+      <typeAlias alias="ISysPermissionCategory" type="EyouSoft.IBLL.SystemStructure.ISysPermissionCategory, EyouSoft.IBLL" />
+      <typeAlias alias="SysPermissionCategory" type="EyouSoft.BLL.SystemStructure.SysPermissionCategory, EyouSoft.BLL" />
+      <typeAlias alias="ISysPermissionClass" type="EyouSoft.IBLL.SystemStructure.ISysPermissionClass, EyouSoft.IBLL" />
+      <typeAlias alias="SysPermissionClass" type="EyouSoft.BLL.SystemStructure.SysPermissionClass, EyouSoft.BLL" />
+      <typeAlias alias="IAffiche" type="EyouSoft.IBLL.SystemStructure.IAffiche, EyouSoft.IBLL" />
+      <typeAlias alias="Affiche" type="EyouSoft.BLL.SystemStructure.Affiche, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyAdv" type="EyouSoft.IBLL.SystemStructure.ICompanyAdv, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyAdv" type="EyouSoft.BLL.SystemStructure.CompanyAdv, EyouSoft.BLL" />
+      <typeAlias alias="ISysIndexAdv" type="EyouSoft.IBLL.SystemStructure.ISysIndexAdv, EyouSoft.IBLL" />
+      <typeAlias alias="SysIndexAdv" type="EyouSoft.BLL.SystemStructure.SysIndexAdv, EyouSoft.BLL" />
+      <typeAlias alias="ISysField" type="EyouSoft.IBLL.SystemStructure.ISysField, EyouSoft.IBLL" />
+      <typeAlias alias="SysField" type="EyouSoft.BLL.SystemStructure.SysField, EyouSoft.BLL" />
+      <typeAlias alias="ISummaryCount" type="EyouSoft.IBLL.SystemStructure.ISummaryCount, EyouSoft.IBLL" />
+      <typeAlias alias="SummaryCount" type="EyouSoft.BLL.SystemStructure.SummaryCount, EyouSoft.BLL" />
+      <typeAlias alias="IProductSuggestion" type="EyouSoft.IBLL.SystemStructure.IProductSuggestion, EyouSoft.IBLL" />
+      <typeAlias alias="ProductSuggestion" type="EyouSoft.BLL.SystemStructure.ProductSuggestion, EyouSoft.BLL" />
+      <typeAlias alias="ISysApplyService" type="EyouSoft.IBLL.SystemStructure.ISysApplyService, EyouSoft.IBLL" />
+      <typeAlias alias="SysApplyService" type="EyouSoft.BLL.SystemStructure.SysApplyService, EyouSoft.BLL" />
+      <!--<typeAlias alias="IAfficheType" type="EyouSoft.IBLL.SystemStructure.IAfficheType, EyouSoft.IBLL" />
+			<typeAlias alias="AfficheType" type="EyouSoft.BLL.SystemStructure.AfficheType, EyouSoft.BLL" />-->
+      <!-- 系统信息相关(SystemStructure) 结束 -->
+
+      <!-- 公司相关(CompanyStructure)开始-->
+      <typeAlias alias="ICommonPriceStand" type="EyouSoft.IBLL.CompanyStructure.ICommonPriceStand, EyouSoft.IBLL" />
+      <typeAlias alias="CommonPriceStand" type="EyouSoft.BLL.CompanyStructure.CommonPriceStand, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyDepartment" type="EyouSoft.IBLL.CompanyStructure.ICompanyDepartment, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyDepartment" type="EyouSoft.BLL.CompanyStructure.CompanyDepartment, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyUserRoles" type="EyouSoft.IBLL.CompanyStructure.ICompanyUserRoles, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyUserRoles" type="EyouSoft.BLL.CompanyStructure.CompanyUserRoles, EyouSoft.BLL" />
+      <typeAlias alias="IServiceStandard" type="EyouSoft.IBLL.CompanyStructure.IServiceStandard, EyouSoft.IBLL" />
+      <typeAlias alias="ServiceStandard" type="EyouSoft.BLL.CompanyStructure.ServiceStandard, EyouSoft.BLL" />
+      <typeAlias alias="IBankAccount" type="EyouSoft.IBLL.CompanyStructure.IBankAccount, EyouSoft.IBLL" />
+      <typeAlias alias="BankAccount" type="EyouSoft.BLL.CompanyStructure.BankAccount, EyouSoft.BLL" />
+      <typeAlias alias="ICommonPriceStandAdd" type="EyouSoft.IBLL.CompanyStructure.ICommonPriceStandAdd, EyouSoft.IBLL" />
+      <typeAlias alias="CommonPriceStandAdd" type="EyouSoft.BLL.CompanyStructure.CommonPriceStandAdd, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyAttachInfo" type="EyouSoft.IBLL.CompanyStructure.ICompanyAttachInfo, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyAttachInfo" type="EyouSoft.BLL.CompanyStructure.CompanyAttachInfo, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyInfo" type="EyouSoft.IBLL.CompanyStructure.ICompanyInfo, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyInfo" type="EyouSoft.BLL.CompanyStructure.CompanyInfo, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyPriceStand" type="EyouSoft.IBLL.CompanyStructure.ICompanyPriceStand, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyPriceStand" type="EyouSoft.BLL.CompanyStructure.CompanyPriceStand, EyouSoft.BLL" />
+      <typeAlias alias="ICompanySetting" type="EyouSoft.IBLL.CompanyStructure.ICompanySetting, EyouSoft.IBLL" />
+      <typeAlias alias="CompanySetting" type="EyouSoft.BLL.CompanyStructure.CompanySetting, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyUser" type="EyouSoft.IBLL.CompanyStructure.ICompanyUser, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyUser" type="EyouSoft.BLL.CompanyStructure.CompanyUser, EyouSoft.BLL" />
+      <typeAlias alias="IMyCustomer" type="EyouSoft.IBLL.CompanyStructure.IMyCustomer, EyouSoft.IBLL" />
+      <typeAlias alias="MyCustomer" type="EyouSoft.BLL.CompanyStructure.MyCustomer, EyouSoft.BLL" />
+      <typeAlias alias="ITourContactInfo" type="EyouSoft.IBLL.CompanyStructure.ITourContactInfo, EyouSoft.IBLL" />
+      <typeAlias alias="TourContactInfo" type="EyouSoft.BLL.CompanyStructure.TourContactInfo, EyouSoft.BLL" />
+      <typeAlias alias="ITourStateBase" type="EyouSoft.IBLL.CompanyStructure.ITourStateBase, EyouSoft.IBLL" />
+      <typeAlias alias="TourStateBase" type="EyouSoft.BLL.CompanyStructure.TourStateBase, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyAffiche" type="EyouSoft.IBLL.CompanyStructure.ICompanyAffiche, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyAffiche" type="EyouSoft.BLL.CompanyStructure.CompanyAffiche, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyFavor" type="EyouSoft.IBLL.CompanyStructure.ICompanyFavor, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyFavor" type="EyouSoft.BLL.CompanyStructure.CompanyFavor, EyouSoft.BLL" />
+      <typeAlias alias="ISupplierInfo" type="EyouSoft.IBLL.CompanyStructure.ISupplierInfo, EyouSoft.IBLL" />
+      <typeAlias alias="SupplierInfo" type="EyouSoft.BLL.CompanyStructure.SupplierInfo, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyCity" type="EyouSoft.IBLL.CompanyStructure.ICompanyCity, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyCity" type="EyouSoft.BLL.CompanyStructure.CompanyCity, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyUnCheckedCity" type="EyouSoft.IBLL.CompanyStructure.ICompanyUnCheckedCity, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyUnCheckedCity" type="EyouSoft.BLL.CompanyStructure.CompanyUnCheckedCity, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyArea" type="EyouSoft.IBLL.CompanyStructure.ICompanyArea, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyArea" type="EyouSoft.BLL.CompanyStructure.CompanyArea, EyouSoft.BLL" />
+      <typeAlias alias="ICompanyAreaSetting" type="EyouSoft.IBLL.CompanyStructure.ICompanyAreaSetting, EyouSoft.IBLL" />
+      <typeAlias alias="CompanyAreaSetting" type="EyouSoft.BLL.CompanyStructure.CompanyAreaSetting, EyouSoft.BLL" />
+      <!-- 公司相关(RouteStructure)结束-->
+
+      <!--SMS-->
+      <typeAlias alias="ISMSAccount" type="EyouSoft.IBLL.SMSStructure.IAccount, EyouSoft.IBLL" />
+      <typeAlias alias="SMSAccount" type="EyouSoft.BLL.SMSStructure.Account, EyouSoft.BLL" />
+      <typeAlias alias="ISMSCustomer" type="EyouSoft.IBLL.SMSStructure.ICustomer, EyouSoft.IBLL" />
+      <typeAlias alias="SMSCustomer" type="EyouSoft.BLL.SMSStructure.Customer, EyouSoft.BLL" />
+      <typeAlias alias="ISMSSendMessage" type="EyouSoft.IBLL.SMSStructure.ISendMessage, EyouSoft.IBLL" />
+      <typeAlias alias="SMSSendMessage" type="EyouSoft.BLL.SMSStructure.SendMessage, EyouSoft.BLL" />
+      <typeAlias alias="ISMSTemplate" type="EyouSoft.IBLL.SMSStructure.ITemplate, EyouSoft.IBLL" />
+      <typeAlias alias="SMSTemplate" type="EyouSoft.BLL.SMSStructure.Template, EyouSoft.BLL" />
+      <!-- 高级网店开始 -->
+      <typeAlias alias="IHighShopAdv" type="EyouSoft.IBLL.ShopStructure.IHighShopAdv, EyouSoft.IBLL" />
+      <typeAlias alias="HighShopAdv" type="EyouSoft.BLL.ShopStructure.HighShopAdv, EyouSoft.BLL" />
+      <typeAlias alias="IHighShopCompanyInfo" type="EyouSoft.IBLL.ShopStructure.IHighShopCompanyInfo, EyouSoft.IBLL" />
+      <typeAlias alias="HighShopCompanyInfo" type="EyouSoft.BLL.ShopStructure.HighShopCompanyInfo, EyouSoft.BLL" />
+      <typeAlias alias="IHighShopFriendLink" type="EyouSoft.IBLL.ShopStructure.IHighShopFriendLink, EyouSoft.IBLL" />
+      <typeAlias alias="HighShopFriendLink" type="EyouSoft.BLL.ShopStructure.HighShopFriendLink, EyouSoft.BLL" />
+      <typeAlias alias="IHighShopNews" type="EyouSoft.IBLL.ShopStructure.IHighShopNews, EyouSoft.IBLL" />
+      <typeAlias alias="HighShopNews" type="EyouSoft.BLL.ShopStructure.HighShopNews, EyouSoft.BLL" />
+      <typeAlias alias="IHighShopResource" type="EyouSoft.IBLL.ShopStructure.IHighShopResource, EyouSoft.IBLL" />
+      <typeAlias alias="HighShopResource" type="EyouSoft.BLL.ShopStructure.HighShopResource, EyouSoft.BLL" />
+      <typeAlias alias="IHighShopTripGuide" type="EyouSoft.IBLL.ShopStructure.IHighShopTripGuide, EyouSoft.IBLL" />
+      <typeAlias alias="HighShopTripGuide" type="EyouSoft.BLL.ShopStructure.HighShopTripGuide, EyouSoft.BLL" />
+      <typeAlias alias="IRouteTeamCustomization" type="EyouSoft.IBLL.ShopStructure.IRouteTeamCustomization, EyouSoft.IBLL" />
+      <typeAlias alias="RouteTeamCustomization" type="EyouSoft.BLL.ShopStructure.RouteTeamCustomization, EyouSoft.BLL" />
+      <!-- 高级网店结束 -->
+
+      <!-- 供求信息相关开始 -->
+      <typeAlias alias="ICommunityAdvisor" type="EyouSoft.IBLL.CommunityStructure.ICommunityAdvisor, EyouSoft.IBLL" />
+      <typeAlias alias="CommunityAdvisor" type="EyouSoft.BLL.CommunityStructure.CommunityAdvisor, EyouSoft.BLL" />
+      <typeAlias alias="IExchangeComment" type="EyouSoft.IBLL.CommunityStructure.IExchangeComment, EyouSoft.IBLL" />
+      <typeAlias alias="ExchangeComment" type="EyouSoft.BLL.CommunityStructure.ExchangeComment, EyouSoft.BLL" />
+      <typeAlias alias="IHonoredGuest" type="EyouSoft.IBLL.CommunityStructure.IHonoredGuest, EyouSoft.IBLL" />
+      <typeAlias alias="HonoredGuest" type="EyouSoft.BLL.CommunityStructure.HonoredGuest, EyouSoft.BLL" />
+      <typeAlias alias="IInfoArticle" type="EyouSoft.IBLL.CommunityStructure.IInfoArticle, EyouSoft.IBLL" />
+      <typeAlias alias="InfoArticle" type="EyouSoft.BLL.CommunityStructure.InfoArticle, EyouSoft.BLL" />
+      <typeAlias alias="ISiteTopic" type="EyouSoft.IBLL.CommunityStructure.ISiteTopic, EyouSoft.IBLL" />
+      <typeAlias alias="SiteTopic" type="EyouSoft.BLL.CommunityStructure.SiteTopic, EyouSoft.BLL" />
+      <typeAlias alias="IExchangeFavor" type="EyouSoft.IBLL.CommunityStructure.IExchangeFavor, EyouSoft.IBLL" />
+      <typeAlias alias="ExchangeFavor" type="EyouSoft.BLL.CommunityStructure.ExchangeFavor, EyouSoft.BLL" />
+      <typeAlias alias="IExchangeList" type="EyouSoft.IBLL.CommunityStructure.IExchangeList, EyouSoft.IBLL" />
+      <typeAlias alias="ExchangeList" type="EyouSoft.BLL.CommunityStructure.ExchangeList, EyouSoft.BLL" />
+      <typeAlias alias="IBSupplyDemandPic" type="EyouSoft.IBLL.CommunityStructure.IBSupplyDemandPic, EyouSoft.IBLL" />
+      <typeAlias alias="BSupplyDemandPic" type="EyouSoft.BLL.CommunityStructure.BSupplyDemandPic, EyouSoft.BLL" />
+      <typeAlias alias="IBSupplyDemandRule" type="EyouSoft.IBLL.CommunityStructure.IBSupplyDemandRule, EyouSoft.IBLL" />
+      <typeAlias alias="BSupplyDemandRule" type="EyouSoft.BLL.CommunityStructure.BSupplyDemandRule, EyouSoft.BLL" />
+      <!-- 供求信息相关结束 -->
+
+      <!--广告相关-->
+      <typeAlias alias="IAdv" type="EyouSoft.IBLL.AdvStructure.IAdv, EyouSoft.IBLL" />
+      <typeAlias alias="Adv" type="EyouSoft.BLL.AdvStructure.Adv, EyouSoft.BLL" />
+
+      <!--营销公司相关 开始-->
+      <typeAlias alias="IMarketingCompany" type="EyouSoft.IBLL.AdvStructure.IMarketingCompany,EyouSoft.IBLL" />
+      <typeAlias alias="MarketingCompany" type="EyouSoft.BLL.AdvStructure.MarketingCompany,EyouSoft.BLL" />
+      <!--营销公司相关 结束-->
+      
+      <!-- 机票相关(TicketStructure) 开始 -->
+      <typeAlias alias="ITicketApply" type="EyouSoft.IBLL.TicketStructure.ITicketApply, EyouSoft.IBLL" />
+      <typeAlias alias="TicketApply" type="EyouSoft.BLL.TicketStructure.TicketApply, EyouSoft.BLL" />
+      <typeAlias alias="ITicketOrder" type="EyouSoft.IBLL.TicketStructure.ITicketOrder, EyouSoft.IBLL" />
+      <typeAlias alias="TicketOrder" type="EyouSoft.BLL.TicketStructure.TicketOrder, EyouSoft.BLL" />
+      <typeAlias alias="IFreightBuyLog" type="EyouSoft.IBLL.TicketStructure.IFreightBuyLog, EyouSoft.IBLL" />
+      <typeAlias alias="FreightBuyLog" type="EyouSoft.BLL.TicketStructure.FreightBuyLog, EyouSoft.BLL" />
+      <typeAlias alias="IFreightPackageInfo" type="EyouSoft.IBLL.TicketStructure.IFreightPackageInfo, EyouSoft.IBLL" />
+      <typeAlias alias="FreightPackageInfo" type="EyouSoft.BLL.TicketStructure.FreightPackageInfo, EyouSoft.BLL" />
+      <typeAlias alias="ITicketFreightInfo" type="EyouSoft.IBLL.TicketStructure.ITicketFreightInfo, EyouSoft.IBLL" />
+      <typeAlias alias="TicketFreightInfo" type="EyouSoft.BLL.TicketStructure.TicketFreightInfo, EyouSoft.BLL" />
+      <typeAlias alias="ITicketVisitor" type="EyouSoft.IBLL.TicketStructure.ITicketVisitor, EyouSoft.IBLL" />
+      <typeAlias alias="TicketVisitor" type="EyouSoft.BLL.TicketStructure.TicketVisitor, EyouSoft.BLL" />
+      <typeAlias alias="ITicketSupplierInfo" type="EyouSoft.IBLL.TicketStructure.ITicketSupplierInfo, EyouSoft.IBLL" />
+      <typeAlias alias="TicketSupplierInfo" type="EyouSoft.BLL.TicketStructure.TicketSupplierInfo, EyouSoft.BLL" />
+      <typeAlias alias="ITicketFlightCompany" type="EyouSoft.IBLL.TicketStructure.ITicketFlightCompany, EyouSoft.IBLL" />
+      <typeAlias alias="TicketFlightCompany" type="EyouSoft.BLL.TicketStructure.TicketFlightCompany, EyouSoft.BLL" />
+      <typeAlias alias="ITicketSeattle" type="EyouSoft.IBLL.TicketStructure.ITicketSeattle, EyouSoft.IBLL" />
+      <typeAlias alias="TicketSeattle" type="EyouSoft.BLL.TicketStructure.TicketSeattle, EyouSoft.BLL" />
+      <typeAlias alias="ITicketFlightCompany" type="EyouSoft.IBLL.TicketStructure.ITicketFlightCompany, EyouSoft.IBLL" />
+      <typeAlias alias="TicketFlightCompany" type="EyouSoft.BLL.TicketStructure.TicketFlightCompany, EyouSoft.BLL" />
+      <typeAlias alias="ITicketCompanyAccount" type="EyouSoft.IBLL.TicketStructure.ITicketCompanyAccount, EyouSoft.IBLL" />
+      <typeAlias alias="TicketCompanyAccount" type="EyouSoft.BLL.TicketStructure.TicketCompanyAccount, EyouSoft.BLL" />
+      <typeAlias alias="ITicketNationInfo" type="EyouSoft.IBLL.TicketStructure.ITicketNationInfo, EyouSoft.IBLL" />
+      <typeAlias alias="TicketNationInfo" type="EyouSoft.BLL.TicketStructure.TicketNationInfo, EyouSoft.BLL" />
+      <typeAlias alias="ILogTicket" type="EyouSoft.IBLL.TicketStructure.ILogTicket, EyouSoft.IBLL" />
+      <typeAlias alias="BLogTicket" type="EyouSoft.BLL.TicketStructure.BLogTicket, EyouSoft.BLL" />
+      <typeAlias alias="ISpecialFares" type="EyouSoft.IBLL.TicketStructure.ISpecialFares,EyouSoft.IBLL" />
+      <typeAlias alias="SpecialFares" type="EyouSoft.BLL.TicketStructure.SpecialFares,EyouSoft.BLL" />
+      <typeAlias alias="IGroupTickets" type="EyouSoft.IBLL.TicketStructure.IGroupTickets,EyouSoft.IBLL" />
+      <typeAlias alias="GroupTickets" type="EyouSoft.BLL.TicketStructure.GroupTickets,EyouSoft.BLL" />
+      <typeAlias alias="IPassengerInformation" type="EyouSoft.IBLL.TicketStructure.IPassengerInformation,EyouSoft.IBLL" />
+      <typeAlias alias="PassengerInformation" type="EyouSoft.BLL.TicketStructure.PassengerInformation,EyouSoft.BLL" />
+      <!-- 机票相关(TicketStructure) 结束 -->
+
+      <!-- 内部管理-客户池(PoolStructure) 开始 -->
+      <typeAlias alias="ICustomerType" type="EyouSoft.IBLL.PoolStructure.ICustomerType, EyouSoft.IBLL" />
+      <typeAlias alias="CustomerType" type="EyouSoft.BLL.PoolStructure.CustomerType, EyouSoft.BLL" />
+      <typeAlias alias="ISuitProduct" type="EyouSoft.IBLL.PoolStructure.ISuitProduct, EyouSoft.IBLL" />
+      <typeAlias alias="SuitProduct" type="EyouSoft.BLL.PoolStructure.SuitProduct, EyouSoft.BLL" />
+      <typeAlias alias="IPoolCompany" type="EyouSoft.IBLL.PoolStructure.ICompany, EyouSoft.IBLL" />
+      <typeAlias alias="PoolCompany" type="EyouSoft.BLL.PoolStructure.Company, EyouSoft.BLL" />
+      <!-- 内部管理-客户池(PoolStructure) 结束 -->
+
+      <!--酒店  开始  -->
+      <typeAlias alias="IHotelOrder" type="EyouSoft.IBLL.HotelStructure.IHotelOrder, EyouSoft.IBLL" />
+      <typeAlias alias="HotelOrder" type="EyouSoft.BLL.HotelStructure.HotelOrder, EyouSoft.BLL" />
+      <typeAlias alias="IHotel" type="EyouSoft.IBLL.HotelStructure.IHotel, EyouSoft.IBLL" />
+      <typeAlias alias="Hotel" type="EyouSoft.BLL.HotelStructure.Hotel, EyouSoft.BLL" />
+      <typeAlias alias="IHotelTourCustoms" type="EyouSoft.IBLL.HotelStructure.IHotelTourCustoms, EyouSoft.IBLL" />
+      <typeAlias alias="HotelTourCustoms" type="EyouSoft.BLL.HotelStructure.HotelTourCustoms, EyouSoft.BLL" />
+      <typeAlias alias="IHotelAccount" type="EyouSoft.IBLL.HotelStructure.IHotelAccount, EyouSoft.IBLL" />
+      <typeAlias alias="HotelAccount" type="EyouSoft.BLL.HotelStructure.HotelAccount, EyouSoft.BLL" />
+      <typeAlias alias="IHotelCity" type="EyouSoft.IBLL.HotelStructure.IHotelCity, EyouSoft.IBLL" />
+      <typeAlias alias="HotelCity" type="EyouSoft.BLL.HotelStructure.HotelCity, EyouSoft.BLL" />
+      <typeAlias alias="IHotelCityAreas" type="EyouSoft.IBLL.HotelStructure.IHotelCityAreas, EyouSoft.IBLL" />
+      <typeAlias alias="HotelCityAreas" type="EyouSoft.BLL.HotelStructure.HotelCityAreas, EyouSoft.BLL" />
+      <typeAlias alias="IHotelLandMarks" type="EyouSoft.IBLL.HotelStructure.IHotelLandMarks, EyouSoft.IBLL" />
+      <typeAlias alias="HotelLandMarks" type="EyouSoft.BLL.HotelStructure.HotelLandMarks, EyouSoft.BLL" />
+      <typeAlias alias="IHotelLocalInfo" type="EyouSoft.IBLL.HotelStructure.IHotelLocalInfo, EyouSoft.IBLL" />
+      <typeAlias alias="HotelLocalInfo" type="EyouSoft.BLL.HotelStructure.HotelLocalInfo, EyouSoft.BLL" />
+
+      <typeAlias alias="IBNewHotel" type="EyouSoft.IBLL.HotelStructure.IBNewHotel, EyouSoft.IBLL" />
+      <typeAlias alias="BNewHotel" type="EyouSoft.BLL.HotelStructure.BNewHotel, EyouSoft.BLL" />
+      <!--酒店  结束  -->
+
+      <!-- 在线客服  开始 -->
+      <typeAlias alias="IOLServer" type="EyouSoft.IBLL.OnLineServer.IOLServer, EyouSoft.IBLL" />
+      <typeAlias alias="OLServer" type="EyouSoft.BLL.OnLineServer.OLServer, EyouSoft.BLL" />
+      <!-- 在线客服  结束 -->
+      
+      <!--新版资讯 开始-->
+      <typeAlias alias="INewsPicInfo" type="EyouSoft.IBLL.NewsStructure.INewsPicInfo, EyouSoft.IBLL" />
+      <typeAlias alias="NewsPicInfo" type="EyouSoft.BLL.NewsStructure.NewsPicInfo, EyouSoft.BLL" />
+      <typeAlias alias="INewsType" type="EyouSoft.IBLL.NewsStructure.INewsType, EyouSoft.IBLL" />
+      <typeAlias alias="NewsType" type="EyouSoft.BLL.NewsStructure.NewsType, EyouSoft.BLL" />
+      <typeAlias alias="ITagKeyInfo" type="EyouSoft.IBLL.NewsStructure.ITagKeyInfo, EyouSoft.IBLL" />
+      <typeAlias alias="TagKeyInfo" type="EyouSoft.BLL.NewsStructure.TagKeyInfo, EyouSoft.BLL" />
+      <typeAlias alias="INewsBll" type="EyouSoft.IBLL.NewsStructure.INewsBll, EyouSoft.IBLL" />
+      <typeAlias alias="NewsBll" type="EyouSoft.BLL.NewsStructure.NewsBll, EyouSoft.BLL" />
+      <!--新版资讯 结束-->
+
+      <!--旅游签证 开始-->
+      <typeAlias alias="VisaBll" type="EyouSoft.BLL.VisaStructure.VisaBll, EyouSoft.BLL" />
+      <typeAlias alias="IVisaBll" type="EyouSoft.IBLL.VisaStructure.IVisaBll, EyouSoft.IBLL" />
+      <!--旅游签证 结束-->
+      
+      <!--分站推广,首页推荐产品 开始-->
+      <typeAlias alias="IExtendProduct" type="EyouSoft.IBLL.AdvStructure.IExtendProduct, EyouSoft.IBLL" />
+      <typeAlias alias="ExtendProduct" type="EyouSoft.BLL.AdvStructure.ExtendProduct, EyouSoft.BLL" />
+      <typeAlias alias="ISiteExtend" type="EyouSoft.IBLL.AdvStructure.ISiteExtend, EyouSoft.IBLL" />
+      <typeAlias alias="SiteExtend" type="EyouSoft.BLL.AdvStructure.SiteExtend, EyouSoft.BLL" />
+      <!--分站推广,首页推荐产品 结束-->
+      
+      <!--首页登录下面的消息提醒 开始-->
+      <typeAlias alias="IRemind" type="EyouSoft.IBLL.CommunityStructure.IRemind, EyouSoft.IBLL" />
+      <typeAlias alias="Remind" type="EyouSoft.BLL.CommunityStructure.Remind, EyouSoft.BLL" />
+      <!--首页登录下面的消息提醒 结束-->
+
+      <!-- 各平台数据同步   开始 -->
+      <typeAlias alias="IOpenRelationCompany" type="EyouSoft.IBLL.OpenStructure.IBCompany, EyouSoft.IBLL" />
+      <typeAlias alias="OpenRelationCompany" type="EyouSoft.BLL.OpenStructure.BCompany, EyouSoft.BLL" />
+      <typeAlias alias="IOpenRelationException" type="EyouSoft.IBLL.OpenStructure.IBException, EyouSoft.IBLL" />
+      <typeAlias alias="OpenRelationException" type="EyouSoft.BLL.OpenStructure.BException, EyouSoft.BLL" />
+      <typeAlias alias="IOpenRelationUser" type="EyouSoft.IBLL.OpenStructure.IBUser, EyouSoft.IBLL" />
+      <typeAlias alias="OpenRelationUser" type="EyouSoft.BLL.OpenStructure.BUser, EyouSoft.BLL" />
+      <!-- 各平台数据同步   结束 -->
+
+    </typeAliases>
+    <containers>
+      <container>
+        <types>
+          <type type="ITest" mapTo="TestBLL" >
+          </type>
+          <type type="ITestBLL" mapTo="TestBLL2" >
+          </type>
+
+          <!-- MQ相关信息(MQStructure) 开始 -->
+          <type type="IIMAcceptMsgPeople" mapTo="IMAcceptMsgPeople" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IIMCommendComapny" mapTo="IMCommendComapny" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IIMFriendList" mapTo="IMFriendList" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IIMGroupList" mapTo="IMGroupList" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IIMMember" mapTo="IMMember" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IIMMessage" mapTo="IMMessage" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IIMMessageUrl" mapTo="IMMessageUrl" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IIMServiceMQ" mapTo="IMServiceMQ" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!-- MQ相关信息(MQStructure) 结束 -->
+
+          <!-- 常用工具相关(ToolStructure) 开始 -->
+          <type type="ICompanyDayMemo" mapTo="CompanyDayMemo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyFileUpload" mapTo="CompanyFileUpload" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IMsgTipRecord" mapTo="MsgTipRecord" name="">
+            <lifetime type="singleton" />
+          </type>
+
+          <type type="IReceivables" mapTo="Receivables" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IFundRegister" mapTo="FundRegister" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IPayments" mapTo="Payments" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!-- 常用工具相关(ToolStructure) 结束 -->
+
+          <!-- 团队相关(TourStructure) 开始 -->
+          <type type="ITour" mapTo="Tour" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITourOrder" mapTo="TourOrder" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITourOrderCustomer" mapTo="TourOrderCustomer" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IRateOrder" mapTo="RateOrder" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IRouteBasicInfo" mapTo="RouteBasicInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyContractSignet" mapTo="CompanyContractSignet" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!-- 团队相关(TourStructure) 结束 -->
+
+          <!-- 系统信息相关(SystemStructure) 开始 -->
+          <type type="ICompanyCityAd" mapTo="CompanyCityAd" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysArea" mapTo="SysArea" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysCompanyDomain" mapTo="SysCompanyDomain" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysFriendLink" mapTo="SysFriendLink" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISystemConfig" mapTo="SystemConfig" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISystemInfo" mapTo="SystemInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISystemUser" mapTo="SystemUser" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysCity" mapTo="SysCity" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysProvince" mapTo="SysProvince" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysOnlineUser" mapTo="SysOnlineUser" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysPermission" mapTo="SysPermission" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysPermissionCategory" mapTo="SysPermissionCategory" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysPermissionClass" mapTo="SysPermissionClass" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IAffiche" mapTo="Affiche" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyAdv" mapTo="CompanyAdv" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysIndexAdv" mapTo="SysIndexAdv" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysField" mapTo="SysField" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISummaryCount" mapTo="SummaryCount" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IProductSuggestion" mapTo="ProductSuggestion" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysApplyService" mapTo="SysApplyService" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!-- 系统信息相关(SystemStructure) 结束 -->
+
+          <!-- 公司相关(CompanyStructure)开始-->
+          <type type="ICommonPriceStand" mapTo="CommonPriceStand" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyDepartment" mapTo="CompanyDepartment" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyUserRoles" mapTo="CompanyUserRoles" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IServiceStandard" mapTo="ServiceStandard" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IBankAccount" mapTo="BankAccount" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICommonPriceStandAdd" mapTo="CommonPriceStandAdd" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyAttachInfo" mapTo="CompanyAttachInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyAffiche" mapTo="CompanyAffiche" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyInfo" mapTo="CompanyInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyPriceStand" mapTo="CompanyPriceStand" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanySetting" mapTo="CompanySetting" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyUser" mapTo="CompanyUser" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IMyCustomer" mapTo="MyCustomer" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--
+					<type type="ITendCompanyInfo" mapTo="TendCompanyInfo" name="">
+						<lifetime type="singleton" />
+					</type>
+					<type type="ITendCompanySetting" mapTo="TendCompanySetting" name="">
+						<lifetime type="singleton" />
+					</type>-->
+          <type type="ITourContactInfo" mapTo="TourContactInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITourStateBase" mapTo="TourStateBase" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyFavor" mapTo="CompanyFavor" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISupplierInfo" mapTo="SupplierInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyCity" mapTo="CompanyCity" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyUnCheckedCity" mapTo="CompanyUnCheckedCity" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyArea" mapTo="CompanyArea" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyAreaSetting" mapTo="CompanyAreaSetting" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!-- 公司相关(RouteStructure)结束-->
+
+          <!--SMS-->
+          <type type="ISMSAccount" mapTo="SMSAccount" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISMSCustomer" mapTo="SMSCustomer" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISMSSendMessage" mapTo="SMSSendMessage" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISMSTemplate" mapTo="SMSTemplate" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!-- 高级网店开始 -->
+          <type type="IHighShopAdv" mapTo="HighShopAdv" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHighShopCompanyInfo" mapTo="HighShopCompanyInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHighShopFriendLink" mapTo="HighShopFriendLink" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHighShopNews" mapTo="HighShopNews" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHighShopResource" mapTo="HighShopResource" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHighShopTripGuide" mapTo="HighShopTripGuide" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IRouteTeamCustomization" mapTo="RouteTeamCustomization" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!-- 高级网店结束 -->
+          <!-- 供求信息相关开始 -->
+          <type type="ICommunityAdvisor" mapTo="CommunityAdvisor" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IExchangeComment" mapTo="ExchangeComment" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHonoredGuest" mapTo="HonoredGuest" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IInfoArticle" mapTo="InfoArticle" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISiteTopic" mapTo="SiteTopic" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IExchangeFavor" mapTo="ExchangeFavor" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IExchangeList" mapTo="ExchangeList" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IBSupplyDemandPic" mapTo="BSupplyDemandPic" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IBSupplyDemandRule" mapTo="BSupplyDemandRule" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!-- 供求信息相关结束 -->
+
+          <!--广告相关-->
+          <type type="IAdv" mapTo="Adv" name="">
+            <lifetime type="singleton" />
+          </type>
+          
+          <!--营销公司相关 开始-->
+          <type type="IMarketingCompany" mapTo="MarketingCompany" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--营销公司相关 结束-->
+          
+          <!-- 机票相关(TicketStructure) 开始 -->
+          <type type="ITicketOrder" mapTo="TicketOrder" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITicketApply" mapTo="TicketApply" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IFreightBuyLog" mapTo="FreightBuyLog" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IFreightPackageInfo" mapTo="FreightPackageInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITicketFreightInfo" mapTo="TicketFreightInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITicketVisitor" mapTo="TicketVisitor" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITicketSeattle" mapTo="TicketSeattle" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITicketSupplierInfo" mapTo="TicketSupplierInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITicketFlightCompany" mapTo="TicketFlightCompany" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITicketFlightCompany" mapTo="TicketFlightCompany" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITicketCompanyAccount" mapTo="TicketCompanyAccount" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITicketNationInfo" mapTo="TicketNationInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ILogTicket" mapTo="BLogTicket" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISpecialFares" mapTo="SpecialFares" name="">
+            <lifetime type="singleton"/>
+          </type>
+          <type type="IGroupTickets" mapTo="GroupTickets" name="">
+            <lifetime type="singleton"/>
+          </type>
+          <type type="IPassengerInformation" mapTo="PassengerInformation" name="">
+            <lifetime type="singleton"/>
+          </type>
+          <!-- 机票相关(TicketStructure) 结束 -->
+
+          <!-- 内部管理-客户池(PoolStructure) 开始 -->
+          <type type="ICustomerType" mapTo="CustomerType" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISuitProduct" mapTo="SuitProduct" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IPoolCompany" mapTo="PoolCompany" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!-- 内部管理-客户池(PoolStructure) 结束 -->
+
+          <!--酒店  开始  -->
+          <type type="IHotelOrder" mapTo="HotelOrder" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHotel" mapTo="Hotel" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHotelTourCustoms" mapTo="HotelTourCustoms" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHotelAccount" mapTo="HotelAccount" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHotelCity" mapTo="HotelCity" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHotelCityAreas" mapTo="HotelCityAreas" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHotelLandMarks" mapTo="HotelLandMarks" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHotelLocalInfo" mapTo="HotelLocalInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IBNewHotel" mapTo="BNewHotel" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--酒店  结束  -->
+          <!-- 在线客服  开始 -->
+          <type type="IOLServer" mapTo="OLServer" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!-- 在线客服  结束 -->
+          
+
+          <!--新版资讯 开始-->
+          <type type="INewsPicInfo" mapTo="NewsPicInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="INewsType" mapTo="NewsType" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ITagKeyInfo" mapTo="TagKeyInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="INewsBll" mapTo="NewsBll" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--新版资讯 结束-->
+
+          <!--旅游签证 开始-->          
+          <type type="IVisaBll" mapTo="VisaBll" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--旅游签证 结束-->
+          
+          <!--分站推广,首页推荐产品 开始-->
+          <type type="IExtendProduct" mapTo="ExtendProduct" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISiteExtend" mapTo="SiteExtend" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--分站推广,首页推荐产品 结束-->
+
+          <!--首页登录下的消息提醒 开始-->
+          <type type="IRemind" mapTo="Remind" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--首页登录下的消息提醒 结束-->
+          
+          <!-- 各平台数据同步   开始 -->
+          <type type="IOpenRelationCompany" mapTo="OpenRelationCompany" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IOpenRelationException" mapTo="OpenRelationException" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IOpenRelationUser" mapTo="OpenRelationUser" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!-- 各平台数据同步   结束 -->
+        </types>
+        <extensions>
+          <add type="Microsoft.Practices.Unity.InterceptionExtension.Interception, Microsoft.Practices.Unity.Interception" />
+        </extensions>
+        <extensionConfig>
+          <add name="interception"
+						type="Microsoft.Practices.Unity.InterceptionExtension.Configuration.InterceptionConfigurationElement, Microsoft.Practices.Unity.Interception.Configuration">
+            <interceptors>
+              <interceptor type="interface">
+                <!--<default type="ICompanyInfo"/>-->
+                <default type="ITest"/>
+                <default type="ITour"/>
+                <default type="IAdv"/>
+                <default type="IMyCustomer"/>
+                <default type="ICompanyFavor"/>
+                <default type="ITourOrder"/>
+                <default type="ISMSAccount"/>
+                <default type="ISMSCustomer"/>
+                <default type="ISMSTemplate"/>
+                <default type="IRateOrder" />
+                <default type="ISystemInfo" />
+                <default type="ISysFriendLink" />
+                <default type="ISysField" />
+                <default type="ISysCity" />
+                <default type="ISysArea" />
+                <default type="ISummaryCount" />
+                <default type="IAffiche" />
+                <default type="IHighShopAdv" />
+                <default type="IHighShopCompanyInfo" />
+                <default type="IHighShopFriendLink" />
+                <default type="IHighShopNews" />
+                <default type="IHighShopResource" />
+                <default type="IHighShopTripGuide" />
+                <default type="ICommunityAdvisor" />
+                <default type="IExchangeList" />
+                <default type="IHonoredGuest" />
+                <default type="IInfoArticle" />
+                <default type="IReceivables" />
+                <!--<default type="IFundRegister" />-->
+                <default type="IIMMember" />
+              </interceptor>
+            </interceptors>
+          </add>
+        </extensionConfig>
+      </container>
+    </containers>
+  </unity>
+</configuration>

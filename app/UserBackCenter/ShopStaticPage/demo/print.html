@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>行程单打印</title><meta name="description" content="旅游同业网提供最新,最全,价格最低的旅游线路产品、酒店、景点门票、机票产品的发布、预订和购买." /><meta name="keywords" content="同业网,旅游线路,专线,线路区域,旅游同行,线路分销,组团社,地接社,计调,旅游,旅行,游客,旅游产品,旅行社,酒店,度假,酒店预定,机票预定,航班查询,机票,在线交易,旅游b2b,电子商务" /><meta content="中国最好的旅游在线分销平台-旅游同业网" name="author" /><meta content="旅游同业网,杭州易诺科技有限公司,tongye114.com" name="Copyright" />
+</head>
+<style>
+<!--
+BODY {color:#000000;font-size:12px;font-family:"宋体";background:#fff; margin:0px; background:url(images/lura4.gif) no-repeat 80px left;}
+img {border: thin none;}
+table{border-collapse:collapse;}
+TD {FONT-SIZE: 12px; line-height:18px;  COLOR: #000000;  }	
+.headertitle { font-family:"黑体"; font-size:25px; line-height:120%; font-weight:bold;}
+.baocun_an {
+	font-size: 12px;	color: #000000;	background-image: url(images/baocun.gif);	float: none;
+	height: 24px;	width: 103px;	border: 0px;
+}
+-->
+</style>
+<body onload="LoadHTML()">
+    <form name="form1" method="post" action="VistorTourView.aspx?ID=4744" id="form1">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:10px;">
+        <tr>
+          <td height="31" valign="bottom" bgcolor="#FFE08B" style="border-bottom:1px solid #DCAE30;"><table width="767" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="155" align="left">调整行间距：<a href="#">+加大</a> <a href="#">-减小</a></td>
+              <td width="154" align="center">字体大小：<a href="#">+加大</a> <a href="#">-减小</a></td>
+              <td width="173" align="right"><a title="自动设置 A4 纸张、打印时出现表格、自动设置页眉和页角为空,不出现网址。" href="printSetup.rar">打印控件安装</a></td>
+              <td width="206" align="center" valign="bottom"><a href="#"><img src="images/zjprint.gif" alt="直接打印" width="80" height="22" border="0" /></a> <a href="#"><img src="images/dcprint.gif" alt="导出为word格式文件，在word里编辑打印" width="80" height="22" border="0" /></a></td>
+              <td width="79" align="right"><a href="#">打印预览</a></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+     
+      <table width="940" border="0" align="left" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="200" rowspan="3" align="right" valign="top">
+		  <table width="83%" border="0" align="right" cellpadding="0" cellspacing="0" style="margin-top:90px;">
+            <tr>
+              <td align="left" style="color:#999999;">勾选复选框隐藏指定项目<br />
+              打勾为隐藏，不打勾为显示</td>
+            </tr>
+            <tr>
+              <td align="left" style="color:#999999;">
+			    
+				<input type="checkbox" name="checkbox" value="checkbox" />集合/接团方式<br />
+				<input name="checkbox" type="checkbox" value="checkbox" checked="checked" />地接社信息<br />
+				<input type="checkbox" name="checkbox" value="checkbox" />报价信息<br />
+                <input type="checkbox" name="checkbox2" value="checkbox" />服务标准及说明 <br />
+				<input type="checkbox" name="checkbox2" value="checkbox" />包含项目 <br />
+                <input type="checkbox" name="checkbox2" value="checkbox" />报价不含项目 <br />
+                <input type="checkbox" name="checkbox22" value="checkbox" />儿童安排 <br />
+                <input type="checkbox" name="checkbox23" value="checkbox" />购物安排 <br />
+                <input type="checkbox" name="checkbox24" value="checkbox" />赠送项目 <br />
+                <input type="checkbox" name="checkbox25" value="checkbox" />其它说明 <br />
+                <input type="checkbox" name="checkbox2" value="checkbox" />温馨提醒 <br />			  </td>
+            </tr>
+          </table></td>
+          <td width="740"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="2%" align="left"><img src="images/printboxt-l.gif" width="16" height="37" /></td>
+              <td width="97%" background="images/printboxt-m.gif">&nbsp;</td>
+              <td width="1%" align="right"><img src="images/printboxt-r.gif" width="6" height="37" /></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td style="border-left:1px solid #C9C9C9; border-bottom:1px solid #C9C9C9; border-right:5px solid #808080; padding-bottom:10px;">
+	<!--打印内容开始-->
+		    <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="35" align="center"><span class="headertitle">四川西部青年旅行社（总部）</span>许可证号：L-CN-YN698554005</td>
+        </tr>
+        <tr>
+          <td align="left">Tel：0577-88800231　Fax：0577-88866682　地址：四川省成都市龟湖路88号</td>
+        </tr>
+      </table>
+      <table width="720" border="1" align="center" cellpadding="1" cellspacing="0" bordercolor="#000000">
+        <tr>
+          <td colspan="2" align="center"><strong style="font-size:14px;">桂林山水5日休闲之旅四星VIP品质纯玩团</strong> 天数：5天</td>
+        </tr>
+        <tr>
+          <td width="50%" align="left"><strong>出发交通：</strong>2008-8-18周六 杭州/广州MU5316/9：50</td>
+          <td width="50%" align="left"><strong>返程交通：</strong>2007-03-26周三 广州/杭州MU5316/9：50</td>
+        </tr>
+		<tr>
+                <td width="50%" align="left" valign="top"><strong>集合方式：</strong>提前1个半小时在杭州萧山机场候客大厅集合萧山机场候客大厅集合</td>
+                <td width="50%" align="left" valign="top"><strong>接团方式：</strong>机场举“欢迎杭州易诺贵宾一行25人</td>
+        </tr>
+              <tr>
+                <td colspan="2" align="left"><strong>地 接 社：</strong>厦门庆忠旅行社 许可证号：L-sc-cn55447</td>
+       </tr>
+      </table>
+	  
+	  <table width="720" border="0" align="center" cellspacing="1" bgcolor="#FFFFFF">
+            <tr>
+                <td width="116" align="right" bgcolor="#eeeeee">
+                    标准：成人价格：</td>
+                <td width="114" bgcolor="#eeeeee">
+              <input name="txtPeoplePrice" type="text" value="2180" id="txtPeoplePrice" class="bottow_side2" style="width:45px;" /> 元／人              </td>
+                <td width="91" align="right" bgcolor="#eeeeee">
+                    儿童价格：</td>
+                <td width="129" bgcolor="#eeeeee">
+              <input name="txtChildPrice" type="text" value="1500" id="txtChildPrice" class="bottow_side2" style="width:45px;" /> 元／人</td>
+		<td width="73" bgcolor="#eeeeee">单房差：</td>
+		<td width="129" bgcolor="#eeeeee"><input name="txtChildPrice" type="text" value="0" id="txtChildPrice" class="bottow_side2" style="width:45px;" /> 元／人</td>
+            <td width="26" bgcolor="#eeeeee"><img src="images/deleiption.gif" width="13" height="13" /></td>
+            </tr>
+            <tr>
+              <td align="right" bgcolor="#eeeeee">三星：成人价格：</td>
+              <td bgcolor="#eeeeee"><input name="txtPeoplePrice" type="text" value="2500" id="txtPeoplePrice" class="bottow_side2" style="width:45px;" />
+                元／人 </td>
+              <td align="right" bgcolor="#eeeeee"> 儿童价格：</td>
+              <td bgcolor="#eeeeee"><input name="txtChildPrice" type="text" value="1700" id="txtChildPrice" class="bottow_side2" style="width:45px;" />
+                元／人</td>
+              <td bgcolor="#eeeeee">单房差：</td>
+              <td bgcolor="#eeeeee"><input name="txtChildPrice" type="text" value="0" id="txtChildPrice" class="bottow_side2" style="width:45px;" />
+                元／人</td>
+              <td bgcolor="#eeeeee"><img src="images/deleiption.gif" width="13" height="13" /></td>
+            </tr>
+            <tr>
+              <td align="right" bgcolor="#eeeeee">四星：成人价格：</td>
+              <td bgcolor="#eeeeee"><input name="txtPeoplePrice" type="text" value="2700" id="txtPeoplePrice" class="bottow_side2" style="width:45px;" />
+                元／人 </td>
+              <td align="right" bgcolor="#eeeeee"> 儿童价格：</td>
+              <td bgcolor="#eeeeee"><input name="txtChildPrice" type="text" value="2900" id="txtChildPrice" class="bottow_side2" style="width:45px;" />
+                元／人</td>
+              <td bgcolor="#eeeeee">单房差：</td>
+              <td bgcolor="#eeeeee"><input name="txtChildPrice" type="text" value="0" id="txtChildPrice" class="bottow_side2" style="width:45px;" />
+                元／人</td>
+              <td bgcolor="#eeeeee"><img src="images/deleiption.gif" width="13" height="13" /></td>
+            </tr>
+      </table>
+	  
+	  
+	  <table width="720" border="1" align="center" cellpadding="1" cellspacing="0" bordercolor="#000000">
+      <tr>
+        <td width="61" align="center" bgcolor="#00D9D9"><strong>日程</strong></td>
+        <td align="center" bgcolor="#00D9D9"><strong>行程安排</strong></td>
+      </tr>
+      <tr>
+        <td width="61" rowspan="2" align="center" bgcolor="#E8FFFF" style="line-height:15px;"><strong>第一天<br />
+        (周六)</strong><br />
+2008/8/18</td>
+    <td width="649" align="left" valign="bottom" bgcolor="#E8FFFF"><img src="images/xing.gif" width="8" height="11" /> 行：杭州/桂林（飞行约1小时55分） <img src="images/zhu.gif" width="15" height="11" /> 住：桂林豪泰宾馆4星 <img src="images/chi.gif" width="10" height="11" /> 餐：中，晚</td>
+  </tr>
+  <tr>
+    <td>杭州萧山机场乘机飞往桂林，抵达后入住酒店；</td>
+  </tr>
+  <tr>
+    <td rowspan="2" align="center" bgcolor="#E8FFFF" style="line-height:15px;"><strong>第二天<br />
+      (周日)</strong><br />
+2008/8/19</td>
+    <td align="left" valign="bottom" bgcolor="#E8FFFF"><img src="images/xing.gif" width="8" height="11" /> 行：桂林-石林-天还胡 <img src="images/zhu.gif" width="15" height="11" /> 住：桂林豪泰宾馆4星 <img src="images/chi.gif" width="10" height="11" /> 餐：早，中，晚</td>
+  </tr>
+  <tr>
+    <td align="left">早餐后车览桂林城徽—－象鼻山（约30分钟）。游览由南北穿透而得名的穿山公园和被誉称为“世界罕见神奇的水晶宝洞”——【穿山岩】（约50分钟）。洞内以晶莹透亮的鹅管、卷曲的石枝、雪白透明的水晶石、石头开花长毛，形成了穿山岩独有的四大特色。可乘车游览靖江王府——独秀峰（约90分钟）（费用自理）。游桂林【杉、榕湖新景】（约50分钟）、观桂林古城门—古南门、赏日月双塔（全世界唯一的纯铜塔）水晶桥、九曲桥、百年古榕、林中休闲台。逛具有桂林特色的步行街，参观银龙珠宝有限公司；百年老店中仁堂；晚餐后走进龙脊神秘剧场,去欣赏荣获巴黎“金秋艺术金奖”的侗族大歌及荣获吉尼斯和国际杂技最高奖的红瑶长发和肩上芭蕾等大型演艺—梦桂林.龙脊魂（约70分钟）(费用自理)。</td>
+  </tr>
+  <tr>
+    <td rowspan="2" align="center" bgcolor="#E8FFFF" style="line-height:15px;"><strong>第三天<br />
+      (周一)</strong><br />
+2008/8/20</td>
+    <td valign="bottom" bgcolor="#E8FFFF"><img src="images/xing.gif" width="8" height="11" /> 行：桂林-石林-天还胡 <img src="images/zhu.gif" width="15" height="11" /> 住：桂林豪泰宾馆4星 <img src="images/chi.gif" width="10" height="11" /> 餐：早，中，晚</td>
+  </tr>
+  <tr>
+    <td>早餐后乘船游览最具诗情画意的百里画廊——【漓江风光（杨堤—画山--杨堤）】（约5.5小时）；逛中国三大洋人街之一的【阳朔西街】（约1小时），可乘车前往游览以音乐石屏、广寒深宫、雪山飞瀑“三绝”和佛祖论经、独柱擎天、混元珍珠伞“三宝”等景点为代表，栩栩如生、形象逼真的“世界岩溶奇观”银子岩（约1小时）(费用自理)。畅游缤纷水晶世界。晚餐自费品尝当地风味小吃。</td>
+  </tr>
+  <tr>
+    <td rowspan="2" align="center" bgcolor="#E8FFFF" style="line-height:15px;"><strong>第四天<br />
+      (周二)</strong><br />
+2008/8/21</td>
+    <td bgcolor="#E8FFFF"><img src="images/xing.gif" width="8" height="11" /> 行：桂林-石林-天还胡 <img src="images/zhu.gif" width="15" height="11" /> 住：桂林豪泰宾馆4星 <img src="images/chi.gif" width="10" height="11" /> 餐：早，中，晚</td>
+  </tr>
+  <tr>
+    <td>早餐后游双峰并立，山石洁白如玉，故称玉屏的——【南溪山公园】（约45分钟）。可乘车游览“刘三姐景观园”（约1.5小时）（费用自理）。进到刘三姐景观园，让您感受到山与水的幽美，带走三姐的问候，这里是歌的海洋，美妙的山歌让你回味无穷，留下你一片片深深的情谊……如有幸还可以和电影《刘三姐》扮演者黄婉秋女士合影留念，参观玉石文化博览馆；</td>
+  </tr>
+  <tr>
+    <td rowspan="2" align="center" bgcolor="#E8FFFF" style="line-height:15px;"><strong>第五天<br />
+      (周三)</strong><br />
+2008/8/22</td>
+    <td bgcolor="#E8FFFF"><img src="images/xing.gif" width="8" height="11" /> 行：桂林-石林-天还胡 <img src="images/zhu.gif" width="15" height="11" /> 住：- <img src="images/chi.gif" width="10" height="11" /> 餐：早，中</td>
+  </tr>
+  <tr>
+    <td>早餐后游览山水王国中最古老的以虞帝而得名的风景区——虞山庙景区（约45分钟）观全国唯一的宫殿式庙宇、赏唐代雕刻的千年男面观音像，游怡沁园、回音壁、两人世界等景点。乘飞机返回杭州，结束愉快的旅程！</td>
+  </tr>
+</table>
+
+
+<table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#F6E5A9"><p><strong>&nbsp;服务标准及说明 </strong></p></td>
+  </tr>
+</table>
+<table width="720" border="1" align="center" cellpadding="1" cellspacing="0" bordercolor="#000000">
+  <tr>
+    <td width="62" align="right" bgcolor="#FCF7E4">包含项目：</td>
+    <td width="648" align="left" style="line-height:18px;">住宿：全程三星级酒店，靠近市区； 
+      用餐：十人一桌，十菜一汤； 
+      景点：景点首道门票 
+      用车：空调旅游大巴 
+      导游：会讲杭州话的优秀女导游 
+      往返交通：回程机票
+    其它： </td>
+  </tr>
+  
+  <tr>
+    <td align="right" bgcolor="#FCF7E4">不含项目：</td>
+    <td align="left" style="line-height:18px;">单房差；航空保险，旅游意外伤害保险；丽江古维80元，雪山大索道152元，牦牛坪索道62元/人，小索道57元（暂停运营），景区环保车20元；个人自费项目等；杭州机场接送费。</td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#FCF7E4">儿童安排：</td>
+    <td align="left" style="line-height:18px;">只含往返机票、全程车费及半价餐费、不占床、除此产生费用自理。</td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#FCF7E4">购物安排：</td>
+    <td align="left" style="line-height:18px;">除七彩，花市、全程只进三店，不进老乡店，加水店。 </td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#FCF7E4">赠送项目：</td>
+    <td align="left" style="line-height:18px;">鲜花接机； 每天赠送一瓶矿泉水； 特别赠送张艺谋导演的《印象丽江》、束河古镇； 省陪全程陪同 .</td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#FCF7E4">其它说明：</td>
+    <td align="left" style="line-height:18px;">此团为我公司重点照顾，请务必保障接待质量。</td>
+  </tr>
+</table>
+      <table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td bgcolor="#F6E5A9"><p><strong>&nbsp;温馨提醒 </strong></p></td>
+        </tr>
+      </table>
+      <table width="720" border="1" align="center" cellpadding="1" cellspacing="0" bordercolor="#000000">
+        <tr>
+          <td align="left">特别说明: 西安椰晖旅行社和西安天路旅行社，西安市旅行社合力推出散客拼团，自己操作，绝不转手！天天发团！ <br />
+            此为散客拼团行程，游览行程中因每天游览线路不同有可能更换导游及车辆，如有不便请多多谅解，到达西安站后，要等待其他客人到达，约2小时，请提前告知客人，做好心理准备，敬请谅解。</td>
+        </tr>
+      </table>
+	<!--打印内容结束-->
+	  </td>
+        </tr>
+        <tr>
+          <td><table width="60%" height="40"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="42%" align="center"><input name="Submit3" type="submit" class="baocun_an" value="直接打印"></td>
+    <td width="11%">&nbsp;</td>
+    <td width="47%" align="center"><input name="Submit222" type="submit" class="baocun_an" value="导出到word"></td>
+  </tr>
+</table></td>
+        </tr>
+      </table>
+</form>
+</body>
+</html>
+

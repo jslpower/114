@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WeatherRoot>
+  <Weather condition="晴" icon="/images/weather/01.gif"></Weather>
+  <Weather condition="多云" icon="/images/weather/02.gif"></Weather>
+</WeatherRoot>
+

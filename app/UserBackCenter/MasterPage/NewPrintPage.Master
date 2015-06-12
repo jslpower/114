@@ -1,0 +1,323 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NewPrintPage.master.cs"
+    Inherits="UserBackCenter.MasterPage.NewPrintPage" %>
+
+<%@ Import Namespace="EyouSoft.Common" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="<%=CssManage.GetCssFilePath("css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%=CssManage.GetCssFilePath("right") %>" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="<%=JsManage.GetJsFilePath("jquery") %>"></script>
+
+    <script type="text/javascript" src="<%=JsManage.GetJsFilePath("floating") %>"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .HeadTitle
+        {
+            font-family: "黑体";
+            font-size: 25px;
+            line-height: 120%;
+            font-weight: bold;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        table td
+        {
+            border-collapse: collapse;
+            padding-left: 4px;
+        }
+        .td_border
+        {
+            border-right-width: 0px;
+        }
+        .td_border2
+        {
+            border-left-width: 0px;
+        }
+        .table_normal2
+        {
+            border: solid #000000;
+            border-width: 1px 0 0 1px;
+        }
+        .table_normal2 td, .table_normal2 th
+        {
+            border: solid #000000;
+            border-width: 0 1px 1px 0;
+        }
+        .table_normal
+        {
+            border: solid #000000;
+            border-width: 1px 0 0 1px;
+        }
+        .table_normal .normaltd
+        {
+            border: solid #000000;
+            border-width: 0 1px 1px 0;
+        }
+        .table_noneborder
+        {
+            border: none;
+        }
+        .table_l_border
+        {
+            border-left: 1px solid #000;
+        }
+        .table_t_border
+        {
+            border-top: 1px solid #000;
+        }
+        .table_r_border
+        {
+            border-right: 1px solid #000;
+        }
+        .table_b_border
+        {
+            border-bottom: 1px solid #000;
+        }
+        .td_noneborder
+        {
+            border: none;
+        }
+        .td_l_border
+        {
+            border: solid #000;
+            border-width: 0 0 0 1px;
+        }
+        .td_l_t_border
+        {
+            border: solid #000;
+            border-width: 1px 0 0 1px;
+        }
+        .td_l_r_border
+        {
+            border: solid #000;
+            border-width: 0 1px 0 1px;
+        }
+        .td_l_b_border
+        {
+            border: solid #000;
+            border-width: 0 0 1px 1px;
+        }
+        .td_t_border
+        {
+            border: solid #000;
+            border-width: 1px 0 0 0;
+        }
+        .td_t_r_border
+        {
+            border: solid #000;
+            border-width: 1px 1px 0 0;
+        }
+        .td_t_b_border
+        {
+            border: solid #000;
+            border-width: 1px 0 1px 0;
+        }
+        .td_r_border
+        {
+            border: solid #000;
+            border-width: 0 1px 0 0;
+        }
+        .td_r_b_border
+        {
+            border: solid #000;
+            border-width: 0 1px 1px 0;
+        }
+        .td_b_border
+        {
+            border: solid #000;
+            border-width: 0 0 1px 0;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="divPrintPageBody">
+        <input type="hidden" id="txtFontSize" name="txtFontSize" value="12" />
+        <input type="hidden" id="txtLineHeight" name="txtLineHeight" value="18" />
+        <input type="hidden" id="txtPrintHTML" name="txtPrintHTML" />
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 10px;">
+            <tbody>
+                <tr>
+                    <td height="31" valign="bottom" bgcolor="#FFE08B" style="border-bottom: 1px solid #DCAE30;">
+                        <table width="767" border="0" align="center" cellpadding="0" cellspacing="0" id="tbl_top">
+                            <tbody>
+                                <tr>
+                                    <td width="155" align="left">
+                                        调整行间距：<a href="javascript:void(0)" onclick="printConfig.setLineHeight(true)">+加大</a>
+                                        <a href="javascript:void(0)" onclick="printConfig.setLineHeight(false)">-减小</a>
+                                    </td>
+                                    <td width="154" align="center">
+                                        字体大小：<a href="javascript:void(0)" onclick="printConfig.setFontSize(true)">+加大</a>
+                                        <a href="javascript:void(0)" onclick="printConfig.setFontSize(false)">-减小</a>
+                                    </td>
+                                    <td width="173" align="right">
+                                        <a title="自动设置 A4 纸张、打印时出现表格、自动设置页眉和页角为空,不出现网址。" href="http://resource.tongye114.com/PrintTemplate/printSetup.zip">
+                                            打印控件安装</a>
+                                    </td>
+                                    <td width="206" align="center" valign="bottom">
+                                        <a href="javascript:void(0)" onclick="printConfig.printPage()">
+                                            <img src="<%=ImageServerPath %>/images/zjprint.gif" alt="直接打印" width="80" height="22"
+                                                border="0" />
+                                        </a><a href="javascript:void(0)" onclick="printConfig.upwordPrint();return false;">
+                                            <img src="<%=ImageServerPath %>/images/dcprint.gif" alt="导出为word                                                 格式文件，在word里编辑打印"
+                                                width="80" height="22" border="0" />
+                                        </a>
+                                    </td>
+                                    <td width="79" align="right">
+                                        <a style="display: none" href="#">打印预览</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="clear: both">
+        </div>
+        <!--打印内容开始-->
+        <asp:ContentPlaceHolder ID="MainPrint" runat="server">
+        </asp:ContentPlaceHolder>
+        <!--打印内容结束-->
+        <div style="clear: both">
+        </div>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 10px;
+            height: 40px;">
+            <tbody>
+                <tr>
+                    <td>
+                        <table width="940" border="0" align="left" cellpadding="0" cellspacing="0" id="tbl_Footer">
+                            <tr>
+                                <td width="200" align="center">
+                                </td>
+                                <td width="365" align="center">
+                                    <input name="Submit3" type="button" class="baocun_an" value="直接打印" onclick="printConfig.printPage()" />
+                                </td>
+                                <td width="365" align="center">
+                                    <asp:Button runat="server" ID="btnWordPrint" CssClass="baocun_an" Text="导出到word"
+                                        OnClientClick="printConfig.wordPrint()" OnClick="btnWordPrint_Click" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="divPrintBody" style="display: none">
+    </div>
+
+    <script language="javascript" type="text/javascript">
+        $(function() {
+            $("#tblFloating").floating({ position: "left", top: 50, left: 35, width: 163 });
+        })
+        var printConfig = {
+            config: { maxFontSize: 16, minFontSize: 10, maxLineHeight: 25, minLineHeight: 15 },
+            printPreviewHTML: '',
+            //设置字体大小 isIncrease=true 加大 isIncrease=false 减小
+            setFontSize: function(isIncrease) {
+                var currentFontSize = parseInt($("#txtFontSize").val());
+                var toFontSize = isIncrease ? currentFontSize + 1 : currentFontSize - 1;
+                if (!isIncrease && toFontSize < this.config.minFontSize) {
+                    alert("已调整至最小字体" + this.config.minFontSize + "像素");
+                    return;
+                }
+                if (isIncrease && toFontSize > this.config.maxFontSize) {
+                    alert("已调整至最大字体" + this.config.maxFontSize + "像素");
+                    return;
+                }
+                $("#printPage td").css({ 'font-size': toFontSize + 'px' });
+                $("#txtFontSize").val(toFontSize);
+            },
+            //设置行间距 isIncrease=true 加大 isIncrease=false 减小
+            setLineHeight: function(isIncrease) {
+                var currentLineHeight = parseInt($("#txtLineHeight").val());
+                var toLineHeight = isIncrease ? currentLineHeight + 1 : currentLineHeight - 1;
+
+                if (!isIncrease && toLineHeight < this.config.minLineHeight) {
+                    alert("已调整至最小行间距" + this.config.minLineHeight + "像素");
+                    return;
+                }
+
+                if (isIncrease && toLineHeight > this.config.maxLineHeight) {
+                    alert("已调整至最大行间距" + this.config.maxLineHeight + "像素");
+                    return;
+                }
+
+                $("#printPage td").css({ 'line-height': toLineHeight + 'px' });
+                $("#txtLineHeight").val(toLineHeight);
+                $("#tblFloating").floating({ position: "left", top: 50, left: 35, width: 163 });
+            },
+            //直接打印
+            printPage: function() {
+                this.setPrintHTML();
+                //隐藏原始页面内容
+                $("#divPrintPageBody").hide();
+                //显示打印的内容
+                $("#divPrintBody").html($("#txtPrintHTML").val()).show();
+                //去掉页面背景 
+                $("body").css({ "background": "none" });
+                //打印
+                if (window.print != null) {
+                    window.print();
+                } else {
+                    alert('没有安装打印机');
+                }
+                //还原页面内容
+                window.setTimeout(function() {
+                    $("#divPrintBody").hide();
+                    $("#divPrintPageBody").show();
+                    $(".addcontrol").prev().show();
+                    $(".addcontrol").remove();
+
+                }, 2000);
+            },
+            upwordPrint: function() {
+                $("#<%=btnWordPrint.ClientID %>").click();
+                return false;
+            },
+            wordPrint: function() {
+                this.setPrintHTML();
+                return false;
+            },
+            setPrintHTML: function() {
+                $(printHTML).find("textarea:visible").each(function() {
+                    var v = $(this).val();
+                    $(this).parent().append("<span class='addcontrol'>" + v + "</span>");
+                    $(this).hide();
+                });
+                //替换掉打印内容的价格input
+                $(printHTML).find("span input:visible").each(function() {
+                    var v = $(this).val();
+                    $(this).parent().append("<span class='addcontrol'>" + v + "</span>");
+                    $(this).hide();
+                });
+                //替换掉打印内容的价格标准的删除图片
+                //                $("#printPage").find("img").each(function() {
+                //                    $(this).parent().hide();
+                //                });
+                var printHTML = $("#printPage").html(); //需要打印的内容
+                var container = document.createElement("div")
+                container.innerHTML = printHTML;
+                $("#tblFloating").find("input[type='checkbox']:checked").each(function() {
+                    var id = $(this).attr("hidval");
+                    $(container).find("#" + id).remove();
+                })
+                $(container).find(".addcontrol").prev().remove();
+                $("#divPrintBody").html(printHTML); //显示
+                $("#txtPrintHTML").val(container.innerHTML); //用于后台的request.form来获取值
+                $("#divPrintBody").html('');
+            }
+
+        };
+    </script>
+
+    </form>
+</body>
+</html>

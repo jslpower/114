@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EyouSoft.SSOComponent</name>
+    </assembly>
+    <members>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.SSOFlow">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.UserLoginAct(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.UserLoginActAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.UserLoginActAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.UserLoginPassword(System.String,System.String,System.String,EyouSoft.SSOComponent.SSORemote.PasswordType)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.UserLoginPasswordAsync(System.String,System.String,System.String,EyouSoft.SSOComponent.SSORemote.PasswordType)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.UserLoginPasswordAsync(System.String,System.String,System.String,EyouSoft.SSOComponent.SSORemote.PasswordType,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.UserLogout(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.UserLogoutAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.UserLogoutAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.GetUserInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.GetUserInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.GetUserInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.UpdateUserInfo(EyouSoft.SSOComponent.SSORemote.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.UpdateUserInfoAsync(EyouSoft.SSOComponent.SSORemote.UserInfo)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.UpdateUserInfoAsync(EyouSoft.SSOComponent.SSORemote.UserInfo,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.SSOFlow.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:EyouSoft.SSOComponent.SSORemote.SSOFlow.UserLoginActCompleted">
+            <remarks/>
+        </member>
+        <member name="E:EyouSoft.SSOComponent.SSORemote.SSOFlow.UserLoginPasswordCompleted">
+            <remarks/>
+        </member>
+        <member name="E:EyouSoft.SSOComponent.SSORemote.SSOFlow.UserLogoutCompleted">
+            <remarks/>
+        </member>
+        <member name="E:EyouSoft.SSOComponent.SSORemote.SSOFlow.GetUserInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:EyouSoft.SSOComponent.SSORemote.SSOFlow.UpdateUserInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.SSOResponse">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.SSOResponse.IsValid">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.SSOResponse.UserInfo">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.SSOResponse.SSOScript">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.UserInfo">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.ID">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.CompanyID">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.OpUserId">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.CompanyRole">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.ProvinceId">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.CityId">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.UserName">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.ContactInfo">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.PermissionList">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.IsEnable">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.IsAdmin">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.DepartId">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.DepartName">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.AreaId">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserInfo.LoginTicket">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.ContactPersonInfo">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.ContactPersonInfo.ContactName">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.ContactPersonInfo.ContactSex">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.ContactPersonInfo.Tel">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.ContactPersonInfo.Fax">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.ContactPersonInfo.Mobile">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.ContactPersonInfo.Email">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.ContactPersonInfo.QQ">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.ContactPersonInfo.MQ">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.ContactPersonInfo.MSN">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.CompanyRole">
+            <remarks/>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.CompanyRole.HasRole(EyouSoft.SSOComponent.SSORemote.CompanyType)">
+            <summary>
+            是否拥有身份
+            </summary>
+            <param name="typeItem">身份类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.SSORemote.CompanyRole.SetRole(EyouSoft.SSOComponent.SSORemote.CompanyType)">
+            <summary>
+            设置公司身份
+            </summary>
+            <param name="typeItem">身份类型</param>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.CompanyRole.RoleItems">
+            <summary>
+            获得所有单位类型的元素
+            </summary>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.CompanyRole.Length">
+            <summary>
+            获得公司身份列表的长度
+            </summary>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.CompanyRole.Item(System.Int32)">
+            <summary>
+            获得某个索引值的单位类型元素
+            </summary>
+            <param name="index">要获得的元素从0开始的索引</param>
+            <returns></returns>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.CompanyType">
+            <remarks/>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.CompanyType.未知">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.CompanyType.专线">
+            <summary>
+            专线商(批发商)
+            </summary>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.CompanyType.组团">
+            <summary>
+            组团社(零售商)
+            </summary>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.CompanyType.地接">
+            <summary>
+            地接社
+            </summary>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.CompanyType.景区">
+            <summary>
+            景区
+            </summary>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.CompanyType.酒店">
+            <summary>
+            酒店
+            </summary>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.CompanyType.车队">
+            <summary>
+            车队
+            </summary>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.CompanyType.旅游用品店">
+            <summary>
+            旅游用品店
+            </summary>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.CompanyType.购物店">
+            <summary>
+            购物店
+            </summary>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.Sex">
+            <remarks/>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.Sex.男">
+            <remarks/>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.Sex.女">
+            <remarks/>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.Sex.未知">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.PasswordType">
+            <remarks/>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.PasswordType.SHA">
+            <remarks/>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.SSORemote.PasswordType.MD5">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.UserLoginActCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.UserLoginActCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserLoginActCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.UserLoginPasswordCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.UserLoginPasswordCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserLoginPasswordCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.UserLogoutCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.UserLogoutCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.UserLogoutCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.GetUserInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.GetUserInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.SSORemote.GetUserInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.SSORemote.UpdateUserInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.IUserLogin">
+            <summary>
+            用户登陆处理接口
+            </summary>
+            开发人：蒋胜蓝  开发时间：2010-5-31
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IUserLogin.UserLoginAct(System.String,System.String,System.String)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">用户密码</param>
+            <returns>用户信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IUserLogin.UserLoginAct(System.String,System.String,System.String,EyouSoft.SSOComponent.Entity.PasswordType)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">用户密码</param>
+            <param name="LoginTicket">登录凭据值</param>
+            <param name="PwdType">密码类型</param>
+            <returns>用户信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IUserLogin.UserLogout(System.String)">
+            <summary>
+            用户退出
+            </summary>
+            <param name="UID">用户编号</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IUserLogin.GetUserInfo(System.String)">
+            <summary>
+            获取用户信息
+            </summary>
+            <param name="UID">用户编号</param>
+            <returns>用户信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IUserLogin.UpdateUserInfo(EyouSoft.SSOComponent.Entity.UserInfo)">
+            <summary>
+            更新用户信息
+            </summary>
+            <param name="User">用户信息</param>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.IUserLoginService">
+            <summary>
+            用户登陆远程处理接口
+            </summary>
+            开发人：蒋胜蓝  开发时间：2010-6-1
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IUserLoginService.UserLoginAct(System.String,System.String,System.String,System.String)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">用户密码</param>
+            <param name="LoginTicket">登录凭据值</param>
+            <param name="RedirectUrl">跳转地址</param>
+            <returns>SSO返回信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IUserLoginService.UserLoginPassword(System.String,System.String,System.String,EyouSoft.SSOComponent.Entity.PasswordType)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">用户密码</param>
+            <param name="LoginTicket">登录凭据值</param>
+            <param name="PwdType">密码类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IUserLoginService.UserLogout(System.String,System.String)">
+            <summary>
+            用户退出
+            </summary>
+            <param name="UID">用户编号</param>
+            <param name="RedirectUrl">跳转地址</param>
+            <returns>SSO返回信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IUserLoginService.GetUserInfo(System.String)">
+            <summary>
+            获取用户信息
+            </summary>
+            <param name="UID">用户编号</param>
+            <returns>用户信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IUserLoginService.UpdateUserInfo(EyouSoft.SSOComponent.Entity.UserInfo)">
+            <summary>
+            更新用户信息
+            </summary>
+            <param name="User">用户信息</param>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.IMasterLogin">
+            <summary>
+            管理员登陆处理接口
+            </summary>
+            开发人：蒋胜蓝  开发时间：2010-5-31
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IMasterLogin.MasterLogin(System.String,System.String)">
+            <summary>
+            管理员登录
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">用户密码</param>
+            <returns>管理员信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IMasterLogin.MasterLogout(System.String)">
+            <summary>
+            管理员退出
+            </summary>
+            <param name="UID">用户编号</param>
+            <param name="PWD">用户密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IMasterLogin.UpdateMasterInfo(EyouSoft.SSOComponent.Entity.MasterUserInfo)">
+            <summary>
+            更新管理员信息
+            </summary>
+            <param name="User">用户编号</param>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.IMasterLogin.GetMasterInfo(System.String)">
+            <summary>
+            获取管理员信息
+            </summary>
+            <param name="UID">用户编号</param>
+            <returns>管理员信息</returns>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.Entity.SSOResponse">
+            <summary>
+            SSO返回信息
+            </summary>
+            开发人：蒋胜蓝  开发时间：2010-5-31
+        </member>
+        <member name="P:EyouSoft.SSOComponent.Entity.SSOResponse.IsValid">
+            <summary>
+            验证是否通过
+            </summary>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.Entity.SSOResponse.UserInfo">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+        <member name="P:EyouSoft.SSOComponent.Entity.SSOResponse.SSOScript">
+            <summary>
+            SSO脚本
+            </summary>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.Remote.UserLogin">
+            <summary>
+            用户登陆处理(远程访问方式)
+            </summary>
+            开发人：蒋胜蓝  开发时间：2010-5-31
+        </member>
+        <member name="F:EyouSoft.SSOComponent.Remote.UserLogin.RemoteLogin">
+            <summary>
+            远程处理对象，继承接口EyouSoft.SSOComponent.IUserLoginService
+            </summary>
+        </member>
+        <member name="F:EyouSoft.SSOComponent.Remote.UserLogin.LocalLogin">
+            <summary>
+            本地处理对象，继承接口EyouSoft.SSOComponent.IUserLogin
+            </summary>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.Remote.UserLogin.UserLoginAct(System.String,System.String,System.String,System.String)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">用户密码</param>
+            <param name="LoginTicket">登录凭据值</param>
+            <param name="RedirectUrl">跳转地址</param>
+            <returns>SSO返回信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.Remote.UserLogin.UserLoginPassword(System.String,System.String,System.String,EyouSoft.SSOComponent.Entity.PasswordType)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">用户密码</param>
+            <param name="LoginTicket">登录凭据值</param>
+            <param name="RedirectUrl">跳转地址</param>
+            <returns>SSO返回信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.Remote.UserLogin.UserLogout(System.String,System.String)">
+            <summary>
+            用户退出
+            </summary>
+            <param name="UID">用户编号</param>
+            <param name="RedirectUrl">跳转地址</param>a
+            <returns>SSO返回信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.Remote.UserLogin.GetUserInfo(System.String)">
+            <summary>
+            获取用户信息
+            </summary>
+            <param name="UID">用户编号</param>
+            <returns>用户信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.Remote.UserLogin.UpdateUserInfo(EyouSoft.SSOComponent.Entity.UserInfo)">
+            <summary>
+            更新用户信息
+            </summary>
+            <param name="User">用户信息</param>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.MaterLogin">
+            <summary>
+            管理员登陆处理
+            </summary>
+            开发人：蒋胜蓝  开发时间：2010-6-1
+        </member>
+        <member name="M:EyouSoft.SSOComponent.MaterLogin.MasterLogin(System.String,System.String)">
+            <summary>
+            管理员登录
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">用户密码</param>
+            <returns>管理员信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.MaterLogin.MasterLogout(System.String)">
+            <summary>
+            管理员退出
+            </summary>
+            <param name="UID">用户编号</param>
+            <param name="PWD">用户密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.MaterLogin.GetMasterInfo(System.String)">
+            <summary>
+            获取管理员信息
+            </summary>
+            <param name="UID">用户编号</param>
+            <returns>管理员信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.MaterLogin.UpdateMasterInfo(EyouSoft.SSOComponent.Entity.MasterUserInfo)">
+            <summary>
+            更新管理员信息
+            </summary>
+            <param name="User">用户编号</param>
+        </member>
+        <member name="T:EyouSoft.SSOComponent.UserLogin">
+            <summary>
+            用户登陆处理(处理本地资源方式)
+            </summary>
+            开发人：蒋胜蓝  开发时间：2010-6-1
+        </member>
+        <member name="M:EyouSoft.SSOComponent.UserLogin.UserLoginFunc(System.String,System.String,EyouSoft.SSOComponent.Entity.PasswordType)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">用户密码</param>
+            <param name="PwdType">密码类型</param>
+            <returns>用户信息</returns> 
+        </member>
+        <member name="M:EyouSoft.SSOComponent.UserLogin.UserLoginAct(System.String,System.String,System.String)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">用户密码</param>
+            <param name="LoginTicket">登录凭据值</param>
+            <returns>用户信息</returns>        
+        </member>
+        <member name="M:EyouSoft.SSOComponent.UserLogin.UserLoginAct(System.String,System.String,System.String,EyouSoft.SSOComponent.Entity.PasswordType)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="PWD">用户密码</param>
+            <param name="LoginTicket">登录凭据值</param>
+            <param name="PwdType">密码类型</param>
+            <returns>用户信息</returns> 
+        </member>
+        <member name="M:EyouSoft.SSOComponent.UserLogin.UserLogout(System.String)">
+            <summary>
+            用户退出
+            </summary>
+            <param name="UID">用户编号</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.UserLogin.GetUserInfo(System.String)">
+            <summary>
+            获取用户信息
+            </summary>
+            <param name="UID">用户编号</param>
+            <returns>用户信息</returns>
+        </member>
+        <member name="M:EyouSoft.SSOComponent.UserLogin.UpdateUserInfo(EyouSoft.SSOComponent.Entity.UserInfo)">
+            <summary>
+            更新用户信息
+            </summary>
+            <param name="User">用户信息</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Adpost.Ticket</name>
+    </assembly>
+    <members>
+        <member name="T:Adpost.Ticket.Model.VoyageType">
+            <summary>
+            航程
+            </summary>
+            开发人：张志瑜  修改时间:2010-06-18
+        </member>
+        <member name="F:Adpost.Ticket.Model.VoyageType.单程">
+            <summary>
+            单程票
+            </summary>
+        </member>
+        <member name="F:Adpost.Ticket.Model.VoyageType.往返">
+            <summary>
+            往返票
+            </summary>
+        </member>
+        <member name="F:Adpost.Ticket.Model.VoyageType.联程">
+            <summary>
+            中转联程票
+            </summary>
+        </member>
+        <member name="T:Adpost.Ticket.Model.TicketFlightModel">
+            <summary>
+            机票航班信息实体类
+            </summary>
+            开发人: 张志瑜  开发时间:2010-06-18
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketFlightModel.FromCity">
+            <summary>
+            预定机票出发城市（必须为三字码）
+            必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketFlightModel.ToCity">
+            <summary>
+            预定机票到达城市（必须为三字码）
+            必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketFlightModel.TransitCity">
+            <summary>
+            预定机票中转城市（必须为三字码）
+            VoyageSet=联程的时候为必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketFlightModel.TakeOffDate">
+            <summary>
+            出发时间
+            必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketFlightModel.TransitDate">
+            <summary>
+            中转时间
+            VoyageSet=联程的时候为必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketFlightModel.ReturnDate">
+            <summary>
+            返程时间
+            VoyageSet=往返的时候为必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketFlightModel.VoyageSet">
+            <summary>
+            航程,默认为单程
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketFlightModel.OnlyShowFare">
+            <summary>
+            是否只显示票面价,默认为false
+            </summary>
+        </member>
+        <member name="T:Adpost.Ticket.Model.TicketSystemModel">
+            <summary>
+            机票系统信息实体
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketSystemModel.TicketInterfaceUrl">
+            <summary>
+            机票接口网址[必填]
+            必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketSystemModel.SignType">
+            <summary>
+            签名类型,默认 md5
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketSystemModel.SignEncryptKeyId">
+            <summary>
+            否认为0。该接口目前只是0
+            对于商户：使用和支付时一样的key，可以登录商户系统修改。
+            对应517平台用户：使用中介支付key，可以登录修改
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketSystemModel.Charset">
+            <summary>
+            字符编码,默认 UTF-8
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketSystemModel.AppPlatformId">
+            <summary>
+            合作伙伴在517平台的ID
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketSystemModel.TicketUserId">
+            <summary>
+            登录的用户在合作伙伴网站的用户名
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketSystemModel.RedirectUrl">
+            <summary>
+            登录成功之后的目的URL
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketSystemModel.Attach">
+            <summary>
+            返回请求接口传的attach
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketSystemModel.TimeStamp">
+            <summary>
+            商户发起请求时的时间戳
+            非必填
+            </summary>
+        </member>
+        <member name="T:Adpost.Ticket.Model.TicketUserModel">
+            <summary>
+            机票用户信息实体
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketUserModel.UserName">
+            <summary>
+            用户517平台账号[必填]，根据和517平台合作协议决定返回明文还是加密串
+            必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketUserModel.UserPassword">
+            <summary>
+            平台帐号密码[必填]
+            517那儿：必须为 MD5 大写
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketUserModel.TicketGroupGuid">
+            <summary>
+            用户所在的分润组GUID[必填]
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketUserModel.TrueName">
+            <summary>
+            用户姓名，根据和517平台合作协议决定是否返回
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketUserModel.CorpName">
+            <summary>
+            公司名字，根据和517平台合作协议决定是否返回
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketUserModel.CredId">
+            <summary>
+            身份证，根据和517平台合作协议决定是否返回
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketUserModel.Balance">
+            <summary>
+            余额，根据和517平台合作协议决定是否返回
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketUserModel.Mobile">
+            <summary>
+            手机
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketUserModel.Email">
+            <summary>
+            Email地址
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketUserModel.QQ">
+            <summary>
+            QQ
+            非必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketUserModel.UserFlag">
+            <summary>
+            是否517平台用户。false：不是，true：是,默认为true
+            必填
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketUserModel.RequestToken">
+            <summary>
+            用户登录token，一段时间内有效。查询用户信息时，带上该token，517平台验证token有效性
+            非必填
+            </summary>
+        </member>
+        <member name="T:Adpost.Ticket.Model.TicketModel">
+            <summary>
+            机票接口实体类
+            </summary>
+            开发人：陈志仁  开发时间:2010-03-10
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketModel.Flight">
+            <summary>
+            航班信息
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketModel.User">
+            <summary>
+            机票用户信息
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketModel.System">
+            <summary>
+            机票系统信息
+            </summary>
+        </member>
+        <member name="T:Adpost.Ticket.Model.TicketQueryResult">
+            <summary>
+            机票查询结果实体类
+            </summary>
+        </member>
+        <member name="T:Adpost.Ticket.Model.ValidateResult">
+            <summary>
+            表单验证结果
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.ValidateResult.IsSuccess">
+            <summary>
+            是否查询成功
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.ValidateResult.ErrorInfo">
+            <summary>
+            返还错误信息
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketQueryResult.TicketGotoUrl">
+            <summary>
+            机票查询后要跳转的URL
+            </summary>
+        </member>
+        <member name="T:Adpost.Ticket.Model.TicketGroupModel">
+            <summary>
+            机票分润组实体类
+            </summary>
+        </member>
+        <member name="M:Adpost.Ticket.Model.TicketGroupModel.#ctor(System.String,System.String)">
+            <summary>
+            机票分润组实体类
+            </summary>
+            <param name="GroupGuid">GUID</param>
+            <param name="GroupName">分润组名称</param>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketGroupModel.GroupGuid">
+            <summary>
+            分润组GUID
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.Model.TicketGroupModel.GroupName">
+            <summary>
+            分润组名称
+            </summary>
+        </member>
+        <member name="T:Adpost.Ticket.BLL.Ticket">
+            <summary>
+            机票接口实现
+            </summary>
+            开发人：陈志仁  开发时间:2010-03-10
+        </member>
+        <member name="F:Adpost.Ticket.BLL.Ticket.Key">
+            <summary>
+            KEY
+            </summary>
+        </member>
+        <member name="M:Adpost.Ticket.BLL.Ticket.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Adpost.Ticket.BLL.Ticket.QueryUrl(Adpost.Ticket.Model.TicketModel)">
+            <summary>
+            获得机票查询后跳转目的URL地址(提交前,请先调用ValidateForm进行表单验证)
+            </summary>
+            <param name="model">机票接口参数实体</param>
+            <returns>机票查询转向网址</returns>
+            修改人: 张志瑜  修改时间:2010-06-18  修改内容:增加参数 VoyageSet,OnlyShowFare,TransitCity,TransitDate,ReturnDate
+        </member>
+        <member name="M:Adpost.Ticket.BLL.Ticket.DefaultUrl(Adpost.Ticket.Model.TicketSystemModel,Adpost.Ticket.Model.TicketUserModel)">
+            <summary>
+            获得机票后台首页的URL地址
+            </summary>
+            <param name="sysModel">机票系统信息实体</param>
+            <param name="userModel">机票用户信息实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:Adpost.Ticket.BLL.Ticket.ValidateForm(Adpost.Ticket.Model.TicketFlightModel)">
+            <summary>
+            验证表单(提交查询前操作)
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Adpost.Ticket.BLL.Ticket.TicketUpdateUserPwd(System.String,System.String)">
+            <summary>
+            修改机票用户密码
+            </summary>
+            <param name="username">用户名</param>
+            <param name="password">新密码</param>
+            <returns>返回 true:成功,返回 false 失败</returns>
+        </member>
+        <member name="M:Adpost.Ticket.BLL.Ticket.Sign(System.Collections.Hashtable)">
+            <summary>
+            签名
+            </summary>
+            <param name="parameters">Hashtable参数集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:Adpost.Ticket.BLL.Ticket.GetParameter(System.Collections.Hashtable,System.String)">
+            <summary>
+            取得参数
+            </summary>
+            <param name="parameters">Hashtable参数集合</param>
+            <param name="parameter">参数的key值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Adpost.Ticket.BLL.Ticket.GetMD5(System.String,System.String)">
+            <summary>
+            与ASP兼容的MD5加密算法
+            </summary>
+            <param name="inputString">加密的字符串</param>
+            <param name="inputCharset">编码</param>
+            <returns>MD5 后的值</returns>
+        </member>
+        <member name="M:Adpost.Ticket.BLL.Ticket.MD5Encrypt(System.String)">
+            <summary>
+            32位MD5 加密
+            </summary>
+            <param name="inputString">要加密的字符串</param>
+            <returns>返回加密后的字符串</returns>
+        </member>
+        <member name="M:Adpost.Ticket.BLL.Ticket.URLEncode(System.String)">
+            <summary>
+            URL 参数 转换编码
+            </summary>
+            <param name="UrlParame">URL 参数</param>
+            <returns>返回 URL 编码后的数据</returns>
+        </member>
+        <member name="P:Adpost.Ticket.BLL.Ticket.TicketUpdatePwdUrl">
+            <summary>
+            修改机票用户密码的的地址
+            </summary>
+        </member>
+        <member name="T:Adpost.Ticket.BLL.TicketGroup">
+            <summary>
+            机票分润组 实现类
+            </summary>
+        </member>
+        <member name="M:Adpost.Ticket.BLL.TicketGroup.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Adpost.Ticket.BLL.TicketGroup.GetTicketGroupList">
+            <summary>
+            获取机票分润组列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Adpost.Ticket.BLL.TicketGroup.UpdateUserGroup(System.String,System.String)">
+            <summary>
+            修改用户分润组
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="GroupGuid">分润组GUID</param>
+            <returns>成功:true 失败:false</returns>
+        </member>
+        <member name="P:Adpost.Ticket.BLL.TicketGroup.TicketGroupUrl">
+            <summary>
+            机票分润组远程获取地址
+            </summary>
+        </member>
+        <member name="P:Adpost.Ticket.BLL.TicketGroup.TicketModifyGroupUrl">
+            <summary>
+            机票分润组远程修改地址
+            </summary>
+        </member>
+    </members>
+</doc>

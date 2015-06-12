@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+ <Remind>
+  <hour hourtype="1" sumhour="4" />
+  <hour hourtype="2" sumhour="4" />
+  <TitleType category="注册" titleLink="http://www.baidu.com" id="1" UpValue="" DownValue="成功" />
+  <TitleType category="发布" titleLink="http://www.baidu.com" id="2" UpValue="" DownValue="最新产品" />
+  <TitleType category="促销" titleLink="http://www.baidu.com" id="3" UpValue="线路发布" DownValue="" />
+  <TitleType category="客满" titleLink="http://www.baidu.com" id="4" UpValue="线路" DownValue="" />
+  <TitleType category="短信充值" titleLink="http://www.baidu.com" id="5" UpValue="" DownValue="成功" />
+  <TitleType category="发布供求" titleLink="http://www.baidu.com" id="6" UpValue="" DownValue="" />
+  <TitleType category="预订机票" titleLink="http://www.baidu.com" id="7" UpValue="成功" DownValue="" />
+  <TitleType category="预订酒店" titleLink="http://www.baidu.com" id="8" UpValue="成功" DownValue="" />
+  <TitleType category="旅游线路" titleLink="http://www.baidu.com" id="9" UpValue="预订" DownValue="成功" />
+  <TitleType category="加MQ好友" titleLink="http://www.baidu.com" id="10" UpValue="" DownValue="成功" />
+  <TitleType category="留言询价" titleLink="http://www.baidu.com" id="11" UpValue="" DownValue="成功" />
+</Remind>

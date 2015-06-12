@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>购买选项</title>
+<link href="../zt2010/css/main.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #EAF3FB;
+}
+-->
+</style>
+<script language="javascript" src="../js/ext/ext-jquery-adapter.js"></script>
+<script src="../js/ext/ext-all.js" type="text/javascript"></script>
+<script src="../js/ext/ContentWindow.js" type="text/javascript"  charset="utf-8"></script>
+<script type="text/javascript">
+    function SendSms(url)
+    {
+		parent.Ext.Win().open(
+		    url,
+			'批发商信息',
+			{width:630, height:410, resizable:'no', maximize:'no', minmize:'no'}
+		);
+    }
+    </script>
+
+</head>
+
+<body>
+<form action="" method="get"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" class="tdleft" height="35">&nbsp;您当前预订的产品由"<a href="javascript:void(0)" onclick="SendSms('gysxx.html')"><strong class="hongzil">海南海之缘旅行社有限公司</strong></a>"提供，联系人<span class="hongzil"><strong>马丽华</strong></span>，电话<span class="hongzil"><strong>13562535552</strong></span><strong> 联系QQ：</strong><a target="blank" href="tencent://message/?uin=229678893&amp;Site=同业网&amp;Menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=1:229678893:10" alt="和我联系吧" style="width:61px; height:16px;" /></a></span></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="6">
+  <tr>
+    <td align="right" class="tdleft"><strong>线路名称：</strong></td>
+    <td colspan="5" align="left" class="td2left"><a href="detail.html" target="_blank">【团号：zf2208887】上海、苏州、杭州、宁波、温州、厦门单飞双卧【天天发团】</a></td>
+  </tr>
+  <tr>
+    <td width="21%" align="right" class="tdleft"><strong>出发日期：</strong></td>
+    <td colspan="5" align="left" class="td2left">2009/01/23 周六</td>
+  </tr>
+  
+  <tr>
+    <td align="right" class="tdleft"><strong>航班：</strong></td>
+    <td colspan="5" align="left" class="td2left"><input name="radiobutton" type="radio" id="radio2" value="radiobutton" checked="checked"/>
+往：南航 上海--海南 CZ3907 10:13&nbsp;&nbsp; 返：南航 海南--上海 CZ3907 22:53
+	 &nbsp; 剩余20 <br />
+     <input name="radiobutton" type="radio" id="radio" value="radiobutton"/>
+往：南航 上海--海南 CZ3907 10:13&nbsp;&nbsp; 返：南航 海南--上海 CZ3907 22:53
+	 &nbsp; 剩余15 </td>
+  </tr>
+  <tr>
+    <td align="right" class="tdleft"><strong><span class="red">*</span>结算价：</strong></td>
+    <td colspan="5" align="left" class="td2left">
+	<input name="radiobutton" type="radio" id="changgui" value="radiobutton" checked="checked" /><label for="changgui">标准
+	成人￥1600  儿童￥1400</label>
+	<input type="checkbox" name="checkbox" value="checkbox" />单房差：￥300
+	<input name="textfield3" type="text" size="4"/>
+	人 <br/>
+    <input type="radio" name="radiobutton" value="radiobutton" id="haohua" /><label for="haohua">三星 成人￥1200   儿童￥1400
+    <input type="checkbox" name="checkbox2" value="checkbox" />单房差：￥350
+    <input name="textfield32" type="text" size="4"/>
+人</label>
+    <br/>
+	<input type="radio" name="radiobutton" value="radiobutton" id="haohua" /><label for="haohua">三星 成人￥1100  儿童￥1400
+    <input type="checkbox" name="checkbox2" value="checkbox" />单房差：￥390
+    <input name="textfield32" type="text" size="4"/>
+人 </label></td>
+  </tr>
+  <tr>
+    <td align="right" class="tdleft"><strong><span class="red">*</span>预订人数：</strong></td>
+    <td colspan="5" align="left" class="td2left">成人
+      <input name="textfield2" type="text" size="5" />
+      儿童
+      <input name="textfield22" type="text" size="5" />     </td>
+  </tr>
+  
+  <tr>
+    <td align="right" class="tdleft"><strong>游客信息：</strong></td>
+    <td colspan="5" align="left" class="td2left">
+	<table id="tblCustomerList" cellspacing="1" cellpadding="0" width="100%" align="center" bgcolor="#93B5D7" border="0" sortcol="5">
+        <tbody>
+          <tr align="middle" bgcolor="#f9f9f4">
+            <td width="8%" height="20" bgcolor="#D4E6F7">序号</td>
+            <td width="12%" bgcolor="#D4E6F7">姓&nbsp;&nbsp; 名</td>
+            <td width="15%" bgcolor="#D4E6F7">证件名称</td>
+            <td width="25%" bgcolor="#D4E6F7">证件号码</td>
+            <td width="7%" bgcolor="#D4E6F7">性别</td>
+            <td width="11%" bgcolor="#D4E6F7">类型</td>
+            <td width="22%" bgcolor="#D4E6F7">联系电话</td>
+            </tr>
+          <tr bgcolor="#ffffff">
+            <td align="middle" bgcolor="#EDF6FF"><input name="CustomerSiteNo" value="1" size="3" readonly="readOnly" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><input size="8" value="游客" name="CustomerName" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CertificateName" name="CertificateName">
+                <option value="" selected="selected">请选择证件</option>
+                <option value="身份证">身份证</option>
+                <option value="户口本">户口本</option>
+                <option value="军官证">军官证</option>
+                <option value="护照">护照</option>
+                <option value="边境通行证">边境通行证</option>
+                <option value="其他">其他</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><input name="CertificateNo" id="CertificateNo" onchange="getBrithdayFormPersonalID(this.value,-1)" size="20" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CustomerSex" name="CustomerSex">
+                <option value="1" selected="selected">男</option>
+                <option value="0">女</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CustomerType" onchange="CustomerTypeChanged()" name="CustomerType">
+                <option value="1" selected="selected">成人</option>
+                <option value="2">儿童</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><input name="CustomerTelphone" id="CustomerTelphone" size="15" /></td>
+            </tr>
+          <tr bgcolor="#ffffff">
+            <td align="middle" bgcolor="#EDF6FF"><input name="CustomerSiteNo2" value="2" size="3" readonly="readOnly" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><input size="8" value="游客" name="CustomerName" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CertificateName" name="CertificateName">
+                <option value="" selected="selected">请选择证件</option>
+                <option value="身份证">身份证</option>
+                <option value="户口本">户口本</option>
+                <option value="军官证">军官证</option>
+                <option value="护照">护照</option>
+                <option value="边境通行证">边境通行证</option>
+                <option value="其他">其他</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><input name="CertificateNo2" id="CertificateNo2" onchange="getBrithdayFormPersonalID(this.value,-1)" size="20" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CustomerSex" name="CustomerSex">
+                <option value="1" selected="selected">男</option>
+                <option value="0">女</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CustomerType" onchange="CustomerTypeChanged()" name="CustomerType">
+                <option value="1" selected="selected">成人</option>
+                <option value="2">儿童</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><input name="CustomerTelphone2" id="CustomerTelphone2" size="15" /></td>
+            </tr>
+          <tr bgcolor="#ffffff">
+            <td align="middle" bgcolor="#EDF6FF"><input name="CustomerSiteNo2" value="3" size="3" readonly="readOnly" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><input size="8" value="游客" name="CustomerName" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CertificateName" name="CertificateName">
+                <option value="" selected="selected">请选择证件</option>
+                <option value="身份证">身份证</option>
+                <option value="户口本">户口本</option>
+                <option value="军官证">军官证</option>
+                <option value="护照">护照</option>
+                <option value="边境通行证">边境通行证</option>
+                <option value="其他">其他</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><input name="CertificateNo3" id="CertificateNo3" onchange="getBrithdayFormPersonalID(this.value,-1)" size="20" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CustomerSex" name="CustomerSex">
+                <option value="1" selected="selected">男</option>
+                <option value="0">女</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CustomerType" onchange="CustomerTypeChanged()" name="CustomerType">
+                <option value="1" selected="selected">成人</option>
+                <option value="2">儿童</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><input name="CustomerTelphone3" id="CustomerTelphone3" size="15" /></td>
+            </tr>
+          <tr bgcolor="#ffffff">
+            <td align="middle" bgcolor="#EDF6FF"><input name="CustomerSiteNo2" value="4" size="3" readonly="readOnly" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><input size="8" value="游客" name="CustomerName" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CertificateName" name="CertificateName">
+                <option value="" selected="selected">请选择证件</option>
+                <option value="身份证">身份证</option>
+                <option value="户口本">户口本</option>
+                <option value="军官证">军官证</option>
+                <option value="护照">护照</option>
+                <option value="边境通行证">边境通行证</option>
+                <option value="其他">其他</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><input name="CertificateNo2" id="CertificateNo2" onchange="getBrithdayFormPersonalID(this.value,-1)" size="20" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CustomerSex" name="CustomerSex">
+                <option value="1" selected="selected">男</option>
+                <option value="0">女</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CustomerType" onchange="CustomerTypeChanged()" name="CustomerType">
+                <option value="1" selected="selected">成人</option>
+                <option value="2">儿童</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><input name="CustomerTelphone2" id="CustomerTelphone2" size="15" /></td>
+          </tr>
+          <tr bgcolor="#ffffff">
+            <td align="middle" bgcolor="#EDF6FF"><input name="CustomerSiteNo2" value="5" size="3" readonly="readOnly" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><input size="8" value="游客" name="CustomerName" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CertificateName" name="CertificateName">
+                <option value="" selected="selected">请选择证件</option>
+                <option value="身份证">身份证</option>
+                <option value="户口本">户口本</option>
+                <option value="军官证">军官证</option>
+                <option value="护照">护照</option>
+                <option value="边境通行证">边境通行证</option>
+                <option value="其他">其他</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><input name="CertificateNo3" id="CertificateNo3" onchange="getBrithdayFormPersonalID(this.value,-1)" size="20" /></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CustomerSex" name="CustomerSex">
+                <option value="1" selected="selected">男</option>
+                <option value="0">女</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><select id="CustomerType" onchange="CustomerTypeChanged()" name="CustomerType">
+                <option value="1" selected="selected">成人</option>
+                <option value="2">儿童</option>
+            </select></td>
+            <td align="middle" bgcolor="#EDF6FF"><input name="CustomerTelphone3" id="CustomerTelphone3" size="15" /></td>
+          </tr>
+        </tbody>
+      </table>	</td>
+  </tr>
+  <tr>
+    <td align="right" class="tdleft"><strong>特殊要求说明：</strong></td>
+    <td colspan="5" align="left" class="td2left"><textarea name="textarea" cols="120" rows="3"></textarea></td>
+  </tr>
+  <tr>
+    <td align="right" class="tdleft"><strong><span class="red">*</span>预订人：</strong></td>
+    <td width="19%" align="left" class="td2left"><select name="select">
+      <option>方太志</option>
+      </select>
+      </td>
+    <td width="8%" align="left" class="tdleft">电话：</td>
+    <td width="19%" align="left" class="td2left">0571-55887777</td>
+    <td width="8%" align="left" class="tdleft">传真：</td>
+    <td width="25%" align="left" class="td2left">0571-55887777</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="50" align="center"><input onclick='parent.Ext.Win().close();window.open("guanli.html")' type="submit" name="Submit" value="   提交预订 " class="inputt"/></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

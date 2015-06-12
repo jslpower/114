@@ -1,0 +1,1677 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EyouSoft.HotelBI</name>
+    </assembly>
+    <members>
+        <member name="T:EyouSoft.HotelBI.AvailCache.MCityDetailsSearchRQInfo">
+            <summary>
+            城市信息查询缓存指令信息业务实体
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.AvailCache.MCityDetailsSearchRQInfo._CountryCode">
+            <summary>
+            所查城市所属国家代码
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MCityDetailsSearchRQInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MCityDetailsSearchRQInfo.CreateCityDetailsSearchRQXML">
+            <summary>
+            Create CityDetailsSearchRQ XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MCityDetailsSearchRQInfo.CountryCode">
+            <summary>
+            所查城市所属国家代码 CN:中国 String类型;’ALL’查询所有国家; US:美国
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MCityDetailsSearchRQInfo.CountryName">
+            <summary>
+            接口预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MCityDetailsSearchRQInfo.RequestXML">
+            <summary>
+            请求XML指令
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.AvailCache.MLandMarkSearchRQInfo">
+            <summary>
+            地标行政区查询指令信息业务实体
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MLandMarkSearchRQInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MLandMarkSearchRQInfo.CreateLandMarkSearchRQXML">
+            <summary>
+            Create LandMarkSearchRQ XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MLandMarkSearchRQInfo.LandMarkType">
+            <summary>
+            地标行政区查询类型
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MLandMarkSearchRQInfo.CityCode">
+            <summary>
+            城市代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MLandMarkSearchRQInfo.RequestXML">
+            <summary>
+            请求XML指令
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.AvailCache.MHotelStaticInfoCacheRQInfo">
+            <summary>
+            多酒店静态信息查询缓存指令信息业务实体
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MHotelStaticInfoCacheRQInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MHotelStaticInfoCacheRQInfo.CreateHotelStaticInfoCacheRQXML">
+            <summary>
+            Create HotelStaticInfoCacheRQ XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelStaticInfoCacheRQInfo.HotelCode">
+            <summary>
+            预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelStaticInfoCacheRQInfo.HotelName">
+            <summary>
+            预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelStaticInfoCacheRQInfo.HotelEnglishName">
+            <summary>
+            预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelStaticInfoCacheRQInfo.CityCode">
+            <summary>
+            城市代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelStaticInfoCacheRQInfo.CityName">
+            <summary>
+            预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelStaticInfoCacheRQInfo.Rank">
+            <summary>
+            预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelStaticInfoCacheRQInfo.CountryCode">
+            <summary>
+            国家代码 不填默认为中国
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelStaticInfoCacheRQInfo.RequestXML">
+            <summary>
+            请求XML指令
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.AvailCache.MHotelAvailabilityCacheRQInfo">
+            <summary>
+            酒店数据缓存查询信息业务实体
+            </summary>
+            Author:汪奇志 2011-05-11
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MHotelAvailabilityCacheRQInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MHotelAvailabilityCacheRQInfo.CreateHotelAvailabilityCacheRQXML">
+            <summary>
+            Create HotelAvailabilityCacheRQ XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelAvailabilityCacheRQInfo.DateRange">
+            <summary>
+            从即日起查询之后多久的数据。现在为查询三个月(3M)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelAvailabilityCacheRQInfo.HotelCode">
+            <summary>
+            酒店代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelAvailabilityCacheRQInfo.RoomType">
+            <summary>
+            接口预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelAvailabilityCacheRQInfo.Vendor">
+            <summary>
+            接口预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelAvailabilityCacheRQInfo.RatePlan">
+            <summary>
+            接口预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MHotelAvailabilityCacheRQInfo.RequestXML">
+            <summary>
+            请求XML指令
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.AvailCache.MRoomTypeStaticInfoCacheRQInfo">
+            <summary>
+            单酒店静态信息查询指令信息业务实体
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MRoomTypeStaticInfoCacheRQInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MRoomTypeStaticInfoCacheRQInfo.CreateRoomTypeStaticInfoCacheRQXML">
+            <summary>
+            Create RoomTypeStaticInfoCacheRQ XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRoomTypeStaticInfoCacheRQInfo.HotelCode">
+            <summary>
+            酒店代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRoomTypeStaticInfoCacheRQInfo.RequestXML">
+            <summary>
+            请求XML指令
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.AvailCache.MRateplanControlCacheRQInfo">
+            <summary>
+            酒店价格计划控制缓存查询信息业务实体
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MRateplanControlCacheRQInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MRateplanControlCacheRQInfo.CreateRateplanControlCacheRQXML">
+            <summary>
+            Create RateplanControlCacheRQ XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRateplanControlCacheRQInfo.DateRange">
+            <summary>
+            从即日起查询之后多久的数据。现在固定为查询三个月(3M)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRateplanControlCacheRQInfo.HotelCode">
+            <summary>
+            酒店代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRateplanControlCacheRQInfo.RoomType">
+            <summary>
+            预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRateplanControlCacheRQInfo.Vendor">
+            <summary>
+            预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRateplanControlCacheRQInfo.RatePlan">
+            <summary>
+            预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRateplanControlCacheRQInfo.RequestXML">
+            <summary>
+            请求XML指令
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.AvailCache.MRateplanCommCacheRQInfo">
+            <summary>
+            酒店价格计划佣金缓存查询信息业务实体
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MRateplanCommCacheRQInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.AvailCache.MRateplanCommCacheRQInfo.CreateRateplanCommCacheRQXML">
+            <summary>
+            Create RateplanCommCacheRQ XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRateplanCommCacheRQInfo.DateRange">
+            <summary>
+            从即日起查询之后多久的数据。现在固定为查询三个月(3M)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRateplanCommCacheRQInfo.HotelCode">
+            <summary>
+            酒店代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRateplanCommCacheRQInfo.RoomType">
+            <summary>
+            预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRateplanCommCacheRQInfo.Vendor">
+            <summary>
+            预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRateplanCommCacheRQInfo.RatePlan">
+            <summary>
+            预留 不填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.AvailCache.MRateplanCommCacheRQInfo.RequestXML">
+            <summary>
+            请求XML指令
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.HBEResStatus">
+            <summary>
+            酒店系统订单状态
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEResStatus.CON">
+            <summary>
+            确认单
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEResStatus.RES">
+            <summary>
+            申请单
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEResStatus.MOD">
+            <summary>
+            修改单
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEResStatus.CAN">
+            <summary>
+            取消单
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEResStatus.HAC">
+            <summary>
+            拒绝单
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEResStatus.TST">
+            <summary>
+            测试
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEResStatus.XXX">
+            <summary>
+            客户取消
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEResStatus.RCM">
+            <summary>
+            房间确认
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.HBEPaymentType">
+            <summary>
+            酒店系统支付方式
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEPaymentType.T">
+            <summary>
+            前台现付
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEPaymentType.S">
+            <summary>
+            代收代付
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEPaymentType.Y">
+            <summary>
+            预付
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.HBECommissionType">
+            <summary>
+            酒店系统佣金类型
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBECommissionType.NUL">
+            <summary>
+            无返佣
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBECommissionType.PCT">
+            <summary>
+            百分比
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBECommissionType.FIX">
+            <summary>
+            固定返佣
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.HBEGuestTypeIndicator">
+            <summary>
+            酒店系统旅客类型
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEGuestTypeIndicator.D">
+            <summary>
+            内宾
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEGuestTypeIndicator.F">
+            <summary>
+            外宾
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.HBEOrderInfo">
+            <summary>
+            酒店系统订单信息业务实体
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEOrderInfo._SContacterFullname">
+            <summary>
+            订单联系人姓名(平台客服)
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEOrderInfo._SContacterMobile">
+            <summary>
+            订单联系人手机(平台客服)
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEOrderInfo._SContacterTelephone">
+            <summary>
+            订单联系人电话(平台客服)
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HBEOrderInfo._CountryCode">
+            <summary>
+            国家代码
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEOrderInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEOrderInfo.GetResGuestsName">
+            <summary>
+            获取旅客姓名 多个旅客各姓名ujf将用","隔开
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEOrderInfo.CreateHotelResRQ">
+            <summary>
+            Create HotelAvailRQ XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEOrderInfo.CreateRoomStays">
+            <summary>
+            Create RoomStays XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEOrderInfo.CreateBasicProperty">
+            <summary>
+            Create BasicProperty XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEOrderInfo.CreateRoomRates">
+            <summary>
+            Create RoomRates XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEOrderInfo.CreateRoomRate">
+            <summary>
+            Create RoomRate XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEOrderInfo.CreateRates">
+            <summary>
+            Create Rates XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEOrderInfo.CreateServices">
+            <summary>
+            Create Services XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEOrderInfo.CreateResGuests">
+            <summary>
+            Create ResGuests XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEOrderInfo.CreateResGlobalInfo">
+            <summary>
+            Create ResGlobalInfo XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEOrderInfo.CreateContactorInfo">
+            <summary>
+            Create ContactorInfo XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.CreateDateTime">
+            <summary>
+            预定时间
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.ResStatus">
+            <summary>
+            订单状态(航旅通接口)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.ResOrderId">
+            <summary>
+            订单号(航旅通接口)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.HotelCode">
+            <summary>
+            酒店代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.HotelName">
+            <summary>
+            酒店名称
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.RoomTypeCode">
+            <summary>
+            房型代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.RoomTypeName">
+            <summary>
+            房型名称
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.CheckInDate">
+            <summary>
+            入住时间
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.CheckOutDate">
+            <summary>
+            离店时间
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.VendorCode">
+            <summary>
+            供应商代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.VendorName">
+            <summary>
+            供应商名称
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.RatePlanCode">
+            <summary>
+            价格计划代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.PaymentType">
+            <summary>
+            支付方式
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.RoomNight">
+            <summary>
+            间夜数
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.TotalAmount">
+            <summary>
+            总房价
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.SpecialRequest">
+            <summary>
+            特殊要求
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.CommissionType">
+            <summary>
+            返佣类型
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.CommissionFix">
+            <summary>
+            固定返佣
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.CommissionPercent">
+            <summary>
+            佣金比例
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.ContacterFullname">
+            <summary>
+            联系人姓名
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.ContacterMobile">
+            <summary>
+            联系人手机
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.ContacterTelephone">
+            <summary>
+            联系人电话
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.IsMobileContact">
+            <summary>
+            是否手机联系
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.Quantity">
+            <summary>
+            房间数量
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.ArriveEarlyTime">
+            <summary>
+            到店最早时间 格式：HHMM(1800 表示为下午六点)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.ArriveLateTime">
+            <summary>
+            到店最晚时间 格式：HHMM(1800 表示为下午六点)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.ResponseXML">
+            <summary>
+            请求返回指令
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.ResGuests">
+            <summary>
+            旅客信息集合 索引0的联系人姓名联系人电话必须填写
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.CityCode">
+            <summary>
+            城市代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.CityName">
+            <summary>
+            城市名称
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.Comments">
+            <summary>
+            订单备注
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.TotalCommission">
+            <summary>
+            总佣金
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.CountryCode">
+            <summary>
+            国家代码 默认值：CN
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEOrderInfo.RequestXML">
+            <summary>
+            预订请求XML指令
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.HBEResGuestInfo">
+            <summary>
+            酒店系统订单旅客信息业务实体
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBEResGuestInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEResGuestInfo.PersonName">
+            <summary>
+            旅客姓名
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEResGuestInfo.Mobile">
+            <summary>
+            旅客手机
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEResGuestInfo.Telephone">
+            <summary>
+            旅客电话
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEResGuestInfo.IsMobileContact">
+            <summary>
+            是否手机联系
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEResGuestInfo.GuestTypeIndicator">
+            <summary>
+            旅客类型
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBEResGuestInfo.Type">
+            <summary>
+            客人，值必须为"gue" 
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.HBECancelOrderInfo">
+            <summary>
+            酒店系统取消订单信息业务实体
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBECancelOrderInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBECancelOrderInfo.ResOrderId">
+            <summary>
+            订单号(航旅通接口)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBECancelOrderInfo.CancelReason">
+            <summary>
+            取消原因
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBECancelOrderInfo.ResponseXML">
+            <summary>
+            请求返回指令
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBECancelOrderInfo.RequestXML">
+            <summary>
+            取消请求XML指令
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.HBESingleOrderSearchInfo">
+            <summary>
+            酒店系统单个订单详细信息查询信息业务实体
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.HBESingleOrderSearchInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBESingleOrderSearchInfo.ResOrderId">
+            <summary>
+            订单号(航旅通接口)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBESingleOrderSearchInfo.ResponseXML">
+            <summary>
+            请求返回指令
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.HBESingleOrderSearchInfo.RequestXML">
+            <summary>
+            取消请求XML指令
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.IdentityInfo">
+            <summary>
+            HBE 接口验证信息
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.IdentityInfo.OfficeID">
+            <summary>
+            HBE OFFICE ID 必填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.IdentityInfo.UserID">
+            <summary>
+            HBE UserID 必填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.IdentityInfo.Password">
+            <summary>
+            HBE Password 必填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.IdentityInfo.Role">
+            <summary>
+            角色    接口预留
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.IdentityInfo.UniqueID">
+            <summary>
+            系列编号 接口预留
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.IdentityInfo.BookingChannel">
+            <summary>
+            预定渠道代码(默认填写:HOTELBE) 必填
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.Header">
+            <summary>
+            头部验证信息
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.Header.SessionID">
+            <summary>
+            SessionID
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.Header.Invoker">
+            <summary>
+            调用者
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.Header.Encoding">
+            <summary>
+            字符编码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.Header.Locale">
+            <summary>
+            区域
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.Header.SerialNo">
+            <summary>
+            SerialNo
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.Header.TimeStamp">
+            <summary>
+            时间戳 YYYY-mm-DD HH:MM:SS
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.Header.Application">
+            <summary>
+            子系统名称 必填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.Header.Language">
+            <summary>
+            语言标识 默认为”CN”
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.BoolEnum">
+            <summary>
+            布尔结构体
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.BoolEnum.none">
+            <summary>
+            未选择
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.BoolEnum.Y">
+            <summary>
+            Y(true)
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.BoolEnum.N">
+            <summary>
+            N(false)
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.AvailReqTypeEnum">
+            <summary>
+            查询完整的酒店信息还是只查询价格、房态、政策等动态信息
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.AvailReqTypeEnum.noneStatics">
+            <summary>
+            只包含动态信息
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.AvailReqTypeEnum.includeStatic">
+            <summary>
+            含动态、静态信息
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.QualityLevelEnum">
+            <summary>
+            装修级别
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.QualityLevelEnum.None">
+            <summary>
+            无要求
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.QualityLevelEnum.豪华">
+            <summary>
+            豪华
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.QualityLevelEnum.标准">
+            <summary>
+            标准
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.QualityLevelEnum.经济">
+            <summary>
+            经济
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.HotelRankEnum">
+            <summary>
+            酒店星级
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelRankEnum._00">
+            <summary>
+            未选择星级
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelRankEnum._1S">
+            <summary>
+            一星
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelRankEnum._2S">
+            <summary>
+            二星
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelRankEnum._3S">
+            <summary>
+            三星
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelRankEnum._4S">
+            <summary>
+            四星
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelRankEnum._5S">
+            <summary>
+            五星
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelRankEnum._1A">
+            <summary>
+            准一星
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelRankEnum._2A">
+            <summary>
+            准二星
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelRankEnum._3A">
+            <summary>
+            准三星
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelRankEnum._4A">
+            <summary>
+            准四星
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelRankEnum._5A">
+            <summary>
+            准五星
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.HotelOrderBy">
+            <summary>
+            酒店排序
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelOrderBy.Default">
+            <summary>
+            未指定排序，调用接口默认
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelOrderBy.STARLTH">
+            <summary>
+            星级低到高
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelOrderBy.STARHTL">
+            <summary>
+            星级高到低
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelOrderBy.PRICELTH">
+            <summary>
+            价格低到高
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.HotelOrderBy.PRICEHTL">
+            <summary>
+            价格高到低
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.LandMarkSearchType">
+            <summary>
+            地标行政区查询类型
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.LandMarkSearchType.POR">
+            <summary>
+            地标信息
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.LandMarkSearchType.DST">
+            <summary>
+            行政区信息
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.LandMarkSearchType.TRA">
+            <summary>
+            交通信息
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.LandMarkSearchType.SGT">
+            <summary>
+            周围景观
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.ErrorType">
+            <summary>
+            请求返回错误级别
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.ErrorType.None">
+            <summary>
+            无错误
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.ErrorType.业务级错误">
+            <summary>
+            业务级错误
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.ErrorType.系统级错误">
+            <summary>
+            系统级错误
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.ErrorType.未知错误">
+            <summary>
+            未知错误
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.ErrorInfo">
+            <summary>
+            请求返回错误信息业务实体
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.ErrorInfo.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.ErrorInfo.ErrorCode">
+            <summary>
+            错误代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.ErrorInfo.ErrorDesc">
+            <summary>
+            错误描述
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.ErrorInfo.ErrorType">
+            <summary>
+            请求返回错误级别
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.SingleSeach">
+            <summary>
+            单酒店查询实体
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.SingleSeach.GetSingleRequestXML">
+            <summary>
+            构造单酒店查询XML
+            </summary>
+            <returns>单酒店查询XML</returns>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.AvailReqType">
+            <summary>
+            查询完整的酒店信息还是只查询价格、房态、政策等动态信息
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.CheckInDate">
+            <summary>
+            入住时间 yyyy-mm-dd 必填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.CheckOutDate">
+            <summary>
+            离店时间 yyyy-mm-dd 必填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.RatePlanCode">
+            <summary>
+            要查询的价格计划代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.RatePlanType">
+            <summary>
+            要查询的价格计划类型
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.VendorCode">
+            <summary>
+            供应商代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.PriceMaxRate">
+            <summary>
+            查询的价格上限 Num(8,2)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.PriceMinRate">
+            <summary>
+            查询的价格下限 Num(8,2)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.Longitude">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.Latitude">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.LandMark">
+            <summary>
+            地理位置(地标)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.Radius">
+            <summary>
+            到中心点距离 接口预留
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.PhoneNumber">
+            <summary>
+            酒店电话
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.HotelCode">
+            <summary>
+            酒店代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.Fitment">
+            <summary>
+            装修时间
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.OpenDate">
+            <summary>
+            开业时间
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.RoomView">
+            <summary>
+            景观 如：海景、山景
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.RoomTypeCode">
+            <summary>
+            房型代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.Internet">
+            <summary>
+            上网 Y/N
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.NoSmoking">
+            <summary>
+            吸烟 Y/N
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.RoomQuantity">
+            <summary>
+            房间数量
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.BedType">
+            <summary>
+            床型(如：双床，大床，三床，大/双)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.QualityLevel">
+            <summary>
+            装修级别
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.RoomTypeGuestMaxNum">
+            <summary>
+            房间最大容纳人数
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.HotelRank">
+            <summary>
+            酒店星级 特殊处理 因为枚举命名不能以数字开头,所以结果要过滤 下划线(_)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.SingleSeach.SingleRequestXML">
+            <summary>
+            单酒店查询XML
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.MultipleSeach">
+            <summary>
+            多酒店查询条件
+            </summary>
+            注 有些 实体属性声明为 private 是接口预留,并注明接口预留
+        </member>
+        <member name="M:EyouSoft.HotelBI.MultipleSeach.GetMultiRequestXML">
+            <summary>
+            构造多酒店查询XML
+            </summary>
+            <returns>多酒店查询XML</returns>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.ConfirmRightNowIndicator">
+            <summary>
+            查立即确认的房型 True/False(默认值)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.Payment">
+            <summary>
+            支付方式 （前台现付：T，代收代付：S，预付：Y） 目前只支持 前台现付,不提供SET方式
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.IsDefinedChannel">
+            <summary>
+            选择只授权给该渠道的价格计划 Y
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.IsDefinedVendor">
+            <summary>
+            选择只授权给该渠道的价格计划 Y
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.PriceCurrency">
+            <summary>
+            货币类型 目前只有 人民币（CNY），如扩充请参考国际货币编码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.MaximumLongitude">
+            <summary>
+            经度上限
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.MinimumLongitude">
+            <summary>
+            经度下限
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.MaximumLatitude">
+            <summary>
+            纬度上限
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.MinimumLatitude">
+            <summary>
+            纬度下限
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.CityCode">
+            <summary>
+            城市代码    必填
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.District">
+            <summary>
+            行政区
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.AirReception">
+            <summary>
+            是否接机
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.HotelBrandName">
+            <summary>
+            酒店品牌名称
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.HotelChainCode">
+            <summary>
+            连锁酒店集团代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.HotelChainName">
+            <summary>
+            连锁酒店集团名称
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.HotelBrandCode">
+            <summary>
+            酒店品牌代码
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.HotelChineseName">
+            <summary>
+            酒店中文名称
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.HotelEnglishName">
+            <summary>
+            酒店英文名称
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.RoomName">
+            <summary>
+            房间名称(房型,如：蜜月，海景，山景，标准，商务)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.NumOfEachPage">
+            <summary>
+            每页要求记录数
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.PageNo">
+            <summary>
+            申请页数
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.IsPageView">
+            <summary>
+            是否需要分页(如果不填写，默认查询第一页，每页10条信息。如填Y，以上两项应填入具体值；不分页须填入N)
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.RoomTypeDetailShowed">
+            <summary>
+            是否展示房型具体内容（是：Y，如果展示，查询时间将会增加）
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.OrderBy">
+            <summary>
+            排序方式
+            </summary>
+        </member>
+        <member name="P:EyouSoft.HotelBI.MultipleSeach.MultiRequestXML">
+            <summary>
+            多酒店查询XML
+            </summary>
+        </member>
+        <member name="T:EyouSoft.HotelBI.Utils">
+            <summary>
+            HotelBI Utility
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelCancelRQ">
+            <summary>
+            取消订单请求指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelResRQ">
+            <summary>
+            预订订单请求指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelResDetailSearchRQ">
+            <summary>
+            单个订单详细信息查询指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelSingleAvailRQ">
+            <summary>
+            单酒店查询指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelMultiAvailRQ">
+            <summary>
+            多酒店查询指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_CityDetailsSearchRQ">
+            <summary>
+            城市信息查询缓存指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_LandMarkSearchRQ">
+            <summary>
+            地标行政区查询缓存指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelStaticInfoCacheRQ">
+            <summary>
+            多酒店静态信息查询缓存指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelAvailabilityCacheRQ">
+            <summary>
+            酒店数据缓存查询指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_RoomTypeStaticInfoCacheRQ">
+            <summary>
+            单酒店静态信息查询指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_RateplanControlCacheRQ">
+            <summary>
+            酒店价格计划控制缓存查询指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_RateplanCommCacheRQ">
+            <summary>
+            酒店价格计划佣金缓存查询指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelCancelRS">
+            <summary>
+            取消订单请求返回指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelResRS">
+            <summary>
+            预订订单请求返回指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelResDetailSearchRS">
+            <summary>
+            单个订单详细信息查询返回指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelSingleAvailRS">
+            <summary>
+            单酒店查询返回指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelMultiAvailRS">
+            <summary>
+            多酒店查询返回指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_CityDetailsSearchRS">
+            <summary>
+            城市信息查询缓存返回指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_LandMarkSearchRS">
+            <summary>
+            地标行政区查询缓存返回指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelStaticInfoCacheRS">
+            <summary>
+            多酒店静态信息查询缓存返回指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_HotelAvailabilityCacheRS">
+            <summary>
+            酒店数据缓存查询返回指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_RoomTypeStaticInfoCacheRS">
+            <summary>
+            单酒店静态信息查询返回指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_RateplanControlCacheRS">
+            <summary>
+            酒店价格计划控制缓存查询返回指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.TH_RateplanCommCacheRS">
+            <summary>
+            酒店价格计划佣金缓存查询返回指令
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.HeaderApplication_hotelbe">
+            <summary>
+            Header Application hotelbe
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.HeaderApplication_availCache">
+            <summary>
+            Header Application availCache
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.HBEURL">
+            <summary>
+            HBE 接口地址
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.ImagesUrl">
+            <summary>
+            HBE 酒店图片地址前缀
+            </summary>
+        </member>
+        <member name="F:EyouSoft.HotelBI.Utils.WebRequestTimeout">
+            <summary>
+            WebRequest Timeout
+            </summary>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.CreateTransactionName(System.String)">
+            <summary>
+            Create TransactionName
+            </summary>
+            <param name="transactionName">指令名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.CreateHeader">
+            <summary>
+            Create Header
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.CreateHeader(EyouSoft.HotelBI.Header)">
+            <summary>
+            Create Header
+            </summary>
+            <param name="header">header info</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.CreateIdentityInfo">
+            <summary>
+            Create IdentityInfo and Source
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.CreateIdentityInfo(EyouSoft.HotelBI.IdentityInfo)">
+            <summary>
+            Create IdentityInfo and Source
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetBusinessErrorNodeName(System.String)">
+            <summary>
+            获取业务级错误指令错误节点名称
+            </summary>
+            <param name="transactionName">指令名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.BoolToYesOrNo(System.Boolean)">
+            <summary>
+            转换 布尔为 Y 或 N
+            </summary>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.CreateRequestXML(System.String,System.String)">
+            <summary>
+            Create Request XML,Header.Application="hotelbe"
+            </summary>
+            <param name="transactionName"></param>
+            <param name="xml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.CreateRequestXML(System.String,System.String,System.String)">
+            <summary>
+            Create Request XML
+            </summary>
+            <param name="transactionName">TransactionName</param>
+            <param name="xml"></param>
+            <param name="headerApplication">Header.Application</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.CreateOrderStatusNotifRS(System.String,System.String)">
+            <summary>
+            创建订单状态异步通知返回指令
+            </summary>
+            <param name="code">正确错误代码</param>
+            <param name="desc">正确错误描述</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.CreateRequest(System.String)">
+            <summary>
+            酒店系统发送请求指令,请求返回内容不进行HttpUtility.UrlDecode
+            </summary>
+            <param name="xml">请求指令</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.CreateRequest(System.String,System.Boolean)">
+            <summary>
+            酒店系统发送请求指令
+            </summary>
+            <param name="xml">请求指令</param>
+            <param name="isUrlDecode">返回内容是否进行HttpUtility.UrlDecode</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.ResponseErrorHandling(System.String)">
+            <summary>
+            请求返回错误处理
+            </summary>
+            <param name="xml">请求返回指令</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetXAttributeValue(System.Xml.Linq.XAttribute)">
+            <summary>
+            Get XAttribute Value
+            </summary>
+            <param name="XAttribute">xAttribute</param>
+            <returns>Value</returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetXAttributeValue(System.Xml.Linq.XElement,System.String)">
+            <summary>
+            Get XAttribute Value
+            </summary>
+            <param name="xElement">XElement</param>
+            <param name="attributeName">Attribute Name</param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetXElement(System.Xml.Linq.XElement,System.String)">
+            <summary>
+            Get XElement
+            </summary>
+            <param name="xElement">parent xElement</param>
+            <param name="xName">xName</param>
+            <returns>XElement</returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetXElements(System.Xml.Linq.XElement,System.String)">
+            <summary>
+            Get XElements
+            </summary>
+            <param name="xElement">parent xElement</param>
+            <param name="xName">xName</param>
+            <returns>XElements</returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetInt(System.String,System.Int32)">
+            <summary>
+            将字符串转化为数字 若值不是数字返回defaultValue
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetInt(System.String)">
+            <summary>
+            将字符串转化为数字 若值不是数字返回0
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetDecimal(System.String,System.Decimal)">
+            <summary>
+            将字符串转化为decimal 若值不是数字返回defaultValue
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetDecimal(System.String)">
+            <summary>
+            将字符串转化为decimal 若值不是数字返回0
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetDouble(System.String,System.Double)">
+            <summary>
+            将字符串转化为double 若值不是数字返回defaultValue
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetDouble(System.String)">
+            <summary>
+            将字符串转化为double 若值不是数字返回0
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetDateTime(System.String,System.DateTime)">
+            <summary>
+            将字符串转换成日期格式 若不能转换成日期将返回defaultValue
+            </summary>
+            <param name="s">要转换的字符串</param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EyouSoft.HotelBI.Utils.GetDateTime(System.String)">
+            <summary>
+            将字符串转换成日期格式 若不能转换成日期将返回DateTime.MinValue
+            </summary>
+            <param name="s">要转换的字符串</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

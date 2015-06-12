@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Notify_url.aspx.cs" Inherits="UserPublicCenter.AirTickets.directpay.Notify_url" %>
