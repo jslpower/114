@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Interface Name="EyouSoft.IDAL.TicketStructure.IFreightBuyLog">
+    <Position X="1.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAACAACAAAAAgAEAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>TicketStructure\IFreightBuyLog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EyouSoft.IDAL.TicketStructure.ITicketWholesalersInfo">
+    <Position X="5.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>TicketStructure\ITicketWholesalersInfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EyouSoft.IDAL.TicketStructure.IFreightPackageInfo">
+    <Position X="3.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>TicketStructure\IFreightPackageInfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EyouSoft.IDAL.TicketStructure.ITicketApply">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>TicketStructure\ITicketApply.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EyouSoft.IDAL.TicketStructure.ITicketCompanyAccount">
+    <Position X="1" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>TicketStructure\ITicketCompanyAccount.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EyouSoft.IDAL.TicketStructure.ITicketFlightCompany">
+    <Position X="1.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>TicketStructure\ITicketFlightCompany.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EyouSoft.IDAL.TicketStructure.ITicketFreightInfo">
+    <Position X="5.75" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAJAAAAAAAAAAAAACAAAAAEAAY=</HashCode>
+      <FileName>TicketStructure\ITicketFreightInfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EyouSoft.IDAL.TicketStructure.IOrder">
+    <Position X="7.75" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABQARQAAAAAAgAAEAAQAAACAAAIAAFAAAIAAAAAAAgA=</HashCode>
+      <FileName>TicketStructure\ITicketOrder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EyouSoft.IDAL.TicketStructure.ITicketPayList">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\ITicketPayList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EyouSoft.IDAL.TicketStructure.ITicketSeattle">
+    <Position X="1.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>TicketStructure\ITicketSeattle.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EyouSoft.IDAL.TicketStructure.ITicketVistorInfo">
+    <Position X="3.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAACAABAAAAAACAAAABEABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\ITicketVistorInfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+</HEAD>
+
+<BODY>
+多酒店
+<form name=1 method=post action=http://dlink.sohoto.com/directlink/send.do>
+<textarea name=request cols=100 rows=30><OTRequest>
+  <Header>
+    <SessionID></SessionID>
+    <Invoker></Invoker>
+    <Encoding></Encoding>
+    <Locale></Locale>
+    <SerialNo></SerialNo>
+    <TimeStamp></TimeStamp>
+    <Application>hotelbe</Application>
+    <Language>CN</Language>
+  </Header>
+  <TransactionName>TH_HotelMultiAvailRQ</TransactionName>
+  <HotelAvailRQ>
+    <HotelAvailCriteria AvailReqType="includeStatic">
+      <ConfirmRightNowIndicator>N</ConfirmRightNowIndicator>
+      <StayDateRange Duration=""  CheckOutDate="2010-12-17" CheckInDate="2010-12-14"/>
+      <RatePlanCandidates>
+        <RatePlanCandidate RatePlanCode="" RatePlanType="" Payment="T"></RatePlanCandidate>
+      </RatePlanCandidates>
+      <RateRange MaxRate="" Currency="CNY" MinRate=""/>
+      <HotelSearchCriteria>
+        <Position LongitudeFrom="" LatitudeFrom="" Longitude="" LongitudeTo="" Latitude="" LatitudeTo=""/>
+        <HotelRef CityCode="HGH" />
+        <RoomStayCandidates>
+          <RoomStayCandidate>
+            <RoomAmenity />
+          </RoomStayCandidate>
+        </RoomStayCandidates>
+      </HotelSearchCriteria>
+      <ReqPageInfo>
+        <ReqNumOfEachPage>8</ReqNumOfEachPage>
+        <ReqPageNo>1</ReqPageNo>
+        <IsPageView>Y</IsPageView>
+      </ReqPageInfo>
+      <RoomTypeDetailShowed>Y</RoomTypeDetailShowed>
+    </HotelAvailCriteria>
+  </HotelAvailRQ>
+  <IdentityInfo>
+    <OfficeID>ZJF114</OfficeID>
+    <UserID>ZJF11400C</UserID>
+    <Password>12345678</Password>
+    <Role></Role>
+  </IdentityInfo>
+  <Source>
+    <OfficeCode>ZJF114</OfficeCode>
+    <UniqueID></UniqueID>
+    <BookingChannel>HOTELBE</BookingChannel>
+  </Source>
+</OTRequest></textarea>
+<button type=submit name=2 value=hhh>提交</button>
+</form>
+单酒店
+<form name=1 method=post action=http://dlink.sohoto.com/directlink/send.do>
+<textarea name=request cols=100 rows=30><OTRequest><TransactionName>TH_HotelSingleAvailRQ</TransactionName><Header><SessionID></SessionID><Invoker></Invoker><Encoding></Encoding><Locale></Locale><SerialNo></SerialNo><TimeStamp></TimeStamp><Application>hotelbe</Application><Language>CN</Language></Header><HotelAvailRQ><HotelAvailCriteria AvailReqType="includeStatic"><StayDateRange Duration=""  CheckOutDate="2010-12-02" CheckInDate="2010-12-01"/><RatePlanCandidates><RatePlanCandidate RatePlanCode="BK001"><VendorsIncluded><Vendor VendorCode="SOHOTO"/></VendorsIncluded></RatePlanCandidate></RatePlanCandidates><RateRange/>/><HotelSearchCriteria><Position Longitude="" Latitude="" /><HotelRef HotelCode="SOHOTO0413" /><RoomStayCandidates><RoomStayCandidate><RoomAmenity /></RoomStayCandidate></RoomStayCandidates></HotelSearchCriteria></HotelAvailCriteria></HotelAvailRQ><IdentityInfo><OfficeID>ZJF114</OfficeID><UserID>ZJF11400C</UserID><Password>12345678</Password><Role></Role></IdentityInfo><Source><OfficeCode>ZJF114</OfficeCode><UniqueID></UniqueID><BookingChannel>HOTELBE</BookingChannel></Source></OTRequest></textarea>
+<button type=submit name=2 value=hhh>提交</button>
+</form>
+</BODY>
+</HTML>

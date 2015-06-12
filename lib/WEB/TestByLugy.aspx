@@ -1,0 +1,25 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TestByLugy.aspx.cs" Inherits="WEB.TestByLugy" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <asp:TextBox runat="server" ID="T1"></asp:TextBox>
+    <asp:Repeater runat="server" ID="rp1">
+        <HeaderTemplate><ul></HeaderTemplate>
+        <ItemTemplate>
+            <li><%# Eval("ID")%>----<%# Eval("TagHTML")%></li>
+        </ItemTemplate>
+        <FooterTemplate>
+            </ul>
+        </FooterTemplate>
+    </asp:Repeater>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SendSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mobiles" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ExNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AtTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ExParam" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSResult" type="tns:SendResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SendResult">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:StdResult">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Balance" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="MsgCount" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="FailCount" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="FailItems" type="tns:ArrayOfFailItem" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="StdResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResultMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfFailItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FailItem" nillable="true" type="tns:FailItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FailItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Reason" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RecvSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecvSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecvSMSResult" type="tns:RecvResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RecvResult">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:StdResult">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="MsgCount" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="MsgItems" type="tns:ArrayOfMsgItem" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfMsgItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MsgItem" nillable="true" type="tns:MsgItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MsgItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="From" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="To" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RecvTime" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProperty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPropertyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPropertyResult" type="tns:GetPropertyResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetPropertyResult">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:StdResult">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Balance" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="ClientText" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Others" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SetProperty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PropertyName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PropertyValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPropertyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetPropertyResult" type="tns:SetPropertyResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SetPropertyResult">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:StdResult" />
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ExCommand">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Param" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExCommandResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExCommandResult" type="tns:ExCommandResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExCommandResult">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:StdResult">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Param" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="SendResult" nillable="true" type="tns:SendResult" />
+      <s:element name="RecvResult" nillable="true" type="tns:RecvResult" />
+      <s:element name="GetPropertyResult" nillable="true" type="tns:GetPropertyResult" />
+      <s:element name="SetPropertyResult" nillable="true" type="tns:SetPropertyResult" />
+      <s:element name="ExCommandResult" nillable="true" type="tns:ExCommandResult" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMS" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecvSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:RecvSMS" />
+  </wsdl:message>
+  <wsdl:message name="RecvSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:RecvSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPropertySoapIn">
+    <wsdl:part name="parameters" element="tns:GetProperty" />
+  </wsdl:message>
+  <wsdl:message name="GetPropertySoapOut">
+    <wsdl:part name="parameters" element="tns:GetPropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetPropertySoapIn">
+    <wsdl:part name="parameters" element="tns:SetProperty" />
+  </wsdl:message>
+  <wsdl:message name="SetPropertySoapOut">
+    <wsdl:part name="parameters" element="tns:SetPropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExCommandSoapIn">
+    <wsdl:part name="parameters" element="tns:ExCommand" />
+  </wsdl:message>
+  <wsdl:message name="ExCommandSoapOut">
+    <wsdl:part name="parameters" element="tns:ExCommandResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="Mobiles" type="s:string" />
+    <wsdl:part name="Msg" type="s:string" />
+    <wsdl:part name="ExNo" type="s:string" />
+    <wsdl:part name="AtTime" type="s:string" />
+    <wsdl:part name="ExParam" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:SendResult" />
+  </wsdl:message>
+  <wsdl:message name="RecvSMSHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="FromID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RecvSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:RecvResult" />
+  </wsdl:message>
+  <wsdl:message name="GetPropertyHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPropertyHttpGetOut">
+    <wsdl:part name="Body" element="tns:GetPropertyResult" />
+  </wsdl:message>
+  <wsdl:message name="SetPropertyHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="PropertyName" type="s:string" />
+    <wsdl:part name="PropertyValue" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPropertyHttpGetOut">
+    <wsdl:part name="Body" element="tns:SetPropertyResult" />
+  </wsdl:message>
+  <wsdl:message name="ExCommandHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="Param" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExCommandHttpGetOut">
+    <wsdl:part name="Body" element="tns:ExCommandResult" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="Mobiles" type="s:string" />
+    <wsdl:part name="Msg" type="s:string" />
+    <wsdl:part name="ExNo" type="s:string" />
+    <wsdl:part name="AtTime" type="s:string" />
+    <wsdl:part name="ExParam" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:SendResult" />
+  </wsdl:message>
+  <wsdl:message name="RecvSMSHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="FromID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RecvSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:RecvResult" />
+  </wsdl:message>
+  <wsdl:message name="GetPropertyHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPropertyHttpPostOut">
+    <wsdl:part name="Body" element="tns:GetPropertyResult" />
+  </wsdl:message>
+  <wsdl:message name="SetPropertyHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="PropertyName" type="s:string" />
+    <wsdl:part name="PropertyValue" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPropertyHttpPostOut">
+    <wsdl:part name="Body" element="tns:SetPropertyResult" />
+  </wsdl:message>
+  <wsdl:message name="ExCommandHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="Param" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExCommandHttpPostOut">
+    <wsdl:part name="Body" element="tns:ExCommandResult" />
+  </wsdl:message>
+  <wsdl:portType name="SMSWSSoap">
+    <wsdl:operation name="SendSMS">
+      <wsdl:input message="tns:SendSMSSoapIn" />
+      <wsdl:output message="tns:SendSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecvSMS">
+      <wsdl:input message="tns:RecvSMSSoapIn" />
+      <wsdl:output message="tns:RecvSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProperty">
+      <wsdl:input message="tns:GetPropertySoapIn" />
+      <wsdl:output message="tns:GetPropertySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetProperty">
+      <wsdl:input message="tns:SetPropertySoapIn" />
+      <wsdl:output message="tns:SetPropertySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExCommand">
+      <wsdl:input message="tns:ExCommandSoapIn" />
+      <wsdl:output message="tns:ExCommandSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SMSWSHttpGet">
+    <wsdl:operation name="SendSMS">
+      <wsdl:input message="tns:SendSMSHttpGetIn" />
+      <wsdl:output message="tns:SendSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecvSMS">
+      <wsdl:input message="tns:RecvSMSHttpGetIn" />
+      <wsdl:output message="tns:RecvSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProperty">
+      <wsdl:input message="tns:GetPropertyHttpGetIn" />
+      <wsdl:output message="tns:GetPropertyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetProperty">
+      <wsdl:input message="tns:SetPropertyHttpGetIn" />
+      <wsdl:output message="tns:SetPropertyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExCommand">
+      <wsdl:input message="tns:ExCommandHttpGetIn" />
+      <wsdl:output message="tns:ExCommandHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SMSWSHttpPost">
+    <wsdl:operation name="SendSMS">
+      <wsdl:input message="tns:SendSMSHttpPostIn" />
+      <wsdl:output message="tns:SendSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecvSMS">
+      <wsdl:input message="tns:RecvSMSHttpPostIn" />
+      <wsdl:output message="tns:RecvSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProperty">
+      <wsdl:input message="tns:GetPropertyHttpPostIn" />
+      <wsdl:output message="tns:GetPropertyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetProperty">
+      <wsdl:input message="tns:SetPropertyHttpPostIn" />
+      <wsdl:output message="tns:SetPropertyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExCommand">
+      <wsdl:input message="tns:ExCommandHttpPostIn" />
+      <wsdl:output message="tns:ExCommandHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SMSWSSoap" type="tns:SMSWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendSMS">
+      <soap:operation soapAction="http://tempuri.org/SendSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecvSMS">
+      <soap:operation soapAction="http://tempuri.org/RecvSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProperty">
+      <soap:operation soapAction="http://tempuri.org/GetProperty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetProperty">
+      <soap:operation soapAction="http://tempuri.org/SetProperty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExCommand">
+      <soap:operation soapAction="http://tempuri.org/ExCommand" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SMSWSSoap12" type="tns:SMSWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendSMS">
+      <soap12:operation soapAction="http://tempuri.org/SendSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecvSMS">
+      <soap12:operation soapAction="http://tempuri.org/RecvSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProperty">
+      <soap12:operation soapAction="http://tempuri.org/GetProperty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetProperty">
+      <soap12:operation soapAction="http://tempuri.org/SetProperty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExCommand">
+      <soap12:operation soapAction="http://tempuri.org/ExCommand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SMSWSHttpGet" type="tns:SMSWSHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="SendSMS">
+      <http:operation location="/SendSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecvSMS">
+      <http:operation location="/RecvSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProperty">
+      <http:operation location="/GetProperty" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetProperty">
+      <http:operation location="/SetProperty" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExCommand">
+      <http:operation location="/ExCommand" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SMSWSHttpPost" type="tns:SMSWSHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="SendSMS">
+      <http:operation location="/SendSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecvSMS">
+      <http:operation location="/RecvSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProperty">
+      <http:operation location="/GetProperty" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetProperty">
+      <http:operation location="/SetProperty" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExCommand">
+      <http:operation location="/ExCommand" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SMSWS">
+    <wsdl:port name="SMSWSSoap" binding="tns:SMSWSSoap">
+      <soap:address location="http://vip.mston.com/smsapi/smsws.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SMSWSSoap12" binding="tns:SMSWSSoap12">
+      <soap12:address location="http://vip.mston.com/smsapi/smsws.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SMSWSHttpGet" binding="tns:SMSWSHttpGet">
+      <http:address location="http://vip.mston.com/smsapi/smsws.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SMSWSHttpPost" binding="tns:SMSWSHttpPost">
+      <http:address location="http://vip.mston.com/smsapi/smsws.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

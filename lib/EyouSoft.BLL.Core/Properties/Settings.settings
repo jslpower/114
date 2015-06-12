@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EyouSoft.BLL.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="EyouSoft_BLL_SMSStructure_SmsServices_SMSWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://vip.mston.com/smsapi/smsws.asmx</Value>
+    </Setting>
+    <Setting Name="EyouSoft_BLL_SMSStructure_TSmsServices_SMSWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.1.254:30010/SMSWS.asmx</Value>
+    </Setting>
+    <Setting Name="EyouSoft_BLL_SMSStructure_VoSmsServices_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://smc.myvo.cn/SMSWebService/Service.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

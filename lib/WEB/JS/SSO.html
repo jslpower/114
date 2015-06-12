@@ -1,0 +1,14 @@
+﻿用户登陆成功，提取该公司已使用的所有域名并跳转到SSO页面，生成相应的COOKIE
+
+LOGIN
+
+<script>
+try{sinaSSOController.setCrossDomainUrlList({"retcode":0,"arrURL":["http:\/\/passport.51uc.com\/sso\/do_crossdomain.php?action=login&savestate=1276755299"]});}catch(e){}try{sinaSSOController.crossDomainAction('login',function(){location.replace('http://vip.stock.finance.sina.com.cn/portfolio/login.php?f_c=stock&savestate=30&u=jslpower&retcode=0');});}catch(e){}
+</script>
+
+
+LOGOUT
+
+<script>
+try{sinaSSOController.setCrossDomainUrlList({"retcode":0,"arrURL":["http:\/\/passport.51uc.com\/sso\/mutelogout.php"]});}catch(e){}try{sinaSSOController.crossDomainAction('logout',function(){location.replace('http://vip.stock.finance.sina.com.cn/portfolio/login.php');});}catch(e){}
+</script>

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EyouSoft.Model.TicketStructure.TicketFlight">
+    <Position X="4.5" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAIQAAAAAAAIAAAAAAAAAAABAAAACACAAACIAAAAAAA=</HashCode>
+      <FileName>TicketStructure\Ticket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.TicketWholesalersInfo">
+    <Position X="2.75" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAAAAgAIAAYAAAAAAAAoAAAAAAAAgAAAAQIEAABAABE=</HashCode>
+      <FileName>TicketStructure\TicketWholesalersInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.TicketApply">
+    <Position X="10.25" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACQQAAAACAAAABAAAAiAAAAAAAQAAAAAAAAAQAAAQA=</HashCode>
+      <FileName>TicketStructure\TicketApply.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.QueryTicketApply">
+    <Position X="8.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAgAAAAAAAAAAACCAAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketApply.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.TicketCompanyAccount">
+    <Position X="3.25" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAIAAAAAAAAAAAAAAAgAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketCompanyAccount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.TicketFlightBase">
+    <Position X="8.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketFlightCompany.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.TicketFreightBuyLog">
+    <Position X="10.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ACGCAAIAQAMAAAAAAEAAAGAACABQAAAIQMAAAAAIAgI=</HashCode>
+      <FileName>TicketStructure\TicketFreightBuyLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.TicketFreightInfo">
+    <Position X="0.5" Y="6.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>FGuWhNEYOJeAUUkBMAdBAESMFABBCAAoAsEkgkgAGgU=</HashCode>
+      <FileName>TicketStructure\TicketFreightInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.TicketFreightPackageInfo">
+    <Position X="5.25" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACADAAAAAAUAAAAAIEAAAEAAAEBQAAAAAIAAAQAAAgA=</HashCode>
+      <FileName>TicketStructure\TicketFreightPackageInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.OrderInfo">
+    <Position X="8" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EQAhAGAABBEQAAACAGCEAAAAAAFAGgAISGAEEAAhAEs=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.OrderRateInfo">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECAAAFgAAAEAACACAAAAAhAAAABEEACAAEAAEAAlAAI=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.OrderChangeInfo">
+    <Position X="2.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EBBgAAAAEAAABAAEAAUAIAAAAACAQAABACAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.TravellerBaseInfo">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAABAAAAAACAAAAAAAAAAAAAAAAAAIAAAAAAgAA=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.OrderTravellerInfo">
+    <Position X="0.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAYAAAAAQAICAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.TicketPayList">
+    <Position X="6" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MACAAAAAAAUAgAIAgAgAACAAAAAAEAAIAAAAAABAAQI=</HashCode>
+      <FileName>TicketStructure\TicketPayList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.TicketSeattle">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAEAAAAAAAAAAAAAIAAAAIAAAIAIAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketSeattle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.TicketVistorInfo">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAQAAAAYAAAAAAAAAAQAABAgABFAAAAAAAAAAAQA=</HashCode>
+      <FileName>TicketStructure\TicketVistorInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.OrderSearchInfo">
+    <Position X="10.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAEAABAEAYAACAACEAAAAAAAAGAIAAAAoEAAAAAI=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.BuyerAnalysisSearchInfo">
+    <Position X="2.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAgAAAAAgE=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TicketStructure.BuyerAnalysisInfo">
+    <Position X="4.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAACACAAAAAABAAAAAAAiAAAAAIAgE=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="EyouSoft.Model.TicketStructure.VoyageType">
+    <Position X="18.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAQAAAAAAEAgAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\Ticket.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.PeopleCountryType">
+    <Position X="18.75" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\Ticket.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.TicketAccountType">
+    <Position X="15" Y="12.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEQgAAAAEAAAAAgAAAAAAAAAAAAAAAAACQAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketCompanyAccount.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.RateType">
+    <Position X="20.75" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAACAAACAABBAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketFreightInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.FreightType">
+    <Position X="21" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACCAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketFreightInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.ProductType">
+    <Position X="15" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketFreightInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.PackageTypes">
+    <Position X="17.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAgAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>TicketStructure\TicketFreightPackageInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.TravellerType">
+    <Position X="13.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.OrderState">
+    <Position X="17.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABABAAAAAgAAAAAAAAAAAAAAgABAAAAAgBAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.TravellerState">
+    <Position X="13.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAkAAAAAAgAAAAAAAAYAgAEJAAAIAAAAAAAEAAA=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.OrderChangeType">
+    <Position X="20.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.OrderChangeState">
+    <Position X="13.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAQQ=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.RefundTicketType">
+    <Position X="17" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAIAAgCAAAAAAAIAACBAAAAEgAA=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.PayFrom">
+    <Position X="17.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAAAACAAAAACAAAAAAAAAEAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketPayList.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.PayState">
+    <Position X="18.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAQAAAAACAAUAAAA=</HashCode>
+      <FileName>TicketStructure\TicketPayList.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.TicketCardType">
+    <Position X="20.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAgAAgAAAAAAAAAAIAAAAAEAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketVistorInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.TicketVistorType">
+    <Position X="22.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAABAAAAQA=</HashCode>
+      <FileName>TicketStructure\TicketVistorInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TicketStructure.OrderStatType">
+    <Position X="15.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAIAEBAgAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketStructure\TicketOrderInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

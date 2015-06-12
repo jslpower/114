@@ -1,0 +1,7 @@
+﻿记录数:{$:#.record}</br>
+<vt:foreach from="$list" item="#.f" index="#.i">
+ID:{$:#.f.Id}</br>
+金额:{$:#.f.SumPrice}</br>
+<vt:expression var="#.sum" expression="{0}+{1}" args="$#.sum" args="$#.f.SumPrice" /></br>
+</vt:foreach>
+总合:{$:sum}</br>

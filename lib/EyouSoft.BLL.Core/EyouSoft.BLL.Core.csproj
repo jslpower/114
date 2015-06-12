@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8573B675-29EC-4A84-834E-47D810BFFC6D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EyouSoft.BLL</RootNamespace>
+    <AssemblyName>EyouSoft.BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\EyouSoft.BLL.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\EyouSoft.BLL.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Adpost.Ticket, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EyouSoft.Common\DLL\Adpost.Ticket.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Security.Membership, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EyouSoft.Common\DLL\EyouSoft.Security.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="RabbitMQ.Client, Version=2.3.1.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EyouSoft.Common\DLL\RabbitMQ.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvStructure\Adv.cs" />
+    <Compile Include="AdvStructure\ExtendProduct.cs" />
+    <Compile Include="CommunityStructure\MarketingCompany.cs" />
+    <Compile Include="AdvStructure\SiteExtend.cs" />
+    <Compile Include="CommunityStructure\BSupplyDemandPic.cs" />
+    <Compile Include="CommunityStructure\BSupplyDemandRule.cs" />
+    <Compile Include="CommunityStructure\CommunityAdvisor.cs" />
+    <Compile Include="CommunityStructure\ExchangeFavor.cs" />
+    <Compile Include="CommunityStructure\ExchangeList.cs" />
+    <Compile Include="CommunityStructure\HonoredGuest.cs" />
+    <Compile Include="CommunityStructure\InfoArticle.cs" />
+    <Compile Include="CommunityStructure\Remind.cs" />
+    <Compile Include="CompanyStructure\BankAccount.cs" />
+    <Compile Include="CompanyStructure\CommonPriceStand.cs" />
+    <Compile Include="CompanyStructure\CommonPriceStandAdd.cs" />
+    <Compile Include="CompanyStructure\CompanyAffiche.cs" />
+    <Compile Include="CompanyStructure\CompanyAttachInfo.cs" />
+    <Compile Include="CompanyStructure\CompanyCityArea.cs" />
+    <Compile Include="CompanyStructure\CompanyDepartment.cs" />
+    <Compile Include="CompanyStructure\CompanyFavor.cs" />
+    <Compile Include="CompanyStructure\CompanyInfo.cs" />
+    <Compile Include="CompanyStructure\CompanyPriceStand.cs" />
+    <Compile Include="CompanyStructure\CompanyRoles.cs" />
+    <Compile Include="CompanyStructure\CompanySetting.cs" />
+    <Compile Include="CompanyStructure\CompanyUser.cs" />
+    <Compile Include="CompanyStructure\MyCustomerList.cs" />
+    <Compile Include="CompanyStructure\ServiceStandard.cs" />
+    <Compile Include="CompanyStructure\SupplierInfo.cs" />
+    <Compile Include="CompanyStructure\TendCompanyInfo.cs" />
+    <Compile Include="CompanyStructure\CompanyAreaSetting.cs" />
+    <Compile Include="CompanyStructure\TourContactInfo.cs" />
+    <Compile Include="CompanyStructure\TourStateBase.cs" />
+    <Compile Include="CreditSystemStructure\AutoJudgeCompany.cs" />
+    <Compile Include="CreditSystemStructure\RateConfig.cs" />
+    <Compile Include="CreditSystemStructure\RateScore.cs" />
+    <Compile Include="CreditSystemStructure\RateHoldUp.cs" />
+    <Compile Include="CreditSystemStructure\CreditLetter.cs" />
+    <Compile Include="EyouSoftApplication.cs" />
+    <Compile Include="HotelStructure\BNewHotel.cs" />
+    <Compile Include="HotelStructure\Hotel.cs" />
+    <Compile Include="HotelStructure\HotelOrder.cs" />
+    <Compile Include="HotelStructure\HotelTourCustoms.cs" />
+    <Compile Include="HotelStructure\HotelAccount.cs" />
+    <Compile Include="HotelStructure\HotelCity.cs" />
+    <Compile Include="HotelStructure\HotelCityAreas.cs" />
+    <Compile Include="HotelStructure\HotelLandMarks.cs" />
+    <Compile Include="HotelStructure\HotelLocalInfo.cs" />
+    <Compile Include="MQStructure\IMAcceptMsgPeople.cs" />
+    <Compile Include="MQStructure\IMCommendComapny.cs" />
+    <Compile Include="MQStructure\IMFriendList.cs" />
+    <Compile Include="MQStructure\IMGroupList.cs" />
+    <Compile Include="MQStructure\IMMember.cs" />
+    <Compile Include="MQStructure\IMMessage.cs" />
+    <Compile Include="MQStructure\IMMessageUrl.cs" />
+    <Compile Include="MQStructure\IMServiceMQ.cs" />
+    <Compile Include="MQStructure\IMSuperCluster.cs" />
+    <Compile Include="MQStructure\IMSuperClusterNews.cs" />
+    <Compile Include="NewsStructure\BPeerNews.cs" />
+    <Compile Include="NewsStructure\NewsPicInfo.cs" />
+    <Compile Include="NewsStructure\NewsType.cs" />
+    <Compile Include="NewsStructure\TagKeyInfo.cs" />
+    <Compile Include="NewsStructure\NewsBll.cs" />
+    <Compile Include="NewTourStructure\BPowderList.cs" />
+    <Compile Include="NewTourStructure\BRoute.cs" />
+    <Compile Include="NewTourStructure\BTourList.cs" />
+    <Compile Include="NewTourStructure\BTourOrder.cs" />
+    <Compile Include="OnLineServer\OLServer.cs" />
+    <Compile Include="OpenStructure\BCompany.cs" />
+    <Compile Include="OpenStructure\BException.cs" />
+    <Compile Include="OpenStructure\BUser.cs" />
+    <Compile Include="PoolStructure\Company.cs" />
+    <Compile Include="PoolStructure\FoundationData.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScenicStructure\BScenicArea.cs" />
+    <Compile Include="ScenicStructure\BScenicImg.cs" />
+    <Compile Include="ScenicStructure\BScenicTheme.cs" />
+    <Compile Include="ScenicStructure\BScenicTickets.cs" />
+    <Compile Include="ShopStructure\HighShopAdv.cs" />
+    <Compile Include="ShopStructure\HighShopCompanyInfo.cs" />
+    <Compile Include="ShopStructure\HighShopFriendLink.cs" />
+    <Compile Include="ShopStructure\HighShopList.cs" />
+    <Compile Include="ShopStructure\HighShopNews.cs" />
+    <Compile Include="ShopStructure\HighShopResource.cs" />
+    <Compile Include="ShopStructure\HighShopTripGuide.cs" />
+    <Compile Include="ShopStructure\RouteTeamCustomization.cs" />
+    <Compile Include="SMSStructure\Account.cs" />
+    <Compile Include="SMSStructure\Customer.cs" />
+    <Compile Include="SMSStructure\SendMessage.cs" />
+    <Compile Include="SMSStructure\Template.cs" />
+    <Compile Include="SyncStructure\SyncCompany.cs" />
+    <Compile Include="SyncStructure\SyncUser.cs" />
+    <Compile Include="SystemStructure\Affiche.cs" />
+    <Compile Include="SystemStructure\AfficheType.cs" />
+    <Compile Include="SystemStructure\BSysCountry.cs" />
+    <Compile Include="SystemStructure\BSystemLandMark.cs" />
+    <Compile Include="SystemStructure\CompanyAdv.cs" />
+    <Compile Include="SystemStructure\CompanyCityAd.cs" />
+    <Compile Include="SystemStructure\ExchangeAskPrice.cs" />
+    <Compile Include="CommunityStructure\ExchangeComment.cs" />
+    <Compile Include="SystemStructure\ExchangeTopicClass.cs" />
+    <Compile Include="CommunityStructure\SiteTopic.cs" />
+    <Compile Include="SystemStructure\ProductSuggestion.cs" />
+    <Compile Include="SystemStructure\SummaryCount.cs" />
+    <Compile Include="SystemStructure\SysApplyService.cs" />
+    <Compile Include="SystemStructure\SysArea.cs" />
+    <Compile Include="SystemStructure\SysCity.cs" />
+    <Compile Include="SystemStructure\SysCompanyDomain.cs" />
+    <Compile Include="SystemStructure\SysDistrictCounty.cs" />
+    <Compile Include="SystemStructure\SysField.cs" />
+    <Compile Include="SystemStructure\SysFriendLink.cs" />
+    <Compile Include="SystemStructure\SysIndexAdv.cs" />
+    <Compile Include="SystemStructure\SysOnlineUser.cs" />
+    <Compile Include="SystemStructure\SysPermission.cs" />
+    <Compile Include="SystemStructure\SysPermissionCategory.cs" />
+    <Compile Include="SystemStructure\SysPermissionClass.cs" />
+    <Compile Include="SystemStructure\SysProvince.cs" />
+    <Compile Include="SystemStructure\SystemConfig.cs" />
+    <Compile Include="SystemStructure\SystemInfo.cs" />
+    <Compile Include="SystemStructure\SystemUser.cs" />
+    <Compile Include="TestBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestBLL2.cs" />
+    <Compile Include="TicketStructure\BLogTicket.cs" />
+    <Compile Include="TicketStructure\FreightBuyLog.cs" />
+    <Compile Include="TicketStructure\FreightPackageInfo.cs" />
+    <Compile Include="TicketStructure\GroupTickets.cs" />
+    <Compile Include="TicketStructure\PassengerInformation.cs" />
+    <Compile Include="TicketStructure\SpecialFares.cs" />
+    <Compile Include="TicketStructure\TicketCompanyAccount.cs" />
+    <Compile Include="TicketStructure\TicketNationInfo.cs" />
+    <Compile Include="TicketStructure\TicketSupplierInfo.cs" />
+    <Compile Include="TicketStructure\TicketApply.cs" />
+    <Compile Include="TicketStructure\TicketFlightCompany.cs" />
+    <Compile Include="TicketStructure\TicketFreightInfo.cs" />
+    <Compile Include="TicketStructure\TicketOrder.cs" />
+    <Compile Include="TicketStructure\TicketSeattle.cs" />
+    <Compile Include="TicketStructure\TicketVisitor.cs" />
+    <Compile Include="ToolStructure\CompanyDayMemo.cs" />
+    <Compile Include="ToolStructure\CompanyFileUpload.cs" />
+    <Compile Include="ToolStructure\FundRegister.cs" />
+    <Compile Include="ToolStructure\MsgTipRecord.cs" />
+    <Compile Include="ToolStructure\Payments.cs" />
+    <Compile Include="ToolStructure\Receivables.cs" />
+    <Compile Include="ToolStructure\TrainPinyin.cs" />
+    <Compile Include="ToolStructure\TrainSchedule.cs" />
+    <Compile Include="TourStructure\CompanyContractSignet.cs" />
+    <Compile Include="TourStructure\RateOrder.cs" />
+    <Compile Include="TourStructure\RouteBasicInfo.cs" />
+    <Compile Include="TourStructure\Tour.cs" />
+    <Compile Include="TourStructure\TourOrder.cs" />
+    <Compile Include="TourStructure\TourOrderCustomer.cs" />
+    <Compile Include="VisaStructure\VisaBll.cs" />
+    <Compile Include="Web References\SMSStructure.SmsServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SMSStructure.TSmsServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SMSStructure.VoSmsServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EyouSoft.AOPHandler\EyouSoft.AOPHandler.csproj">
+      <Project>{406B8327-844E-4E8F-A042-E328713761B7}</Project>
+      <Name>EyouSoft.AOPHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.BackgroundServices\EyouSoft.BackgroundServices.csproj">
+      <Project>{1B911605-491C-43E0-BD08-841DF5128840}</Project>
+      <Name>EyouSoft.BackgroundServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.BLL.Interface\EyouSoft.IBLL.csproj">
+      <Project>{11EA2D95-0CFD-4979-84A0-D25CB0345EF1}</Project>
+      <Name>EyouSoft.IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Cache.Facade\EyouSoft.Cache.Facade.csproj">
+      <Project>{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}</Project>
+      <Name>EyouSoft.Cache.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Common\EyouSoft.Common.csproj">
+      <Project>{8F83F92A-AC73-4736-9449-EF69355C98B1}</Project>
+      <Name>EyouSoft.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Component.Factory\EyouSoft.Component.Factory.csproj">
+      <Project>{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}</Project>
+      <Name>EyouSoft.Component.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.DAL.Interface\EyouSoft.IDAL.csproj">
+      <Project>{D24B21F8-D812-435E-ADA6-1D528DBAD430}</Project>
+      <Name>EyouSoft.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.DAL\EyouSoft.DAL.csproj">
+      <Project>{FE024C5C-6B2B-4D8C-8773-DEE052A75659}</Project>
+      <Name>EyouSoft.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Exception.Facade\EyouSoft.Exception.Facade.csproj">
+      <Project>{FE710F51-E721-4229-8179-2BD7F665AB77}</Project>
+      <Name>EyouSoft.Exception.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.HotelBI\EyouSoft.HotelBI.csproj">
+      <Project>{BE25C6F7-5868-4995-90CB-C92059977EEC}</Project>
+      <Name>EyouSoft.HotelBI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Model\EyouSoft.Model.csproj">
+      <Project>{48EBFFCD-8A6D-48DE-ABED-5659DA8547EA}</Project>
+      <Name>EyouSoft.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.OpenRelation.Model\EyouSoft.OpenRelation.Model.csproj">
+      <Project>{8C5F553B-DBAD-48B2-AEF6-6EEA2ED3A4D9}</Project>
+      <Name>EyouSoft.OpenRelation.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Oracle.DAL\EyouSoft.Oracle.DAL.csproj">
+      <Project>{118BB714-2083-49FD-B305-F10F10D86281}</Project>
+      <Name>EyouSoft.Oracle.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SMSStructure.SmsServices\smsws.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.1.254:30010/SMSWS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SMSStructure.TSmsServices\</RelPath>
+      <UpdateFromURL>http://192.168.1.254:30010/SMSWS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>EyouSoft_BLL_SMSStructure_TSmsServices_SMSWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://smc.myvo.cn/SMSWebService/Service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SMSStructure.VoSmsServices\</RelPath>
+      <UpdateFromURL>http://smc.myvo.cn/SMSWebService/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://vip.mston.com/smsapi/smsws.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SMSStructure.SmsServices\</RelPath>
+      <UpdateFromURL>http://vip.mston.com/smsapi/smsws.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>EyouSoft_BLL_SMSStructure_SmsServices_SMSWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\SMSStructure.SmsServices\ExCommandResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SMSStructure.SmsServices\GetPropertyResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SMSStructure.SmsServices\RecvResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SMSStructure.SmsServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SMSStructure.SmsServices\SendResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SMSStructure.SmsServices\SetPropertyResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SMSStructure.SmsServices\smsws.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\SMSStructure.TSmsServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SMSStructure.TSmsServices\SendResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SMSStructure.TSmsServices\SMSWS.disco" />
+    <None Include="Web References\SMSStructure.TSmsServices\SMSWS.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\SMSStructure.VoSmsServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SMSStructure.VoSmsServices\Service.disco" />
+    <None Include="Web References\SMSStructure.VoSmsServices\Service.wsdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

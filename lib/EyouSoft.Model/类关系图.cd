@@ -1,0 +1,1411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EyouSoft.Model.CompanyStructure.BankAccount" Collapsed="true">
+    <Position X="37.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAIAAAAAAAAAAAAAAAgAAACAABAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\BankAccount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CommonPriceStand" Collapsed="true">
+    <Position X="42.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAgAAAAAAAAACA=</HashCode>
+      <FileName>CompanyStructure\CommonPriceStand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CommonPriceStandAdd" Collapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAYAgAAAAAAAAAAAAAAAAAAAAIAAAAAAACA=</HashCode>
+      <FileName>CompanyStructure\CommonPriceStandAdd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyAffiche" Collapsed="true">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABAAAAAAAYAgAAAABAIAAAAAAAAABAAAkAIAACAAoA=</HashCode>
+      <FileName>CompanyStructure\CompanyAffiche.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyAreaSetting" Collapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAABBAAAAAAAAAgQAAAAAIAEAAAAAEAA=</HashCode>
+      <FileName>CompanyStructure\CompanyAreaSetting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.AttachImageBase" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAIAAAAAAAQAAEAACAAAAAAQ=</HashCode>
+      <FileName>CompanyStructure\CompanyAttachInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyImg" Collapsed="true">
+    <Position X="1" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyAttachInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyLogo" Collapsed="true">
+    <Position X="4.25" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyAttachInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyAttachInfo" Collapsed="true">
+    <Position X="32.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAIAAAAIAQAAAAQAAAAAAAAAAAIAAAAABAAAEAFA=</HashCode>
+      <FileName>CompanyStructure\CompanyAttachInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.BusinessCertif" Collapsed="true">
+    <Position X="39.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAhAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyAttachInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CardInfo" Collapsed="true">
+    <Position X="7.5" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyAttachInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.ProductInfo" Collapsed="true">
+    <Position X="10.75" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyAttachInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyDepartment" Collapsed="true">
+    <Position X="37.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAgAAAAAAAAAAEAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyDepartment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyFavor" Collapsed="true">
+    <Position X="39.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyFavor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.Company" Collapsed="true">
+    <Position X="4" Y="13.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyInfo" Collapsed="true">
+    <Position X="4" Y="14.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAABAgAACBAAAIAHAAIAAAAAAAAAAAAAAgAACQA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyBasicInfo" Collapsed="true">
+    <Position X="2.5" Y="16.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyArchiveInfo" Collapsed="true">
+    <Position X="0.75" Y="17.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAACAAgAAAAAAAAQAAgAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyState" Collapsed="true">
+    <Position X="0.5" Y="20.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAADQAAACAAAAEAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyStateMore" Collapsed="true">
+    <Position X="0.5" Y="21.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAEAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyServiceItem" Collapsed="true">
+    <Position X="28.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyService" Collapsed="true">
+    <Position X="27" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAACADAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyDetailInfo" Collapsed="true">
+    <Position X="0.75" Y="19" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyTag" Collapsed="true">
+    <Position X="21.75" Y="13.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.SupplierInfo" Collapsed="true">
+    <Position X="7.25" Y="16.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AUAAAAAAQAAAAgAACAAACAgAAAAAAAAAAAAAFIAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyRole" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAADAAAAABAAAAAAAAAAAACIAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.QueryParamsAllCompany" Collapsed="true">
+    <Position X="4.5" Y="22.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAEAAAAAAQAABAAAAAAAAAAAAAAAAAAAAAAAAAEAIA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.QueryParamsCompany" Collapsed="true">
+    <Position X="4.5" Y="20.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.QueryParamsStockCompany" Collapsed="true">
+    <Position X="39.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.QueryParamsCompanyBase" Collapsed="true">
+    <Position X="4.5" Y="19.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAABAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyPriceStand" Collapsed="true">
+    <Position X="42.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAgAABAAAAAAAAAAAAAAAAAAAAAAAAQCA=</HashCode>
+      <FileName>CompanyStructure\CompanyPriceStand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyUserRoles" Collapsed="true">
+    <Position X="32.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAZAgAAAAAAAAAAAAAAAAAAAAEAAEACAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyRoles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanySetting" Collapsed="true">
+    <Position X="30.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIIAAAAAAAAAAAAAAAIAAAAgAAAAgIAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanySetting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.ContactPersonInfo" Collapsed="true">
+    <Position X="34" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCAAgAAAAAAgAAAAAAAABQCAAAEQAAAAQAA=</HashCode>
+      <FileName>CompanyStructure\CompanyUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.UserAccount" Collapsed="true">
+    <Position X="18.5" Y="15.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAABAAAAAAAAgAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyUserBase" Collapsed="true">
+    <Position X="18.5" Y="16.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAIAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.CompanyUser" Collapsed="true">
+    <Position X="18.5" Y="18.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAIBAAAACAAAAAEAAAAECIAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.PassWord" Collapsed="true">
+    <Position X="32.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAABgAAAAAAAQQAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.MyCustomer" Collapsed="true">
+    <Position X="41" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAIAgAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>CompanyStructure\MyCustomerList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.ServiceStandard" Collapsed="true">
+    <Position X="41" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgIAgAAAAAAAAAAAAAAAAAAgAAAAAACAAAA=</HashCode>
+      <FileName>CompanyStructure\ServiceStandard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.TendCompanyInfo" Collapsed="true">
+    <Position X="4" Y="17.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAgAAAAAEAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\TendCompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.TourContactInfo" Collapsed="true">
+    <Position X="39.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAIAAAAIAgAAAAAAgAAAAAAAAAAAAAQAAAQAAAAA=</HashCode>
+      <FileName>CompanyStructure\TourContactInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CompanyStructure.TourStateBase" Collapsed="true">
+    <Position X="30.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAgAAAAAAAAAAAACAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\TourStateBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CreditSystemStructure.AutoJudgeCompany" Collapsed="true">
+    <Position X="34" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>CreditSystemStructure\AutoJudgeCompany.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CreditSystemStructure.CreditLetter" Collapsed="true">
+    <Position X="35.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACQAAQACYAABAAAAAgMAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>CreditSystemStructure\CreditLetter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CreditSystemStructure.RateCertificate" Collapsed="true">
+    <Position X="41" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIAQIAAIAAAAAAAAAAgAAEAAAQQIAAAAAgAAAAIAAAA=</HashCode>
+      <FileName>CreditSystemStructure\RateCertificate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CreditSystemStructure.RateConfig" Collapsed="true">
+    <Position X="42.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIAAAAQAAQAMAAIAAAAAAACAAAAAMAACIGAAAAA=</HashCode>
+      <FileName>CreditSystemStructure\RateConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CreditSystemStructure.RateCreditDetail" Collapsed="true">
+    <Position X="16.5" Y="20.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAQEAACAQCICAAAIAABAOAAAAEAAABACAAEBA=</HashCode>
+      <FileName>CreditSystemStructure\RateCreditDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CreditSystemStructure.RateDetailTotal" Collapsed="true">
+    <Position X="12.5" Y="20.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQAEIAAAAAAAAAACAAAAAAAAEAAAAAAAAAACACAAAAA=</HashCode>
+      <FileName>CreditSystemStructure\RateDetailTotal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CreditSystemStructure.RateHoldUp" Collapsed="true">
+    <Position X="25.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACgAAAAAQAAAAAAAAAAAAAAAAAAAAAAAIAAGAAABA=</HashCode>
+      <FileName>CreditSystemStructure\RateHoldUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CreditSystemStructure.RateJudgeLevelCount" Collapsed="true">
+    <Position X="16.5" Y="19.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAABAAAAAAAAACAAAAAAAAAAIAAAAAQAAAAAAAg=</HashCode>
+      <FileName>CreditSystemStructure\RateJudgeLevelCount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.CreditSystemStructure.RateScore" Collapsed="true">
+    <Position X="12.5" Y="19.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>TAAAACAAAAIAAAAAAQAAAAAAAAAAAAACAAEAAAABCAA=</HashCode>
+      <FileName>CreditSystemStructure\RateScore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.MQStructure.IMAcceptMsgPeople" Collapsed="true">
+    <Position X="42.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAIcAgAAAAABAAAAAAAAAABAAAIEAAAAAAEg=</HashCode>
+      <FileName>MQStructure\IMAcceptMsgPeople.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.MQStructure.IMCommendComapny" Collapsed="true">
+    <Position X="25.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQEFABIcAEAAABgBIAAAAACAECAAAAIEACAAAEAA=</HashCode>
+      <FileName>MQStructure\IMCommendComapny.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.MQStructure.IMFriendList" Collapsed="true">
+    <Position X="27" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQUAAgAAAAAAAAAABACEAAAAAAAAAAAQAAE=</HashCode>
+      <FileName>MQStructure\IMFriendList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.MQStructure.IMGroupList" Collapsed="true">
+    <Position X="28.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAIgAAAAAAAAAAAAAAAAAAAACAAE=</HashCode>
+      <FileName>MQStructure\IMGroupList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.MQStructure.IMMember" Collapsed="true">
+    <Position X="30.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAgAQAAAgCQAAAACBEgAAAAAAAAABAAEEAAAAEAAA=</HashCode>
+      <FileName>MQStructure\IMMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.MQStructure.IMMessage" Collapsed="true">
+    <Position X="32.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCAAAcAAAAAAIAIAAAABAAAAgAAEAACAAAAACA=</HashCode>
+      <FileName>MQStructure\IMMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.MQStructure.OneToOneMessageInfo" Collapsed="true">
+    <Position X="28.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAgAA=</HashCode>
+      <FileName>MQStructure\IMMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.MQStructure.OneToManyUnspecifiedMQMessageInfo" Collapsed="true">
+    <Position X="27" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAABAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAABgAA=</HashCode>
+      <FileName>MQStructure\IMMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.MQStructure.OneToManySpecifiedMQMessageInfo" Collapsed="true">
+    <Position X="25.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>MQStructure\IMMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.MQStructure.OneToManySpecifiedMQMessageAccepMQInfo" Collapsed="true">
+    <Position X="42.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgAABAQAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MQStructure\IMMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.MQStructure.IMMessageUrl" Collapsed="true">
+    <Position X="34" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAUAkAAgAgBAAAAABBAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MQStructure\IMMessageUrl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.MQStructure.IMServiceMQ" Collapsed="true">
+    <Position X="35.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAQCAAQAAiAAAAABAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>MQStructure\IMServiceMQ.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.ShopStructure.HighShopAdv" Collapsed="true">
+    <Position X="30.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgYAgAAAAAAAAICAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ShopStructure\HighShopAdv.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.ShopStructure.HighShopCompanyInfo" Collapsed="true">
+    <Position X="32.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAIAAAAAAAAAAAAAAAAAAABAAAAAAAAEAAA=</HashCode>
+      <FileName>ShopStructure\HighShopCompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.ShopStructure.HighShopFriendLink" Collapsed="true">
+    <Position X="34" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABgYAgAAAAAAAAACAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ShopStructure\HighShopFriendLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.ShopStructure.HighShopList" Collapsed="true">
+    <Position X="35.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAQEAFJAJAiAAAAAAAIACAAAiAABAAACAAAACAAQI=</HashCode>
+      <FileName>ShopStructure\HighShopList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.ShopStructure.HighShopNews" Collapsed="true">
+    <Position X="37.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAYAgkAAAAACAAAAAAAAAAAgAgAAAACAAAA=</HashCode>
+      <FileName>ShopStructure\HighShopNews.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.ShopStructure.HighShopResource" Collapsed="true">
+    <Position X="39.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAYAgkAAAAACAIAAAAAAAAAAAgAAAACAAAA=</HashCode>
+      <FileName>ShopStructure\HighShopResource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.ShopStructure.HighShopTripGuide" Collapsed="true">
+    <Position X="41" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAYAgkAAAAACAIAAAAAAAAAgAgAAAACAAAA=</HashCode>
+      <FileName>ShopStructure\HighShopTripGuide.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.ShopStructure.ProductSuggestion" Collapsed="true">
+    <Position X="35.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAQAAQAAYAggAAAAAgAAAAAAAAAAAgAAEQAAAAAAA=</HashCode>
+      <FileName>ShopStructure\ProductSuggestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SMSStructure.AccountInfo" Collapsed="true">
+    <Position X="8.5" Y="19.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAYAAAAAAgAAAAAAAAAAgQAAAAAAAAAAAAA=</HashCode>
+      <FileName>SMSStructure\AccountInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SMSStructure.AccountDetailInfo" Collapsed="true">
+    <Position X="8.5" Y="20.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAABAQAAiAAAAAAgAAAAAAAAAACAAAEAAAAAAAA=</HashCode>
+      <FileName>SMSStructure\AccountInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SMSStructure.AccountExpenseCollectInfo" Collapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>SMSStructure\AccountInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SMSStructure.CustomerCategoryInfo" Collapsed="true">
+    <Position X="37.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAYAAgAAAAAAAAgAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SMSStructure\CustomerCategoryInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SMSStructure.CustomerInfo" Collapsed="true">
+    <Position X="39.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAYAAgAAAAAAAAgAACAAABCAAAAAAAAAASA=</HashCode>
+      <FileName>SMSStructure\CustomerInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SMSStructure.PayMoneyInfo" Collapsed="true">
+    <Position X="34" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAQAAAACIAAAACAAgAIAwAAACAAAgIAAMAAAIAAAQ=</HashCode>
+      <FileName>SMSStructure\PayMoneyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SMSStructure.SendDetailInfo" Collapsed="true">
+    <Position X="34" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAQAAAAAAYAAAAAABAAABgAEgAAAACAAgAAoAAgAAA=</HashCode>
+      <FileName>SMSStructure\SendDetailInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SMSStructure.SendMessageInfo" Collapsed="true">
+    <Position X="35.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAQQAAAAAICAAAAAAAAABgAAAAAAAAAAgAAAAIgFAA=</HashCode>
+      <FileName>SMSStructure\SendMessageInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SMSStructure.SendResultInfo" Collapsed="true">
+    <Position X="37.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAAAABAAVAACCAAMBIAAAAIghQKoQAAAAAgAAAAEAA=</HashCode>
+      <FileName>SMSStructure\SendMessageInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SMSStructure.SendTotalInfo" Collapsed="true">
+    <Position X="39.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAQAAAABYACAQAAAAAABgAAAAAAAAAAgAAAAAgAAA=</HashCode>
+      <FileName>SMSStructure\SendTotalInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SMSStructure.TemplateCategoryInfo" Collapsed="true">
+    <Position X="30.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAYAAgAAAAAAAAgAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SMSStructure\TemplateCategoryInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SMSStructure.TemplateInfo" Collapsed="true">
+    <Position X="32.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgYAAgAAAAAAAAgAACAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>SMSStructure\TemplateInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.SSOComponent.Entity.MasterUserInfo" Collapsed="true">
+    <Position X="39.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAAAQIAAAkAAAAAAgAAAAAAAAAAAAIUAAAAAAAAA=</HashCode>
+      <FileName>SSOEntity\MasterUserInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.SSOComponent.Entity.UserInfo" Collapsed="true">
+    <Position X="34" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAABIAIAiAAAAIEAAAIECAAABgAAIUAAAAAAAAA=</HashCode>
+      <FileName>SSOEntity\UserInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.SSOComponent.Entity.LocalUserInfo" Collapsed="true">
+    <Position X="37.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>SSOEntity\UserInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.SSOComponent.Entity.DecryptLoginTicket" Collapsed="true">
+    <Position X="41" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>SSOEntity\UserInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.Affiche" Collapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABAAAAAAAQAgAAAABAAAAAAAAAAABAAAEAIAACAAgA=</HashCode>
+      <FileName>SystemStructure\Affiche.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.CompanyAdv" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAgAAgQAgAAABAAIAAIBAAAAAAgAALAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\CompanyAdv.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.CompanyCityAd" Collapsed="true">
+    <Position X="34" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAABAAIAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\CompanyCityAd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.ExchangeAskPrice" Collapsed="true">
+    <Position X="42.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAgAAAAAAAAAgAAAAgAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\ExchangeAskPrice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.ExchangeComment" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAABAYAgAAAAAAIAAAIAAAAAAAgIIAAAQAAABA=</HashCode>
+      <FileName>SystemStructure\ExchangeComment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.ExchangeList" Collapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAAAIQAAAQApCACEBAAAAAAAAAAAABAAgACAgCAAAA=</HashCode>
+      <FileName>SystemStructure\ExchangeList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.ExchangeTopicClass" Collapsed="true">
+    <Position X="28.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAgAAAAAAACAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>SystemStructure\ExchangeTopicClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.RouteType" Collapsed="true">
+    <Position X="32.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAABAABAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\RouteType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SummaryCount" Collapsed="true">
+    <Position X="25.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUABAEAAQCQAAAABAECAAAAAAFGAAAAAABAAAAAAYCA=</HashCode>
+      <FileName>SystemStructure\SummaryCount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.AreaBase" Collapsed="true">
+    <Position X="15" Y="9.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAECAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysArea" Collapsed="true">
+    <Position X="15" Y="10.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysAreaContact" Collapsed="true">
+    <Position X="27" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAQAAAAgAAAABAgAAAAAAAABAAAAAEQAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysAreaContact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysAreaSiteControl" Collapsed="true">
+    <Position X="18.25" Y="10.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysAreaSiteControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.CityBase" Collapsed="true">
+    <Position X="5.75" Y="10.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysCity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysCity" Collapsed="true">
+    <Position X="4" Y="12.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAEAAIAIAIAACCAAAAQCAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysCity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SiteAreaInfo" Collapsed="true">
+    <Position X="7.25" Y="12.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysCity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SiteAreaList" Collapsed="true">
+    <Position X="42.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>SystemStructure\SysCity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysCityArea" Collapsed="true">
+    <Position X="11.75" Y="10.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysCityAreaControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysCityAreaControl" Collapsed="true">
+    <Position X="11.75" Y="12.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABIAAACAAAAAAAAICAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysCityAreaControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysCompanyDomain" Collapsed="true">
+    <Position X="28.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAQIAAgAcAgAAAAABAAAAAAgAEAAFAAiEAAAAAAIA=</HashCode>
+      <FileName>SystemStructure\SysCompanyDomain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysFieldBase" Collapsed="true">
+    <Position X="20.25" Y="12.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysField" Collapsed="true">
+    <Position X="18.5" Y="13.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQBAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysFriendLink" Collapsed="true">
+    <Position X="30.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAQAAABCUAgAAAAABAAAKAAAAAAAAAAQAIIIAAAAA=</HashCode>
+      <FileName>SystemStructure\SysFriendLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysIndexAdv" Collapsed="true">
+    <Position X="32.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEgQAgAAAAAAgBAIAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysIndexAdv.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysOnlineUser" Collapsed="true">
+    <Position X="34" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAKAgAAAAABAAAgAAAAAAAAIAAEAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysOnlineUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysPermission" Collapsed="true">
+    <Position X="35.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgAgAAAgCAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysPermission.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysPermissionCategory" Collapsed="true">
+    <Position X="37.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAAAAAAAAEAAAAAACAAAAAgAAAAEAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysPermissionCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysPermissionClass" Collapsed="true">
+    <Position X="39.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgCAAgAAAAEAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysPermissionClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.ProvinceBase" Collapsed="true">
+    <Position X="4" Y="9.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysProvince.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.ProvinceSiteList" Collapsed="true">
+    <Position X="0.5" Y="12.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>SystemStructure\SysProvince.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.ProvinceSiteAreaList" Collapsed="true">
+    <Position X="0.5" Y="13.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysProvince.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.ProvinceCityList" Collapsed="true">
+    <Position X="37.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAABAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysProvince.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysProvince" Collapsed="true">
+    <Position X="0.75" Y="10.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAQAAAAIAQAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysProvince.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SystemConfig" Collapsed="true">
+    <Position X="41" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAEAAhQAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SystemConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SystemDomain" Collapsed="true">
+    <Position X="42.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAIAgAAAAABAAAAIAAgQAABAAiEgAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SystemDomain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SystemInfo" Collapsed="true">
+    <Position X="25.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQAAAwABAA4hoEAARgAgCCAAAABgCAkgEAAAQAAAA=</HashCode>
+      <FileName>SystemStructure\SystemInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SystemUser" Collapsed="true">
+    <Position X="27" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgQAAgAwAAUAkAAAAABgAgAAIAAAEAAAMUIAAAgAEAA=</HashCode>
+      <FileName>SystemStructure\SystemUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.SystemStructure.SysUserAreaControl" Collapsed="true">
+    <Position X="28.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAABAAAgAAAAAAAAIIAAAAAAAEAA=</HashCode>
+      <FileName>SystemStructure\SysUserAreaControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TestModel" Collapsed="true">
+    <Position X="35.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TestModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.ToolStructure.CompanyDayMemo" Collapsed="true">
+    <Position X="35.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAYAgAAAEAAIAAAAIAAAAIAAAIAAAAAAAAA=</HashCode>
+      <FileName>ToolStructure\CompanyDayMemo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.ToolStructure.CompanyFileUpload" Collapsed="true">
+    <Position X="41" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAYAAABAAAAAQAAAAAAAAAAAAoBAAAJAAAA=</HashCode>
+      <FileName>ToolStructure\CompanyFileUpload.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.RateOrder" Collapsed="true">
+    <Position X="27" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>XwIAAAAGAMWAqCIAIABAwAAABAAACgAGCDAMgggEBgA=</HashCode>
+      <FileName>TourStructure\RateOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.RouteObject" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAgAAAAAAAAAAAAAAAAAAAAAAAAIBAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\RouteBasicInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.RouteBasicInfo" Collapsed="true">
+    <Position X="1" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAQAgAAAYAgAABGAIwCAAAACEAAAAgAQAAAJCACAI=</HashCode>
+      <FileName>TourStructure\RouteBasicInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.WholesalerWaitAcceptRouteInfo" Collapsed="true">
+    <Position X="1" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\RouteBasicInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.RoutePriceDetail" Collapsed="true">
+    <Position X="21.75" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\RouteBasicPriceDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.RoutePriceCustomerLeaveDetail" Collapsed="true">
+    <Position X="14.75" Y="17.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\RouteBasicPriceDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.PriceDetail" Collapsed="true">
+    <Position X="20.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>TourStructure\RouteBasicPriceDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.PriceCustomerLeaveDetail" Collapsed="true">
+    <Position X="13.25" Y="16.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAAAAAgAAEAAAA=</HashCode>
+      <FileName>TourStructure\RouteBasicPriceDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.RouteSendList" Collapsed="true">
+    <Position X="30.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAQAgAAAEAAAAAAAgAgAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\RouteSendList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.ServiceStandard" Collapsed="true">
+    <Position X="16.25" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAkAAAAAAAAAAAAAAAIAAAAGAQIAAEAAAAAAA=</HashCode>
+      <FileName>TourStructure\RouteServiceStandard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.RouteServiceStandard" Collapsed="true">
+    <Position X="14.5" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\RouteServiceStandard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourServiceStandard" Collapsed="true">
+    <Position X="17.75" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>TourStructure\RouteServiceStandard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.RouteStandardPlan" Collapsed="true">
+    <Position X="14.75" Y="14.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\RouteStandardPlan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourStandardPlan" Collapsed="true">
+    <Position X="11.5" Y="14.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>TourStructure\RouteStandardPlan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.StandardPlan" Collapsed="true">
+    <Position X="13.25" Y="13.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAEAAAAAAABCAQAAAAAAIAACAACAA=</HashCode>
+      <FileName>TourStructure\RouteStandardPlan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourAttachInfo" Collapsed="true">
+    <Position X="37.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAIIUAgAQAQABAAAAAAAAAACAAAAAEAADAIAA=</HashCode>
+      <FileName>TourStructure\TourAttachInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourObject" Collapsed="true">
+    <Position X="9.25" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAEAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourBasicInfo" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAYApGACdIkgQAIAoADABgABEAABAAAAgAQBaAAhQ=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourInfo" Collapsed="true">
+    <Position X="10.75" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAQABAAgAQCAA1AABAACAQAAAgAQBAAQAAAAg=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.AutoTourCodeInfo" Collapsed="true">
+    <Position X="35.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.ChildrenTourInfo" Collapsed="true">
+    <Position X="41" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACAAAgAAACgAAAAAADAAABAAAAAEAAAAABA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TemplateTourInfo" Collapsed="true">
+    <Position X="34" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAEAAAQAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourVisitInfo" Collapsed="true">
+    <Position X="32.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAABBAAAAAkCIAAAIAAAAAEAAEACEAAgAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.AreaStatInfo" Collapsed="true">
+    <Position X="30.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.HavingOrderTourInfo" Collapsed="true">
+    <Position X="4.25" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAEAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.AreaTypeStatInfo" Collapsed="true">
+    <Position X="32.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAACAAAAAAAAAAAAAAAAAIIAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourStatByOrderInfo" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAICAIACAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.VisitedHistoryStatInfo" Collapsed="true">
+    <Position X="35.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAACIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourSearchInfo" Collapsed="true">
+    <Position X="28.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAgAQAABAAIBAAAAAAAAEAAAAAAAAAAAIBCABAAAAAE=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourLocalityInfo" Collapsed="true">
+    <Position X="41" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgASAAAAAAQAAAAAAAAAEAAAAAAAAAAAAIAEAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourLocalityInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourMessage" Collapsed="true">
+    <Position X="42.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAgUAgCACAABABAAIAAAAAAAAAAAEAAgAAAA=</HashCode>
+      <FileName>TourStructure\TourMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourOrder" Collapsed="true">
+    <Position X="14" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>c4OEoIAlEIdgwCDwIgBshBaQAAiQmBB00BM0waCBQAM=</HashCode>
+      <FileName>TourStructure\TourOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.OrderStatistics" Collapsed="true">
+    <Position X="30.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAASBAgQAJAAAAAAIAkAAAAABAEgAQAEAEBAABAAgA=</HashCode>
+      <FileName>TourStructure\TourOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.RetailLoginStatistics" Collapsed="true">
+    <Position X="28.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAQAAAIAAAAAAAEAAAAAAAAEQAAAEAEAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.WholesalersStatistics" Collapsed="true">
+    <Position X="37.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAISAQAQANCAQAAAAQAAAAAAJAEAAQAEAEAAAAAAgA=</HashCode>
+      <FileName>TourStructure\TourOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.AreaAndOrderNum" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAICABAIAAAEAAAAAAAAAAAABAAAAAAIAACAAAAAgA=</HashCode>
+      <FileName>TourStructure\TourOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourOrderCustomer" Collapsed="true">
+    <Position X="25.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAACQBAAABcAhgEAGABACAAABQAEAAAAERcEEBEABQA=</HashCode>
+      <FileName>TourStructure\TourOrderCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourOrderFinance" Collapsed="true">
+    <Position X="27" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MwMCAAAAAAYAAAAAACAoAAIAAAAACAAAABIEAACAAAI=</HashCode>
+      <FileName>TourStructure\TourOrderFinance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourPriceDetail" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourPriceDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EyouSoft.Model.TourStructure.TourPriceCustomerLeaveDetail" Collapsed="true">
+    <Position X="11.5" Y="17.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourPriceDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="EyouSoft.Model.CompanyStructure.BankAccountType" Collapsed="true">
+    <Position X="28.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\BankAccount.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.CompanyStructure.CommPriceTypeID" Collapsed="true">
+    <Position X="34" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAgAgAEQAAAEAAAA=</HashCode>
+      <FileName>CompanyStructure\CommonPriceStand.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.CompanyStructure.CompanyAfficheType" Collapsed="true">
+    <Position X="35.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAQEABAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyAffiche.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.CompanyStructure.SysService" Collapsed="true">
+    <Position X="28.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAQAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.CompanyStructure.QueryCityType" Collapsed="true">
+    <Position X="34" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAABAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.CompanyStructure.CompanyType" Collapsed="true">
+    <Position X="37.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAACAAAgAAgAAAEAAACAAAIAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.CompanyStructure.BusinessProperties" Collapsed="true">
+    <Position X="30.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAACAAAgAAgAIAAAAACAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.CompanyStructure.MenuSection" Collapsed="true">
+    <Position X="28.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanySetting.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.CompanyStructure.Sex" Collapsed="true">
+    <Position X="42.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAIAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CompanyUser.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.CompanyStructure.CustomerLevelType" Collapsed="true">
+    <Position X="39.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAQAAAAAAAAAAAQAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>CompanyStructure\CustomerLevelType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.CompanyStructure.ServiceTypes" Collapsed="true">
+    <Position X="41" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAACAEAAAEAAAAAAAAAAAAEFQAAAAQAA=</HashCode>
+      <FileName>CompanyStructure\ServiceStandard.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.SMSStructure.SMSNoType" Collapsed="true">
+    <Position X="25.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SMSStructure\SendMessageInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.SSOComponent.Entity.PasswordType" Collapsed="true">
+    <Position X="32.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SSOEntity\UserInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.SystemStructure.AfficheType" Collapsed="true">
+    <Position X="25.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAAAAAAACAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\Affiche.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.SystemStructure.AreaType" Collapsed="true">
+    <Position X="27" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysArea.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.SystemStructure.DomainType" Collapsed="true">
+    <Position X="41" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQCAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysCompanyDomain.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.SystemStructure.SysFieldType" Collapsed="true">
+    <Position X="27" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAQAAAAAAAAAAEAAAAAAAAAAAAAAEAQ=</HashCode>
+      <FileName>SystemStructure\SysField.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.SystemStructure.FriendLinkType" Collapsed="true">
+    <Position X="25.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAoAAAAAAEAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemStructure\SysFriendLink.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.ResultStructure.ResultInfo" Collapsed="true">
+    <Position X="37.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAEAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>SystemStructure\ResultInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.ResultStructure.CheckState" Collapsed="true">
+    <Position X="32.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>SystemStructure\ResultInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.ToolStructure.MemoDetailType.UrgentType" Collapsed="true">
+    <Position X="41" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ToolStructure\CompanyDayMemo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.ToolStructure.MemoDetailType.MemoState" Collapsed="true">
+    <Position X="27" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAIAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ToolStructure\CompanyDayMemo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.ToolStructure.CompanyFileType.FileType" Collapsed="true">
+    <Position X="42.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAA=</HashCode>
+      <FileName>ToolStructure\CompanyFileUpload.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TourStructure.ReleaseType" Collapsed="true">
+    <Position X="35.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TourStructure.TourState" Collapsed="true">
+    <Position X="37.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAACAAAAAAAAAAAAAAQAABAAAQAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TourStructure.SearchTourState" Collapsed="true">
+    <Position X="39.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAACAAAAAAAAAAAAAAAAAAAAAABAAAAAAEAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TourStructure.TourType" Collapsed="true">
+    <Position X="39.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TourStructure.TourSpreadState" Collapsed="true">
+    <Position X="35.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAAAAAQAAAAAAAAAgAAAAAAAAAAAAAAAAAEAAAg=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TourStructure.TourDisplayType" Collapsed="true">
+    <Position X="30.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TourStructure.TourSearchType" Collapsed="true">
+    <Position X="34" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAQAAAAAQAAAAAAEAAAAAAAAAAAAABAEAAAA=</HashCode>
+      <FileName>TourStructure\TourInfo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TourStructure.OrderState" Collapsed="true">
+    <Position X="30.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAEAAAACQAAAAAIAQA=</HashCode>
+      <FileName>TourStructure\TourOrder.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EyouSoft.Model.TourStructure.TourOrderOperateType" Collapsed="true">
+    <Position X="32.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TourStructure\TourOrder.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

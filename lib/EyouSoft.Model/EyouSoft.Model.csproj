@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48EBFFCD-8A6D-48DE-ABED-5659DA8547EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EyouSoft.Model</RootNamespace>
+    <AssemblyName>EyouSoft.Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\EyouSoft.Model.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\EyouSoft.Model.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvStructure\AdvInfo.cs" />
+    <Compile Include="AdvStructure\ExtendProductInfo.cs" />
+    <Compile Include="CommunityStructure\MarketingCompany.cs" />
+    <Compile Include="AdvStructure\SiteExtendInfo.cs" />
+    <Compile Include="CommunityStructure\CommunityAdvisor.cs" />
+    <Compile Include="CommunityStructure\ExchangeFavor.cs" />
+    <Compile Include="CommunityStructure\ExchangeList.cs" />
+    <Compile Include="CommunityStructure\ExchangeVisited.cs" />
+    <Compile Include="CommunityStructure\InfoArticle.cs" />
+    <Compile Include="CommunityStructure\MQQGroupMessageInfo.cs" />
+    <Compile Include="CommunityStructure\MSupplyDemandBase.cs" />
+    <Compile Include="CommunityStructure\Remind.cs" />
+    <Compile Include="CommunityStructure\RemindSource.cs" />
+    <Compile Include="CompanyStructure\BankAccount.cs" />
+    <Compile Include="CompanyStructure\CommonPriceStand.cs" />
+    <Compile Include="CompanyStructure\CommonPriceStandAdd.cs" />
+    <Compile Include="CompanyStructure\CompanyAffiche.cs" />
+    <Compile Include="CompanyStructure\CompanyAttachInfo.cs" />
+    <Compile Include="CompanyStructure\CompanyDepartment.cs" />
+    <Compile Include="CompanyStructure\CompanyFavor.cs" />
+    <Compile Include="CompanyStructure\CompanyInfo.cs" />
+    <Compile Include="CompanyStructure\CompanyPriceStand.cs" />
+    <Compile Include="CompanyStructure\CompanyRoles.cs" />
+    <Compile Include="CompanyStructure\CompanySetting.cs" />
+    <Compile Include="CompanyStructure\CompanyUser.cs" />
+    <Compile Include="CompanyStructure\CompanyUserAreaControl.cs" />
+    <Compile Include="CompanyStructure\CustomerLevelType.cs" />
+    <Compile Include="CompanyStructure\MyCustomerList.cs" />
+    <Compile Include="CompanyStructure\ServiceStandard.cs" />
+    <Compile Include="CommunityStructure\HonoredGuest.cs" />
+    <Compile Include="CommunityStructure\SiteTopic.cs" />
+    <Compile Include="CompanyStructure\TendCompanyInfo.cs" />
+    <Compile Include="CompanyStructure\CompanyAreaSetting.cs" />
+    <Compile Include="CompanyStructure\TourContactInfo.cs" />
+    <Compile Include="CompanyStructure\TourStateBase.cs" />
+    <Compile Include="CreditSystemStructure\CreditLetter.cs" />
+    <Compile Include="HotelStructure\HotelAccount.cs" />
+    <Compile Include="HotelStructure\HotelCity.cs" />
+    <Compile Include="HotelStructure\HotelCityAreas.cs" />
+    <Compile Include="HotelStructure\HotelInfo.cs" />
+    <Compile Include="HotelStructure\HotelLandMarks.cs" />
+    <Compile Include="HotelStructure\HotelTourCustoms.cs" />
+    <Compile Include="HotelStructure\HotelLocalInfo.cs" />
+    <Compile Include="HotelStructure\MNewHotelInfo.cs" />
+    <Compile Include="HotelStructure\OrderInfo.cs" />
+    <Compile Include="MQStructure\IMSuperCluster.cs" />
+    <Compile Include="MQStructure\IMSuperClusterNews.cs" />
+    <Compile Include="NewsStructure\MPeerNews.cs" />
+    <Compile Include="NewsStructure\NewsModel.cs" />
+    <Compile Include="NewsStructure\NewsPicInfo.cs" />
+    <Compile Include="NewsStructure\NewsType.cs" />
+    <Compile Include="NewsStructure\TagKeyInfo.cs" />
+    <Compile Include="NewTourStructure\MOrderSmsInfo.cs" />
+    <Compile Include="NewTourStructure\MPowderList.cs" />
+    <Compile Include="NewTourStructure\MRoute.cs" />
+    <Compile Include="NewTourStructure\MTourList.cs" />
+    <Compile Include="NewTourStructure\MTourOrder.cs" />
+    <Compile Include="NewTourStructure\RouteEnum.cs" />
+    <Compile Include="NewTourStructure\TourEnum.cs" />
+    <Compile Include="OnLineServer\OLServerInfo.cs" />
+    <Compile Include="OpenStructure\MCompanyInfo.cs" />
+    <Compile Include="OpenStructure\MExceptionInfo.cs" />
+    <Compile Include="OpenStructure\MUserInfo.cs" />
+    <Compile Include="PoolStructure\CompanyInfo.cs" />
+    <Compile Include="ScenicStructure\MScenicArea.cs" />
+    <Compile Include="ScenicStructure\MScenicImg.cs" />
+    <Compile Include="ScenicStructure\MScenicTheme.cs" />
+    <Compile Include="ScenicStructure\MScenicTickets.cs" />
+    <Compile Include="ScenicStructure\ScenicEnum.cs" />
+    <Compile Include="ShopStructure\RouteTeamCustomization.cs" />
+    <Compile Include="SMSStructure\AccountInfo.cs" />
+    <Compile Include="SMSStructure\CustomerCategoryInfo.cs" />
+    <Compile Include="SMSStructure\CustomerInfo.cs" />
+    <Compile Include="SMSStructure\PayMoneyInfo.cs" />
+    <Compile Include="SMSStructure\SendDetailInfo.cs" />
+    <Compile Include="SMSStructure\SendMessageInfo.cs" />
+    <Compile Include="SMSStructure\SendTotalInfo.cs" />
+    <Compile Include="SMSStructure\SMSSystemConfig.cs" />
+    <Compile Include="SMSStructure\TemplateCategoryInfo.cs" />
+    <Compile Include="SMSStructure\TemplateInfo.cs" />
+    <Compile Include="SSOEntity\MasterUserInfo.cs" />
+    <Compile Include="SSOEntity\UserInfo.cs" />
+    <Compile Include="MQStructure\IMAcceptMsgPeople.cs" />
+    <Compile Include="MQStructure\IMCommendComapny.cs" />
+    <Compile Include="MQStructure\IMFriendList.cs" />
+    <Compile Include="MQStructure\IMGroupList.cs" />
+    <Compile Include="MQStructure\IMMember.cs" />
+    <Compile Include="MQStructure\IMMessage.cs" />
+    <Compile Include="MQStructure\IMMessageUrl.cs" />
+    <Compile Include="MQStructure\IMServiceMQ.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CreditSystemStructure\AutoJudgeCompany.cs" />
+    <Compile Include="CreditSystemStructure\RateCertificate.cs" />
+    <Compile Include="CreditSystemStructure\RateConfig.cs" />
+    <Compile Include="CreditSystemStructure\RateCreditDetail.cs" />
+    <Compile Include="CreditSystemStructure\RateDetailTotal.cs" />
+    <Compile Include="CreditSystemStructure\RateJudgeLevelCount.cs" />
+    <Compile Include="CreditSystemStructure\RateScore.cs" />
+    <Compile Include="CreditSystemStructure\RateHoldUp.cs" />
+    <Compile Include="ShopStructure\HighShopAdv.cs" />
+    <Compile Include="ShopStructure\HighShopCompanyInfo.cs" />
+    <Compile Include="ShopStructure\HighShopFriendLink.cs" />
+    <Compile Include="ShopStructure\HighShopList.cs" />
+    <Compile Include="ShopStructure\HighShopNews.cs" />
+    <Compile Include="ShopStructure\HighShopResource.cs" />
+    <Compile Include="ShopStructure\HighShopTripGuide.cs" />
+    <Compile Include="SystemStructure\MSysSettingInfo.cs" />
+    <Compile Include="SystemStructure\MSystemLandMark.cs" />
+    <Compile Include="SystemStructure\ProductSuggestion.cs" />
+    <Compile Include="SystemStructure\Affiche.cs" />
+    <Compile Include="SystemStructure\CompanyAdv.cs" />
+    <Compile Include="SystemStructure\CompanyCityAd.cs" />
+    <Compile Include="SystemStructure\ExchangeAskPrice.cs" />
+    <Compile Include="CommunityStructure\ExchangeComment.cs" />
+    <Compile Include="SystemStructure\ExchangeList.cs" />
+    <Compile Include="SystemStructure\ExchangeTopicClass.cs" />
+    <Compile Include="SystemStructure\ResultInfo.cs" />
+    <Compile Include="SystemStructure\RouteType.cs" />
+    <Compile Include="SystemStructure\SummaryCount.cs" />
+    <Compile Include="SystemStructure\SysApplyServiceInfo.cs" />
+    <Compile Include="SystemStructure\SysArea.cs" />
+    <Compile Include="SystemStructure\SysAreaContact.cs" />
+    <Compile Include="SystemStructure\SysAreaSiteControl.cs" />
+    <Compile Include="SystemStructure\SysCity.cs" />
+    <Compile Include="SystemStructure\SysCompanyDomain.cs" />
+    <Compile Include="SystemStructure\MSysCountry.cs" />
+    <Compile Include="SystemStructure\SysDistrictCounty.cs" />
+    <Compile Include="SystemStructure\SysField.cs" />
+    <Compile Include="SystemStructure\SysFriendLink.cs" />
+    <Compile Include="SystemStructure\SysIndexAdv.cs" />
+    <Compile Include="SystemStructure\SysOnlineUser.cs" />
+    <Compile Include="SystemStructure\SysPermission.cs" />
+    <Compile Include="SystemStructure\SysPermissionCategory.cs" />
+    <Compile Include="SystemStructure\SysPermissionClass.cs" />
+    <Compile Include="SystemStructure\SysProvince.cs" />
+    <Compile Include="SystemStructure\SysCityAreaControl.cs" />
+    <Compile Include="SystemStructure\SystemConfig.cs" />
+    <Compile Include="SystemStructure\SystemDomain.cs" />
+    <Compile Include="SystemStructure\SystemInfo.cs" />
+    <Compile Include="SystemStructure\SystemUser.cs" />
+    <Compile Include="SystemStructure\SysUserAreaControl.cs" />
+    <Compile Include="TestModel.cs" />
+    <Compile Include="TicketStructure\GroupTickets.cs" />
+    <Compile Include="TicketStructure\MLogTicketInfo.cs" />
+    <Compile Include="TicketStructure\PassengerInformation.cs" />
+    <Compile Include="TicketStructure\SpecialFares.cs" />
+    <Compile Include="TicketStructure\TicketCompanyAccount.cs" />
+    <Compile Include="TicketStructure\TicketFlightCompany.cs" />
+    <Compile Include="TicketStructure\TicketFreightBuyLog.cs" />
+    <Compile Include="TicketStructure\TicketFreightPackageInfo.cs" />
+    <Compile Include="TicketStructure\TicketNationInfo.cs" />
+    <Compile Include="TicketStructure\TicketOrderInfo.cs" />
+    <Compile Include="TicketStructure\Ticket.cs" />
+    <Compile Include="TicketStructure\TicketApply.cs" />
+    <Compile Include="TicketStructure\TicketFreightInfo.cs" />
+    <Compile Include="TicketStructure\TicketOrderLog.cs" />
+    <Compile Include="TicketStructure\TicketPayList.cs" />
+    <Compile Include="TicketStructure\TicketSeattle.cs" />
+    <Compile Include="TicketStructure\TicketVistorInfo.cs" />
+    <Compile Include="TicketStructure\TicketWholesalersInfo.cs" />
+    <Compile Include="ToolStructure\CompanyDayMemo.cs" />
+    <Compile Include="ToolStructure\CompanyFileUpload.cs" />
+    <Compile Include="ToolStructure\FundRegisterInfo.cs" />
+    <Compile Include="ToolStructure\MsgTipRecord.cs" />
+    <Compile Include="ToolStructure\Payments.cs" />
+    <Compile Include="ToolStructure\Receivables.cs" />
+    <Compile Include="ToolStructure\TrainList.cs" />
+    <Compile Include="ToolStructure\TrainPinyin.cs" />
+    <Compile Include="ToolStructure\TrainSchedule.cs" />
+    <Compile Include="TourStructure\RateOrder.cs" />
+    <Compile Include="TourStructure\RouteBasicInfo.cs" />
+    <Compile Include="TourStructure\RouteBasicPriceDetail.cs" />
+    <Compile Include="TourStructure\RouteSendList.cs" />
+    <Compile Include="TourStructure\RouteServiceStandard.cs" />
+    <Compile Include="TourStructure\RouteStandardPlan.cs" />
+    <Compile Include="TourStructure\TourAttachInfo.cs" />
+    <Compile Include="TourStructure\TourOrderFinance.cs" />
+    <Compile Include="TourStructure\TourPriceDetail.cs" />
+    <Compile Include="TourStructure\TourInfo.cs" />
+    <Compile Include="TourStructure\TourLocalityInfo.cs" />
+    <Compile Include="TourStructure\TourMessage.cs" />
+    <Compile Include="TourStructure\TourOrder.cs" />
+    <Compile Include="TourStructure\TourOrderCustomer.cs" />
+    <Compile Include="VisaStructure\VisaModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="CompanyDiagram.cd" />
+    <None Include="类关系图.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EyouSoft.HotelBI\EyouSoft.HotelBI.csproj">
+      <Project>{BE25C6F7-5868-4995-90CB-C92059977EEC}</Project>
+      <Name>EyouSoft.HotelBI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

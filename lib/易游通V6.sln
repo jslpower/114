@@ -1,0 +1,275 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.BusinessLogWriter", "EyouSoft.BusinessLogWriter\EyouSoft.BusinessLogWriter.csproj", "{07937E40-F528-465D-B445-D040B284F688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.AOPHandler", "EyouSoft.AOPHandler\EyouSoft.AOPHandler.csproj", "{406B8327-844E-4E8F-A042-E328713761B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Common", "EyouSoft.Common\EyouSoft.Common.csproj", "{8F83F92A-AC73-4736-9449-EF69355C98B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Exception.Facade", "EyouSoft.Exception.Facade\EyouSoft.Exception.Facade.csproj", "{FE710F51-E721-4229-8179-2BD7F665AB77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Model", "EyouSoft.Model\EyouSoft.Model.csproj", "{48EBFFCD-8A6D-48DE-ABED-5659DA8547EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Console", "EyouSoft.Console\EyouSoft.Console.csproj", "{0B52B3BC-62F0-4DD5-A516-6BBDB60B5F0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Cache.Facade", "EyouSoft.Cache.Facade\EyouSoft.Cache.Facade.csproj", "{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.DAL", "EyouSoft.DAL\EyouSoft.DAL.csproj", "{FE024C5C-6B2B-4D8C-8773-DEE052A75659}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Oracle.DAL", "EyouSoft.Oracle.DAL\EyouSoft.Oracle.DAL.csproj", "{118BB714-2083-49FD-B305-F10F10D86281}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.IBLL", "EyouSoft.BLL.Interface\EyouSoft.IBLL.csproj", "{11EA2D95-0CFD-4979-84A0-D25CB0345EF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.BLL.Core", "EyouSoft.BLL.Core\EyouSoft.BLL.Core.csproj", "{8573B675-29EC-4A84-834E-47D810BFFC6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Cache.Core", "EyouSoft.Cache.Core\EyouSoft.Cache.Core.csproj", "{DCC461DA-621F-47EE-85F3-B89DD6AD030F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Config", "EyouSoft.Config\EyouSoft.Config.csproj", "{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Document", "EyouSoft.Document\EyouSoft.Document.csproj", "{555B1A58-9C7C-44E0-8FAB-70A9B5FFC5BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB", "WEB\WEB.csproj", "{64947F0F-0991-4775-8761-0602C0D80D85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.IDAL", "EyouSoft.DAL.Interface\EyouSoft.IDAL.csproj", "{D24B21F8-D812-435E-ADA6-1D528DBAD430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Component.Factory", "EyouSoft.Component.Factory\EyouSoft.Component.Factory.csproj", "{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSO", "SSO", "{F02FF514-304F-4A19-A874-1B0D6A3F91EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Service.SSO", "EyouSoft.Service.SSO\EyouSoft.Service.SSO.csproj", "{2C05D16C-101C-48E8-904D-85D4B6E36C5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.SSOComponent", "EyouSoft.SSOComponent\EyouSoft.SSOComponent.csproj", "{E6C66292-B68A-4B88-96AD-C768AF4C8F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Security.Membership", "EyouSoft.Security.Membership\EyouSoft.Security.Membership.csproj", "{22692765-6207-4393-BCB1-622491BC8E59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utility", "Utility", "{62A38521-482E-42C3-892C-A6B19C784CBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.BackgroundServices", "EyouSoft.BackgroundServices\EyouSoft.BackgroundServices.csproj", "{1B911605-491C-43E0-BD08-841DF5128840}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.UTEST", "EyouSoft.UTEST\EyouSoft.UTEST.csproj", "{1530D102-55CE-4B04-9E12-89DC81B0A199}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.HotelBI", "EyouSoft.HotelBI\EyouSoft.HotelBI.csproj", "{BE25C6F7-5868-4995-90CB-C92059977EEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "数据迁移", "数据迁移", "{80BF2D9B-5611-4CE1-9A59-9C4738396664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.MoveData", "EyouSoft.MoveData\EyouSoft.MoveData.csproj", "{44896FC3-FA30-4979-B1DB-18767DB17884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.OpenRelation.Model", "EyouSoft.OpenRelation.Model\EyouSoft.OpenRelation.Model.csproj", "{8C5F553B-DBAD-48B2-AEF6-6EEA2ED3A4D9}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 25
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EyouSoft.BusinessLogWriter\\EyouSoft.BusinessLogWriter.csproj
+		SccProjectTopLevelParentUniqueName1 = 易游通V6.sln
+		SccProjectName1 = \u0022$/易游通V6/EyouSoft.BusinessLogWriter\u0022,\u0020OPAAAAAA
+		SccLocalPath1 = EyouSoft.BusinessLogWriter
+		SccProjectUniqueName2 = EyouSoft.AOPHandler\\EyouSoft.AOPHandler.csproj
+		SccProjectTopLevelParentUniqueName2 = 易游通V6.sln
+		SccProjectName2 = \u0022$/易游通V6/EyouSoft.AOPHandler\u0022,\u0020XBAAAAAA
+		SccLocalPath2 = EyouSoft.AOPHandler
+		SccProjectUniqueName3 = EyouSoft.Common\\EyouSoft.Common.csproj
+		SccProjectTopLevelParentUniqueName3 = 易游通V6.sln
+		SccProjectName3 = \u0022$/易游通V6/EyouSoft.Common\u0022,\u0020FBAAAAAA
+		SccLocalPath3 = EyouSoft.Common
+		SccProjectUniqueName4 = EyouSoft.Exception.Facade\\EyouSoft.Exception.Facade.csproj
+		SccProjectTopLevelParentUniqueName4 = 易游通V6.sln
+		SccProjectName4 = \u0022$/易游通V6/EyouSoft.Exception.Facade\u0022,\u0020TAAAAAAA
+		SccLocalPath4 = EyouSoft.Exception.Facade
+		SccProjectUniqueName5 = EyouSoft.Model\\EyouSoft.Model.csproj
+		SccProjectName5 = \u0022$/易游通V6/EyouSoft.Model\u0022,\u0020HAAAAAAA
+		SccLocalPath5 = EyouSoft.Model
+		SccProjectUniqueName6 = EyouSoft.Console\\EyouSoft.Console.csproj
+		SccProjectName6 = \u0022$/易游通V6/EyouSoft.Console\u0022,\u0020NAAAAAAA
+		SccLocalPath6 = EyouSoft.Console
+		SccProjectUniqueName7 = EyouSoft.Cache.Facade\\EyouSoft.Cache.Facade.csproj
+		SccProjectTopLevelParentUniqueName7 = 易游通V6.sln
+		SccProjectName7 = \u0022$/易游通V6/EyouSoft.Cache.Facade\u0022,\u0020WAAAAAAA
+		SccLocalPath7 = EyouSoft.Cache.Facade
+		SccProjectUniqueName8 = EyouSoft.DAL\\EyouSoft.DAL.csproj
+		SccProjectName8 = \u0022$/易游通V6/EyouSoft.DAL\u0022,\u0020QAAAAAAA
+		SccLocalPath8 = EyouSoft.DAL
+		SccProjectUniqueName9 = EyouSoft.Oracle.DAL\\EyouSoft.Oracle.DAL.csproj
+		SccProjectName9 = \u0022$/易游通V6/EyouSoft.Oracle.DAL\u0022,\u0020IBAAAAAA
+		SccLocalPath9 = EyouSoft.Oracle.DAL
+		SccProjectUniqueName10 = EyouSoft.BLL.Interface\\EyouSoft.IBLL.csproj
+		SccProjectName10 = \u0022$/易游通V6/EyouSoft.BLL.Interface\u0022,\u0020LBAAAAAA
+		SccLocalPath10 = EyouSoft.BLL.Interface
+		SccProjectUniqueName11 = EyouSoft.BLL.Core\\EyouSoft.BLL.Core.csproj
+		SccProjectName11 = \u0022$/易游通V6/EyouSoft.BLL.Core\u0022,\u0020CBAAAAAA
+		SccLocalPath11 = EyouSoft.BLL.Core
+		SccProjectUniqueName12 = EyouSoft.Cache.Core\\EyouSoft.Cache.Core.csproj
+		SccProjectTopLevelParentUniqueName12 = 易游通V6.sln
+		SccProjectName12 = \u0022$/易游通V6/EyouSoft.Cache.Core\u0022,\u0020ZAAAAAAA
+		SccLocalPath12 = EyouSoft.Cache.Core
+		SccProjectUniqueName13 = EyouSoft.Config\\EyouSoft.Config.csproj
+		SccProjectTopLevelParentUniqueName13 = 易游通V6.sln
+		SccProjectName13 = \u0022$/易游通V6/EyouSoft.Config\u0022,\u0020KAAAAAAA
+		SccLocalPath13 = EyouSoft.Config
+		SccProjectUniqueName14 = EyouSoft.Document\\EyouSoft.Document.csproj
+		SccProjectName14 = \u0022$/易游通V6/EyouSoft.Document\u0022,\u0020RBAAAAAA
+		SccLocalPath14 = EyouSoft.Document
+		SccProjectUniqueName15 = WEB\\WEB.csproj
+		SccProjectName15 = \u0022$/易游通V6/WEB\u0022,\u0020EAAAAAAA
+		SccLocalPath15 = WEB
+		SccProjectUniqueName16 = EyouSoft.DAL.Interface\\EyouSoft.IDAL.csproj
+		SccProjectName16 = \u0022$/易游通V6/EyouSoft.DAL.Interface\u0022,\u0020OBAAAAAA
+		SccLocalPath16 = EyouSoft.DAL.Interface
+		SccProjectUniqueName17 = EyouSoft.Component.Factory\\EyouSoft.Component.Factory.csproj
+		SccProjectName17 = \u0022$/易游通V6/EyouSoft.Component.Factory\u0022,\u0020UBAAAAAA
+		SccLocalPath17 = EyouSoft.Component.Factory
+		SccProjectUniqueName18 = EyouSoft.Service.SSO\\EyouSoft.Service.SSO.csproj
+		SccProjectTopLevelParentUniqueName18 = 易游通V6.sln
+		SccProjectName18 = \u0022$/易游通V6/EyouSoft.Service.SSO\u0022,\u0020ATAAAAAA
+		SccLocalPath18 = EyouSoft.Service.SSO
+		SccProjectUniqueName19 = EyouSoft.SSOComponent\\EyouSoft.SSOComponent.csproj
+		SccProjectTopLevelParentUniqueName19 = 易游通V6.sln
+		SccProjectName19 = \u0022$/易游通V6/EyouSoft.SSOComponent\u0022,\u0020OSAAAAAA
+		SccLocalPath19 = EyouSoft.SSOComponent
+		SccProjectUniqueName20 = EyouSoft.Security.Membership\\EyouSoft.Security.Membership.csproj
+		SccProjectTopLevelParentUniqueName20 = 易游通V6.sln
+		SccProjectName20 = \u0022$/易游通V6/EyouSoft.Security.Membership\u0022,\u0020HVAAAAAA
+		SccLocalPath20 = EyouSoft.Security.Membership
+		SccProjectUniqueName21 = EyouSoft.BackgroundServices\\EyouSoft.BackgroundServices.csproj
+		SccProjectTopLevelParentUniqueName21 = 易游通V6.sln
+		SccLocalPath21 = .
+		SccProjectFilePathRelativizedFromConnection21 = EyouSoft.BackgroundServices\\
+		SccProjectUniqueName22 = EyouSoft.UTEST\\EyouSoft.UTEST.csproj
+		SccLocalPath22 = .
+		SccProjectFilePathRelativizedFromConnection22 = EyouSoft.UTEST\\
+		SccProjectUniqueName23 = EyouSoft.HotelBI\\EyouSoft.HotelBI.csproj
+		SccProjectTopLevelParentUniqueName23 = 易游通V6.sln
+		SccLocalPath23 = .
+		SccProjectFilePathRelativizedFromConnection23 = EyouSoft.HotelBI\\
+		SccProjectUniqueName24 = EyouSoft.OpenRelation.Model\\EyouSoft.OpenRelation.Model.csproj
+		SccProjectTopLevelParentUniqueName24 = 易游通V6.sln
+		SccLocalPath24 = .
+		SccProjectFilePathRelativizedFromConnection24 = EyouSoft.OpenRelation.Model\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07937E40-F528-465D-B445-D040B284F688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07937E40-F528-465D-B445-D040B284F688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07937E40-F528-465D-B445-D040B284F688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07937E40-F528-465D-B445-D040B284F688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{406B8327-844E-4E8F-A042-E328713761B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{406B8327-844E-4E8F-A042-E328713761B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{406B8327-844E-4E8F-A042-E328713761B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{406B8327-844E-4E8F-A042-E328713761B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F83F92A-AC73-4736-9449-EF69355C98B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F83F92A-AC73-4736-9449-EF69355C98B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F83F92A-AC73-4736-9449-EF69355C98B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F83F92A-AC73-4736-9449-EF69355C98B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE710F51-E721-4229-8179-2BD7F665AB77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE710F51-E721-4229-8179-2BD7F665AB77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE710F51-E721-4229-8179-2BD7F665AB77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE710F51-E721-4229-8179-2BD7F665AB77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48EBFFCD-8A6D-48DE-ABED-5659DA8547EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48EBFFCD-8A6D-48DE-ABED-5659DA8547EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48EBFFCD-8A6D-48DE-ABED-5659DA8547EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48EBFFCD-8A6D-48DE-ABED-5659DA8547EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B52B3BC-62F0-4DD5-A516-6BBDB60B5F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B52B3BC-62F0-4DD5-A516-6BBDB60B5F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B52B3BC-62F0-4DD5-A516-6BBDB60B5F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B52B3BC-62F0-4DD5-A516-6BBDB60B5F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE024C5C-6B2B-4D8C-8773-DEE052A75659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE024C5C-6B2B-4D8C-8773-DEE052A75659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE024C5C-6B2B-4D8C-8773-DEE052A75659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE024C5C-6B2B-4D8C-8773-DEE052A75659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118BB714-2083-49FD-B305-F10F10D86281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118BB714-2083-49FD-B305-F10F10D86281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118BB714-2083-49FD-B305-F10F10D86281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118BB714-2083-49FD-B305-F10F10D86281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11EA2D95-0CFD-4979-84A0-D25CB0345EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11EA2D95-0CFD-4979-84A0-D25CB0345EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11EA2D95-0CFD-4979-84A0-D25CB0345EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11EA2D95-0CFD-4979-84A0-D25CB0345EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8573B675-29EC-4A84-834E-47D810BFFC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8573B675-29EC-4A84-834E-47D810BFFC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8573B675-29EC-4A84-834E-47D810BFFC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8573B675-29EC-4A84-834E-47D810BFFC6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC461DA-621F-47EE-85F3-B89DD6AD030F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC461DA-621F-47EE-85F3-B89DD6AD030F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC461DA-621F-47EE-85F3-B89DD6AD030F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC461DA-621F-47EE-85F3-B89DD6AD030F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555B1A58-9C7C-44E0-8FAB-70A9B5FFC5BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555B1A58-9C7C-44E0-8FAB-70A9B5FFC5BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555B1A58-9C7C-44E0-8FAB-70A9B5FFC5BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555B1A58-9C7C-44E0-8FAB-70A9B5FFC5BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64947F0F-0991-4775-8761-0602C0D80D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64947F0F-0991-4775-8761-0602C0D80D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64947F0F-0991-4775-8761-0602C0D80D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64947F0F-0991-4775-8761-0602C0D80D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D24B21F8-D812-435E-ADA6-1D528DBAD430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D24B21F8-D812-435E-ADA6-1D528DBAD430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D24B21F8-D812-435E-ADA6-1D528DBAD430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D24B21F8-D812-435E-ADA6-1D528DBAD430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C05D16C-101C-48E8-904D-85D4B6E36C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C05D16C-101C-48E8-904D-85D4B6E36C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C05D16C-101C-48E8-904D-85D4B6E36C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C05D16C-101C-48E8-904D-85D4B6E36C5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C66292-B68A-4B88-96AD-C768AF4C8F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C66292-B68A-4B88-96AD-C768AF4C8F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C66292-B68A-4B88-96AD-C768AF4C8F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C66292-B68A-4B88-96AD-C768AF4C8F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22692765-6207-4393-BCB1-622491BC8E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22692765-6207-4393-BCB1-622491BC8E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22692765-6207-4393-BCB1-622491BC8E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22692765-6207-4393-BCB1-622491BC8E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B911605-491C-43E0-BD08-841DF5128840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B911605-491C-43E0-BD08-841DF5128840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B911605-491C-43E0-BD08-841DF5128840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B911605-491C-43E0-BD08-841DF5128840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1530D102-55CE-4B04-9E12-89DC81B0A199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1530D102-55CE-4B04-9E12-89DC81B0A199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1530D102-55CE-4B04-9E12-89DC81B0A199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1530D102-55CE-4B04-9E12-89DC81B0A199}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE25C6F7-5868-4995-90CB-C92059977EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE25C6F7-5868-4995-90CB-C92059977EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE25C6F7-5868-4995-90CB-C92059977EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE25C6F7-5868-4995-90CB-C92059977EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44896FC3-FA30-4979-B1DB-18767DB17884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44896FC3-FA30-4979-B1DB-18767DB17884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44896FC3-FA30-4979-B1DB-18767DB17884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44896FC3-FA30-4979-B1DB-18767DB17884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5F553B-DBAD-48B2-AEF6-6EEA2ED3A4D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5F553B-DBAD-48B2-AEF6-6EEA2ED3A4D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5F553B-DBAD-48B2-AEF6-6EEA2ED3A4D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C5F553B-DBAD-48B2-AEF6-6EEA2ED3A4D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{406B8327-844E-4E8F-A042-E328713761B7} = {62A38521-482E-42C3-892C-A6B19C784CBC}
+		{8F83F92A-AC73-4736-9449-EF69355C98B1} = {62A38521-482E-42C3-892C-A6B19C784CBC}
+		{FE710F51-E721-4229-8179-2BD7F665AB77} = {62A38521-482E-42C3-892C-A6B19C784CBC}
+		{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768} = {62A38521-482E-42C3-892C-A6B19C784CBC}
+		{DCC461DA-621F-47EE-85F3-B89DD6AD030F} = {62A38521-482E-42C3-892C-A6B19C784CBC}
+		{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4} = {62A38521-482E-42C3-892C-A6B19C784CBC}
+		{07937E40-F528-465D-B445-D040B284F688} = {62A38521-482E-42C3-892C-A6B19C784CBC}
+		{1B911605-491C-43E0-BD08-841DF5128840} = {62A38521-482E-42C3-892C-A6B19C784CBC}
+		{BE25C6F7-5868-4995-90CB-C92059977EEC} = {62A38521-482E-42C3-892C-A6B19C784CBC}
+		{8C5F553B-DBAD-48B2-AEF6-6EEA2ED3A4D9} = {62A38521-482E-42C3-892C-A6B19C784CBC}
+		{2C05D16C-101C-48E8-904D-85D4B6E36C5A} = {F02FF514-304F-4A19-A874-1B0D6A3F91EE}
+		{E6C66292-B68A-4B88-96AD-C768AF4C8F77} = {F02FF514-304F-4A19-A874-1B0D6A3F91EE}
+		{22692765-6207-4393-BCB1-622491BC8E59} = {F02FF514-304F-4A19-A874-1B0D6A3F91EE}
+		{44896FC3-FA30-4979-B1DB-18767DB17884} = {80BF2D9B-5611-4CE1-9A59-9C4738396664}
+	EndGlobalSection
+EndGlobal

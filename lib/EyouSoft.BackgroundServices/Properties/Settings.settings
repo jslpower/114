@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EyouSoft.BackgroundServices.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="EyouSoft_BackgroundServices_smsSoap_soap" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:30009/smsapi.asmx</Value>
+    </Setting>
+    <Setting Name="EyouSoft_BackgroundServices_VoSmsServices_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://smc.myvo.cn/SMSWebService/Service.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Send">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sendMessageInfo" type="tns:SendMessageInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SendMessageInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserFullName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SMSType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SMSContent" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SendTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mobiles" type="tns:ArrayOfAcceptMobileInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="SendType" type="tns:SendType" />
+          <s:element minOccurs="0" maxOccurs="1" name="SendChannel" type="tns:SMSChannel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAcceptMobileInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AcceptMobileInfo" nillable="true" type="tns:AcceptMobileInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AcceptMobileInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsEncrypt" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="SendType">
+        <s:restriction base="s:string">
+          <s:enumeration value="直接发送" />
+          <s:enumeration value="定时发送" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="SMSChannel">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Index" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChannelName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pw" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PriceOne" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsLong" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendResult" type="tns:SendResultInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SendResultInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSucceed" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CountFee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="SendFee" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="TempFeeTakeId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SendTotalId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AccountMoney" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="MobileNumberCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PHSNumberCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SuccessCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PHSSuccessCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PHSErrorCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeoutCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PHSTimeoutCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FactCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PHSFactCount" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="APISoapHeader" type="tns:APISoapHeader" />
+      <s:complexType name="APISoapHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SecretKey" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendSoapIn">
+    <wsdl:part name="parameters" element="tns:Send" />
+  </wsdl:message>
+  <wsdl:message name="SendSoapOut">
+    <wsdl:part name="parameters" element="tns:SendResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendAPISoapHeader">
+    <wsdl:part name="APISoapHeader" element="tns:APISoapHeader" />
+  </wsdl:message>
+  <wsdl:portType name="SmsAPISoap">
+    <wsdl:operation name="Send">
+      <wsdl:input message="tns:SendSoapIn" />
+      <wsdl:output message="tns:SendSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SmsAPISoap" type="tns:SmsAPISoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Send">
+      <soap:operation soapAction="http://tempuri.org/Send" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SendAPISoapHeader" part="APISoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SmsAPISoap12" type="tns:SmsAPISoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Send">
+      <soap12:operation soapAction="http://tempuri.org/Send" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SendAPISoapHeader" part="APISoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SmsAPI">
+    <wsdl:port name="SmsAPISoap" binding="tns:SmsAPISoap">
+      <soap:address location="http://localhost:30009/smsapi.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SmsAPISoap12" binding="tns:SmsAPISoap12">
+      <soap12:address location="http://localhost:30009/smsapi.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

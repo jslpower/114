@@ -1,0 +1,193 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1530D102-55CE-4B04-9E12-89DC81B0A199}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EyouSoft.UTEST</RootNamespace>
+    <AssemblyName>EyouSoft.UTEST</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Adpost.Ticket, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EyouSoft.Common\DLL\Adpost.Ticket.dll</HintPath>
+    </Reference>
+    <Reference Include="EntLibContrib.Data.MySql, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EyouSoft.Common\DLL\EntLibContrib.Data.MySql.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Cache.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EyouSoft.BLL.Core\bin\Debug\EyouSoft.Cache.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EyouSoft.Security.Membership, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EyouSoft.Common\DLL\EyouSoft.Security.Membership.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="mysql.data, Version=6.1.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EyouSoft.Common\DLL\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompanyTest.cs" />
+    <Compile Include="CompanyUserTest.cs" />
+    <Compile Include="CustomerTest.cs" />
+    <Compile Include="CustomerTypeTest.cs" />
+    <Compile Include="FreightBuyLogTest.cs" />
+    <Compile Include="FreightPackageInfoTest.cs" />
+    <Compile Include="HotelAccountTest.cs" />
+    <Compile Include="HotelCityAreasTest.cs" />
+    <Compile Include="HotelCityTest.cs" />
+    <Compile Include="HotelLandMarksTest.cs" />
+    <Compile Include="LocalHotelInfoTest.cs" />
+    <Compile Include="NewsDalTest.cs" />
+    <Compile Include="PaymentsTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceivablesTest.cs" />
+    <Compile Include="RouteTeamCustomizationTest.cs" />
+    <Compile Include="SMSServicesTest.cs" />
+    <Compile Include="SuitProductTest.cs" />
+    <Compile Include="SystemUserTest.cs" />
+    <Compile Include="TicketFlightCompanyTest.cs" />
+    <Compile Include="TicketFreightInfoTest.cs" />
+    <Compile Include="TicketNationInfoTest.cs" />
+    <Compile Include="TicketOrderTest.cs" />
+    <Compile Include="TicketPayListTest.cs" />
+    <Compile Include="TicketSeattleTest.cs" />
+    <Compile Include="TicketVistorInfoTest.cs" />
+    <Compile Include="TicketWholesalersInfoTest.cs" />
+    <Compile Include="UnitTest1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AuthoringTests.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EyouSoft.AOPHandler\EyouSoft.AOPHandler.csproj">
+      <Project>{406B8327-844E-4E8F-A042-E328713761B7}</Project>
+      <Name>EyouSoft.AOPHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.BackgroundServices\EyouSoft.BackgroundServices.csproj">
+      <Project>{1B911605-491C-43E0-BD08-841DF5128840}</Project>
+      <Name>EyouSoft.BackgroundServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.BLL.Core\EyouSoft.BLL.Core.csproj">
+      <Project>{8573B675-29EC-4A84-834E-47D810BFFC6D}</Project>
+      <Name>EyouSoft.BLL.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.BLL.Interface\EyouSoft.IBLL.csproj">
+      <Project>{11EA2D95-0CFD-4979-84A0-D25CB0345EF1}</Project>
+      <Name>EyouSoft.IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Cache.Facade\EyouSoft.Cache.Facade.csproj">
+      <Project>{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}</Project>
+      <Name>EyouSoft.Cache.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Common\EyouSoft.Common.csproj">
+      <Project>{8F83F92A-AC73-4736-9449-EF69355C98B1}</Project>
+      <Name>EyouSoft.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Component.Factory\EyouSoft.Component.Factory.csproj">
+      <Project>{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}</Project>
+      <Name>EyouSoft.Component.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Config\EyouSoft.Config.csproj">
+      <Project>{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4}</Project>
+      <Name>EyouSoft.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.DAL.Interface\EyouSoft.IDAL.csproj">
+      <Project>{D24B21F8-D812-435E-ADA6-1D528DBAD430}</Project>
+      <Name>EyouSoft.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.DAL\EyouSoft.DAL.csproj">
+      <Project>{FE024C5C-6B2B-4D8C-8773-DEE052A75659}</Project>
+      <Name>EyouSoft.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Exception.Facade\EyouSoft.Exception.Facade.csproj">
+      <Project>{FE710F51-E721-4229-8179-2BD7F665AB77}</Project>
+      <Name>EyouSoft.Exception.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.HotelBI\EyouSoft.HotelBI.csproj">
+      <Project>{BE25C6F7-5868-4995-90CB-C92059977EEC}</Project>
+      <Name>EyouSoft.HotelBI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Model\EyouSoft.Model.csproj">
+      <Project>{48EBFFCD-8A6D-48DE-ABED-5659DA8547EA}</Project>
+      <Name>EyouSoft.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Oracle.DAL\EyouSoft.Oracle.DAL.csproj">
+      <Project>{118BB714-2083-49FD-B305-F10F10D86281}</Project>
+      <Name>EyouSoft.Oracle.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <Shadow Include="测试引用\EyouSoft.DAL.accessor" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

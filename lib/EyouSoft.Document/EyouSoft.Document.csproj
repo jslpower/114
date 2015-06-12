@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{555B1A58-9C7C-44E0-8FAB-70A9B5FFC5BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EyouSoft.Document</RootNamespace>
+    <AssemblyName>EyouSoft.Document</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="PowerDesigner\DatabaseArch.pdm" />
+    <None Include="PowerDesigner\Interface.oob" />
+    <None Include="PowerDesigner\Interface.oom" />
+    <None Include="PowerDesigner\大平台.sws" />
+    <None Include="PowerDesigner\数据互通.eab" />
+    <None Include="PowerDesigner\数据互通.eam" />
+    <None Include="PowerDesigner\数据统计服务.oob" />
+    <None Include="PowerDesigner\数据统计服务.oom" />
+    <None Include="PowerDesigner\用户身份验证.eab" />
+    <None Include="PowerDesigner\用户身份验证.eam" />
+    <None Include="PowerDesigner\缓存.oob" />
+    <None Include="PowerDesigner\缓存.oom" />
+    <None Include="易游通V6底层开发要求.doc" />
+    <None Include="易游通V6结构.vsd" />
+    <None Include="策划文档\newitem.rar" />
+    <None Include="策划文档\同业114改版new%287%29.mmap" />
+    <None Include="策划文档\易诺旅游第二期.mmap" />
+    <None Include="策划文档\最新界面.rar" />
+    <None Include="策划文档\子系统-专线.mmap" />
+    <None Include="策划文档\子系统-地接社.mmap" />
+    <None Include="策划文档\子系统-组团社.mmap" />
+    <None Include="策划文档\子系统-高级网店.mmap" />
+    <None Include="策划文档\总体规划-运营后台.mmap" />
+    <None Include="策划文档\机票2010.10.18界面.rar" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PowerDesigner\DatabaseArch.pdb" />
+    <Content Include="全国省份城市县区数据.sql" />
+    <Content Include="策划文档\问题2010-7-6.txt" />
+  </ItemGroup>
+</Project>

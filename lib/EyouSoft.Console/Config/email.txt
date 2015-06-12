@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+</head>
+<body>
+<style>
+/* CSS Document */
+.font14red { font-size:14px; font-weight:bold; color:#D91010; line-height:25px;}
+.font14zs {font-size:14px; font-weight:bold; color:#682000; line-height:25px;}
+a.font14zs {font-size:14px; font-weight:bold; color:#682000; line-height:35px;text-decoration:none}
+a.font14zs:hover {font-size:14px; font-weight:bold; color:#ff0000; line-height:35px;text-decoration: underline}
+.font12ls {color:5C9008}
+a.font12ls,a.font12ls:visited {color:#5C9008; text-decoration:none; font-size:12px;}
+</style>
+<table width="752" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="80" valign="bottom">      亲爱的<span class="font14red">{username}</span>很久没在同业MQ上看到你了，不要生活太辛苦哦~登录同业MQ和旅游同行联系一下吧。 你没来的日子里，你的客户给你留下了新信息呦！<br />
+<span style="font-size:12px;color:#999999">-----为保障会员能及时收到同业114所发出的优惠讯息和会员通知，请将邮箱地址：noreply@tongye114.com加入通讯录---- </span>
+</td>
+  </tr>
+</table>
+<table width="752" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="http://resource.tongye114.com/images/email/mailinfo_01.jpg" width="752" height="52" /></td>
+  </tr>
+</table>
+<table width="752" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><a href="http://www.tongye114.com/RouteManage/Default.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/mailinfo_02.jpg" alt="全国最优质专线" width="156" height="49" border="0" /></a></td>
+    <td><a href="http://www.tongye114.com/PlaneInfo/PlaneListPage.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/mailinfo_03.jpg" alt="打折机票" width="90" height="49" border="0" /></a></td>
+    <td><a href="http://www.tongye114.com/SupplierInfo/SupplierInfo.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/mailinfo_04.jpg" alt=" 最新最火的供求信息" width="162" height="49" border="0" /></a></td>
+    <td><a href="http://club.tongye114.com/default.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/mailinfo_05.jpg" alt="同行社区交流" width="142" height="49" border="0" /></a></td>
+    <td><a href="http://www.tongye114.com/Register/FindPassWord.aspx"><img src="http://resource.tongye114.com/images/email/mailinfo_06.jpg" width="202" height="49" border="0"/></A></td>
+  </tr>
+</table>
+<table width="752" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td><a href="http://im.tongye114.com/IM/DownLoad/download.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/mailinfo_07.jpg" width="752" height="83" border="0" /></a></td>
+  </tr>
+  <tr>
+    <td align="right"><a href="http://im.tongye114.com/IM/DownLoad/download.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/05062003117.gif" width="24" height="23" border=0/><img src="http://resource.tongye114.com/images/email/wtg.gif" width="250" height="25" border="0" /><img src="http://resource.tongye114.com/images/email/05062003117.gif" width="24" height="23" border=0 /></a></td>
+  </tr>
+</table>
+<table width="752" border="0" align="center" cellpadding="4" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td width="56" align="right">&nbsp;</td>
+    <td width="98" align="right" style="padding-top:30px;"><img src="http://resource.tongye114.com/images/email/rico.gif" width="98" height="88" /></td>
+    <td width="574" class="font14red" style="padding-top:30px;">亲爱的{username}，很久没在同业MQ上看到你了，不要生活太辛苦哦~
+    登录同业MQ和旅游同行联系一下吧。 你没来的日子里，你的客户给你留下了新信息呦！<br /><span style="color: #009900">您的MQ用户名是：{username}&nbsp; 密码：{passwd} 请妥善保管 </span></td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td colspan="2" align="center" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="15" align="center"><img src="http://resource.tongye114.com/images/email/T1j.png" width="15" height="11" /> 您有3条消息</td>
+      </tr>
+      <tr>
+        <td align="center"><a href="http://www.tongye114.com/mqlogin.html" target="_blank"><img src="http://resource.tongye114.com/images/email/T1758-39.png" width="235" height="39" border="0" /></a></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td colspan="2" align="left" valign="bottom"><img src="http://resource.tongye114.com/images/email/mailinfo_12.jpg" width="234" height="37" /></td>
+  </tr>
+  <tr>
+    <td align="right">&nbsp;</td>
+    <td height="300" colspan="2" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><a href="http://im.tongye114.com" target="_blank"><img src="http://resource.tongye114.com/images/email/mailwz_01.gif" width="339" height="36" border="0" /></a></td>
+        <td><a href="http://www.tongye114.com/HotelManage/HotelDefault.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/mailwz_02.gif" width="332" height="36" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="http://im.tongye114.com" target="_blank"><img src="http://resource.tongye114.com/images/email/mailwz_03.gif" width="339" height="44" border="0" /></a></td>
+        <td><a href="http://www.tongye114.com/HotelManage/HotelDefault.aspx"><img src="http://resource.tongye114.com/images/email/mailwz_04.gif" width="332" height="44" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="http://www.tongye114.com/RouteManage/Default.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/mailwz_05.gif" width="339" height="29" border="0" /></a></td>
+        <td><a href="http://www.tongye114.com/SupplierInfo/SupplierInfo.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/mailwz_06.gif" width="332" height="29" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="http://www.tongye114.com/RouteManage/Default.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/mailwz_07.gif" width="339" height="44" border="0" /></a></td>
+        <td><a href="http://www.tongye114.com/SupplierInfo/SupplierInfo.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/mailwz_08.gif" width="332" height="44" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="http://www.tongye114.com/PlaneInfo/PlaneListPage.aspx"><img src="http://resource.tongye114.com/images/email/mailwz_09.gif" width="339" height="30" border="0" /></a></td>
+        <td><a href="http://club.tongye114.com/default.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/mailwz_10.gif" width="332" height="30" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="http://www.tongye114.com/PlaneInfo/PlaneListPage.aspx"><img src="http://resource.tongye114.com/images/email/mailwz_11.gif" width="339" height="42" border="0" /></a></td>
+        <td><a href="http://club.tongye114.com/default.aspx" target="_blank"><img src="http://resource.tongye114.com/images/email/mailwz_12.gif" width="332" height="42" border="0" /></a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="font-size:12px; color:#999999;"> 亲爱的同业114会员： <br />
+      &nbsp;&nbsp;&nbsp; 您之所以收到这封邮件，是因为您曾经注册成为同业114用户。我们保证仅向您发送关于同业114的产品、促销优惠以及服务的电子邮件。同业114尊重并保护您的隐私。</td>
+  </tr>
+</table>
+</body>
+</html>
